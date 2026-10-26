@@ -1,0 +1,6 @@
+Chaos-One-Time-Prompt : Only Chaos and get the prompt for your AI - and then, pray for your AI. Simply, what you can expect? Logic? Dead. Seed? what the fuck is seed? only Random.
+
+How to build a app exe like a shit to make you are cool and your girls friend want to go up the bed with you?
+    1/ Type "cd COTP" and paste that shit "pyinstaller --onefile --windowed --name "COTP - CHAOS ONE TIME PROMPT" main.py" to get that bed with your girls.
+    2/ Becarefully, no one wants to get the baby when you are very young and have salary with "trial and pray" mindset as developer.
+Author : Grunt - Trung.
