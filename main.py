@@ -4,18 +4,19 @@ from Script.script import *
 from Script.caculate_pool import *
 
 
-def generateScene():
-    scene = ""
-    option = sceneType.get()
+def generateOutput():
+    output = ""
+    option = outputType.get()
 
     if option == "RANDOM 🎲🎲🎲":
         option = random.choice(
             [
+                "App Date Options",
                 "Cảnh Indoor",
                 "Cảnh Outdoor",
-                "Random Rule L4D2",
-                "App Date Options",
                 "Lovely Prompt",
+                "Modeling Prompt",
+                "Random Rule L4D2",
                 "Short Story 1 - Curse Breaking Journey",
                 "Short Story 2 - Job Interview",
                 "Short Story 3 - Dating",
@@ -25,25 +26,27 @@ def generateScene():
 
     match option:
         case "Cảnh Indoor":
-            scene = generateIndoorScene()
+            output = generateIndoorOutput()
         case "Cảnh Outdoor":
-            scene = generateOutdoorScene()
+            output = generateOutdoorOutput()
         case "Lovely Prompt":
-            scene = generateLovelyPromt()
+            output = generateLovelyPrompt()
+        case "Modeling Prompt":
+            output = generateModelingPrompt()
         case "Random Rule L4D2":
-            scene = ruleL4D2()
+            output = ruleL4D2()
         case "App Date Options":
-            scene = dateAppOptions()
+            output = dateAppOptions()
         case "Short Story 1 - Curse Breaking Journey":
-            scene = generateShortStory1()
+            output = generateShortStory1()
         case "Short Story 2 - Job Interview":
-            scene = generateShortStory2()
+            output = generateShortStory2()
         case "Short Story 3 - Dating":
-            scene = generateShortStory3()
+            output = generateShortStory3()
         case "Short Story 4 - Rebellious Past":
-            scene = generateShortStory4()
+            output = generateShortStory4()
         case _:
-            scene = generateIndoorScene()
+            output = generateIndoorOutput()
 
     outputText.delete("1.0", tk.END)
     outputText.tag_configure(
@@ -65,10 +68,10 @@ def generateScene():
         "icons", font=("Segoe UI", 13, "normal"), foreground="#FFE66D"
     )
 
-    if isinstance(scene, tuple):
-        scene = "\n".join(scene)
+    if isinstance(output, tuple):
+        output = "\n".join(output)
 
-    lines = scene.split("\n")  
+    lines = output.split("\n")  
     for i, line in enumerate(lines):
         if i == 0:
             outputText.insert(tk.END, line + "\n", "title")
@@ -86,15 +89,15 @@ def generateScene():
                         outputText.insert(tk.END, line, "content")
                 else:
                     if i == len(lines) - 1:
-                        icon_start = None
+                        iconStart = None
                         for icon in all_icons:
                             pos = line.find(icon)
                             if pos != -1:
-                                icon_start = pos
+                                iconStart = pos
                                 break
-                        if icon_start is not None:
-                            outputText.insert(tk.END, line[:icon_start], "content")
-                            outputText.insert(tk.END, line[icon_start:], "icons")
+                        if iconStart is not None:
+                            outputText.insert(tk.END, line[:iconStart], "content")
+                            outputText.insert(tk.END, line[iconStart:], "icons")
                         else:
                             outputText.insert(tk.END, line, "content")
                     else:
@@ -104,49 +107,50 @@ def generateScene():
     outputText.config(padx=15, pady=15)
 
 
-def copySceneToClipboard():
-    scene = outputText.get("1.0", tk.END).strip()
-    if scene:
+def copyOutputToClipboard():
+    output = outputText.get("1.0", tk.END).strip()
+    if output:
         root.clipboard_clear()
-        root.clipboard_append(scene)
-        copy_button.config(text="📋 Đã copy!", bg="#89F900", fg="black")
+        root.clipboard_append(output)
+        copyButton.config(text="📋 Đã copy!", bg="#89F900", fg="black")
         root.after(
-            1500, lambda: copy_button.config(text="📋 Copy", bg="#E9F900", fg="black")
+            1500, lambda: copyButton.config(text="📋 Copy", bg="#E9F900", fg="black")
         )
 
-
 def copyStatsToClipboard():
-    stats_text = (
+    statsText = (
         f"📊📊📊 Tổng hợp nội dung có thể tạo bởi COTP (latest):\n"
-        f"Cảnh Indoor: {indoor_combinations:,} [👉 {formatNumber(abs(indoor_combinations), 2)}]\n"
-        f"Cảnh Outdoor: {outdoor_combinations:,} [👉 {formatNumber(abs(outdoor_combinations), 2)}]\n"
-        f"L4D2 Case: {L4D2caseTotal:,} [👉 {formatNumber(abs(L4D2caseTotal), 2)}]\n"
+        f"Cảnh Indoor: {indoorCombinations:,} [👉 {formatNumber(abs(indoorCombinations), 2)}]\n"
+        f"Cảnh Outdoor: {outdoorCombinations:,} [👉 {formatNumber(abs(outdoorCombinations), 2)}]\n"
+        f"L4D2 Case: {l4d2CaseTotal:,} [👉 {formatNumber(abs(l4d2CaseTotal), 2)}]\n"
         f"appDateTotal: {appDateTotal:,} [👉 {formatNumber(abs(appDateTotal), 2)}]\n"
-        f"Short Story 1 - Curse Breaking Journey: {story_combinations:,} [👉 {formatNumber(abs(story_combinations), 2)}]\n"
-        f"Short Story 2 - Job Interview: {story2_combinations:,} [👉 {formatNumber(abs(story2_combinations), 2)}]\n"
-        f"Short Story 3 - Dating: {story3_combinations:,} [👉 {formatNumber(abs(story3_combinations), 2)}]\n"
+        f"Short Story 1 - Curse Breaking Journey: {storyCombinations:,} [👉 {formatNumber(abs(storyCombinations), 2)}]\n"
+        f"Short Story 2 - Job Interview: {story2Combinations:,} [👉 {formatNumber(abs(story2Combinations), 2)}]\n"
+        f"Short Story 3 - Dating: {story3Combinations:,} [👉 {formatNumber(abs(story3Combinations), 2)}]\n"
         f"Short Story 4 - Rebellious Past: {shortStory4Total:,} [👉 {formatNumber(abs(shortStory4Total), 2)}]\n"
         f"Lovely Prompt: {lovelyPromptTotal:,} [👉 {formatNumber(abs(lovelyPromptTotal), 2)}]\n"
-        f"📊📊📊 TOTAL : {total_combinations:,} [👉 {formatNumber(abs(total_combinations), 2)}]\n"
+        f"Modeling Prompt: {modelingPromptTotal:,} [👉 {formatNumber(abs(modelingPromptTotal), 2)}]\n"
+        f"📊📊📊 TOTAL : {totalCombinations:,} [👉 {formatNumber(abs(totalCombinations), 2)}]\n"
         f"=======================================================================================\n"
         f"📊📢📢📢 Phân tích chi tiết:\n"
-        f"Độ dài của con số tổng tổ hợp khả năng của Indoor: {len(str(indoor_combinations))} số\n"
-        f"Độ dài của con số tổng tổ hợp khả năng của Outdoor: {len(str(outdoor_combinations))} số\n"
-        f"Độ dài của con số tổng tổ kịch bản của L4D2: {len(str(L4D2caseTotal))} số\n"
+        f"Độ dài của con số tổng tổ hợp khả năng của Indoor: {len(str(indoorCombinations))} số\n"
+        f"Độ dài của con số tổng tổ hợp khả năng của Outdoor: {len(str(outdoorCombinations))} số\n"
+        f"Độ dài của con số tổng tổ kịch bản của L4D2: {len(str(l4d2CaseTotal))} số\n"
         f"Độ dài của con số tổng tổ hợp khả năng của appDate: {len(str(appDateTotal))} số\n"
-        f"Độ dài của con số tổng tổ hợp khả năng của Story 1 - Curse Breaking Journey: {len(str(story_combinations))} số\n"
-        f"Độ dài của con số tổng tổ hợp khả năng của Story 2 - Job Interview: {len(str(story2_combinations))} số\n"
-        f"Độ dài của con số tổng tổ hợp khả năng của Story 3 - Dating: {len(str(story3_combinations))} số\n"
+        f"Độ dài của con số tổng tổ hợp khả năng của Story 1 - Curse Breaking Journey: {len(str(storyCombinations))} số\n"
+        f"Độ dài của con số tổng tổ hợp khả năng của Story 2 - Job Interview: {len(str(story2Combinations))} số\n"
+        f"Độ dài của con số tổng tổ hợp khả năng của Story 3 - Dating: {len(str(story3Combinations))} số\n"
         f"Độ dài của con số tổng tổ hợp khả năng của Story 4 - Rebellious Past: {len(str(shortStory4Total))} số\n"
         f"Độ dài của con số tổng tổ hợp khả năng của Lovely Prompt: {len(str(lovelyPromptTotal))} số\n"
-        f"Độ dài của con số tổng tổ hợp : {len(str(total_combinations))} số\n"
+        f"Độ dài của con số tổng tổ hợp khả năng của Modeling Prompt: {len(str(modelingPromptTotal))} số\n"
+        f"Độ dài của con số tổng tổ hợp : {len(str(totalCombinations))} số\n"
     )
     root.clipboard_clear()
-    root.clipboard_append(stats_text)
-    copy_stats_btn.config(text="📋 Đã copy!", bg="#89F900", fg="black")
+    root.clipboard_append(statsText)
+    copyStatsButton.config(text="📋 Đã copy!", bg="#89F900", fg="black")
     root.after(
         1500,
-        lambda: copy_stats_btn.config(text="📋 Copy Stats", bg="#FBFF00", fg="black"),
+        lambda: copyStatsButton.config(text="📋 Copy Stats", bg="#FBFF00", fg="black"),
     )
 
 
@@ -156,55 +160,57 @@ root.geometry("1500x800")
 root.resizable(True, True)
 root.configure(bg="#1E1E1E")
 
-sceneType = tk.StringVar(value="🎲🎲🎲")  # <-- Đặt ở đây
+outputType = tk.StringVar(value="🎲🎲🎲")  # <-- Đặt ở đây
 
 (
-    indoor_combinations,
-    outdoor_combinations,
-    story_combinations,
-    story2_combinations,
-    story3_combinations,
+    indoorCombinations,
+    outdoorCombinations,
+    storyCombinations,
+    story2Combinations,
+    story3Combinations,
     shortStory4Total,
-    L4D2caseTotal
-    , appDateTotal
-    , lovelyPromptTotal
+    l4d2CaseTotal,
+    appDateTotal,
+    lovelyPromptTotal,
+    modelingPromptTotal,
 ) = caculateQuantity()
-total_combinations = (
-    indoor_combinations
-    + outdoor_combinations
-    + story_combinations
-    + story2_combinations
-    + story3_combinations
+totalCombinations = (
+    indoorCombinations
+    + outdoorCombinations
+    + storyCombinations
+    + story2Combinations
+    + story3Combinations
     + shortStory4Total
-    + L4D2caseTotal
+    + l4d2CaseTotal
     + appDateTotal
     + lovelyPromptTotal
+    + modelingPromptTotal
 )
 
-main_frame = tk.Frame(root, bg="#1E1E1E")
-main_frame.pack(padx=20, pady=20, fill="both", expand=True)
+mainFrame = tk.Frame(root, bg="#1E1E1E")
+mainFrame.pack(padx=20, pady=20, fill="both", expand=True)
 
-# Cấu hình grid cho main_frame để các cột/row co giãn
-main_frame.grid_rowconfigure(0, weight=0)  # stats_frame
-main_frame.grid_rowconfigure(1, weight=0)  # label + option + copy stats
-main_frame.grid_rowconfigure(2, weight=0)  # render button
-main_frame.grid_rowconfigure(3, weight=1)  # outputText
-main_frame.grid_rowconfigure(4, weight=0)  # copy button
-main_frame.grid_columnconfigure(0, weight=1)
-main_frame.grid_columnconfigure(1, weight=1)
-main_frame.grid_columnconfigure(2, weight=0)
+# Cấu hình grid cho mainFrame để các cột/row co giãn
+mainFrame.grid_rowconfigure(0, weight=0)  # statsFrame
+mainFrame.grid_rowconfigure(1, weight=0)  # label + option + copy stats
+mainFrame.grid_rowconfigure(2, weight=0)  # render button
+mainFrame.grid_rowconfigure(3, weight=1)  # outputText
+mainFrame.grid_rowconfigure(4, weight=0)  # copy button
+mainFrame.grid_columnconfigure(0, weight=1)
+mainFrame.grid_columnconfigure(1, weight=1)
+mainFrame.grid_columnconfigure(2, weight=0)
 
 # Tạo frame riêng cho bảng stats
-stats_frame = tk.Frame(main_frame, bg="#000000")
-stats_frame.grid(row=0, column=0, columnspan=3, sticky="nsew", pady=(0, 10))
+statsFrame = tk.Frame(mainFrame, bg="#000000")
+statsFrame.grid(row=0, column=0, columnspan=3, sticky="nsew", pady=(0, 10))
 
-# Cấu hình grid cho stats_frame để textbox co giãn
-stats_frame.grid_rowconfigure(1, weight=1)
-stats_frame.grid_columnconfigure(0, weight=1)
+# Cấu hình grid cho statsFrame để textbox co giãn
+statsFrame.grid_rowconfigure(1, weight=1)
+statsFrame.grid_columnconfigure(0, weight=1)
 
 # Thanh cuộn ngang trên đầu bảng đen
 xscroll = tk.Scrollbar(
-    stats_frame,
+    statsFrame,
     orient="horizontal",
     bg="#000000",
     troughcolor="#000000",
@@ -214,35 +220,37 @@ xscroll = tk.Scrollbar(
 )
 xscroll.grid(row=0, column=0, sticky="ew")
 
-# Textbox stats (chiếm hết chiều ngang của stats_frame)
-stats_detail_text = (
+# Textbox stats (chiếm hết chiều ngang của statsFrame)
+statsDetailText = (
     f"📊📊📊 Tổng hợp nội dung có thể tạo bởi COTP (latest):\n"
-    f"Cảnh Indoor: {indoor_combinations:,} [👉 {formatNumber(abs(indoor_combinations), 2)}]\n"
-    f"Cảnh Outdoor: {outdoor_combinations:,} [👉 {formatNumber(abs(outdoor_combinations), 2)}]\n"
+    f"Cảnh Indoor: {indoorCombinations:,} [👉 {formatNumber(abs(indoorCombinations), 2)}]\n"
+    f"Cảnh Outdoor: {outdoorCombinations:,} [👉 {formatNumber(abs(outdoorCombinations), 2)}]\n"
     f"Lovely Prompt: {lovelyPromptTotal:,} [👉 {formatNumber(abs(lovelyPromptTotal), 2)}]\n"
-    f"L4D2 Case: {L4D2caseTotal:,} [👉 {formatNumber(abs(L4D2caseTotal), 2)}]\n"
+    f"Modeling Prompt: {modelingPromptTotal:,} [👉 {formatNumber(abs(modelingPromptTotal), 2)}]\n"
+    f"L4D2 Case: {l4d2CaseTotal:,} [👉 {formatNumber(abs(l4d2CaseTotal), 2)}]\n"
     f"appDateTotal: {appDateTotal:,} [👉 {formatNumber(abs(appDateTotal), 2)}]\n"
-    f"Short Story 1 - Curse Breaking Journey: {story_combinations:,} [👉 {formatNumber(abs(story_combinations), 2)}]\n"
-    f"Short Story 2 - Job Interview: {story2_combinations:,} [👉 {formatNumber(abs(story2_combinations), 2)}]\n"
-    f"Short Story 3 - Dating: {story3_combinations:,} [👉 {formatNumber(abs(story3_combinations), 2)}]\n"
+    f"Short Story 1 - Curse Breaking Journey: {storyCombinations:,} [👉 {formatNumber(abs(storyCombinations), 2)}]\n"
+    f"Short Story 2 - Job Interview: {story2Combinations:,} [👉 {formatNumber(abs(story2Combinations), 2)}]\n"
+    f"Short Story 3 - Dating: {story3Combinations:,} [👉 {formatNumber(abs(story3Combinations), 2)}]\n"
     f"Short Story 4 - Rebellious Past: {shortStory4Total:,} [👉 {formatNumber(abs(shortStory4Total), 2)}]\n"
-    f"📊📊📊 TOTAL : {total_combinations:,} [👉 {formatNumber(abs(total_combinations), 2)}]\n"
+    f"📊📊📊 TOTAL : {totalCombinations:,} [👉 {formatNumber(abs(totalCombinations), 2)}]\n"
     f"=======================================================================================\n"
     f"📊📢📢📢 Phân tích chi tiết:\n"
-    f"Độ dài của con số tổng tổ hợp khả năng của Indoor: {len(str(indoor_combinations))} số\n"
-    f"Độ dài của con số tổng tổ hợp khả năng của Outdoor: {len(str(outdoor_combinations))} số\n"
+    f"Độ dài của con số tổng tổ hợp khả năng của Indoor: {len(str(indoorCombinations))} số\n"
+    f"Độ dài của con số tổng tổ hợp khả năng của Outdoor: {len(str(outdoorCombinations))} số\n"
     f"Độ dài của con số tổng tổ hợp khả năng của Lovely Prompt: {len(str(lovelyPromptTotal))} số\n"
-    f"Độ dài của con số tổng tổ kịch bản của L4D2: {len(str(L4D2caseTotal))} số\n"
+    f"Độ dài của con số tổng tổ hợp khả năng của Modeling Prompt: {len(str(modelingPromptTotal))} số\n"
+    f"Độ dài của con số tổng tổ kịch bản của L4D2: {len(str(l4d2CaseTotal))} số\n"
     f"Độ dài của con số tổng tổ hợp khả năng của appDate: {len(str(appDateTotal))} số\n"
-    f"Độ dài của con số tổng tổ hợp khả năng của Story 1 - Curse Breaking Journey: {len(str(story_combinations))} số\n"
-    f"Độ dài của con số tổng tổ hợp khả năng của Story 2 - Job Interview: {len(str(story2_combinations))} số\n"
-    f"Độ dài của con số tổng tổ hợp khả năng của Story 3 - Dating: {len(str(story3_combinations))} số\n"
+    f"Độ dài của con số tổng tổ hợp khả năng của Story 1 - Curse Breaking Journey: {len(str(storyCombinations))} số\n"
+    f"Độ dài của con số tổng tổ hợp khả năng của Story 2 - Job Interview: {len(str(story2Combinations))} số\n"
+    f"Độ dài của con số tổng tổ hợp khả năng của Story 3 - Dating: {len(str(story3Combinations))} số\n"
     f"Độ dài của con số tổng tổ hợp khả năng của Story 4 - Rebellious Past: {len(str(shortStory4Total))} số\n"
-    f"Độ dài của con số tổng tổ hợp : {len(str(total_combinations))} số\n"
+    f"Độ dài của con số tổng tổ hợp : {len(str(totalCombinations))} số\n"
 )
 
-stats_detail_textbox = tk.Text(
-    stats_frame,
+statsDetailTextbox = tk.Text(
+    statsFrame,
     font=("Segoe UI", 10),
     fg="#00FFEA",
     bg="#000000",
@@ -252,14 +260,14 @@ stats_detail_textbox = tk.Text(
     padx=10,
     pady=10,
 )
-xscroll.config(command=stats_detail_textbox.xview)
-stats_detail_textbox.insert("1.0", stats_detail_text)
-stats_detail_textbox.config(state="disabled", xscrollcommand=xscroll.set)
-stats_detail_textbox.grid(row=1, column=0, sticky="nsew")
+xscroll.config(command=statsDetailTextbox.xview)
+statsDetailTextbox.insert("1.0", statsDetailText)
+statsDetailTextbox.config(state="disabled", xscrollcommand=xscroll.set)
+statsDetailTextbox.grid(row=1, column=0, sticky="nsew")
 
 # Nút copy stats ở ngoài, bên dưới bảng đen, góc phải
-copy_stats_btn = tk.Button(
-    main_frame,
+copyStatsButton = tk.Button(
+    mainFrame,
     text="📋 Copy Stats",
     command=copyStatsToClipboard,
     width=15,
@@ -269,26 +277,27 @@ copy_stats_btn = tk.Button(
     relief="flat",
     bd=0,
 )
-copy_stats_btn.grid(row=1, column=2, sticky="e", padx=(0, 10), pady=(0, 5))
+copyStatsButton.grid(row=1, column=2, sticky="e", padx=(0, 10), pady=(0, 5))
 
-sceneType = tk.StringVar(value="🎲🎲🎲")
+outputType = tk.StringVar(value="🎲🎲🎲")
 
-scene_label = tk.Label(
-    main_frame,
+outputLabel = tk.Label(
+    mainFrame,
     text="Chọn loại Prompt:",
     font=("Segoe UI", 13),
     fg="#FFFFFF",
     bg="#1E1E1E",
 )
-scene_label.grid(row=1, column=0, sticky="w", pady=5)
+outputLabel.grid(row=1, column=0, sticky="w", pady=5)
 
-option_menu = tk.OptionMenu(
-    main_frame,
-    sceneType,
+optionMenu = tk.OptionMenu(
+    mainFrame,
+    outputType,
     "RANDOM 🎲🎲🎲",
     "Cảnh Indoor",
     "Cảnh Outdoor",
     "Lovely Prompt",
+    "Modeling Prompt",
     "Random Rule L4D2",
     "App Date Options",
     "Short Story 1 - Curse Breaking Journey",
@@ -297,15 +306,15 @@ option_menu = tk.OptionMenu(
     "Short Story 4 - Rebellious Past",
     
 )
-option_menu.config(
+optionMenu.config(
     bg="#2D2D2D", fg="#E0E0E0", font=("Segoe UI", 13), relief="flat", bd=0
 )
-option_menu.grid(row=1, column=1, sticky="w", pady=5)
+optionMenu.grid(row=1, column=1, sticky="w", pady=5)
 
-create_button = tk.Button(
-    main_frame,
+createButton = tk.Button(
+    mainFrame,
     text="🎲🎲🎲 Render 🎲🎲🎲",
-    command=generateScene,
+    command=generateOutput,
     width=30,
     height=2,
     bg="#12FFD8",
@@ -316,10 +325,10 @@ create_button = tk.Button(
     activebackground="#919191",
     activeforeground="black",
 )
-create_button.grid(row=2, columnspan=3, pady=15)
+createButton.grid(row=2, columnspan=3, pady=15)
 
 outputText = tk.Text(
-    main_frame,
+    mainFrame,
     wrap="word",
     height=13,
     width=60,
@@ -333,27 +342,27 @@ outputText = tk.Text(
 outputText.grid(row=3, column=0, columnspan=2, pady=10, sticky="nsew")
 
 scrollbar = tk.Scrollbar(
-    main_frame, command=outputText.yview, bg="#2D2D2D", troughcolor="#1E1E1E"
+    mainFrame, command=outputText.yview, bg="#2D2D2D", troughcolor="#1E1E1E"
 )
 scrollbar.grid(row=3, column=2, sticky="ns")
 outputText.config(yscrollcommand=scrollbar.set)
 
-main_frame.grid_rowconfigure(3, weight=1)
-main_frame.grid_columnconfigure(1, weight=1)
+mainFrame.grid_rowconfigure(3, weight=1)
+mainFrame.grid_columnconfigure(1, weight=1)
 
-copy_button = tk.Button(
-    main_frame,
+copyButton = tk.Button(
+    mainFrame,
     text="📋 Copy",
-    command=copySceneToClipboard,
+    command=copyOutputToClipboard,
     width=20,
     bg="#2196F3",
     fg="white",
     font=("Segoe UI", 10, "bold"),
     relief="flat",
     bd=0,
-    activebackground="#1976D2",
+    activebackground="#C3D219",
     activeforeground="white",
 )
-copy_button.grid(row=4, columnspan=2, pady=10)
+copyButton.grid(row=4, columnspan=2, pady=10)
 
 root.mainloop()

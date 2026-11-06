@@ -14,7 +14,7 @@ print_array_sizes()
 
 
 def check_duplicates_in_array(array_name, array):
-    """Kiem tra trung lap trong mot mang"""
+    """Kiểm tra trùng lặp trong một mảng."""
     duplicates = []
     seen = set()
 
@@ -28,7 +28,7 @@ def check_duplicates_in_array(array_name, array):
         print(f"[DUPLICATE] {array_name}: {len(duplicates)} items trùng lặp")
         for dup in set(duplicates):
             count = duplicates.count(dup)
-            print(f"   - '{dup}' lặp lại {count} lan")
+            print(f"   - '{dup}' lặp lại {count} lần")
     else:
         print(f"[OK] {array_name} : Không có trùng lặp")
 
@@ -36,8 +36,8 @@ def check_duplicates_in_array(array_name, array):
 
 
 def check_cross_array_duplicates():
-    """Kiem tra trung lap giua cac mang khac nhau"""
-    print("\n=== KIEM TRA TRUNG LAP GIUA CAC MANG ===")
+    """Kiểm tra trùng lặp giữa các mảng khác nhau."""
+    print("\n=== KIỂM TRA TRÙNG LẶP GIỮA CÁC MẢNG ===")
     print("=" * 50)
 
     # Tao dictionary tat ca arrays
@@ -45,16 +45,14 @@ def check_cross_array_duplicates():
         "ending": ending,
         "comment": comment,
         "starting": starting,
-        "emojiMeme": emojiMeme,
-        "cuteEmojis": cuteEmojis,
-        "foodEmojis": foodEmojis,
-        "emojiStatus": emojiStatus,
-        "animalsEmojis": animalsEmojis,
-        "NPCEmojis": NPCEmojis,
-        "titleEmojis": titleEmojis,
-        "entertainmentIcons": entertainmentIcons,
-        "sportsIcons": sportsIcons,
-        "chaosEmojis": chaosEmojis,
+        "face_people_emojis": face_people_emojis,
+        "animals_nature_emojis": animals_nature_emojis,
+        "food_drink_emojis": food_drink_emojis,
+        "sports_entertainment_emojis": sports_entertainment_emojis,
+        "vehicles_places_emojis": vehicles_places_emojis,
+        "objects_tools_emojis": objects_tools_emojis,
+        "symbols_hearts_emojis": symbols_hearts_emojis,
+        "all_icons": all_icons,
         "colors": colors,
         "quantities": quantities,
         "shapes": shapes,
@@ -103,10 +101,9 @@ def check_cross_array_duplicates():
         "weaponsL4D2": weaponsL4D2,
         "meleeL4D2": meleeL4D2,
         "playerRulesL4D2": playerRulesL4D2,
-        "fashionHair": fashionHair,
     }
 
-    # Kiem tra trung lap trong tung mang
+    # Kiểm tra trùng lặp trong từng mảng
     total_duplicates = 0
     print("\n--- KIỂM TRA THỐNG KÊ ITEM BỊ LẶP ---")
     print("-" * 50)
@@ -116,7 +113,7 @@ def check_cross_array_duplicates():
             duplicates = check_duplicates_in_array(name, array)
             total_duplicates += duplicates
 
-    # Kiem tra trung lap giua cac arrays
+    # Kiểm tra trùng lặp giữa các mảng
     print(f"\n=== TỔNG KẾT ===")
     print(f"   - TỔNG SỐ MẢNG: {len(all_arrays)}")
     print(f"   - TỔNG ITEM BỊ LẶP: {total_duplicates}")
@@ -124,7 +121,7 @@ def check_cross_array_duplicates():
     if total_duplicates == 0:
         print("ĐÉO LẶP GÌ HẾT! ĐMM ĐƯỢC ĐÓ CON TRAI!")
     else:
-        print("CẦN KTRA LẠI CÁC ITEM BỊ LẶP DDUMAMAAY THẰNG RANH CON NÀY!")
+        print("CẦN KIỂM TRA LẠI CÁC ITEM BỊ LẶP DDUMAMAAY THẰNG RANH CON NÀY!")
 
 
 def log_combinations_to_file():
@@ -141,6 +138,7 @@ def log_combinations_to_file():
             L4D2caseTotal,
             app_date_total,
             lovely_prompt_total,
+            modelingPromptTotal,
         ) = caculateQuantity()
         total_combinations = (
             indoor_total
@@ -152,6 +150,7 @@ def log_combinations_to_file():
             + L4D2caseTotal
             + app_date_total
             + lovely_prompt_total
+            + modelingPromptTotal
         )
 
         # Format timestamp
@@ -168,6 +167,7 @@ Short Story 4 - Rebellious Past: {shortStory4Total:,} [👉 {formatNumber(abs(sh
 Kịch bản L4D2: {L4D2caseTotal:,} [👉 {formatNumber(abs(L4D2caseTotal), 2)}]
 App Date Options: {app_date_total:,} [👉 {formatNumber(abs(app_date_total), 2)}]
 Lovely Prompt: {lovely_prompt_total:,} [👉 {formatNumber(abs(lovely_prompt_total), 2)}]
+Modeling Prompt: {modelingPromptTotal:,} [👉 {formatNumber(abs(modelingPromptTotal), 2)}]
 Tổng: {total_combinations:,} [👉 {formatNumber(abs(total_combinations), 2)}]
 =======================================================================================
 📊📢📢📢 Phân tích chi tiết:
@@ -180,6 +180,7 @@ Tổng: {total_combinations:,} [👉 {formatNumber(abs(total_combinations), 2)}]
 Độ dài của con số tổng tổ kịch bản của L4D2: {len(str(L4D2caseTotal))} số
 Độ dài của con số tổng tổ hợp khả năng của App Date Options: {len(str(app_date_total))} số
 Độ dài của con số tổng tổ hợp khả năng của Lovely Prompt: {len(str(lovely_prompt_total))} số
+Độ dài của con số tổng tổ hợp khả năng của Modeling Prompt: {len(str(modelingPromptTotal))} số
 
 Độ dài của con số tổng tổ hợp: {len(str(total_combinations))} số
 =======================================================================================

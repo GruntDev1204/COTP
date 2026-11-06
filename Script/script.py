@@ -6,6 +6,13 @@ from data.data import *
 def generateRandomIcons(quantity):
     return " ".join(random.choices(all_icons, k=quantity))
 
+def generateRandomReciprocal():
+    denominator = random.randint(100_000_000_000, 1_000_000_000_000)
+    return f"1/{denominator}"
+
+def generateRandomWord():
+    return random.choice(UpperText) + "".join(random.choices(LowerText, k=5))
+
 def generateNPC():
     return f"Xung quanh, {random.choice(quantities)} {random.choice(liveNPCs)} {random.choice(liveNPCApperances)}, nhìn thì trông có vẻ {random.choice(liveNPCEmotions)}, và đang {random.choice(liveNPCActions)}"
 
@@ -16,27 +23,27 @@ def generateIndoorObject():
 def generateIndoorItems():
     return f"Có {random.choice(quantities)} {random.choice(indoorItems)} {random.choice(indoorItemStatus)}, nó có hình dạng là {random.choice(shapes)} , và đang {random.choice(indoorLightVerb)} là {random.choice(indoorItemLightningSource)} màu {random.choice(colors)} từ bên ngoài"
 
-def generateIndoorScene():
+def generateIndoorOutput():
     NPCstr = generateNPC().strip()
     location = random.choice(indoorLocations).strip()
     indoorItemsStr = generateIndoorItems().strip()
     indoorObjectStr = generateIndoorObject().strip()
     endingStr = random.choice(ending).strip()
-    scene = (
-        f"{''.join(random.choices(titleEmojis, k=4))}- Một khung cảnh {random.choice(starting).strip()} -{''.join(random.choices(titleEmojis, k=4))}:\n"
+    output = (
+        f"{generateRandomIcons(4)}- Một khung cảnh {random.choice(starting).strip()} -{generateRandomIcons(4)}:\n"
         f"Bên trong {location} {random.choice(indoorStatus)} lâu năm , được xây bằng {random.choice(indoorMaterials)} và sơn màu {random.choice(colors)}. "
         f"{indoorItemsStr}. "
         f"Ở đây, {indoorObjectStr}. "
         f"{NPCstr}. "
-        f"Cảm xúc của người đang quan sát có thể nói là {random.choice(status)} {''.join(random.choices(emojiStatus, k=3))}{''.join(random.choices(emotionPunctuations, k=4))}.\n"
-        f"{random.choice(comment).strip()} {''.join(random.choices(cuteEmojis, k=3))}. {endingStr}{generateRandomIcons(7)}"
+        f"Cảm xúc của người đang quan sát có thể nói là {random.choice(status)} {generateRandomIcons(3)}{''.join(random.choices(emotionPunctuations, k=4))}.\n"
+        f"{random.choice(comment).strip()} {generateRandomIcons(3)}. {endingStr}{generateRandomIcons(7)}"
     )
-    return scene
+    return output
 
 
 # tạo cảnh outdoor
 def returnOutdoorSkyStrongObject():
-    outDoorTime = random.choice(times).strip().upper()
+    outDoorTime = random.choice(times).strip()
     if outDoorTime == "ban ngày":
         return f"Bầu trời đang ban ngày, có Mặt trời có hình {random.choice(shapes)} {random.choice(outDoorSkyStrongObjectStatus)}"
     else:
@@ -48,7 +55,7 @@ def generateOutdoorObject():
 def generateOutdoorSkyObject():
     return f"Có {random.choice(quantities)} {random.choice(outDoorSkyObjects)} hình dạng là {random.choice(shapes)} đang phát quang màu {random.choice(colors)} giữa không trung"
 
-def generateOutdoorScene():
+def generateOutdoorOutput():
     NPCstr = generateNPC().strip()
     location = random.choice(outdoorView).strip()
     outDoorStatusStr = random.choice(outDoorStatus).strip()
@@ -57,18 +64,18 @@ def generateOutdoorScene():
     skyObjStr = generateOutdoorSkyObject().strip()
     outdoorObjStr = generateOutdoorObject().strip()
     endingStr = random.choice(ending).strip()
-    scene = (
-        f"{''.join(random.choices(titleEmojis, k=4))} - Một khung cảnh {random.choice(starting).strip()} - {''.join(random.choices(titleEmojis, k=4))}:\n"
+    output = (
+        f"{generateRandomIcons(4)} - Một khung cảnh {random.choice(starting).strip()} - {generateRandomIcons(4)}:\n"
         f"{location} đã {outDoorStatusStr} lâu năm, "
         f"thời tiết thì đang {weatherStr}. "
         f"{skyStrongObjStr}. "
         f"{skyObjStr}. "
         f"{outdoorObjStr}. "
         f"{NPCstr}. "
-        f"Cảm xúc của người đang quan sát có thể nói là {random.choice(status)} {''.join(random.choices(emojiStatus, k=3))}{''.join(random.choices(emotionPunctuations, k=4))}.\n"
-        f"{random.choice(comment).strip()} {''.join(random.choices(cuteEmojis, k=3))}. {endingStr}{generateRandomIcons(7)}"
+        f"Cảm xúc của người đang quan sát có thể nói là {random.choice(status)} {generateRandomIcons(3)}{''.join(random.choices(emotionPunctuations, k=4))}.\n"
+        f"{random.choice(comment).strip()} {generateRandomIcons(3)}. {endingStr}{generateRandomIcons(7)}"
     )
-    return scene
+    return output
 
 # tạo câu chuyện ngắn mẫu 1
 def generateShortStory1():
@@ -94,7 +101,8 @@ def generateShortStory1():
     customer_status = random.choice(liveNPCEmotions)
     proverb = random.choice(proverbs)
 
-    scene = (
+    output = (
+        f"SHORT STORY 1 : Curse Breaking Journey \n\n"
         f"Dựa trên một câu chuyện được lấy từ {random.choice(sourceInfo)}!!! {generateRandomIcons(10)}\n"
         f"Có một {random.choice(businesses)} bán {random.choice(indoorObjectItems)}, nó tọa lạc ngay {shop_location} và trông có vẻ đã {outdoor_shope_status} lâu năm.\n\n"
         f"Ở {outdoor_density} nhìn từ phía tiệm, {random.choice(quantities)} {outdoor_object} có hình dạng là {random.choice(shapes)} đang phát ra ánh sáng màu {random.choice(colors)}.\n"
@@ -122,37 +130,38 @@ def generateShortStory1():
         f"Anh ta tuy câm điếc bẩm sinh nhưng anh ta sẽ nói rõ ràng chi tiết với cậu cách để giải lời nguyền của cậu. Nhưng với điều kiện là cậu phải đưa cho anh ta {random.randint(100000000000, 1000000000000):,}$ hoặc {random.randint(100000000000, 1000000000000):,} {random.choice(indoorObjectItems)} để làm phí giao dịch .\n"
         f"Anh ta ngoài ra còn bị cụt tứ chi, nên anh ta sẽ đi bộ cùng cậu để dẫn cậu đến 1 con đường mòn, sau đó cậu sẽ đi con đường đó thẳng một đoạn {random.randint(100000000000, 1000000000000):,}km nữa là sẽ đến đích. "
         f"Tôi nghĩ đây là một hành trình khá ngắn vì chỉ mất {random.randint(100000000000, 1000000000000):,} giờ đi xe taxi từ đây đến nơi mà địa điểm đó tọa lạc. "
-        f"Tôi nghĩ cậu nên tranh thủ vì thời gian không còn nhiều nữa, vì cậu chỉ đang còn {formatNumber(1/random.randint(100000000000, 1000000000000) , 2)} giây để phá giải lời nguyền của cậu.\n"
+        f"Tôi nghĩ cậu nên tranh thủ vì thời gian không còn nhiều nữa, vì cậu chỉ đang còn {generateRandomReciprocal()} giây để phá giải lời nguyền của cậu.\n"
         f"Và tôi nghe nói nơi cậu cần đến được xây bằng {random.choice(indoorMaterials)}, tường thì được sơn màu {random.choice(colors)} và nó thì đã {indoor_location_status} lâu năm rồi. Ngay khi vừa đến đó, cậu hãy lặp lại {repeat_times} lần việc {random.choice(liveNPCActions)} trong {years_duration} năm. "
         f'Nếu làm theo tất cả lời tôi dặn, lời nguyền của cậu sẽ được phá giải hoàn toàn."\n\n'
         f'Vị khách thắc mắc: "Nhưng tôi thực sự không hiểu, tại sao lại phải làm như vậy?".\n\n'
         f'Chủ tiệm chỉ im lặng, rồi sau đó chỉ đáp lại: "{random.choice(slogan)}".\n\n'
-        f'Sau đó, vị khách cứ lúng túng mãi thì được chủ tiệm trao cho một tờ giấy có ghi nội dung là "{proverb}".\n'
+        f'Sau đó, vị khách cứ lúng túng mãi thì được chủ tiệm trao cho một tờ giấy có ghi nội dung là "{proverb}" và có 1 từ kì lạ phía cuối tờ giấy là `{generateRandomWord()}`.\n'
         f"Vị khách như đã hiểu ra điều gì đó mà chủ tiệm truyền đạt, và ngay lập tức làm theo lời chủ tiệm nói. "
         f"Từ sau khi thực hiện xong lời chủ tiệm dặn dò, vị khách đó đã giải được hoàn toàn lời nguyền. Trông vị khách sau đó có vẻ rất {random.choice(liveNPCEmotions)}\n\n"
         f"Còn bạn? Nếu bạn thực sự hiểu được điều gì đó từ câu chuyện ngắn này, thì tôi không thể không chúc mừng bạn!!!! {generateRandomIcons(7)}"
     )
-    return scene
+    return output
 
 # short story 2
 def generateShortStory2():
-    scene = (
+    output = (
+        f"SHORT STORY 2 : JOB INTERVIEW \n\n"
         f"Một ngày {random.choice(weatherConditions)} tại {random.choice(companies)} Company!!! {generateRandomIcons(10)}\n\n"
         f"Nơi này đang diễn ra một buổi phỏng vấn ứng viên đặc biệt - Cuộc phỏng vấn không giới hạn , diễn ra tại sảnh chờ {random.randint(100000000000, 1000000000000):,}km2 của công ty.\n\n"
         f"Đang có tổng cộng {random.randint(100000000000, 1000000000000):,} ứng viên, họ đều là {random.choice(liveNPCs)} {random.choice(liveNPCApperances)}, nhìn bọn họ trông có vẻ {random.choice(liveNPCEmotions)}, và đang {random.choice(liveNPCActions)} trong lúc chờ đến lượt phỏng vấn của mình\n\n"
         f"Một lúc sau, có {random.randint(100000000000, 1000000000000):,} {random.choice(liveNPCs)} , họ là đại diện phòng nhân sự của công ty xuất hiện để tiến hành buổi phỏng vấn đặc biệt này.\n\n"
         f"CEO của công ty là 1 {random.choice(liveNPCs)}, tên thật là {random.choice(nameNPC)}, là người sáng lập công ty. Ông ta vừa đứng trên bục, vừa {random.choice(liveNPCActions)} và vừa phát biểu :\n"
         f" - Chào mừng mọi người đến với buổi phỏng vấn đặc biệt tại đây! Buổi phỏng vấn này đặc biệt ở chỗ 'Đây là buổi phỏng vấn nhân sự đầu tiên. Cái mà bạn có thể nhận mọi công việc bạn muốn làm nhất, deal mọi mức lương mà bạn muốn nhất!!!'\n\n"
-        f"Sau đó , CEO lấy ly rượu {random.randint(100000000000, 1000000000000):,} lít ra và uống hết sạch trong {formatNumber(1/random.randint(100000000000, 1000000000000) , 2)} nano giây, rồi ông ta đã ợ {random.randint(100000000000, 1000000000000):,} hơi liên tục, rồi tiếp tục nói : \n"
+        f"Sau đó , CEO lấy ly rượu {random.randint(100000000000, 1000000000000):,} lít ra và uống hết sạch trong {generateRandomReciprocal()} nano giây, rồi ông ta đã ợ {random.randint(100000000000, 1000000000000):,} hơi liên tục, rồi tiếp tục nói : \n"
         f" - Cuộc phỏng vấn này sẽ không có thi cử, không xét duyệt điều kiện. Chỉ cần với duy nhất điều kiện là bạn phải thành thật, và đó là điều kiện duy nhất bạn buộc phải làm.\n\n"
         f"Cuộc phỏng vấn sau đó được tiến hành theo như kế hoạch. Đâu đó ở trong các cuộc phỏng vấn, có một cuộc phỏng vấn đang được diễn ra khá suôn sẻ giữa ứng viên và HR. \n"
         f" - Chào anh , tôi là {random.choice(nameNPC)}, {random.randint(100000000000, 1000000000000):,} tuổi. Tôi đại diện cho phòng HR của công ty và tôi sẽ là người thực hiện việc phỏng vấn anh ở đây. Rất vui được gặp anh!! \n\n"
         f" - Vâng , tôi là {random.choice(nameNPC)}, {random.randint(100000000000, 1000000000000):,} tuổi. Tôi cũng rất vui khi được gặp cô ở đây, à mà... cô có bạn trai chưa? "
         f"...Tôi chỉ là muốn mời cô đi {random.choice(liveNPCActions)} cùng tôi tại 1 {random.choice(indoorLocations)} sau cuộc phỏng vấn này, tôi nghe bảo nơi đó đã {random.choice(indoorStatus)} lâu năm!!! \n\n"
         f"HR hơi đỏ mặt , ngượng ngùng rồi lí nhí đáp : \n\n"
-        f" - Tôi... tôi đã từng trải qua {random.randint(100000000000, 1000000000000):,} mối tình cũ, mà chưa thấy ai vừa đẹp trai mà lãng mạn như anh đó!!!{''.join(random.choices(emojiStatus, k=3))} \n\n"
-        f"Ứng viên ghé sát đôi môi vài tai HR và khẽ nói : \n\n"
-        f" - Tôi thì... cũng đã từng hẹn hò với {random.randint(100000000000, 1000000000000):,} cô gái rồi... Cơ mà chưa thấy ai xinh đẹp như cô cả!!!{''.join(random.choices(emojiStatus, k=3))} \n\n"
+        f" - Tôi... tôi đã từng trải qua {random.randint(100000000000, 1000000000000):,} mối tình cũ, mà chưa thấy ai vừa đẹp trai mà lãng mạn như anh đó!!!{generateRandomIcons(3)} \n\n"
+        f"Ứng viên ghé sát đôi môi vào tai HR và khẽ nói : \n\n"
+        f" - Tôi thì... cũng đã từng hẹn hò với {random.randint(100000000000, 1000000000000):,} cô gái rồi... Cơ mà chưa thấy ai xinh đẹp như cô cả!!!{generateRandomIcons(3)} \n\n"
         f"HR đỏ tím cả mặt , rồi dần chuyển sang {random.choice(colors)} và dịu nhẹ lại. Cô bỗng nghiêm giọng : \n\n"
         f" - À mà thôi... có gì thì nói sau nha! Bây giờ, ta tiến hành cuộc phỏng vấn nhé... Hmmm, trước mắt thì để tôi đọc qua hồ sơ cả anh. Tên tuổi anh đã giới thiệu rồi nên tôi sẽ không nhắc nữa! \n\n"
         f"Cô HR xăm soi một lúc, trông cô có vẻ {random.choice(liveNPCEmotions)} và {random.choice(status)}. Bỗng cô dừng lại :  \n\n"
@@ -161,48 +170,49 @@ def generateShortStory2():
         f"Tôi đùa đấy... thật ra thì tôi không còn hứng thú với công việc bên đó nữa nên tôi quyết định nghỉ việc và tạm thư giãn ở nhà {random.randint(100000000000, 1000000000000):,} năm. "
         f"Trước khi tôi đã nộp {random.randint(100000000000, 1000000000000):,} cái CV để có thể có được cơ hội vào vòng phỏng vấn ở công ty này!\n\n"
         f"Cô ứng viên 2 má tự dưng dần chuyển sang {random.choice(colors)} vì ngượng ngùng. Nhưng cô vẫn giữ được sự nghiêm túc và lại tiếp tục : \n\n"
-        f" - Mồm miệng anh cũng ghê thật đó... Không biết tối nay ai đó có chịu đúng hẹn không mà bày đặt... À mà, lúc {random.randint(1, 18)} tuổi, anh đã từng hack thành công vào Ngân Hàng SIDA Liên Bang Quốc Tế để trộm đi {formatNumber(1/random.randint(100000000000, 1000000000000) , 2)}$ và {formatNumber(1/random.randint(100000000000, 1000000000000) , 2)} thỏi vàng sao? \n\n"
+        f" - Mồm miệng anh cũng ghê thật đó... Không biết tối nay ai đó có chịu đúng hẹn không mà bày đặt... À mà, lúc {random.randint(1, 18)} tuổi, anh đã từng hack thành công vào Ngân Hàng SIDA Liên Bang Quốc Tế để trộm đi {generateRandomReciprocal()}$ và {generateRandomReciprocal()} thỏi vàng sao? \n\n"
         f"Ứng viên thật thà đáp: - Phải, tôi cũng đã bị phán {random.randint(1000000000, 10000000000):,} năm tù ở 1 phiên tòa được diễn ra tại {random.choice(outdoorView)} và phải khổ sai bằng việc {random.choice(liveNPCActions)} liên tục {random.randint(100000000000, 1000000000000):,} lần. Và do tôi thực hiện cải tạo tốt nên được mãn hạn sớm. \n\n"
         f"Cô ứng viên mỉm cười : - Anh cũng thật thà phết nhỉ? Tôi thích anh rồi đó! ...Bây giờ, vào việc quan trọng chính nhé. Về việc thực hiện chủ trương của CEO trong buổi phỏng vấn này, anh hãy nói vị trí mà anh đang muốn vào nhất, công việc anh muốn làm nhất và mức lương anh muốn nhất? Hãy thành thật nha! \n\n"
-        f"Ứng viên dõng dạc: - Được rồi, tôi sẽ thành thật và không giấu diếm gì cả! Yêu cầu của tôi khá là khắt khe nha. Tôi muốn vào vị trí {random.choice(NPCjobs).upper()} , công việc tôi muốn làm là {random.choice(liveNPCActions)}. Mức lương tôi muốn nhất là {formatNumber(1/random.randint(100000000000, 1000000000000) , 2)}$ , cô thấy sao? Yêu cầu này có quá cao không? \n\n"
+        f"Ứng viên dõng dạc: - Được rồi, tôi sẽ thành thật và không giấu diếm gì cả! Yêu cầu của tôi khá là khắt khe nha. Tôi muốn vào vị trí {random.choice(NPCjobs).upper()} , công việc tôi muốn làm là {random.choice(liveNPCActions)}. Mức lương tôi muốn nhất là {generateRandomReciprocal()}$ , cô thấy sao? Yêu cầu này có quá cao không? \n\n"
         f"Cô ứng viên nhẹ nhàng : - Cá nhân tôi thì thấy anh cũng xứng đáng với điều đó chứ không thực sự quá cao. Được rồi, tôi bây giờ sẽ phải đi họp lại với ban nhân sự trước khi ra quyết định! Anh vui lòng chờ trong {random.randint(1000000000, 10000000000):,} phút nhá, tôi sẽ quay lại và cho anh biết kết quả sớm nhất!\n\n"
         f"Lúc cô HR rời đi, anh ứng viên đã lấy ra điếu thuốc dài {random.randint(100000000000, 1000000000000):,}m ra đốt và rít 1 hơi dài để giải tỏa áp lực. Xung quanh anh, các ứng viên khác đang {random.choice(liveNPCActions)} trong giờ giải lao giữa buổi phỏng vấn.\n\n"
         f"Sau khi họp xong, các đại diện nhân sự quay lại với ứng viên của mình để thông báo kết quả. Cô ứng viên kia cũng quay lại với anh HR của mình. \n\n"
         f"Cô HR mỉm cười và nói với anh ứng viên: - Xin được chúc mừng anh! kết quả thành công ngoài mong đợi, bên phía nhân sự của công ty đều bỏ {random.randint(100000000000, 1000000000000):,} phiếu để tuyển anh vào!! "
-        f"Chưa kể là nếu anh làm việc đủ {random.randint(100000000000, 1000000000000):,} năm nữa thì lương của anh sẽ tăng thêm {formatNumber(1/random.randint(100000000000, 1000000000000) , 2)}% mức lương hiện tại anh yêu cầu! Ngày mai anh có thể bắt đầu đi làm rồi!\n\n"
-        f"Anh ứng viên vui mừng : - Vậy thì quá tốt rồi! Vậy là...tôi sẽ được gặp cô mỗi này...nhỉ? À mà, còn lời mời của tôi trước đó thì...cô đồng ý chứ? \n\n"
+        f"Chưa kể là nếu anh làm việc đủ {random.randint(100000000000, 1000000000000):,} năm nữa thì lương của anh sẽ tăng thêm {generateRandomReciprocal()}% mức lương hiện tại anh yêu cầu! Ngày mai anh có thể bắt đầu đi làm rồi!\n\n"
+        f"Anh ứng viên vui mừng : - Vậy thì quá tốt rồi! Vậy là...tôi sẽ được gặp cô mỗi ngày...nhỉ? À mà, còn lời mời của tôi trước đó thì...cô đồng ý chứ? \n\n"
         f"Cô ứng viên im lặng, chỉ mỉm cười. Và rồi cô vấp té cắm đầu vì không để ý và nhào lộn {random.randint(100000000000, 1000000000000):,} vòng rồi đứng dậy , sau đó bỏ đi. Nhưng cô cố tình làm rơi mảnh giấy nhỏ gần chân anh ứng viên. \n\n"
         f"Anh ứng viên cũng không nói gì thêm nữa, nhưng tò mò mở mảnh giấy đó ra đọc. Bên trong ghi :`Tối nay tôi tan làm lúc {random.randint(17, 24)}giờ, anh hãy đến công ty đón tôi. Ngoài ra, tôi cũng muốn tăng 2 cho cuộc hẹn của chúng ta là {random.choice(liveNPCActions)} ở {random.choice(indoorLocations)}. Số điện thoại của tôi kèm ở dưới nha! Còn nữa, tôi làm ở văn phòng nhân sự tại tầng {random.randint(100000000000, 1000000000000):,} tòa nhà {random.choice(buildings)} của công ty. "
-        f"Tạm thời thì thang máy ở đó đang bảo trì {random.randint(100000000000, 1000000000000):,} năm nên anh chịu khó đi thang bộ nhé 😉!! Vào Buổi trưa thì tôi hay ăn trưa tại 1 quán quen cách ở đây {random.randint(100000000000, 1000000000000):,}km 😉` \n\n"
-        f"Anh ứng viên vui vẻ cười lớn, sau đó thì bỏ mảnh giấy vào túi áo và ra về! Hôm đó , tâm trạng anh trông rất {random.choice(liveNPCEmotions)}. \n"
+        f"Tạm thời thì thang máy ở đó đang bảo trì {random.randint(100000000000, 1000000000000):,} năm nên anh chịu khó đi thang bộ nhé 😉!! Vào Buổi trưa thì tôi hay ăn trưa tại 1 quán quen cách ở đây {random.randint(100000000000, 1000000000000):,}km 😉` và có 1 từ kì lạ phía cuối tờ giấy là `{generateRandomWord()}` \n\n"
+        f"Anh ứng viên hiểu ý và vui vẻ cười lớn, sau đó thì bỏ mảnh giấy vào túi áo và ra về! Hôm đó , tâm trạng anh trông rất {random.choice(liveNPCEmotions)}. \n"
         f"Còn bạn? Bạn có đoán được mối quan hệ giữa 2 nhân vật này sẽ tiến triển như thế nào? {generateRandomIcons(7)}"
     )
 
-    return scene
+    return output
 
 # generateShortStory3
 def generateShortStory3():
-    scene = (
+    output = (
+        f"SHORT STORY 3 : Dating \n\n"
         f"Một đêm thư giãn sau giờ làm việc, thời tiết thì {random.choice(weatherConditions)}. "
         f"Bầu trời đang {random.choice(status)}, có {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} và bị {random.choice(outDoorSkyStrongObjectStatus)} đang phát ra ánh sáng màu {random.choice(colors)}. {generateRandomIcons(10)}\n\n"
-        f"Ở đâu đó, có {random.randint(100000000000, 1000000000000):,} cặp đôi đang thực hiện kết hoạch thực hiện lời hẹn ước từ lúc sáng, cái lúc mà họ hẹn trước khi ở sảnh công ty với tư cách là HR và ứng viên xin việc.\n\n"
+        f"Ở đâu đó, có {random.randint(100000000000, 1000000000000):,} cặp đôi đang thực hiện kế hoạch cho lời hẹn ước từ lúc sáng, cái lúc mà họ hẹn trước khi ở sảnh công ty với tư cách là HR và ứng viên xin việc.\n\n"
         f"Ở ngay trước công ty {random.choice(companies)} tọa lạc tại {random.choice(outdoorView).upper()} đã {random.choice(outDoorStatus)} lâu năm. "
         f"Ngay tại {random.choice(outdoorObjectDensity)} của công ty, có {random.randint(100000000000, 1000000000000):,} {random.choice(outdoorObjects)} đều có hình dạng là {random.choice(shapes)} đang phát ra ánh sáng màu {random.choice(colors)} khiến cho nơi này lung linh hơn bao giờ hết.\n\n"
         f"Đâu đó tại tòa nhà {random.choice(buildings)} của công ty, có anh chàng {random.choice(liveNPCs)} , tên thật của anh là {random.choice(nameNPC)}. Đang {random.choice(liveNPCEmotions)} và đợi cô gái {random.choice(liveNPCs)} của mình tan ca khi cô đang làm việc ở phòng HR tại tầng  {random.randint(100000000000, 1000000000000):,}, và tên thật của cô là {random.choice(nameNPC)}. "
         f"Hôm nay anh có lẽ hơi nóng vội hơn mọi ngày, nên anh đã đến sớm hơn {random.randint(100000000000, 1000000000000):,} phút so với lịch đã hẹn trước với cô gái. "
         f"Vì anh đến hơi sớm, và cô gái kia thì vẫn đang còn trong ca nên anh hơi đói bụng. Anh đang thầm nghĩ, nên mua {random.randint(100000000000, 1000000000000):,} cái bánh mì để ăn nhẹ trước.\n\n"
-        f"Có một quán quen của anh cách đó {random.randint(100000000000, 1000000000000):,}km. Nghĩ cũng gần đây thôi, chưa kể vẫn còn cách thời gian đã hẹn là {formatNumber(1/random.randint(100000000000, 1000000000000),2)} ns nữa, thời gian trông khá thoải mái. "
-        f"Không nghĩ thêm vì bụng anh kêu ọc ọc rồi, anh lập tức phóng xe với tốc độ {formatNumber(1/random.randint(100000000000, 1000000000000),2)}nm/h đi mua vội bánh mì trước khi anh hết hứng hẹn hò vì đói. \n\n"
+        f"Có một quán quen của anh cách đó {random.randint(100000000000, 1000000000000):,}km. Nghĩ cũng gần đây thôi, chưa kể vẫn còn cách thời gian đã hẹn là {generateRandomReciprocal()} ns nữa, thời gian trông khá thoải mái. "
+        f"Không nghĩ thêm vì bụng anh kêu ọc ọc rồi, anh lập tức phóng xe với tốc độ {generateRandomReciprocal()}nm/h đi mua vội bánh mì trước khi anh hết hứng hẹn hò vì đói. \n\n"
         f"Dọc đường, anh phải băng qua 1 ngã tư , và anh phải dừng đèn đỏ là {random.randint(100000000000, 1000000000000):,}s. "
         f"Lúc đợi cái cột đèn giao thông có hình là {random.choice(shapes)}, và đang từ đỏ sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi mới xanh để anh được đi tiếp, thì anh nhìn ngắm cảnh vật xung quanh một chút, tâm trạng anh đang rất {random.choice(status)}.\n\n"
         f"Rồi bỗng anh thấy có {random.randint(100000000000, 1000000000000):,} cặp đôi {random.choice(liveNPCs)}-{random.choice(liveNPCs)} đang vừa {random.choice(liveNPCActions)} và vừa {random.choice(liveNPCActions)} bên đường. Sau đó, bọn họ nắm tay nhau băng qua vạch kẻ đường trông rất tình cảm. "
         f"Anh dõi nhìn theo bọn họ, sau đó {random.choice(liveNPCActions)} một lúc rồi quay lại xe của mình và cười thầm trong lòng - 'Phải chi cuộc hẹn hôm nay của mình cũng được như thế!' \n\n"
         f"Một lúc sau, anh đã quay lại công ty nơi bạn gái anh vẫn còn đang làm việc và kèm túi bánh mì nhỏ. Anh mừng trong lòng là vẫn còn kịp, chứ nếu không, anh sẽ bị block thẳng tay trên {random.choice(sourceInfo)} trước khi kịp giải thích là do anh mãi ngắm các cặp đôi hẹn hò ở ngã tư kia. "
-        f"Anh nhanh chóng bỏ hết số bánh mì vừa mua được vào bụng trong chưa đến {formatNumber(1/random.randint(100000000000, 1000000000000),2)}ns. Và ngay khi anh vừa lau miệng xong thì cô bạn gái đã xuất hiện và đứng cách anh rất gần - {random.randint(100000000000, 1000000000000):,}m. \n\n"
+        f"Anh nhanh chóng bỏ hết số bánh mì vừa mua được vào bụng trong chưa đến {generateRandomReciprocal()}ns. Và ngay khi anh vừa lau miệng xong thì cô bạn gái đã xuất hiện và đứng cách anh rất gần - {random.randint(100000000000, 1000000000000):,}m. \n\n"
         f"Anh có thể nhìn thấy rõ cô nàng xinh đẹp đó với diện mạo {random.choice(liveNPCApperances)} và dù có hơi rũ rượi do tăng ca. Anh vẫy tay để ra hiệu cho cô thấy, và rồi cô cũng nhìn thấy diện mạo {random.choice(liveNPCApperances)} của anh - trông rất đẹp trai. "
         f"Cô lập tức chạy thật nhanh {random.randint(100000000000, 1000000000000):,}km/s đến với anh để anh không phải đợi lâu thêm nữa.\n\n"
-        f"- Chà, anh chàng đẹp trai? Đợi ta có lâu không chàng? Xin lỗi vì hôm nay nhiều việc nên em tăng ca quá, để xíu bé bù cho anh nha!{''.join(random.choices(emojiStatus, k=3))}\n\n"
-        f"- Hổng sao đâu, anh chàng đẹp trai của em vừa đủ thời gian ăn bánh mì với ngắm người ta yêu nhau ở ngã tư đó nha! {''.join(random.choices(emojiStatus, k=3))}\n\n"
+        f"- Chà, anh chàng đẹp trai? Đợi ta có lâu không chàng? Xin lỗi vì hôm nay nhiều việc nên em tăng ca quá, để xíu bé bù cho anh nha!{generateRandomIcons(3)}\n\n"
+        f"- Hổng sao đâu, anh chàng đẹp trai của em vừa đủ thời gian ăn bánh mì với ngắm người ta yêu nhau ở ngã tư đó nha! {generateRandomIcons(3)}\n\n"
         f"- Mà bây giờ anh muốn đi đâu trước nhỉ? Em đi theo anh đó, muốn đưa em đi đâu thì cứ tự nhiên nhe.\n\n"
         f"- HMMM, anh vừa tìm ra chỗ này cũng hay. Anh lướt trên {random.choice(sourceInfo)}, thì thấy ở {random.choice(indoorLocations)} cách ở đây {random.randint(100000000000, 1000000000000):,}km về phía {random.choice(gpsLocations)}. "
         f"Có 1 ông chủ {random.choice(businesses)} tên là {random.choice(nameNPC)} bán {random.choice(indoorObjectItems)} cũng được {random.randint(100000000000, 1000000000000):,} năm rồi. Nghe đồn là ông ấy có năng lực {random.choice(magicTypes)}. Ông ta có thể bói toán được {random.randint(100000000000, 1000000000000):,} tiền kiếp đó. Em muốn thử không?\n\n"
@@ -217,23 +227,24 @@ def generateShortStory3():
         f"- Mối lương duyên giữa 2 người không hề tầm thường đâu! 2 người đã có tiền duyên với nhau cũng {random.randint(100000000000, 1000000000000):,} kiếp rồi đó. "
         f"Kiếp trước, vì 2 người hiểu lầm nhau, nguyên nhân là chàng trai đã {random.choice(liveNPCActions)} {random.randint(100000000000, 1000000000000):,} lần trước mặt cô gái khiến cô trầm cảm mà tự vẫn. Chàng trai vì nhớ thương người mình yêu nên đã đi theo cô sau đó không lâu! "
         f"Kiếp này, vì 2 người vẫn còn mối nợ kiếp trước chưa trả hết. Nên kiếp này sẽ tiếp tục bên nhau thôi! Cơ mà, ta muốn nói trước 2 người biết, sẽ có họa kiếp đó. Này cậu trai trẻ? Cậu từng phạm phải tội gì phải không?\n\n"
-        f"- Ơ sao ông lại,.... ??? Phải, tôi từng hack thành công vào Ngân Hàng SIDA Liên Bang Quốc Tế để trộm đi {formatNumber(1/random.randint(100000000000, 1000000000000),2)}$ và {formatNumber(1/random.randint(100000000000, 1000000000000),2)} thỏi vàng lúc tôi chỉ mới {random.randint(1, 18)} tuổi! "
+        f"- Ơ sao ông lại,.... ??? Phải, tôi từng hack thành công vào Ngân Hàng SIDA Liên Bang Quốc Tế để trộm đi {generateRandomReciprocal()}$ và {generateRandomReciprocal()} thỏi vàng lúc tôi chỉ mới {random.randint(1, 18)} tuổi! "
         f"Và tôi cũng đã bị phán {random.randint(1000000000, 10000000000):,} năm tù ở 1 phiên tòa được diễn ra tại {random.choice(outdoorView).upper()} và phải khổ sai bằng việc {random.choice(liveNPCActions)} liên tục {random.randint(100000000000, 1000000000000):,} lần.\n\n"
         f"- Vì ta biết đó do nghiệp báo kiếp trước. Cơ mà quan trọng là chính cô gái trong tương lai cũng sẽ gặp tai họa tương tự, 2 người bây giờ chỉ cần làm theo tờ giấy {random.choice(colors)} này ghi, thì lập tức họa kiếp tiêu trừ. Vạn sự bình an!\n\n"
         f"Cặp đôi ra về và với tâm trạng hơi {random.choice(liveNPCEmotions)}. Một lúc sau, họ đi dạo ở gần đó, và lúc không có ai, họ lấy tờ giấy ông chủ đó đưa cho họ ra xem. Họ như hiểu ra điều gì đó và họ nhìn nhau như ngầm hiểu - 'Ohhh, thì ra là thế!'\n\n"
         f"Chàng trai nhìn sâu vào ánh mắt cô gái : - Em có hiểu không?\n\n"
         f"Cô gái đưa tay xoa mặt chàng trai : - Em hiểu rồi!!\n\n"
-        f"Vậy là họ làm theo lời tờ giấy đó ghi - {random.choice(slogan)}. Và càng về sau, đúng như lời tiên tri của chủ tiệm bí ẩn, mọi việc đều rất suôn sẻ!\n\n"
+        f"Vậy là họ làm theo lời tờ giấy đó ghi - {random.choice(slogan)} và có 1 từ kì lạ phía cuối tờ giấy là `{generateRandomWord()}`. Và càng về sau, đúng như lời tiên tri của chủ tiệm bí ẩn, mọi việc đều rất suôn sẻ!\n\n"
         f"Vậy còn bạn? bạn thực sự đã hiểu ra gì chưa? {generateRandomIcons(7)} \n\n"
     )
-    return scene
+    return output
 
 # generateShortStory4
 def generateShortStory4():
     mainName = random.choice(nameNPC).upper()
     mainAction = random.choice(liveNPCActions)
-    mainOfen = random.randint(100000000000, 1000000000000)
-    scene = (
+    mainDuration = random.randint(100000000000, 1000000000000)
+    output = (
+        f"SHORT STORY 4 : Rebellious Past \n\n"
         f"Tọa lạc tại {random.choice(outdoorView).upper()}, thời tiết thì {random.choice(weatherConditions)}. Bầu trời đang trông có vẻ {random.choice(status)}, "
         f"có {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} và bị {random.choice(outDoorSkyStrongObjectStatus)} đang phát ra ánh sáng màu {random.choice(colors)}. "
         f"Đây quả thật là một khung cảnh {random.choice(status)}. {generateRandomIcons(10)}\n\n"
@@ -242,27 +253,27 @@ def generateShortStory4():
         f"Và ngay tại đó cũng có một cặp đôi đặc biệt {random.choice(liveNPCs)}-{random.choice(liveNPCs)} đang hẹn hò. Chàng trai tên thật là {mainName}, {random.randint(100000000000, 1000000000000):,} tuổi. "
         f"Còn bạn nữ thì tên là {random.choice(nameNPC).upper()}, {random.randint(100000000000, 1000000000000):,} tuổi.\n\n"
         f"Cặp đôi đặc biệt đang trò chuyện với nhau trông rất {random.choice(liveNPCEmotions)}.\n\n"
-        f"- Anh không thể ngờ là chúng ta có {random.randint(100000000000, 1000000000000):,} tiền kiếp ở bên nhau đó. Ông thầy bói đó quả nhiên là cao thủ {random.choice(magicTypes)}. {''.join(random.choices(emojiStatus, k=3))} \n\n"
-        f"- Em cũng thế, em không ngờ là sáng nay em mới gặp anh với tư cách là HR và ứng viên ở {random.choice(companies)}, mà bây giờ thì chúng ta... hihi ngại nói ghê. {''.join(random.choices(emojiStatus, k=3))} \n\n"
+        f"- Anh không thể ngờ là chúng ta có {random.randint(100000000000, 1000000000000):,} tiền kiếp ở bên nhau đó. Ông thầy bói đó quả nhiên là cao thủ {random.choice(magicTypes)}. {generateRandomIcons(3)} \n\n"
+        f"- Em cũng thế, em không ngờ là sáng nay em mới gặp anh với tư cách là HR và ứng viên ở {random.choice(companies)}, mà bây giờ thì chúng ta... hihi ngại nói ghê. {generateRandomIcons(3)} \n\n"
         f"- Cơ mà, về quá khứ của anh... Em đã biết rồi đó, em vẫn đồng ý hẹn hò với anh? Em không hề e ngại hay suy nghĩ lại sao?\n\n"
         f"- Không đâu, lúc đó anh còn quá trẻ, ai mà chả từng có sai lầm. Anh đừng lo, em không quan tâm anh đã làm những gì. Em chỉ quan tâm anh bây giờ là anh thôi! \n\n"
-        f"- Qủa thật thời gian đó anh quá ham vui và thiếu suy nghĩ chính chắn. Cơ mà, thật may mắn vì em không hề trách anh hay e ngại và rời bỏ anh. "
+        f"- Quả thật thời gian đó anh quá ham vui và thiếu suy nghĩ chín chắn. Cơ mà, thật may mắn vì em không hề trách anh hay e ngại và rời bỏ anh. "
         f"Thật ra, {random.randint(100000000000, 1000000000000):,} cô gái anh đã từng hẹn hò, sau khi họ biết về quá khứ anh từng phạm pháp, họ đều bỏ đi! Cho đến khi gặp em, em là người đầu tiên chịu ở lại.\n\n"
         f"- Ohhh, thì ra là thế. Cơ mà, em đang thấy anh rất tốt ở hiện tại, dù anh đã có hẹn hò {random.randint(100000000000, 1000000000000):,} hay {random.randint(100000000000, 1000000000000):,} cô gái khác đi nữa."
         f" Em vẫn tin là anh rất chung tình. Chỉ là họ vì e ngại quá khứ của anh, họ đã không hiểu anh, họ không chịu thông cảm cho anh! Cơ mà em thì khác, em không quan tâm gì cả, chỉ cần anh là phiên bản tốt nhất của chính mình là đủ rồi!"
         f" Cơ mà anh phải kể cho em nghe cái chuyện anh từng phạm phải đó! Em khá tò mò lắm nha... haha. \n\n"
         f"- Được rồi được rồi, anh sẽ kể chi tiết ngay đây, không giấu diếm. Lúc đó, anh chỉ mới {random.randint(1, 18)} tuổi thôi...\n\n"
         f"Chàng trai đang bắt đầu hồi tưởng...\n\n"
-        f"Cách thời điểm hiện tại {random.randint(100000000000, 1000000000000):,} năm. Chàng trai ban đầu nãy ra ý tưởng hack và trộm đi một số tiền để test bảo mật Ngân Hàng SIDA Liên Bang Quốc Tế thuộc tập đoàn {random.choice(companies)} sau đó giúp họ cải tiến hệ thống và vá lổ hổng bảo mật. "
+        f"Cách thời điểm hiện tại {random.randint(100000000000, 1000000000000):,} năm. Chàng trai ban đầu nảy ra ý tưởng hack và trộm đi một số tiền để test bảo mật Ngân Hàng SIDA Liên Bang Quốc Tế thuộc tập đoàn {random.choice(companies)} sau đó giúp họ cải tiến hệ thống và vá lỗ hổng bảo mật. "
         f"Anh ấy đã rủ thêm {random.randint(100000000000, 1000000000000):,} {random.choice(liveNPCs)}, tất cả là đều đồng phạm chung trong vụ đó với anh. \n\n"
         f"Sau {random.randint(100000000000, 1000000000000):,} phút tính toán kế hoạch một cách nhanh chóng, họ bắt đầu thực hiện kế hoạch đó một cách bài bản. Trông tất cả bọn họ đều phối hợp ăn ý nhau và rất là {random.choice(liveNPCEmotions)}. \n\n"
         f"Họ quyết định chọn một chi nhánh ngân hàng gần đó cách {random.randint(100000000000, 1000000000000):,}km về hướng {random.choice(gpsLocations)}. "
-        f"Cả bọn đều lên xe và phóng đi nhanh chóng với tốc độ là {formatNumber(1/random.randint(100000000000, 1000000000000),2)}nm/year đến đó.\n\n"
+        f"Cả bọn đều lên xe và phóng đi nhanh chóng với tốc độ là {generateRandomReciprocal()}nm/year đến đó.\n\n"
         f"Theo kế hoạch ban đầu, cả bọn sẽ chia làm 2 nhóm. Nhóm 1 sẽ vào sảnh chính của ngân hàng giả vờ thực hiện giao dịch như các khách hàng, sau đó họ sẽ {random.choice(liveNPCActions)} {random.randint(100000000000, 1000000000000):,} lần/ns để đánh lạc hướng bảo vệ và nhân viên là dàn dựng 1 vụ cướp có vũ trang giả ở sảnh. "
-        f"Nhóm 2 bao gồm chàng trai chủ mưu sẽ đột nhật vào kho phòng máy chủ trung tâm của ngân hàng, họ buộc phải {random.choice(liveNPCActions)} {random.randint(100000000000, 1000000000000):,} lần/ns để qua mặt lớp bảo vệ của hệ thống ngân hàng.\n\n"
+        f"Nhóm 2 bao gồm chàng trai chủ mưu sẽ đột nhập vào kho phòng máy chủ trung tâm của ngân hàng, họ buộc phải {random.choice(liveNPCActions)} {random.randint(100000000000, 1000000000000):,} lần/ns để qua mặt lớp bảo vệ của hệ thống ngân hàng.\n\n"
         f"Sau {random.randint(100000000000, 1000000000000):,}h thì nhóm 2 đã đột nhập vào kho tổng của ngân hàng thành công. Họ đã đánh ngất {random.randint(100000000000, 1000000000000):,} bảo vệ ở đó, và lúc đó thì các lực lượng bảo vệ lo mải mê {random.choice(liveNPCActions)} {random.randint(100000000000, 1000000000000):,} lần/ns và {random.choice(liveNPCActions)} {random.randint(100000000000, 1000000000000):,} lần/ns. "
-        f"Nhanh chóng họ đã bỏ túi {formatNumber(1/random.randint(100000000000, 1000000000000),2)}$ và {formatNumber(1/random.randint(100000000000, 1000000000000),2)}nanogram vàng khối và rời đi bằng cửa sau.\n\n"
-        f"Nhóm 1 sau khi được báo là là kế hoạch thành công và rút lui thông qua bộ đàm, bọn họ cũng bắt đầu {random.choice(liveNPCActions)} {random.randint(100000000000, 1000000000000):,} lần, "
+        f"Nhanh chóng họ đã bỏ túi {generateRandomReciprocal()}$ và {generateRandomReciprocal()}nanogram vàng khối và rời đi bằng cửa sau.\n\n"
+        f"Nhóm 1 sau khi được báo là kế hoạch thành công và rút lui thông qua bộ đàm, bọn họ cũng bắt đầu {random.choice(liveNPCActions)} {random.randint(100000000000, 1000000000000):,} lần, "
         f"rồi tiếp tục {random.choice(liveNPCActions)} {random.randint(100000000000, 1000000000000):,} lần nữa để câu giờ cho nhóm 2 trước khi cả nhóm 1 cũng rời khỏi hiện trường.\n\n"
         f"Sau một lúc, ngân hàng mới phát hiện ra đã mất đi một số khoản tiền. Họ lập tức ấn chuông báo động. "
         f"Cảnh sát địa phương đã điều động 1 lực lượng đặc nhiệm gồm {random.randint(100000000000, 1000000000000):,} người, cùng với đó là {random.randint(100000000000, 1000000000000):,} xe tăng và {random.randint(100000000000, 1000000000000):,} chó nghiệp vụ. "
@@ -291,7 +302,7 @@ def generateShortStory4():
         f"- Rốt cuộc là sao đây? khai thật đi. \n\n"
         f"- Dạ, có người thuê tôi giả dạng anh ta để vào ngân hàng lấy tiền thưởng về. Anh ta hứa sẽ chia cho tôi 20% của tổng tiền thưởng... nên là tôi mới làm.\n\n"
         f"Cảnh sát trưởng đập bàn thật to: - Thật là tức chết đi mà! \n\n"
-        f"Ngày {random.randint(1, 18)} sau khi triển khai truy bắt triệt để, thủ phạm thật đã bị bắt. Lúc đó, anh ta đang có diện mạo là {random.choice(liveNPCApperances)} và lẩn trốn tại tại 1 {random.choice(indoorLocations)}...\n\n"
+        f"Ngày {random.randint(1, 18)} sau khi triển khai truy bắt triệt để, thủ phạm thật đã bị bắt. Lúc đó, anh ta đang có diện mạo là {random.choice(liveNPCApperances)} và lẩn trốn tại 1 {random.choice(indoorLocations)}...\n\n"
         f"Quay trở lại hiện tại, cô gái đang mỉm cười và vỗ vào vai anh ta an ủi và bảo: \n\n"
         f"- Tính ra anh đâu có thực sự phạm pháp, động cơ gây án ban đầu của anh là ý tốt. Cơ mà tại sao anh bị phán án nặng quá vậy? Còn tên cảnh sát trưởng? Hắn ta đúng là 1 kẻ tham lam!! Còn anh điều tra viên đặc biệt đó? Anh ta có giúp anh không? \n\n"
         f"- Tên cảnh sát trưởng đó, anh biết. Hắn ta là kẻ biến chất và tham tiền, không biết bao nhiêu nạn nhân đã bị hắn hại? Còn anh điều tra viên đó, là người anh thấy duy nhất là người tốt, anh ta thì đã giúp anh nhiều lắm đó. Anh rất biết ơn anh ta... \n\n"
@@ -310,19 +321,19 @@ def generateShortStory4():
         f"Ngoài ra bị cáo còn phải thực hiện 1 trong các hình phạt, thuộc lao động công ích sau: \n\n"
         f"   a/ Lặp lại việc {random.choice(liveNPCActions)} trong {random.randint(100000000000, 1000000000000):,} năm.\n\n"
         f"   b/ Lặp lại việc {random.choice(liveNPCActions)} trong {random.randint(100000000000, 1000000000000):,} năm.\n\n"
-        f"   c/ Lặp lại việc {mainAction} trong {mainOfen:,} năm.\n\n"
-        f"Về việc chọn 1 hình phạt trong các mục này sẽ do cái thẩm phán và bên công tố lựa chọn.\n\n"
-        f"Sau một lúc việc bỏ phiếu từ các bên liên quan, tòa phán quyết cuối cùng về hình phạt lao động công ích là mục lặp lại việc {mainAction} trong {mainOfen:,} năm. Bản án sẽ hiệu lực tính từ thời gian lúc phán quyết....\n\n"
+        f"   c/ Lặp lại việc {mainAction} trong {mainDuration:,} năm.\n\n"
+        f"Về việc chọn hình phạt trong các mục này sẽ do cái thẩm phán và bên công tố lựa chọn.\n\n"
+        f"Sau một lúc việc bỏ phiếu từ các bên liên quan, tòa phán quyết cuối cùng về hình phạt lao động công ích là mục lặp lại việc {mainAction} trong {mainDuration:,} năm. Bản án sẽ hiệu lực tính từ thời gian lúc phán quyết....\n\n"
         f" - Tên thẩm phán và bọn công tố đều biến chất như vậy à?? Thật khổ cho anh rồi, em thấy thương anh quá à! Còn người điều tra viên tốt bụng kia? Anh ta đã cứu anh sao? đã cứu như thế nào vậy? - Cô gái tò mò và tiếp tục tập trung lắng nghe chàng trai kể.\n\n"
         f" - Về điều tra viên đó thì như thế này, lúc đó anh đã thụ án cũng được mới có {random.randint(1000000000, 10000000000):,} ngày,....\n\n"
         f"Tại nhà tù `SIDA VKL QUỐC TẾ`, tọa lạc tại một {random.choice(outdoorView)}. Các phạm nhân cũng sinh hoạt bình thường như mọi ngày.\n\n"
-        f" - Phạm nhân {mainName}, có người muốn gặp anh! - 1 cai ngục hằn giọng. \n\n"
-        f"Chàng trai đi theo cai ngục đó, anh ta được dẫn đến gặp anh điều tra viên chính trực kia. Hai người bắt đầu trò chuyện.\n\n"
+        f" - Phạm nhân {mainName}, có người muốn gặp anh! - {random.randint(100000000000, 1000000000000):,} cai ngục hằn giọng. \n\n"
+        f"Chàng trai đi theo các cai ngục đó, anh ta được dẫn đến gặp anh điều tra viên chính trực kia. Hai người bắt đầu trò chuyện.\n\n"
         f" - Chào anh, chúng ta lại gặp nhau rồi! - Điều tra viên thân thiện đưa tay ra trước mặt chàng trai. \n\n"
         f" - Vâng, chào anh. Chúng ta đã gặp nhau nhiều rồi. Và người duy nhất tôi rất nể trọng trong vụ án này là anh, anh là người duy nhất không bị biến chất và còn hiểu được động cơ ban đầu thực sự của {mainName} tôi đây nữa! Haha!\n\n"
         f" - Tôi cảm thấy như vậy là chưa thực sự giúp anh đâu! Tôi hôm nay đến thăm anh, 1 là để thay mặt toàn bộ hệ thống tư pháp để tạ lỗi với anh!\n\n"
         f" - Còn 2 là gì? Anh cứ nói đi, tôi đang nghe đây!\n\n"
-        f" - Tôi không tiện nói ra ở đây! anh hãy cầm lấy tờ giấy nhỏ này, mở ra đọc sẽ hiểu thôi. - Điều tra viên lấy trong túi áo ra 1 tờ giấy nhỏ {random.randint(100000000000, 1000000000000):,} dòng đưa cho chàng trai. \n\n"
+        f" - Tôi không tiện nói ra ở đây! anh hãy cầm lấy tờ giấy nhỏ này, mở ra đọc sẽ hiểu thôi. - Điều tra viên lấy trong túi áo ra 1 tờ giấy nhỏ {random.randint(100000000000, 1000000000000):,} dòng và có 1 từ kì lạ phía cuối tờ giấy là `{generateRandomWord()}` đưa cho chàng trai. \n\n"
         f"Lúc về lại phòng giam, anh ta mở ra đọc ngay. Nội dung ghi là: 'Anh thực sự không có phạm phải tội lớn gì! Bây giờ nếu tôi không thể giúp anh giảm nhẹ hình phạt thì tôi lại không đành lòng nhìn anh chịu khổ vì những cái anh không làm. "
         f"Nên là tôi sẽ giúp anh ...vượt ngục, hãy chạy trốn đi thật xa và đừng ngẩng đầu lại. Bên dưới là bản đồ bí mật của nhà tù này, anh chỉ cần canh lúc 18h ngày mai. "
         f"Lúc đó, các cai ngục sẽ giải lao và đi {random.choice(liveNPCActions)} theo thói quen sinh hoạt thường thấy. Đây là thời điểm tốt nhất, hãy theo bản đồ này và thoát ra ngoài. "
@@ -337,46 +348,54 @@ def generateShortStory4():
         f" - Bye anh yêu nha!!! Cơ mà anh nhớ mai chúng ta sẽ hẹn hò ở đâu không đó??? =)))\n\n"
         f" - Anh nhớ chứ, mai chúng ta sẽ đi {random.choice(liveNPCActions)} ở một {random.choice(indoorLocations)} gần đây? Anh nhớ đúng phải hông ta??\n\n"
         f" - Đúng rùi đó, mai nhớ đúng giờ nha!! Em muốn ở bên anh cựu `tội phạm lương thiện` lâu hơn nè!!~ =))\n\n"
-        f"Cặp đôi nhanh chóng tạm biệt nhau, tình cảm họ lúc này đã tăng lên đáng kể. Còn bạn? Bạn cảm thấy quá khứ của chàng trai thế nào? Bạn sẽ làm gì khi bị phán quyết khổ sai bằng cách `Lặp lại việc {mainAction} trong {mainOfen:,} năm`? {generateRandomIcons(7)}"
+        f"Cặp đôi nhanh chóng tạm biệt nhau, tình cảm họ lúc này đã tăng lên đáng kể. Còn bạn? Bạn cảm thấy quá khứ của chàng trai thế nào? Bạn sẽ làm gì khi bị phán quyết khổ sai bằng cách `Lặp lại việc {mainAction} trong {mainDuration:,} năm`? {generateRandomIcons(7)}"
     )
-    return scene
+    return output
 
 
-#prompt for AI romantic
-def generateLovelyPromt():
+#prompt for AI Art romantic
+def generateLovelyPrompt():
     locationIndoor = random.choice(indoorLocations).strip()
     locationOutdoor = random.choice(outdoorView).strip()   
     typeLocation = random.randint(1,2)
-    endingStatus = f"Đây thật là 1 khung cảnh {random.choice(status)}!"
+    
+    endingStatus = ( f"Đây thật là 1 khung cảnh {random.choice(status)}! \n"
+                   f"Cảm xúc chung có thể nói là : {''.join(random.choices(loveIcons, k=4))}" ) 
+    
+    commonSence = (
+            f"Hai người này là cặp đôi yêu nhau rất sâu đậm. Tóc của chàng trai có kiểu {random.choice(fashionHairMale)}, cô gái thì có kiểu tóc {random.choice(fashionHairFemale)}. \n"
+            f"Chàng trai rất đẹp trai và có đôi mắt 2 mí rất đẹp, áo của chàng trai đóng thùng gọn gàng. Cô gái có nhan sắc xinh đẹp tuyệt trần (giữ nguyên outfit 2 ảnh gốc). \n"
+            f"Chàng trai đang {random.choice(BoyActions)}. Còn cô gái thì đang {random.choice(GirlActions)}. \n"
+            f"Bọn họ đang {random.choice(LoveActions)} và trông họ có vẻ {random.choice(liveNPCEmotions)}. \n"
+    )
+    
     if typeLocation == 1:
-        scene = (
-            f"Hai người này là cặp đôi yêu nhau rất sâu đậm. Tóc của chàng trai sidepart ngắn gọn, chàng trai rất đẹp trai và có đôi mắt 2 mí rất đẹp, áo của chàng trai đóng thùng gọn gàng ( giữ nguyên outfit 2 ảnh gốc). \n"
-            f"Chàng trai đang {random.choice(BoyActions)} và cô gái đang {random.choice(GirlActions)}. \n"
-            f"Bọn họ đang {random.choice(LoveActions)} ở khung cảnh là bên trong {locationIndoor} {random.choice(indoorStatus)} lâu năm. \n"
+        output = (
+            f"{commonSence}\n"
+            f"Và khung cảnh hẹn hò đang là bên trong {locationIndoor} {random.choice(indoorStatus)} lâu năm. \n"
             f"Nó được xây bằng {random.choice(indoorMaterials)} và sơn màu {random.choice(colors)}. \n"
             f"{generateIndoorItems().strip()}. \n"
             f"Ở đây, {generateIndoorObject().strip()}. \n"
-            f"{generateNPC().strip()}. \n"
+            f"{generateNPC().strip()}. \n\n"
             f"{endingStatus}"
         )
     else:
-        scene = (
-            f"Hai người này là cặp đôi yêu nhau rất sâu đậm. Tóc của chàng trai sidepart ngắn gọn, chàng trai rất đẹp trai và có đôi mắt 2 mí rất đẹp, áo của chàng trai đóng thùng gọn gàng ( giữ nguyên outfit 2 ảnh gốc). \n"
-            f"Chàng trai đang {random.choice(BoyActions)} và cô gái đang {random.choice(GirlActions)}. \n"
-            f"Bọn họ đang {random.choice(LoveActions)} ở khung cảnh {locationOutdoor} đã {random.choice(outDoorStatus).strip()} lâu năm. \n"
+        output = (
+            f"{commonSence}\n"
+            f"Và khung cảnh hẹn hò đang là {locationOutdoor} đã {random.choice(outDoorStatus).strip()} lâu năm. \n"
             f"Khung cảnh đang có thời tiết {random.choice(weatherConditions).strip()}. \n"
             f"{returnOutdoorSkyStrongObject().strip()}. \n"
             f"{generateOutdoorSkyObject().strip()}. \n"
-            f"{generateNPC().strip()}. \n"
+            f"{generateNPC().strip()}. \n\n"
             f"{endingStatus}"
         )
-    return scene
+    return output
 
 # anything
 def ruleL4D2():
-    scene = (
-        f"Rule of this game (L4D2) : Người chơi làm theo mục tiêu, Zombie cố định luôn là tank , trong 1 khoảng thời gian và số bước di chuyển đc giới hạn :\n\n"
-        f"Map : {random.choice(mapsL4D2)} - Campain của map sẽ được random ( trừ map cuối) \n"
+    output = (
+        f"Rule of this game (L4D2): Người chơi làm theo mục tiêu, Zombie cố định luôn là tank, trong 1 khoảng thời gian và số bước di chuyển được giới hạn:\n\n"
+        f"Map: {random.choice(mapsL4D2)} - Campaign của map sẽ được random (trừ map cuối)\n"
         f"Character : {random.choice(charactersL4D2)}\n"
         f"Player HP : {random.randint(1, 100):,}\n"
         + (
@@ -394,15 +413,21 @@ def ruleL4D2():
         f"Time limit: {random.randint(2, 5)} minutes\n"
         f"Step limit: {random.randint(100, 500)} steps\n"
         f"Player Rules : {random.choice(playerRulesL4D2)} - time limit: {random.randint(10, 60)} seconds\n"
-        f"Objective : {random.choice(['kill the tank', 'survive', 'escape'])}\n"
+        f"Objective : {random.choice(['escape', 'kill the tank', 'survive'])}\n"
     )
-    return scene
+    return output
 
 def dateAppOptions():
-    scene = (
-        f"Chào mừng đến với ứng dụng tài xỉu sổ xố hẹn hò `SIDA VKL QUỐC TẾ ${random.choice(companies)}`. \n\n"
+    output = (
+        f"Chào mừng đến với ứng dụng tài xỉu xổ số hẹn hò `SIDA VKL QUỐC TẾ ${random.choice(companies)}`. \n\n"
         f"Reject Number of Profiles (số lượt phải quẹt trái): {random.randint(1,20):,} profiles\n"
         f"Like Number of Profiles (số lượt phải quẹt phải): {random.randint(1,20):,} profiles\n"
         f"Options: {random.choice(optionsDateApp)} \n"
     )
-    return scene
+    return output
+
+def generateModelingPrompt():
+    return (
+        f"{(random.choice(modelSetup)).format(shoe = random.choice(shoes))}"
+        f"The background is : {random.choice(backgrounds)}."
+    )

@@ -38,7 +38,7 @@ def caculateQuantity():
 
     indoor_total = (
         (len(liveNPCEmotions))
-        * ((len(titleEmojis) ** 4) ** 2)
+        * returnIconRandom(8)
         * titleLen
         * indoorLocationLen
         * indoorStatusLen
@@ -56,10 +56,10 @@ def caculateQuantity():
         * NPCActionLen
         * endingLen
         * statusLen
-        * (len(emojiStatus) ** 3)
+        * returnIconRandom(3)
         * (len(emotionPunctuations) ** 4)
         * commentLen
-        * (len(emojiMeme) ** 3)
+        * returnIconRandom(3)
         * returnIconRandom(7)
     )
 
@@ -74,7 +74,7 @@ def caculateQuantity():
 
     outdoor_total = (
         (len(liveNPCEmotions))
-        * ((len(titleEmojis) ** 4) ** 2)
+        * returnIconRandom(8)
         * titleLen
         * outdoorViewLen
         * outdoorStatusLen
@@ -92,10 +92,10 @@ def caculateQuantity():
         * NPCActionLen
         * endingLen
         * statusLen
-        * (len(emojiStatus) ** 3)
+        * returnIconRandom(3)
         * (len(emotionPunctuations) ** 4)
         * commentLen
-        * (len(emojiMeme) ** 3)
+        * returnIconRandom(3)
         * returnIconRandom(7)
     )
 
@@ -104,6 +104,8 @@ def caculateQuantity():
         * returnIconRandom(7)
         * len(businesses)
         * len(magicTypes)
+        * len(UpperText)
+        * (len(LowerText)**5)
         * (outdoorViewLen**2)
         * outdoorStatusLen
         * outdoorObjectDensityLen
@@ -137,7 +139,7 @@ def caculateQuantity():
     story2_total = (
         returnIconRandom(10)
         * returnIconRandom(7)
-        * ((len(emojiStatus) ** 3) ** 2)
+        * returnIconRandom(6)
         * (len(colors) ** 2)
         * (9000000001**2)
         * 8  # số giờ có thể rảnh
@@ -156,6 +158,8 @@ def caculateQuantity():
         * len(status)
         * (len(NPCjobs) ** 2)
         * len(buildings)
+        * len(UpperText)
+        * (len(LowerText)**5)
     )
 
     shortStory3Total = (
@@ -166,7 +170,7 @@ def caculateQuantity():
         * (len(indoorMaterials) ** 2)
         * returnIconRandom(10)
         * returnIconRandom(7)
-        * ((len(emojiStatus) ** 3) ** 2)
+        * returnIconRandom(6)
         * len(gpsLocations)
         * len(magicTypes)
         * len(businesses)
@@ -191,12 +195,14 @@ def caculateQuantity():
         * (len(proverbs) ** 2)
         * (len(nameNPC) ** 3)
         * len(slogan)
+        * len(UpperText)
+        * (len(LowerText)**5)
     )
 
     shortStory4Total = (
         (1000000000000000 - 100000000000000 + 1)
-        * ((10000000000 - 1000000000 + 1) ** 3)
-        * (900000000001**46)
+        * ((10000000000 -  1000000000 + 1) ** 3)
+        * (900000000001**47)
         * (18**3)
         * returnIconRandom(10)
         * returnIconRandom(7)
@@ -215,11 +221,13 @@ def caculateQuantity():
         * (len(liveNPCs) ** 5)
         * (len(nameNPC) ** 6)
         * len(magicTypes)
-        * ((len(emojiStatus) ** 3) ** 2)
+        * returnIconRandom(6)
         * (len(companies) ** 2)
         * (len(gpsLocations) ** 2)
         * (len(indoorObjectItems) ** 2)
         * len(liveNPCApperances)
+        * len(UpperText)
+        * (len(LowerText)**5)
     )
     
     L4D2caseTotal = (
@@ -253,6 +261,10 @@ def caculateQuantity():
         * len(GirlActions)
         * len(LoveActions)
         * len(status)
+        * (len(loveIcons)**4)
+        * len(liveNPCEmotions)
+        *len(fashionHairMale)
+        * len(fashionHairFemale)
         * (
             len(indoorLocations)
             * len(indoorStatus)
@@ -291,6 +303,8 @@ def caculateQuantity():
             * len(liveNPCActions)
         )
     )
+    
+    modelingPromptTotal = len(backgrounds) * (2 + 2 * len(shoes))
 
     return (
         indoor_total,
@@ -302,4 +316,5 @@ def caculateQuantity():
         L4D2caseTotal,
         appDateTotal,
         lovelyPromptTotal,
+        modelingPromptTotal,
     )

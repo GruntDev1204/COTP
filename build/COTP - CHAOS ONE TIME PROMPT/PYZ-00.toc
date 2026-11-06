@@ -40,6 +40,10 @@
    'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
    'custom\\tool\\random\\COTP\\data\\data.py',
    'PYMODULE'),
+  ('data.dataIcon',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\data\\dataIcon.py',
+   'PYMODULE'),
   ('data.dataIndoor',
    'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
    'custom\\tool\\random\\COTP\\data\\dataIndoor.py',
@@ -51,6 +55,10 @@
   ('data.dataLove',
    'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
    'custom\\tool\\random\\COTP\\data\\dataLove.py',
+   'PYMODULE'),
+  ('data.dataModelingPrompt',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\data\\dataModelingPrompt.py',
    'PYMODULE'),
   ('data.dataNPC',
    'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
