@@ -2,6 +2,13 @@ import random
 from data.data import *
 from Script.common_script import *
 
+def generateRandomReciprocal():
+    denominator = random.randint(100_000_000_000, 1_000_000_000_000)
+    return f"(1/{denominator})"
+
+def generateRandomWord():
+    return random.choice(UpperText) + "".join(random.choices(LowerText, k=5))
+
 # short story 1
 def generateShortStory1():
     repeatTimes = random.randint(100000, 1000000)
@@ -170,10 +177,10 @@ def generateShortStory4():
     mainDuration = random.randint(100000000000, 1000000000000)
     output = (
         f"SHORT STORY 4 : Rebellious Past \n\n"
-        f"Tọa lạc tại {random.choice(outdoorView).upper()}, thời tiết thì {random.choice(weatherConditions)}. Bầu trời đang trông có vẻ {random.choice(status)}, "
+        f"Tọa lạc tại {random.choice(outdoorView).upper()}, có thời tiết {random.choice(weatherConditions)}. Bầu trời đang trông có vẻ {random.choice(status)}, "
         f"có {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} và bị {random.choice(outDoorSkyStrongObjectStatus)} đang phát ra ánh sáng màu {random.choice(colors)}. "
         f"Đây quả thật là một khung cảnh {random.choice(status)}. {generateRandomIcons(10)}\n\n"
-        f"Có một {random.choice(indoorLocations)} {random.choice(indoorStatus)} lâu năm, được xây dựng bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. "
+        f"Có một {random.choice(indoorLocations)}, trông có vẻ {random.choice(indoorStatus)}. Và nó được xây dựng bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. "
         f"Ở đây đang có {random.randint(100000000000, 1000000000000):,} cặp đôi {random.choice(liveNPCs)}-{random.choice(liveNPCs)} đang hẹn hò. Họ đang {random.choice(liveNPCActions)} và trông rất {random.choice(liveNPCEmotions)}.\n\n"
         f"Và ngay tại đó cũng có một cặp đôi đặc biệt {random.choice(liveNPCs)}-{random.choice(liveNPCs)} đang hẹn hò. Chàng trai tên thật là {mainName}, {random.randint(100000000000, 1000000000000):,} tuổi. "
         f"Còn bạn nữ thì tên là {random.choice(nameNPC).upper()}, {random.randint(100000000000, 1000000000000):,} tuổi.\n\n"

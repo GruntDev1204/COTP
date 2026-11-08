@@ -146,7 +146,6 @@ quantities = [
     "lác đác vài",
     "một số",
     "một số ít",
-    "một vài",
     "nhiều",
     "rải đều có",
     "rải rác đều có",
@@ -154,6 +153,12 @@ quantities = [
     "vài",
     "1",
     "3",
+    "một vài", 
+    "một nhóm", 
+    "một đám",
+    "hàng loạt", 
+    "đầy rẫy", 
+    "vài đám",
 ]
 
 shapes = [
