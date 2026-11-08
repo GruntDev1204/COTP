@@ -236,7 +236,6 @@ status = [
     "đáng yêu",
     "dễ thương",
     "bối rối",
-    "dễ thương",
     "hào hứng",
     "hơi ấm",
     "hơi bối rối",

@@ -1,13 +1,29 @@
 ('F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
  'custom\\tool\\random\\COTP\\build\\COTP - CHAOS ONE TIME PROMPT\\PYZ-00.pyz',
  [('Script', '-', 'PYMODULE'),
+  ('Script.auto_prompts_script',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\Script\\auto_prompts_script.py',
+   'PYMODULE'),
   ('Script.caculate_pool',
    'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
    'custom\\tool\\random\\COTP\\Script\\caculate_pool.py',
    'PYMODULE'),
+  ('Script.common_script',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\Script\\common_script.py',
+   'PYMODULE'),
+  ('Script.game_rule_script',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\Script\\game_rule_script.py',
+   'PYMODULE'),
   ('Script.script',
    'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
    'custom\\tool\\random\\COTP\\Script\\script.py',
+   'PYMODULE'),
+  ('Script.story_script',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\Script\\story_script.py',
    'PYMODULE'),
   ('__future__', 'E:\\ProgramFile\\Python\\Lib\\__future__.py', 'PYMODULE'),
   ('_colorize', 'E:\\ProgramFile\\Python\\Lib\\_colorize.py', 'PYMODULE'),
@@ -217,6 +233,18 @@
   ('json.scanner',
    'E:\\ProgramFile\\Python\\Lib\\json\\scanner.py',
    'PYMODULE'),
+  ('log',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\log\\__init__.py',
+   'PYMODULE'),
+  ('log.cotp_structure_log',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\log\\cotp_structure_log.py',
+   'PYMODULE'),
+  ('log.log',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\log\\log.py',
+   'PYMODULE'),
   ('logging', 'E:\\ProgramFile\\Python\\Lib\\logging\\__init__.py', 'PYMODULE'),
   ('lzma', 'E:\\ProgramFile\\Python\\Lib\\lzma.py', 'PYMODULE'),
   ('numbers', 'E:\\ProgramFile\\Python\\Lib\\numbers.py', 'PYMODULE'),
@@ -249,11 +277,22 @@
   ('tkinter.constants',
    'E:\\ProgramFile\\Python\\Lib\\tkinter\\constants.py',
    'PYMODULE'),
-  ('tkinter.ttk', 'E:\\ProgramFile\\Python\\Lib\\tkinter\\ttk.py', 'PYMODULE'),
   ('token', 'E:\\ProgramFile\\Python\\Lib\\token.py', 'PYMODULE'),
   ('tokenize', 'E:\\ProgramFile\\Python\\Lib\\tokenize.py', 'PYMODULE'),
   ('tracemalloc', 'E:\\ProgramFile\\Python\\Lib\\tracemalloc.py', 'PYMODULE'),
   ('typing', 'E:\\ProgramFile\\Python\\Lib\\typing.py', 'PYMODULE'),
+  ('ui',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\ui\\__init__.py',
+   'PYMODULE'),
+  ('ui.interface',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\ui\\interface.py',
+   'PYMODULE'),
+  ('ui.ui_properties',
+   'F:\\PC MEDIA\\developer_skills\\AI developer\\prompt and '
+   'custom\\tool\\random\\COTP\\ui\\ui_properties.py',
+   'PYMODULE'),
   ('urllib', 'E:\\ProgramFile\\Python\\Lib\\urllib\\__init__.py', 'PYMODULE'),
   ('urllib.parse',
    'E:\\ProgramFile\\Python\\Lib\\urllib\\parse.py',

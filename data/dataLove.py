@@ -1,13 +1,3 @@
-callName = [
-    "bé AI",
-    "công chúa",
-    "cô gái dễ thương",
-    "cô nàng",
-    "em thơ",
-    "nàng",
-    "nàng thơ",
-]
-
 LoveActions = [
     "cùng ngắm cảnh",
     "cùng nhau đi dạo",
@@ -101,6 +91,16 @@ BoyActions = [
     "viết thư tình cho cô gái",
     "vòng tay qua vai ôm trọn lấy bờ vai nhỏ của cô gái",
     "xoa đầu cô gái",
+    "chu mỏ làm mặt xấu trêu chọc cô gái",
+    "dùng hai ngón tay giả làm gọng kìm kẹp nhẹ vào mũi cô gái",
+    "giơ hai tay lên đầu làm tai thỏ phía sau cô gái",
+    "giả vờ làm biểu cảm hoảng hốt khi nhìn cô gái",
+    "há hốc mồm làm mặt ngạc nhiên một cách hài hước với cô gái",
+    "khẽ lấy hai tay che mắt cô gái từ phía sau",
+    "lấy ngón tay xoắn nhẹ một lọn tóc của cô gái",
+    "nhăn mặt làm biểu cảm hề hước để chọc cười cô gái",
+    "phồng má giả vờ giận dỗi với cô gái",
+    "lấy hai ngón tay trỏ khẽ kéo nhẹ hai khóe môi mình để làm mặt hề với cô gái",
 ]
 
 GirlActions = [
@@ -162,35 +162,18 @@ GirlActions = [
     "úp mặt vào người chàng trai",
     "véo tai chàng trai",
     "viết thư tình cho chàng trai",
-]
-
-
-nameUser = [
-    "Anything man",
-    "boy in love",
-    "chàng trai của chaos",
-    "Chaotics",
-    "chilling guy Grunt",
-    "chill Guy",
-    "Grunt",
-    "Grunt boy in love",
-    "Mr. Dev",
-    "Mr. Loving",
-    "Santino",
-    "the chaos man",
-    "the man is loving",
-    "Trung",
-    "What the man",
-]
-
-yearOfBirth = [
-    "1996",
-    "1997",
-    "1998",
-    "1999",
-    "2000",
-    "2001",
-    "2002",
+    "chu mỏ làm mặt xấu trêu chọc lại chàng trai",
+    "dùng hai tay vò rối tung mái tóc của lại chàng trai",
+    "dùng hai tay bóp nhẹ hai bên má của lại chàng trai tạo thành mỏ vịt",
+    "giơ hai ngón tay chữ V tạo tai thỏ phía sau đầu của lại chàng trai",
+    "giả vờ làm biểu cảm hoảng hốt khi nhìn lại chàng trai",
+    "há hốc mồm làm mặt ngạc nhiên một cách hài hước với lại chàng trai",
+    "khẽ lấy hai tay che mắt của lại chàng trai từ phía sau",
+    "lấy hai ngón tay trỏ xoay xoay nhẹ hai bên thái dương của lại chàng trai",
+    "nhăn mặt làm biểu cảm hề hước để chọc cười lại chàng trai",
+    "phồng má giả vờ giận dỗi với lại chàng trai",
+    "bất ngờ dùng một tay bịt miệng của lại chàng trai một cách tinh nghịch",
+    "lấy hai ngón tay kẹp nhẹ và kéo mũi của lại chàng trai đầy trêu chọc",
 ]
 
 fashionHairMale = [
@@ -210,6 +193,10 @@ fashionHairMale = [
     "Side part 7/3 vuốt rủ cổ điển",
     "Textured Crop cắt ngắn gọn gàng",
     "Two Block hai lớp thư sinh",
+    "Buzz Cut cắt ngắn ba phân nam tính và bụi bặm",
+    "Crew Cut phối Fade sắc nét gọn gàng kiểu quân đội",
+    "Buzz Cut ngắn nhuộm màu bạch kim thời thượng đầy phá cách",
+    "Spiky ngắn cắt gọn vuốt sáp tạo lọn dựng đầy năng động",
 ]
 
 fashionHairFemale = [
@@ -229,6 +216,8 @@ fashionHairFemale = [
     "Tóc dài uốn xoăn lọn to bồng bềnh nhuộm màu hạt dẻ",
     "Tóc dài vuốt ngược nửa đầu (half-up) đính ngọc trai quý phái",
     "Tóc kẹp nửa đầu bằng kẹp càng cua đính đá lấp lánh",
+    "Tóc Lob ngang vai rẽ ngôi lệch uốn cụp nhẹ",
+    "Tóc Bob ngắn chạm gáy uốn cụp phồng ôm nhẹ gương mặt nhuộm màu đen tuyền tự nhiên",
 ]
 
 loveIcons = [

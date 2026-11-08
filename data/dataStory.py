@@ -233,3 +233,149 @@ LowerText = [
   "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
   "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
 ]
+
+Vehicle = [
+    # ==================== HÃNG TESLA (XE ĐIỆN MỸ) ====================
+    "xe điện Tesla Model 3", "xe điện Tesla Model Y", "xe điện bán tải Tesla Cybertruck", 
+    "xe điện hạng sang Tesla Model S Plaid", "xe điện SUV Tesla Model X", "xe điện thể thao Tesla Roadster",
+
+    # ==================== HÃNG MERCEDES-BENZ (XE SANG ĐỨC) ====================
+    "xe sang Mercedes-Benz C200", "xe sang Mercedes-Benz C300 AMG", "xe sang Mercedes-Benz E200 Exclusive", 
+    "xe sang Mercedes-Benz E300 AMG", "xe sang Mercedes-Benz S450 Luxury", "xe sang Mercedes-Benz S500", 
+    "xe siêu sang Mercedes-Maybach S450", "xe siêu sang Mercedes-Maybach S650", "xe siêu sang Mercedes-Maybach S680", 
+    "xe SUV Mercedes-Benz GLC 200", "xe SUV Mercedes-Benz GLC 300 4MATIC", "xe SUV Mercedes-Benz GLE 450", 
+    "xe SUV Mercedes-Benz GLS 450", "xe SUV địa hình Mercedes-AMG G63", "xe thể thao Mercedes-AMG GT Coupe",
+
+    # ==================== HÃNG BMW (XE SANG ĐỨC) ====================
+    "xe sang BMW 320i Sport Line", "xe sang BMW 330i M Sport", "xe sang BMW 520i Luxury Line", 
+    "xe sang BMW 530i M Sport", "xe sang BMW 740Li Pure Excellence", "xe sang BMW 760Li", 
+    "xe siêu sang BMW M8 Gran Coupe", "xe SUV BMW X1", "xe SUV BMW X3 M Sport", 
+    "xe SUV BMW X5 xDrive40i", "xe SUV BMW X6", "xe SUV hạng sang BMW X7", 
+    "xe thể thao BMW Z4 M40i", "xe siêu xe hybrid BMW i8", "xe điện hạng sang BMW i7",
+
+    # ==================== HÃNG AUDI (XE SANG ĐỨC) ====================
+    "xe hơi Audi A4", "xe hơi Audi A6", "xe sang Audi A7 Sportback", 
+    "xe sang Audi A8L", "xe SUV Audi Q3", "xe SUV Audi Q5", 
+    "xe SUV Audi Q7", "xe SUV Audi Q8", "xe thể thao Audi R8 Spyder", 
+    "xe điện hạng sang Audi e-tron GT",
+
+    # ==================== HÃNG PORSCHE (XE THỂ THAO ĐỨC) ====================
+    "xe thể thao Porsche 718 Cayman", "xe thể thao Porsche 718 Boxster", "xe huyền thoại Porsche 911 Carrera", 
+    "xe thể thao Porsche 911 Turbo S", "xe sedan điện Porsche Taycan", "xe sang Porsche Panamera 4S", 
+    "xe SUV Porsche Macan GTS", "xe SUV hạng sang Porsche Cayenne Coupe",
+
+    # ==================== HÃNG ROLLS-ROYCE (SIÊU SANG ANH QUỐC) ====================
+    "xe siêu sang Rolls-Royce Phantom VII", "xe siêu sang Rolls-Royce Phantom VIII", "xe siêu sang Rolls-Royce Ghost", 
+    "xe siêu sang Rolls-Royce Wraith", "xe siêu sang mui trần Rolls-Royce Dawn", "xe SUV siêu sang Rolls-Royce Cullinan", 
+    "xe điện siêu sang Rolls-Royce Spectre",
+
+    # ==================== HÃNG BENTLEY (SIÊU SANG ANH QUỐC) ====================
+    "xe siêu sang Bentley Flying Spur V8", "xe siêu sang Bentley Flying Spur W12", "xe siêu sang Bentley Continental GT", 
+    "xe SUV siêu sang Bentley Bentayga", "xe siêu sang Bentley Mulsanne",
+
+    # ==================== HÃNG LAND ROVER (SUV SANG ANH QUỐC) ====================
+    "xe SUV hạng sang Range Rover Vogue", "xe SUV hạng sang Range Rover Autobiography", "xe SUV Land Rover Defender 90", 
+    "xe SUV Land Rover Defender 110", "xe SUV Range Rover Sport", "xe SUV Range Rover Velar", 
+    "xe SUV Land Rover Discovery",
+
+    # ==================== HÃNG LEXUS (XE SANG NHẬT BẢN) ====================
+    "xe sang Lexus ES 250", "xe sang Lexus ES 300h", "xe sang Lexus LS 500h", 
+    "xe SUV Lexus NX 350h", "xe SUV Lexus RX 350 Premium", "xe SUV Lexus RX 500h F Sport", 
+    "xe SUV hạng nặng Lexus LX 570", "xe SUV hạng sang Lexus LX 600", "xe coupe thể thao Lexus LC 500",
+
+    # ==================== HÃNG LAMBORGHINI (SIÊU XE Ý) ====================
+    "siêu xe Lamborghini Gallardo", "siêu xe Lamborghini Murciélago LP640", "siêu xe Lamborghini Huracán LP610-4", 
+    "siêu xe Lamborghini Huracán STO", "siêu xe Lamborghini Aventador LP700-4", "siêu xe Lamborghini Aventador SVJ", 
+    "siêu xe Lamborghini Revuelto", "xe SUV siêu xe Lamborghini Urus Performante",
+
+    # ==================== HÃNG FERRARI (SIÊU XE Ý) ====================
+    "siêu xe Ferrari 458 Italia", "siêu xe Ferrari 488 GTB", "siêu xe Ferrari 812 Superfast", 
+    "siêu xe Ferrari F8 Tributo", "siêu xe Ferrari Roma", "siêu xe Ferrari Portofino", 
+    "siêu xe Ferrari SF90 Stradale", "xe SUV siêu xe Ferrari Purosangue",
+
+    # ==================== HÃNG MCLAREN & ASTON MARTIN (SIÊU XE ANH) ====================
+    "siêu xe McLaren 570S", "siêu xe McLaren 650S Spider", "siêu xe McLaren 720S", 
+    "siêu xe McLaren 765LT", "xe sang Aston Martin DB11", "xe thể thao Aston Martin Vantage", 
+    "xe SUV siêu xe Aston Martin DBX 707",
+
+    # ==================== HÃNG TOYOTA (Ô TÔ NHẬT) ====================
+    "xe hơi Toyota Wigo", "xe hơi Toyota Vios taxi", "xe hơi Toyota Yaris", 
+    "xe hơi Toyota Corolla Altis", "xe hơi Toyota Camry đại gia", "xe SUV Toyota Corolla Cross", 
+    "xe SUV Toyota Raize", "xe SUV Toyota Yaris Cross", "xe SUV Toyota Fortuner Legender", 
+    "xe SUV Toyota Land Cruiser Prado", "xe SUV Toyota Land Cruiser LC300", "xe bán tải Toyota Hilux", 
+    "xe đa dụng Toyota Innova Cross", "xe đa dụng Toyota Avanza Premio", "xe đa dụng Toyota Veloz Cross", 
+    "xe minivan Toyota Alphard",
+
+    # ==================== HÃNG HONDA (XE MÁY & Ô TÔ NHẬT) ====================
+    "xe máy Honda Super Cub 50", "xe máy Honda Dream Thái", "xe máy Honda Wave Alpha", 
+    "xe máy Honda Future Neo", "xe máy Honda Winner X", "xe tay ga Honda Vision", 
+    "xe tay ga Honda Lead", "xe tay ga Honda Air Blade 160", "xe tay ga Honda SH 125i", 
+    "xe tay ga Honda SH 150i", "xe tay ga Honda SH 350i", "xe phân khối lớn Honda CBR1000RR-R", 
+    "xe hơi Honda Brio", "xe hơi Honda City", "xe hơi Honda Civic Type R", 
+    "xe SUV Honda CR-V", "xe SUV Honda HR-V", "xe SUV Honda BR-V",
+
+    # ==================== HÃNG YAMAHA & SUZUKI (XE MÁY NHẬT) ====================
+    "xe máy Yamaha Sirius", "xe máy Yamaha Jupiter", "xe máy Yamaha Exciter 135", 
+    "xe máy Yamaha Exciter 150", "xe máy Yamaha Exciter 155 VVA", "xe tay ga Yamaha Grande", 
+    "xe tay ga Yamaha NVX 155", "xe phân khối lớn Yamaha YZF-R1", "xe máy Suzuki Viva cổ", 
+    "xe máy Suzuki Sport Xì-po", "xe côn tay Suzuki Raider R150", "xe côn tay Suzuki Satria F150", 
+    "xe phân khối lớn Suzuki Hayabusa",
+
+    # ==================== HÃNG HYUNDAI & KIA (Ô TÔ HÀN QUỐC) ====================
+    "xe hơi Hyundai Grand i10", "xe hơi Hyundai Accent", "xe hơi Hyundai Elantra", 
+    "xe SUV Hyundai Creta", "xe SUV Hyundai Tucson", "xe SUV Hyundai Santa Fe", 
+    "xe SUV hạng sang Hyundai Palisade", "xe tải nhẹ Hyundai Porter H150", "xe khách Hyundai Solati 16 chỗ", 
+    "xe khách giường nằm Hyundai Universe", "xe hơi Kia Morning", "xe hơi Kia Soluto", 
+    "xe hơi Kia K3", "xe hơi Kia K5", "xe SUV Kia Sonet", 
+    "xe SUV Kia Seltos", "xe SUV Kia Sportage", "xe SUV Kia Sorento", 
+    "xe minivan Kia Carnival",
+
+    # ==================== HÃNG MAZDA & FORD (Ô TÔ PHỔ THÔNG) ====================
+    "xe hơi Mazda 2", "xe hơi Mazda 3", "xe hơi Mazda 6", 
+    "xe SUV Mazda CX-3", "xe SUV Mazda CX-5", "xe SUV Mazda CX-8", 
+    "xe bán tải Mazda BT-50", "xe hơi Ford Fiesta", "xe hơi Ford Focus", 
+    "xe SUV Ford Territory", "xe SUV Ford Everest", "xe SUV hạng sang Ford Explorer", 
+    "xe bán tải Ford Ranger XLS", "xe bán tải siêu hiệu năng Ford Ranger Raptor", "xe bán tải hạng nặng Ford F-150", 
+    "xe cơ bắp Ford Mustang GT", "xe khách Ford Transit cứu thương",
+
+    # ==================== HÃNG VINFAST (Ô TÔ ĐIỆN VIỆT NAM) ====================
+    "xe hơi VinFast Fadil", "xe hơi VinFast Lux A2.0", "xe SUV VinFast Lux SA2.0", 
+    "xe SUV điện VinFast VF3", "xe SUV điện VinFast VF5 Plus", "xe SUV điện VinFast VF e34", 
+    "xe SUV điện VinFast VF6", "xe SUV điện VinFast VF7", "xe SUV điện VinFast VF8", 
+    "xe SUV điện VinFast VF9 đại gia", "xe buýt điện VinFast VinBus",
+
+    # ==================== HÃNG THACO, HINO & ISUZU (XE TẢI & XE KHÁCH) ====================
+    "xe tải nhẹ Thaco Towner", "xe tải ben Thaco Forland", "xe tải trung Thaco Ollin", 
+    "xe tải nặng Thaco Auman", "xe khách Thaco Meadow", "xe khách giường nằm Thaco Mobihome", 
+    "xe tải Hino 300 series", "xe tải ben Hino 500 series", "xe tải nặng Hino 700 series", 
+    "xe tải nhẹ Isuzu QKR", "xe tải trung Isuzu Forward", "xe đầu kéo Isuzu Giga", 
+    "xe bán tải Isuzu D-Max", "xe SUV Isuzu Mu-X",
+
+    # ==================== XE QUÂN SỰ NGA (KAMAZ, URAL, GAZ, ZIL) ====================
+    "xe tải quân sự KamAZ-43114", "xe tải chiến thuật KamAZ-4326", "xe tải hậu cần KamAZ-43118", 
+    "xe vận tải hạng nặng KamAZ-5350", "xe bọc thép chống mìn KamAZ-6560 Typhoon", "xe tải chiến thuật Ural-4320", 
+    "xe tải nhẹ hai cầu Ural-43206", "xe bọc thép chở quân chống mìn Ural-VV", "xe tải nhẹ chiến thuật GAZ-66", 
+    "xe tải quân sự GAZ-Sadko-NEXT", "xe bọc thép trinh sát BRDM-2", "xe thiết giáp bánh lốp BTR-60", 
+    "xe thiết giáp bánh lốp BTR-80", "xe bọc thép chống mìn GAZ-Tigr", "xe vận tải chiến thuật ZIL-131", 
+    "xe tải phổ thông ZIL-130", "xe tải kéo pháo ZIL-157", "xe tải bốn cầu bệ phóng tên lửa ZIL-135",
+    
+    # ==================== XE PHI NHIÊN LIỆU (CHẠY BẰNG SỨC NGƯỜI & SÚC VẬT) ====================
+    "xe xích lô đạp Chợ Lớn", "xe lôi đạp miền Tây", "xe ba gác đạp chở hàng", 
+    "xe đạp mini Thống Nhất", "xe đạp Phượng Hoàng cổ cọc chèo", "xe đạp cuộc Martin 107", 
+    "xe đạp địa hình Asama", "xe đạp thể thao Giant", "xe đạp gấp Brompton đại gia", 
+    "xe đạp thồ hàng Điện Biên Phủ", "xe đạp điện HKbike hết pin", "xe trượt scooter trẻ em", 
+    "xe đẩy hàng bốn bánh", "xe cút kít xi măng", "xe rùa công trường", 
+    "xe kéo tay phu xe cổ đại", "xe bò kéo bánh gỗ", "xe ngựa kéo Đà Lạt", 
+    "xe trâu kéo bánh lốp", "xe lừa thồ hàng",
+    
+        # ==================== XE THỜI CỔ ĐẠI & PHONG KIẾN (ANCIENT & FEUDAL ERA) ====================
+    "kiệu bát cống bốn người khiêng", "kiệu hoa đại hồng gấm", "xe song mã hoàng gia", 
+    "xe tứ mã chiến trận cổ đại", "xe thiết xa La Mã", "thuyền rồng ngự chế", 
+    "xe đẩy bằng tay bằng gỗ thời Tống", "kiệu võng tre đường trường", "bệ rước long đình",
+
+    # ==================== PHƯƠNG TIỆN VIỄN TƯỞNG & HOẠT HÌNH (FUTURE & FICTIONAL) ====================
+    "chong chóng tre Doraemon", "thảm thần Aladdin", "đĩa bay UFO phản vật chất", 
+    "phi thuyền không gian Millennium Falcon", "cỗ máy thời gian DeLorean DMC-12", 
+    "xe mô tô bay hoverbike không trọng lực", "giày bay phản lực jetpack", 
+    "kén ngủ dịch chuyển tức thời quantum pod", "bàn tọa bay phản lực",
+]

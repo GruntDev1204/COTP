@@ -1,6 +1,6 @@
 # Emojis
 # Mặt cười & Con người
-face_people_emojis = [
+facePeopleEmojis = [
     "😀",
     "😃",
     "😄",
@@ -175,7 +175,7 @@ face_people_emojis = [
 ]
 
 # Động vật & Tự nhiên
-animals_nature_emojis = [
+animalsNatureEmojis = [
     "🙈",
     "🙉",
     "🙊",
@@ -336,7 +336,7 @@ animals_nature_emojis = [
 ]
 
 # Đồ ăn & Thức uống
-food_drink_emojis = [
+foodDrinkEmojis = [
     "🍇",
     "🍈",
     "🍉",
@@ -465,7 +465,7 @@ food_drink_emojis = [
 ]
 
 # Thể thao & Giải trí
-sports_entertainment_emojis = [
+sportsEntertainmentEmojis = [
     "⚽",
     "🏀",
     "🏈",
@@ -551,7 +551,7 @@ sports_entertainment_emojis = [
 ]
 
 # Xe cộ & Địa điểm
-vehicles_places_emojis = [
+vehiclesPlacesEmojis = [
     "🚗",
     "🚕",
     "🚙",
@@ -664,7 +664,7 @@ vehicles_places_emojis = [
 ]
 
 # Vật dụng & Công cụ
-objects_tools_emojis = [
+objectsToolsEmojis = [
     "⌚",
     "📱",
     "📲",
@@ -851,7 +851,7 @@ objects_tools_emojis = [
 ]
 
 # Biểu tượng & Trái tim
-symbols_hearts_emojis = [ "❤️",
+symbolsHeartsEmojis = [ "❤️",
     "🩷",
     "🧡",
     "💛",
@@ -964,12 +964,14 @@ emotionPunctuations = [
 ]
 
 
-all_icons = (
-    face_people_emojis
-    + animals_nature_emojis
-    + food_drink_emojis
-    + sports_entertainment_emojis
-    + vehicles_places_emojis
-    + objects_tools_emojis
-    + symbols_hearts_emojis
+allIcons = list(
+    dict.fromkeys(
+        facePeopleEmojis
+        + animalsNatureEmojis
+        + foodDrinkEmojis
+        + sportsEntertainmentEmojis
+        + vehiclesPlacesEmojis
+        + objectsToolsEmojis
+        + symbolsHeartsEmojis
+    )
 )

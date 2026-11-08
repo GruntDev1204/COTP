@@ -6,13 +6,19 @@ def formatNumber(number, digits=2):
         return f"{number:.12f}".rstrip("0").rstrip(".")
     n = len(str(int(number))) - 1
     base = str(int(number))[:digits]
-    base_float = round(int(base) / (10 ** (digits - 1)), 2)
-    return f"{base_float}×10^{n}"
+    baseFloat = round(int(base) / (10 ** (digits - 1)), 2)
+    return f"{baseFloat}×10^{n}"
 
 
 def returnIconRandom(number):
-    iconLength = len(all_icons)
+    iconLength = len(allIcons)
     return iconLength**number
+
+
+def caculateModelingPromptPool():
+    maleTotal = len(backgrounds) * len(maleHair) * (2 + 2 * len(maleShoes))
+    femaleTotal = len(backgrounds) * len(femaleHair) * (2 + 2 * len(femaleShoes))
+    return maleTotal, femaleTotal
 
 
 def caculateQuantity():
@@ -36,7 +42,7 @@ def caculateQuantity():
     indoorSourceLightLen = len(indoorItemLightningSource)
     indoorObjectLen = len(indoorObjectItems)
 
-    indoor_total = (
+    indoorTotal = (
         (len(liveNPCEmotions))
         * returnIconRandom(8)
         * titleLen
@@ -72,7 +78,7 @@ def caculateQuantity():
     outdoorObjectDensityLen = len(outdoorObjectDensity)
     outdoorObjectsLen = len(outdoorObjects)
 
-    outdoor_total = (
+    outdoorTotal = (
         (len(liveNPCEmotions))
         * returnIconRandom(8)
         * titleLen
@@ -99,7 +105,7 @@ def caculateQuantity():
         * returnIconRandom(7)
     )
 
-    story_total = (
+    storyTotal = (
         returnIconRandom(10)
         * returnIconRandom(7)
         * len(businesses)
@@ -133,10 +139,11 @@ def caculateQuantity():
         * (len(nameNPC) ** 4)
         * len(sourceInfo)
         * len(gpsLocations)
+        * len(Vehicle)
         * (NPCActionLen**7)
     )
 
-    story2_total = (
+    story2Total = (
         returnIconRandom(10)
         * returnIconRandom(7)
         * returnIconRandom(6)
@@ -146,6 +153,7 @@ def caculateQuantity():
         * 18  # số tuổi của ứng viên
         * len(outdoorView)
         * (900000000001**25)
+        * len(Vehicle)
         * len(weatherConditions)
         * (len(companies) ** 2)
         * (len(liveNPCs) ** 3)
@@ -171,6 +179,7 @@ def caculateQuantity():
         * returnIconRandom(10)
         * returnIconRandom(7)
         * returnIconRandom(6)
+        * len(Vehicle)
         * len(gpsLocations)
         * len(magicTypes)
         * len(businesses)
@@ -181,7 +190,7 @@ def caculateQuantity():
         * len(outDoorSkyStrongObjects)
         * (len(shapes) ** 3)
         * len(outDoorSkyStrongObjectStatus)
-        * (len(status) ** 2)
+        * (len(status) ** 3)
         * len(outdoorObjectDensity)
         * len(outdoorObjects)
         * (len(colors) ** 9)
@@ -197,15 +206,18 @@ def caculateQuantity():
         * len(slogan)
         * len(UpperText)
         * (len(LowerText)**5)
+        * len(GirlActions)
+        * len(BoyActions)
     )
 
     shortStory4Total = (
         (1000000000000000 - 100000000000000 + 1)
         * ((10000000000 -  1000000000 + 1) ** 3)
-        * (900000000001**47)
+        * (900000000001**49)
         * (18**3)
         * returnIconRandom(10)
         * returnIconRandom(7)
+        * len(Vehicle)
         * (len(indoorLocations) ** 3)
         * len(indoorStatus)
         * len(indoorMaterials)
@@ -213,7 +225,7 @@ def caculateQuantity():
         * (len(outdoorView) ** 3)
         * len(weatherConditions)
         * (len(shapes) ** 2)
-        * (len(status) ** 2)
+        * (len(status) ** 3)
         * len(outDoorSkyStrongObjects)
         * len(outDoorSkyStrongObjectStatus)
         * (len(liveNPCActions) ** 15)
@@ -228,14 +240,15 @@ def caculateQuantity():
         * len(liveNPCApperances)
         * len(UpperText)
         * (len(LowerText)**5)
+        * len(GirlActions)
+        * len(BoyActions)
     )
     
     L4D2caseTotal = (
         len(mapsL4D2) *
         len(charactersL4D2) *
         (100 - 1 + 1) *  # HP
-        (len(weaponsL4D2) + 1) *  # có thể không có vũ khí
-        (500 - 1 + 1) *  # ammo
+        (len(weaponsL4D2) * (500 - 1 + 1) + 1) *  # weapon + ammo, or no weapon
         len(meleeL4D2) *
         len(grenadesL4D2) * (5 - 0 + 1) *  # số lượng lựu đạn
         len(pickupsL4D2) * (5 - 0 + 1) *  # số lượng đồ nhặt được
@@ -304,13 +317,14 @@ def caculateQuantity():
         )
     )
     
-    modelingPromptTotal = len(backgrounds) * (2 + 2 * len(shoes))
+    modelingPromptMaleTotal, modelingPromptFemaleTotal = caculateModelingPromptPool()
+    modelingPromptTotal = modelingPromptMaleTotal + modelingPromptFemaleTotal
 
     return (
-        indoor_total,
-        outdoor_total,
-        story_total,
-        story2_total,
+        indoorTotal,
+        outdoorTotal,
+        storyTotal,
+        story2Total,
         shortStory3Total,
         shortStory4Total,
         L4D2caseTotal,

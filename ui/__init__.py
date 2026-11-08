@@ -1,0 +1,1 @@
+"""COTP graphical user interface."""
