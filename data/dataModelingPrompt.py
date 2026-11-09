@@ -135,9 +135,60 @@ maleHair = [
 
 backgrounds = backgroundModeling + backgroundModelingColors
 
-modelSetup = [
-    "Three-quarter thigh-up studio lookbook shot of a professional model, preserve the exact face structure and highly detailed facial features identical to the reference photo, standing perfectly straight in a strict and formal posture, facing directly at the camera, symmetrical frontal alignment, arms naturally down at sides or maximum one hand casually resting inside the pants pocket, never folding arms behind the back, clean e-commerce style, 8k resolution, crisp details, soft floor shadow, professional studio lighting.",
-    "Knee-up fashion studio lookbook portrait of a professional model, preserve the exact face structure and highly detailed facial features identical to the reference photo, standing perfectly straight in a strict and formal posture, facing directly at the camera, symmetrical frontal alignment, arms naturally down at sides or maximum one hand casually resting inside the pants pocket, never folding arms behind the back, clean e-commerce style, 8k resolution, crisp details, soft floor shadow, professional studio lighting.",
-    "Ankle-up fashion studio lookbook portrait of a professional model, preserve the exact face structure and highly detailed facial features identical to the reference photo, standing perfectly straight in a strict and formal posture, facing directly at the camera, symmetrical frontal alignment, arms naturally down at sides or maximum one hand casually resting inside the pants pocket, never folding arms behind the back, clean e-commerce style, 8k resolution, crisp details, soft floor shadow, professional studio lighting. The model is {shoe}.",
-    "Full-body studio lookbook portrait of a professional model, preserve the exact face structure and highly detailed facial features identical to the reference photo, standing perfectly straight in a strict and formal posture, facing directly at the camera, symmetrical frontal alignment, arms naturally down at sides or maximum one hand casually resting inside the pants pocket, never folding arms behind the back, clean e-commerce style, 8k resolution, crisp details, soft floor shadow, professional studio lighting. The model is {shoe}."
+maleArmPoses = [
+    "both arms relaxed straight down at sides, never folding arms behind the back",
+    "arms crossed naturally in front of the torso with relaxed shoulders, never folding arms behind the back",
+    # 3. Một tay đút túi quần (Tối ưu cho mọi cỡ cảnh)
+    "one hand tucked casually at the hip pocket level while the other arm hangs relaxed at the side, never folding arms behind the back",
+]
+
+femaleArmPoses = [
+    "both arms relaxed straight down at sides, never folding arms behind the back",
+    "arms crossed gracefully in front of the torso with poised shoulders, never folding arms behind the back",
+    # 3. Một tay bắn tim (Korean finger heart)
+    "one hand raised near chest level making a cute Korean finger heart gesture toward the camera while the other arm hangs relaxed at the side, never folding arms behind the back",
+]
+
+malePoses = [
+    # --- DÁNG CƠ BẢN & VỮNG CHÃI ---
+    "standing straight in a formal posture with feet shoulder-width apart, facing directly toward the camera",
+    "standing in a confident wide-leg stance, torso upright and facing forward",
+    "standing with legs straight and slightly apart, torso angled at 45 degrees while turning head squarely toward the lens",
+
+    # --- DÁNG BƯỚC ĐI & CHUYỂN TRỌNG TÂM ---
+    "standing with weight shifted firmly onto the back leg while the front leg steps slightly forward, upper body upright and clean, facing directly at the lens",
+    "captured mid-stride in a slow, deliberate walking motion toward the camera, legs in a natural walking step, upper torso straight and composed",
+    "standing with ankles crossed casually while maintaining an upright upper torso, facing forward",
+
+    # --- GÓC THẤP, GÓC CAO & GÓC NGHIÊNG ---
+    "captured from a dramatic low-angle perspective looking upward, standing tall with one foot planted forward, commanding posture",
+    "captured from an elevated high-angle perspective looking slightly downward, feet planted firmly apart, looking straight up into the camera lens",
+    "standing in a sharp side-profile posture with legs in a slight walking stance, torso upright and head turned 90 degrees toward the camera",
+    "standing in a three-quarter rear-angled posture, feet staggered, looking back over the shoulder toward the lens with a clean garment silhouette",
+]
+
+femalePoses = [
+    # --- DÁNG TÔN DÁNG & CHỮ S ---
+    "standing straight in a formal posture with heels together and toes slightly turned out, facing directly toward the camera",
+    "standing in a classic editorial contrapposto pose with weight shifted onto one hip, the opposite knee slightly bent and foot extended forward to elongate the legs, upper torso straight",
+    "standing with one leg crossed gracefully in front of the other at the ankles, creating a sleek vertical silhouette, upper body upright and facing the lens",
+
+    # --- DÁNG BƯỚC ĐI & GÓC NGHIÊNG ---
+    "captured mid-stride in an elegant runway step toward the camera, one foot placed directly in front of the other, upper torso poised and straight",
+    "standing at a soft three-quarter angle with the front foot pointed toward the camera and back foot angled at 45 degrees, torso upright",
+    "standing with knees close together and one heel slightly lifted off the ground, upper body straight and facing forward",
+
+    # --- GÓC THẤP, GÓC CAO & NGOÁI NHÌN ---
+    "captured from a low-angle perspective looking upward to accentuate leg length, standing tall with one leg stepped forward, looking confidently at the lens",
+    "captured from an elevated high-angle perspective looking slightly downward, standing gracefully with feet together, looking up toward the camera",
+    "standing in a slender side-profile posture with one knee slightly bent, torso straight and head turned gracefully toward the camera",
+    "standing in a three-quarter rear-angled posture, one leg stepped back, looking back over the shoulder with a poised upper-body posture",
+]
+
+modelFramings = [
+    # (chuỗi_mô_tả, có_dùng_giày_không)
+    ("Three-quarter thigh-up photorealistic studio lookbook shot of a professional model, {pose}, {armPose}, crisp real-world details, soft studio lighting, shot on 35mm lens, natural skin texture.", False),
+    ("Knee-up fashion studio lookbook photorealistic portrait of a professional model, {pose}, {armPose}, crisp real-world details, soft studio lighting, highly detailed realistic textures, raw photo.", False),
+    ("Ankle-up fashion studio lookbook photorealistic portrait of a professional model, {pose}, {armPose}, soft floor shadow, professional studio lighting, realistic photography style. The model is wearing {shoe}.", True),
+    ("Full-body studio lookbook photorealistic portrait of a professional model, {pose}, {armPose}, clean realistic environment, soft floor shadow, professional studio lighting, shot on high-end DSLR camera. The model is wearing {shoe}.", True),
 ]

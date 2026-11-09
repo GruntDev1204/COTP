@@ -619,7 +619,7 @@ def createInterface():
             20,
             height / 2,
             anchor="w",
-            text="🎲🎭🎰🎪👑 CHAOS ONE-TIME PROMPT (COTP)- AUTHOR: GRUNT 🎭🎰🎪👑🎲",
+            text="🎲🎭🎰🎪👑 CHAOS ONE-TIME PROMPT (COTP) - AUTHOR: GRUNT 🎭🎰🎪👑🎲",
             fill=outerTheme["headerFg"],
             font=("Segoe UI", 13, "bold"),
         )

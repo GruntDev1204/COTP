@@ -23,6 +23,7 @@ def generateIndoorItems():
     return f"{random.choice(quantities)} {random.choice(indoorItems)} {random.choice(indoorItemStatus)}, nó có hình dạng là {random.choice(shapes)}, và đang {random.choice(indoorLightVerb)} là {random.choice(indoorItemLightningSource)} màu {random.choice(colors)} từ bên ngoài"
 
 def generateIndoorObject():
+    
     return f"{random.choice(quantities)} {random.choice(indoorObjectItems)} đang có hình dạng là {random.choice(shapes)} và đang phát quang màu {random.choice(colors)}"
 
 def generateIndoorOutput():
@@ -32,10 +33,10 @@ def generateIndoorOutput():
     indoorObjectStr = generateIndoorObject().strip()
     output = (
         f"{generateOpenScene()}\n"
-        f"Bên trong {location}, trông rất {random.choice(indoorStatus)}, nó được xây bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. "
-        f"Có {indoorItemsStr}. "
-        f"Ở đây, đang có {indoorObjectStr}. "
-        f"{NPCstr}. "
+        f"Bên trong {location}, trông rất {random.choice(indoorStatus)}, nó được xây bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. \n"
+        f"Có {indoorItemsStr}. \n"
+        f"Ở đây, đang có {indoorObjectStr}. \n"
+        f"{NPCstr}. \n\n"
         f"{generateEnding()}"
     )
     return output
@@ -65,11 +66,11 @@ def generateOutdoorOutput():
     output = (
         f"{generateOpenScene()}\n"
         f"{location} đã {outDoorStatusStr} lâu năm, "
-        f"thời tiết thì đang {weatherStr}. "
-        f"{skyStrongObjStr}. "
-        f"Có {skyObjStr}. "
-        f"Tại {outdoorObjStr}. "
-        f"{NPCstr}. "
+        f"thời tiết thì đang {weatherStr}. \n"
+        f"{skyStrongObjStr}. \n"
+        f"Có {skyObjStr}. \n"
+        f"Tại {outdoorObjStr}. \n"
+        f"{NPCstr}. \n\n"
         f"{generateEnding()}"
     )
     return output
