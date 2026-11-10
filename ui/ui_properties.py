@@ -63,8 +63,8 @@ themePalettes = {
 
 outputMenuOptions = [
     "RANDOM 🎲🎲🎲",
-    "Cảnh Indoor",
-    "Cảnh Outdoor",
+    "Indoor Scene Prompt",
+    "Outdoor Scene Prompt",
     "Lovely Prompt",
     "Modeling Prompt",
     "Random Rule L4D2",

@@ -29,12 +29,12 @@ def generateOutput():
     if option == "RANDOM 🎲🎲🎲":
         option = random.choice(
             [
-                "App Date Options",
-                "Cảnh Indoor",
-                "Cảnh Outdoor",
+                "Indoor Scene Prompt",
+                "Outdoor Scene Prompt",
                 "Lovely Prompt",
                 "Modeling Prompt",
                 "Random Rule L4D2",
+                "App Date Options",
                 "Short Story 1 - Curse Breaking Journey",
                 "Short Story 2 - Job Interview",
                 "Short Story 3 - Dating",
@@ -43,9 +43,9 @@ def generateOutput():
         )
 
     match option:
-        case "Cảnh Indoor":
+        case  "Indoor Scene Prompt":
             output = generateIndoorOutput()
-        case "Cảnh Outdoor":
+        case "Outdoor Scene Prompt":
             output = generateOutdoorOutput()
         case "Lovely Prompt":
             output = generateLovelyPrompt()

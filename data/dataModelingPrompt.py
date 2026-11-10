@@ -21,7 +21,25 @@ backgroundModeling = [
     "softly blurred industrial loft wall, minimalist interior",
     "blurred contemporary fashion boutique backdrop with warm glowing lights",
     "out of focus clean architectural concrete wall, minimalist design",
-    "softly blurred serene outdoor garden, natural daylight, clean composition"
+    "softly blurred serene outdoor garden, natural daylight, clean composition",
+    
+    # --- DANH MỤC: BÃI BIỂN & BỜ BIỂN (BEACH & COASTLINE) ---
+    "softly blurred sandy beach with gentle ocean waves at golden hour, warm sunlight, minimalist clean horizon",
+    "out of focus rocky coastline under a clear blue sky, calm sea water, soft natural lighting, minimal details",
+    "blurred tropical white sand beach with distant turquoise water, bright airy daylight, clean composition",
+    "softly blurred moody overcast shoreline, muted gray ocean and wet sand, calm minimalist atmosphere",
+
+    # --- DANH MỤC: SÂN KHẤU & ÁNH ĐÈN NGHỆ THUẬT (STAGE & SPOTLIGHT) ---
+    "out of focus dark concert stage with subtle warm spotlight beams and soft haze, minimalist bokeh background",
+    "softly blurred theater stage backdrop with deep velvet curtains and dim ambient stage lights, clean composition",
+    "blurred minimalist fashion runway stage with sleek dark flooring and soft overhead lighting, minimal details",
+    "out of focus modern studio stage with subtle neon rim lighting and smooth dark gradient backdrop",
+
+    # --- DANH MỤC: ĐỒI NÚI & THIÊN NHIÊN RỘNG LỚN (MOUNTAINS & NATURE) ---
+    "softly blurred misty mountain peaks at dawn, cool morning tones, serene minimalist backdrop",
+    "out of focus tranquil lakeside surrounded by pine trees, soft diffused daylight, clean composition",
+    "blurred vast desert sand dunes under a soft pastel sunset sky, smooth warm textures, minimal details",
+    "softly blurred bamboo forest path with gentle dappled sunlight, calm green tones, clean background",
 ]
 
 backgroundModelingColors = [
@@ -33,7 +51,16 @@ backgroundModelingColors = [
     "solid midnight black",        # Đen tuyền (Ép AI đánh khối ánh sáng studio viền gáy - Rim light rất nghệ)
     "solid deep burgundy wine",    # Đỏ rượu vang chát (Sang trọng, huyền bí, hợp với đồ dạ hội/vest)
     "solid slate gray",            # Xám đá phiến (Màu trung tính lạnh, tạo cảm giác hiện đại, sạch sẽ)
-    "solid dark forest green"      # Xanh lá cây sẫm/rừng sâu (Tạo chiều sâu tuyệt đối cho khung hình)
+    "solid dark forest green",      # Xanh lá cây sẫm/rừng sâu (Tạo chiều sâu tuyệt đối cho khung hình)
+    "solid warm ivory cream",      # Trắng kem ngà ấm (Sáng sủa, tự nhiên, không bị chói gắt như trắng tinh)
+    "solid soft dusty rose",       # Hồng phấn trầm/hồng đất nhẹ (Cực kỳ nịnh da và hợp concept trẻ trung)
+    "solid pastel sage green",     # Xanh bơ/xanh xô thơm pastel (Nhẹ nhàng, hiện đại, chuẩn gu chụp lookbook Hàn Quốc)
+    "solid muted mustard yellow",  # Vàng mù tạt trầm (Tạo điểm nhấn cá tính, nghệ thuật nhưng vẫn giữ độ sâu)
+    "solid soft lavender mist",    # Tím oải hương nhạt (Mộng mơ, lạ mắt mà không hề sến)
+    "solid crisp alabaster white", # Trắng thạch cao mịn (Chuẩn phông nền studio tối giản, sạch bong từng chi tiết)
+    "solid cool ice blue",         # Xanh băng giá nhạt (Tươi mát, thanh thoát, làm nổi bật tóc và trang phục tối màu)
+    "solid rich burnt orange",     # Cam cháy trầm (Tạo hiệu ứng thị giác mạnh mẽ chuẩn bìa tạp chí)
+    "solid deep royal purple",     # Tím hoàng gia trầm (Huyền bí, quyền lực và cực kỳ tôn ánh sáng da)
 ]
 
 #female 
@@ -148,6 +175,11 @@ maleArmPoses = [
     "left hand raised near chest level holding a cigarette loosely between the fingers while the right arm hangs relaxed at the side",
     # Tay phải giơ ngang ngực kẹp điếu thuốc giữa các ngón tay một cách tự nhiên, tay trái buông thõng dọc thân
     "right hand raised near chest level holding a cigarette loosely between the fingers while the left arm hangs relaxed at the side",
+    
+    # Giơ tay trái áp sát dọc theo nửa mặt trái (tự thích nghi theo góc xoay của đầu, kể cả khi ngoái đầu hay nghiêng mặt), tay phải buông tự nhiên
+    "left hand raised vertically with straight fingers held together pointing upward and the back of the hand facing outward, resting naturally against the left cheek to cover the left eye and vertical left half of the face in natural alignment with the head's angle, while the right arm hangs relaxed at the side",
+    # Giơ tay phải áp sát dọc theo nửa mặt phải (tự thích nghi theo góc xoay của đầu, kể cả khi ngoái đầu hay nghiêng mặt), tay trái buông tự nhiên
+    "right hand raised vertically with straight fingers held together pointing upward and the back of the hand facing outward, resting naturally against the right cheek to cover the right eye and vertical right half of the face in natural alignment with the head's angle, while the left arm hangs relaxed at the side",
 ]
 
 femaleArmPoses = [
@@ -169,6 +201,11 @@ femaleArmPoses = [
     "one arm folded horizontally across the waist supporting the elbow of the other arm, whose hand rests gently under the chin",
     # Một bàn tay đưa lên chạm nhẹ dưới cằm thanh thoát, tay còn lại buông thõng tự nhiên dọc thân
     "one hand raised with fingers resting lightly under the chin while the other arm hangs relaxed at the side",
+    
+    # Giơ tay trái thanh thoát áp sát dọc theo nửa mặt trái (tự thích nghi theo góc xoay của đầu), tay phải buông tự nhiên
+    "left hand raised gracefully in a vertical position with straight fingers held neatly together pointing upward and the back of the hand facing outward, resting lightly against the left cheek to cover the left eye and vertical left half of the face in natural alignment with the head's angle, while the right arm hangs relaxed at the side",
+    # Giơ tay phải thanh thoát áp sát dọc theo nửa mặt phải (tự thích nghi theo góc xoay của đầu), tay trái buông tự nhiên
+    "right hand raised gracefully in a vertical position with straight fingers held neatly together pointing upward and the back of the hand facing outward, resting lightly against the right cheek to cover the right eye and vertical right half of the face in natural alignment with the head's angle, while the left arm hangs relaxed at the side",
 ]
 
 malePoses = [
@@ -203,6 +240,16 @@ malePoses = [
     ("standing in a three-quarter rear-angled posture with feet staggered, upright torso and squared shoulders", 1),
     # Đứng quay lưng hoàn toàn 180 độ ra sau, hai chân rộng bằng vai và bờ vai vuông vức (flag = 1)
     ("standing in a full 180-degree rear view with back turned completely away, feet shoulder-width apart and squared shoulders", 1),
+    
+    # Ngồi thẳng lưng trên ghế đẩu, hai chân mở rộng bằng vai và đặt phẳng trên sàn, vai vuông vức
+    ("sitting upright on a minimalist studio stool with legs set shoulder-width apart and feet planted flat on the floor, straight back and squared shoulders", 0),
+    # Ngồi bắt chéo một chân theo kiểu chữ ngũ (cổ chân gác lên đầu gối chân kia), thân trên thẳng và mở
+    ("sitting comfortably on a minimalist studio stool with one ankle resting across the opposite knee in a figure-four leg position, upright torso and open chest", 0),
+    # Ngồi xoay nghiêng góc 3/4 trên ghế đẩu, hai chân đặt vững trên sàn, thân trên thẳng và vai mở
+    ("sitting turned in a three-quarter side profile on a minimalist studio stool with feet planted firmly on the floor, upright torso and squared shoulders", 0),
+    # Ngồi quay lưng góc nghiêng 3/4 trên ghế đẩu, lưng giữ thẳng và bờ vai vuông vức (flag = 1)
+    ("sitting in a three-quarter rear-angled posture on a minimalist studio stool with back turned partially away, upright spine and squared shoulders", 1),
+
 ]
 
 femalePoses = [
@@ -237,6 +284,15 @@ femalePoses = [
     ("standing in a three-quarter rear-angled posture, one leg stepped back, with a poised upper-body posture", 1),
     # Đứng quay lưng hoàn toàn 180 độ ra sau, hai chân khép sát và giữ dáng thẳng (flag = 1)
     ("standing in a full 180-degree rear view with back turned completely away, feet close together and upright posture", 1),
+    
+    # Ngồi thẳng lưng thanh lịch trên ghế đẩu, hai đầu gối khép sát và duỗi chéo sang một bên để kéo dài đôi chân
+    ("sitting gracefully on a minimalist studio stool with knees close together and legs angled diagonally to one side to elongate the silhouette, upright torso", 0),
+    # Ngồi bắt chéo chân duyên dáng ở phần đầu gối, mũi chân hướng nhẹ xuống dưới, thân trên thẳng gọn
+    ("sitting on a minimalist studio stool with legs crossed neatly at the knees and toes pointed softly downward, maintaining a poised and upright upper torso", 0),
+    # Ngồi xoay nghiêng góc 3/4 thanh thoát trên ghế đẩu, hai đầu gối khép nhẹ và duỗi chéo, lưng giữ thẳng
+    ("sitting turned in a graceful three-quarter side profile on a minimalist studio stool with knees softly together and legs angled diagonally, upright posture", 0),
+    # Ngồi quay lưng góc nghiêng 3/4 trên ghế đẩu, hai chân khép gọn gàng, giữ dáng lưng thẳng thanh thoát (flag = 1)
+    ("sitting in a three-quarter rear-angled posture on a minimalist studio stool with back turned partially away, legs neatly together and poised upright posture", 1),
 ]
 
 maleExpressions = [
@@ -267,7 +323,14 @@ maleExpressions = [
     "with an intense, stoic expression, unblinking focused eyes, and a firmly set jawline",
     # Nụ cười nửa miệng sắc sảo với đôi mắt hơi nheo lại đầy tự tin
     "with a sharp, calculating half-smile and subtly narrowed, confident eyes",
-
+    
+    # Nhướng một bên chân mày nghi hoặc, mắt hơi nheo lại đầy vẻ khó hiểu (biểu cảm 🤨)
+    "with one eyebrow raised skeptically and slightly narrowed eyes in a quizzical, doubtful expression",
+    # Nhướng cao một bên chân mày đầy vẻ phán xét và hoài nghi, môi khép chặt
+    "with a deadpan, skeptical expression, one eyebrow arched high in disbelief, and firmly closed lips",
+    
+    # Giật mình hoảng hốt bất ngờ như vừa bị ai đó hù, mắt mở to, chân mày giật bắn lên và miệng há hốc rõ nét
+    "with a sudden startled expression as if caught off guard, wide-eyed, eyebrows jolted upward, and mouth open in a surprised gasp",
 ]
 
 femaleExpressions = [
@@ -302,7 +365,12 @@ femaleExpressions = [
     "with a soft, contemplative expression, gently relaxed lips, and wide, clear eyes",
     # Nụ cười mím môi dịu dàng, e thẹn với sắc mặt tươi tắn tự nhiên
     "with a gentle, understated closed-lip smile and a soft, natural complexion",
+    
+    # Nháy một bên mắt kiêu kỳ, quyến rũ kèm nụ cười mỉm tự tin đầy cuốn hút
+    "with a poised, alluring wink of one eye and a confident, subtle closed-mouth smile",
 
+    #Giật mình hoảng hốt bất ngờ như vừa bị hù, đôi mắt mở tròn xoe, chân mày nhướng cao và miệng há hốc kinh ngạc
+    "with a sudden startled, flustered expression as if startled by a sudden noise, eyes wide open, raised eyebrows, and mouth open in a surprised gasp",
 ]
  
 modelGazes = [

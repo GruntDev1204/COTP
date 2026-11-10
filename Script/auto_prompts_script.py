@@ -3,6 +3,45 @@ from data.data import *
 from Script.common_script import *
 
 #prompt for AI Art
+
+#Indoor scene prompt
+def generateIndoorOutput():
+    NPCstr = generateNPC().strip()
+    location = random.choice(indoorLocations).strip()
+    indoorItemsStr = generateIndoorItems().strip()
+    indoorObjectStr = generateIndoorObject().strip()
+    output = (
+        f"{generateOpenScene()}\n"
+        f"Bên trong {location}, trông rất {random.choice(indoorStatus)}, nó được xây bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. \n"
+        f"Có {indoorItemsStr}. \n"
+        f"Ở đây, đang có {indoorObjectStr}. \n"
+        f"{NPCstr}. \n\n"
+        f"{generateEnding()}"
+    )
+    return output
+
+# Outdoor scene prompt
+def generateOutdoorOutput():
+    NPCstr = generateNPC().strip()
+    location = random.choice(outdoorView).strip()
+    outDoorStatusStr = random.choice(outDoorStatus).strip()
+    weatherStr = random.choice(weatherConditions).strip()
+    skyStrongObjStr = returnOutdoorSkyStrongObject().strip()
+    skyObjStr = generateOutdoorSkyObject().strip()
+    outdoorObjStr = generateOutdoorObject().strip()
+    output = (
+        f"{generateOpenScene()}\n"
+        f"{location} đã {outDoorStatusStr} lâu năm, "
+        f"thời tiết thì đang {weatherStr}. \n"
+        f"{skyStrongObjStr}. \n"
+        f"Có {skyObjStr}. \n"
+        f"Tại {outdoorObjStr}. \n"
+        f"{NPCstr}. \n\n"
+        f"{generateEnding()}"
+    )
+    return output
+
+# Romantic prompt
 def generateLovelyPrompt():
     typeLocation = random.randint(1,2)
     
@@ -40,7 +79,7 @@ def generateLovelyPrompt():
         )
     return output
 
-
+# Modeling prompt
 def generateModelingPrompt():
     gender = random.choice(["male", "female"])
     selectedPose, gazeFlag = random.choice(globals()[f"{gender}Poses"])

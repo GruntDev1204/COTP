@@ -2,12 +2,7 @@ import random
 from data.data import *
 from Script.common_script import *
 
-def generateRandomReciprocal():
-    denominator = random.randint(100_000_000_000, 1_000_000_000_000)
-    return f"(1/{denominator})"
 
-def generateRandomWord():
-    return random.choice(UpperText) + "".join(random.choices(LowerText, k=5))
 
 # short story 1
 def generateShortStory1():
@@ -86,18 +81,18 @@ def generateShortStory2():
         f"Ứng viên ngập ngừng đáp: Vâng, đúng là tôi đã từng làm việc bên đó. Và để trả lời cho câu hỏi của cô thì lí do tôi nghĩ là vì... bên này có cô HR xinh đẹp này làm tôi {random.choice(status)} từ lâu 🤡! "
         f"Tôi đùa đấy... thật ra thì tôi không còn hứng thú với công việc bên đó nữa nên tôi quyết định nghỉ việc và tạm thư giãn ở nhà {random.randint(100000000000, 1000000000000):,} năm. "
         f"Sau đó, tôi đã nộp {random.randint(100000000000, 1000000000000):,} cái CV để có thể có được cơ hội vào vòng phỏng vấn ở công ty này!\n\n"
-        f"Cô ứng viên 2 má tự dưng dần chuyển sang {random.choice(colors)} vì ngượng ngùng. Nhưng cô vẫn giữ được sự nghiêm túc và lại tiếp tục: \n\n"
+        f"Cô HR 2 má tự dưng dần chuyển sang {random.choice(colors)} vì ngượng ngùng. Nhưng cô vẫn giữ được sự nghiêm túc và lại tiếp tục: \n\n"
         f" - Mồm miệng anh cũng ghê thật đó... Không biết tối nay ai đó có chịu đúng hẹn không mà bày đặt... À mà, trong CV của anh mục Kinh nghiệm có ghi rằng là lúc {random.randint(1, 18)} tuổi, anh đã từng hack thành công vào Ngân Hàng SIDA Liên Bang Quốc Tế để trộm đi {generateRandomReciprocal()}$ và {generateRandomReciprocal()} thỏi vàng sao? \n\n"
-        f"Ứng viên thật thà đáp: - Dạ, báo cáo đồng chí HR, tôi không giấu gì cô. Tôi cũng đã bị phán {random.randint(1000000000, 10000000000):,} năm tù ở 1 phiên tòa được diễn ra tại {random.choice(outdoorView)} và phải khổ sai bằng việc {random.choice(liveNPCActions)} liên tục trong {random.randint(100000000000, 1000000000000):,} năm. Và do tôi thực hiện cải tạo tốt nên được mãn hạn sớm. \n\n"
-        f"Cô ứng viên mỉm cười: - Đánh giá sơ bộ tôi đưa ra nhận định thế này, anh cũng thật thà phết nhỉ? Tôi thích anh rồi đó! ...Bây giờ, vào việc quan trọng chính nhé. Về việc thực hiện chủ trương của CEO trong buổi phỏng vấn này, anh hãy nói vị trí mà anh đang muốn vào nhất, công việc anh muốn làm nhất và mức lương anh muốn nhất? Hãy thành thật nha! \n\n"
-        f"Ứng viên dõng dạc: - Được rồi, tôi xin thành thật và không giấu diếm gì cả! Yêu cầu của tôi khá là khắt khe nha. Tôi muốn vào vị trí {random.choice(NPCjobs).upper()}, công việc tôi muốn làm là {random.choice(liveNPCActions)}. Mức lương tôi muốn nhất là {generateRandomReciprocal()}$ , cô thấy sao? Yêu cầu này có quá cao không? \n\n"
-        f"Cô ứng viên nhẹ nhàng: - Cá nhân tôi thì thấy anh cũng xứng đáng với điều đó chứ không thực sự quá cao. Được rồi, tôi bây giờ sẽ phải đi họp lại với ban nhân sự trước khi ra quyết định! Anh vui lòng chờ trong {random.randint(1000000000, 10000000000):,} phút nhá, tôi sẽ quay lại và cho anh biết kết quả sớm nhất!\n\n"
+        f"Anh ứng viên thật thà đáp: - Dạ, báo cáo đồng chí HR, tôi không giấu gì cô. Tôi cũng đã bị phán {random.randint(1000000000, 10000000000):,} năm tù ở 1 phiên tòa được diễn ra tại {random.choice(outdoorView)} và phải khổ sai bằng việc {random.choice(liveNPCActions)} liên tục trong {random.randint(100000000000, 1000000000000):,} năm. Và do tôi thực hiện cải tạo tốt nên được mãn hạn sớm. \n\n"
+        f"Cô HR bắt đầu nghiêm túc: - Đánh giá sơ bộ tôi đưa ra nhận định thế này, anh cũng thật thà phết nhỉ? Tôi thích anh rồi đó! ...Bây giờ, vào việc quan trọng chính nhé. Về việc thực hiện chủ trương của CEO trong buổi phỏng vấn này, anh hãy nói vị trí mà anh đang muốn vào nhất, công việc anh muốn làm nhất và mức lương anh muốn nhất? Hãy thành thật nha! \n\n"
+        f"Anh ứng viên dõng dạc: - Được rồi, tôi xin thành thật và không giấu diếm gì cả! Yêu cầu của tôi khá là khắt khe nha. Tôi muốn vào vị trí {random.choice(NPCjobs).upper()}, công việc tôi muốn làm là {random.choice(liveNPCActions)}. Mức lương tôi muốn nhất là {generateRandomReciprocal()}$ , cô thấy sao? Yêu cầu này có quá cao không? \n\n"
+        f"Cô HR nhẹ nhàng: - Cá nhân tôi thì thấy anh cũng xứng đáng với điều đó chứ không thực sự quá cao. Được rồi, tôi bây giờ sẽ phải đi họp lại với ban nhân sự trước khi ra quyết định! Anh vui lòng chờ trong {random.randint(1000000000, 10000000000):,} phút nhá, tôi sẽ quay lại và cho anh biết kết quả sớm nhất!\n\n"
         f"Lúc cô HR rời đi, anh ứng viên đã lấy ra điếu thuốc dài {random.randint(100000000000, 1000000000000):,}m ra đốt và rít 1 hơi dài để giải tỏa áp lực. Xung quanh anh, các ứng viên khác đang {random.choice(liveNPCActions)} trong giờ giải lao giữa buổi phỏng vấn.\n\n"
-        f"Sau khi họp xong, các đại diện nhân sự quay lại với ứng viên của mình để thông báo kết quả. Cô ứng viên kia cũng quay lại với anh HR của mình. \n\n"
+        f"Sau khi họp xong, các đại diện nhân sự quay lại với ứng viên của mình để thông báo kết quả. Cô HR kia cũng quay lại với anh ứng viên của mình. \n\n"
         f"Cô HR mỉm cười và nói với anh ứng viên: - Xin được chúc mừng anh! kết quả thành công ngoài mong đợi, bên phía nhân sự của công ty đã bỏ {random.randint(100000000000, 1000000000000):,} phiếu để tuyển anh! "
         f"Chưa kể là nếu anh làm việc đủ {random.randint(100000000000, 1000000000000):,} năm nữa thì lương của anh sẽ tăng thêm {generateRandomReciprocal()}% mức lương hiện tại anh yêu cầu! Ngày mai anh có thể bắt đầu đi làm rồi!\n\n"
         f"Anh ứng viên vui mừng: - Vậy thì quá tốt rồi! Vậy là...tôi sẽ được gặp cô mỗi ngày...nhỉ? À mà, còn lời mời của tôi trước đó thì...cô đồng ý chứ? \n\n"
-        f"Cô ứng viên im lặng, chỉ mỉm cười. Và rồi cô vấp té cắm đầu vì không để ý và nhào lộn {random.randint(100000000000, 1000000000000):,} vòng rồi đứng dậy. Sau đó, vì ngại ngùng mà cô đã {random.choice(liveNPCActions)} để chữa quê, sau đó bỏ đi. Nhưng cô cố tình làm rơi mảnh giấy nhỏ gần chân anh ứng viên. \n\n"
+        f"Cô HR im lặng, rồi chỉ {random.choice(liveNPCActions)}. Và rồi cô vấp té cắm đầu vì không để ý và nhào lộn {random.randint(100000000000, 1000000000000):,} vòng rồi đứng dậy. Sau đó, vì ngại ngùng mà cô đã {random.choice(liveNPCActions)} để chữa quê, sau đó bỏ đi. Nhưng cô cố tình làm rơi mảnh giấy nhỏ gần chân anh ứng viên. \n\n"
         f"Anh ứng viên cũng không nói gì thêm nữa, nhưng tò mò mở mảnh giấy đó ra đọc. Bên trong ghi: `Tối nay tôi tan làm lúc {random.randint(17, 24)}giờ, anh hãy đến công ty đón tôi. Ngoài ra, tôi cũng muốn tăng 2 cho cuộc hẹn của chúng ta là {random.choice(liveNPCActions)} ở {random.choice(indoorLocations)}. Số điện thoại của tôi kèm ở dưới nha! Còn nữa, tôi làm ở văn phòng nhân sự tại tầng {random.randint(100000000000, 1000000000000):,} tòa nhà {random.choice(buildings)} của công ty. "
         f"Tạm thời thì thang máy ở đó đang bảo trì {random.randint(100000000000, 1000000000000):,} năm nên anh chịu khó đi thang bộ nhé 😉!! Vào Buổi trưa thì tôi hay ăn trưa tại 1 quán quen tại {random.choice(outdoorView)} cách ở đây {random.randint(100000000000, 1000000000000):,}km 😉` và có 1 từ kì lạ phía cuối tờ giấy là `{generateRandomWord()}` \n\n"
         f"Anh ứng viên hiểu ý và vui vẻ cười lớn rồi bỏ mảnh giấy vào túi áo. Sau đó, anh ta bước ra {random.choice(outdoorView)} gần đó để lấy chiếc {random.choice(Vehicle).upper()} của mình và ra về! Hôm đó, tâm trạng anh trông rất {random.choice(liveNPCEmotions)}. \n"

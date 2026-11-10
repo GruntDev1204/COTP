@@ -177,7 +177,7 @@ def caculateQuantity():
         * (len(liveNPCs) ** 3)
         * len(liveNPCApperances)
         * (len(liveNPCEmotions) ** 4)
-        * (len(liveNPCActions) ** 12)
+        * (len(liveNPCActions) ** 13)
         * (len(nameNPC) ** 3)
         * (len(indoorLocations) ** 2)
         * len(indoorStatus)

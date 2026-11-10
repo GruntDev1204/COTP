@@ -11,8 +11,8 @@ PROJECT_DIR = Path(
 SCRIPT_DIR = PROJECT_DIR / "Script"
 
 MENU_GENERATORS = {
-    "Cảnh Indoor": "generateIndoorOutput",
-    "Cảnh Outdoor": "generateOutdoorOutput",
+    "Indoor Scene Prompt": "generateIndoorOutput",
+    "Outdoor Scene Prompt": "generateOutdoorOutput",
     "Lovely Prompt": "generateLovelyPrompt",
     "Modeling Prompt": "generateModelingPrompt",
     "Random Rule L4D2": "ruleL4D2",

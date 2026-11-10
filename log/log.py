@@ -166,35 +166,38 @@ def buildFullStats(timestamp=None):
         "modelingPrompt": modelingPromptTotal,
         "total": totalCombinations,
     }
-    statsText = f"""📊📊📊 Tổng hợp nội dung có thể tạo bởi COTP (latest):
-Updated Timestamp: {timestamp}
-Cảnh Indoor: {indoorTotal:,} [👉 {formatNumber(abs(indoorTotal), 2)}]
-Cảnh Outdoor: {outdoorTotal:,} [👉 {formatNumber(abs(outdoorTotal), 2)}]
-L4D2 Case: {l4d2Total:,} [👉 {formatNumber(abs(l4d2Total), 2)}]
-appDateTotal: {appDateTotal:,} [👉 {formatNumber(abs(appDateTotal), 2)}]
-Short Story 1 - Curse Breaking Journey: {storyTotal:,} [👉 {formatNumber(abs(storyTotal), 2)}]
-Short Story 2 - Job Interview: {story2Total:,} [👉 {formatNumber(abs(story2Total), 2)}]
-Short Story 3 - Dating: {story3Total:,} [👉 {formatNumber(abs(story3Total), 2)}]
-Short Story 4 - Rebellious Past: {story4Total:,} [👉 {formatNumber(abs(story4Total), 2)}]
-Lovely Prompt: {lovelyPromptTotal:,} [👉 {formatNumber(abs(lovelyPromptTotal), 2)}]
-Modeling Prompt Male: {modelingMaleTotal:,} [👉 {formatNumber(abs(modelingMaleTotal), 2)}]
-Modeling Prompt Female: {modelingFemaleTotal:,} [👉 {formatNumber(abs(modelingFemaleTotal), 2)}]
-Modeling Prompt: {modelingMaleTotal:,} + {modelingFemaleTotal:,} = {modelingPromptTotal:,} [👉 {formatNumber(abs(modelingPromptTotal), 2)}]
-TOTAL : {totalCombinations:,} [👉 {formatNumber(abs(totalCombinations), 2)}]
-=======================================================================================
-📊📢📢📢 Phân tích chi tiết:
-Độ dài của con số tổng tổ hợp khả năng của Indoor: {len(str(indoorTotal))} số
-Độ dài của con số tổng tổ hợp khả năng của Outdoor: {len(str(outdoorTotal))} số
-Độ dài của con số tổng kịch bản của L4D2: {len(str(l4d2Total))} số
-Độ dài của con số tổng tổ hợp khả năng của appDate: {len(str(appDateTotal))} số
-Độ dài của con số tổng tổ hợp khả năng của Story 1 - Curse Breaking Journey: {len(str(storyTotal))} số
-Độ dài của con số tổng tổ hợp khả năng của Story 2 - Job Interview: {len(str(story2Total))} số
-Độ dài của con số tổng tổ hợp khả năng của Story 3 - Dating: {len(str(story3Total))} số
-Độ dài của con số tổng tổ hợp khả năng của Story 4 - Rebellious Past: {len(str(story4Total))} số
-Độ dài của con số tổng tổ hợp khả năng của Lovely Prompt: {len(str(lovelyPromptTotal))} số
-Độ dài của con số tổng tổ hợp khả năng của Modeling Prompt Male: {len(str(modelingMaleTotal))} số
-Độ dài của con số tổng tổ hợp khả năng của Modeling Prompt Female: {len(str(modelingFemaleTotal))} số
-Độ dài của con số tổng tổ hợp khả năng của Modeling Prompt: {len(str(modelingPromptTotal))} số
-Độ dài của con số tổng tổ hợp : {len(str(totalCombinations))} số
+    statsText = f"""📊📊📊 Tổng không gian trạng thái của COTP (COTP - Total Combinations and Possibilities):
+Updated Timestamp (latest): {timestamp}
+=================================================================================================
+🖼️🎨 PROMPTS FOR AI ART MENU:
+    - Indoor Scene Prompt: {indoorTotal:,} [👉 {formatNumber(abs(indoorTotal), 2)}]
+    - Outdoor Scene Prompt: {outdoorTotal:,} [👉 {formatNumber(abs(outdoorTotal), 2)}]
+    - Lovely Prompt: {lovelyPromptTotal:,} [👉 {formatNumber(abs(lovelyPromptTotal), 2)}]
+    - Modeling Prompt: {modelingMaleTotal:,} (Male) + {modelingFemaleTotal:,} (Female)= {modelingPromptTotal:,} [👉 {formatNumber(abs(modelingPromptTotal), 2)}]
+🕹️🎮 ANY GAMES RULE CUSTOM:
+    - L4D2 Case: {l4d2Total:,} [👉 {formatNumber(abs(l4d2Total), 2)}]
+    - appDateTotal: {appDateTotal:,} [👉 {formatNumber(abs(appDateTotal), 2)}]
+🎲📖 SHORT STORIES MENU:
+    - Short Story 1 - Curse Breaking Journey: {storyTotal:,} [👉 {formatNumber(abs(storyTotal), 2)}]
+    - Short Story 2 - Job Interview: {story2Total:,} [👉 {formatNumber(abs(story2Total), 2)}]
+    - Short Story 3 - Dating: {story3Total:,} [👉 {formatNumber(abs(story3Total), 2)}]
+    - Short Story 4 - Rebellious Past: {story4Total:,} [👉 {formatNumber(abs(story4Total), 2)}]
+📜TOTAL : {totalCombinations:,} [👉 {formatNumber(abs(totalCombinations), 2)}]
+=====================================================================================================
+📊📢📢📢 Phân tích chi tiết (Details):
+🖼️🎨 PROMPTS FOR AI ART MENU:
+    - Indoor combinations (digits): {len(str(indoorTotal))}
+    - Outdoor combinations (digits): {len(str(outdoorTotal))}
+    - Lovely Prompt combinations (digits): {len(str(lovelyPromptTotal))}
+    - Modeling Prompt combinations (digits): {len(str(modelingMaleTotal))} (Male) + {len(str(modelingFemaleTotal))} (Female)= {len(str(modelingPromptTotal))}
+🕹️🎮 ANY GAMES RULE CUSTOM:
+    - L4D2 scenarios (digits): {len(str(l4d2Total))}
+    - appDate combinations (digits): {len(str(appDateTotal))}
+🎲📖 SHORT STORIES MENU:
+    - Story 1 - Curse Breaking Journey combinations (digits): {len(str(storyTotal))}
+    - Story 2 - Job Interview combinations (digits): {len(str(story2Total))}
+    - Story 3 - Dating combinations (digits): {len(str(story3Total))}
+    - Story 4 - Rebellious Past combinations (digits): {len(str(story4Total))}
+📜TOTAL combinations (digits): {len(str(totalCombinations))}
 """
     return statsText, stats
