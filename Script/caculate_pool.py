@@ -19,8 +19,20 @@ def caculateModelingPromptPool():
     noShoeCount = sum(1 for _, hasShoe in modelFramings if not hasShoe)
     hasShoeCount = sum(1 for _, hasShoe in modelFramings if hasShoe)
 
-    maleSetupPool = len(malePoses) * len(maleArmPoses) * (noShoeCount + hasShoeCount * len(maleShoes))
-    femaleSetupPool = len(femalePoses) * len(femaleArmPoses) * (noShoeCount + hasShoeCount * len(femaleShoes))
+    maleSetupPool = (
+        len(malePoses)
+        * len(maleArmPoses)
+        * len(modelGazes)
+        * len(maleExpressions)
+        * (noShoeCount + hasShoeCount * len(maleShoes))
+    )
+    femaleSetupPool = (
+        len(femalePoses)
+        * len(femaleArmPoses)
+        * len(modelGazes)
+        * len(femaleExpressions)
+        * (noShoeCount + hasShoeCount * len(femaleShoes))
+    )
 
     maleTotal = len(backgrounds) * len(maleHair) * maleSetupPool
     femaleTotal = len(backgrounds) * len(femaleHair) * femaleSetupPool
@@ -165,7 +177,7 @@ def caculateQuantity():
         * (len(liveNPCs) ** 3)
         * len(liveNPCApperances)
         * (len(liveNPCEmotions) ** 4)
-        * (len(liveNPCActions) ** 11)
+        * (len(liveNPCActions) ** 12)
         * (len(nameNPC) ** 3)
         * (len(indoorLocations) ** 2)
         * len(indoorStatus)
@@ -177,6 +189,7 @@ def caculateQuantity():
         *len(slogan)
         *len(proverbs)
         *(len(outdoorView)**3)
+        * len(indoorObjectItems)
     )
 
     shortStory3Total = (
@@ -253,6 +266,7 @@ def caculateQuantity():
         * len(GirlActions)
         * len(BoyActions)
         * len(quantities)
+        * len(outDoorStatus)
     )
     
     L4D2caseTotal = (

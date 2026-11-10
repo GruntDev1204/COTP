@@ -310,6 +310,15 @@ status = [
     "sầu muộn",
     "trầm tư",
     "xa xăm",
+    "kỳ quặc",
+    "kỳ cục",
+    "kỳ bí",
+    "chớt quớt",
+    "lag lag",
+    "khùng điên",
+    "vô trụ",
+    "không xác định",
+    "bí ẩn",
 ]
 
 

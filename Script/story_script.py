@@ -58,8 +58,8 @@ def generateShortStory2():
     output = (
         f"SHORT STORY 2: Job Interview {generateRandomIcons(10)}\n\n"
         f"Một ngày {random.choice(weatherConditions)} tại {random.choice(companies).upper()} COMPANY!!!\n"
-        f"Công ty này vốn là công ty con của công ty con của công ty con của công ty con của {random.choice(companies)} Company. \n"
-        f"Hôm nay, công ty này sẽ diễn ra một buổi phỏng vấn ứng viên đặc biệt - Cuộc phỏng vấn không giới hạn với triết lý '{random.choice(slogan)}'. \n"
+        f"Công ty này vốn là công ty con của công ty con của công ty con của công ty con của {random.choice(companies)} Company, đây là một công ty chuyên về {random.choice(liveNPCActions)} và chuyên cung cấp {random.choice(indoorObjectItems)} có uy tín trong địa phương. \n"
+        f"Hôm nay, tại công ty này sẽ diễn ra một buổi phỏng vấn ứng viên đặc biệt - Cuộc phỏng vấn không giới hạn với triết lý '{random.choice(slogan)}'. \n"
         f"Đang có tổng cộng {random.randint(100000000000, 1000000000000):,} ứng viên đang ở tại sảnh chờ {random.randint(100000000000, 1000000000000):,}km2 của công ty này.\n"
         f"Tất cả ứng viên đều là {random.choice(liveNPCs)}. Ai cũng {random.choice(liveNPCApperances)}, nhìn bọn họ trông có vẻ {random.choice(liveNPCEmotions)}, và đang {random.choice(liveNPCActions)} trong lúc chờ đến lượt phỏng vấn của mình.\n"
         f"Một lúc sau, {random.randint(100000000000, 1000000000000):,} {random.choice(liveNPCs)} đều có mặt, họ là đại diện phòng nhân sự của công ty. Đang chuẩn bị tiến hành buổi phỏng vấn đặc biệt này.\n\n"
@@ -164,7 +164,7 @@ def generateShortStory4():
     mainDuration = random.randint(100000000000, 1000000000000)
     output = (
         f"SHORT STORY 4 : Rebellious Past {generateRandomIcons(10)}\n\n"
-        f"Tọa lạc tại {random.choice(outdoorView).upper()}, có thời tiết {random.choice(weatherConditions)}. Bầu trời đang trông có vẻ {random.choice(status)}, "
+        f"Tọa lạc tại {random.choice(outdoorView).upper()} trông {random.choice(outDoorStatus)} lâu năm. Ở đây, tình hình thời tiết phức tạp, thời tiết luôn {random.choice(weatherConditions)} vài năm gần đây. Bầu trời đang trông có vẻ {random.choice(status)}, "
         f"có {random.choice(quantities)} {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} và bị {random.choice(outDoorSkyStrongObjectStatus)} đang phát ra ánh sáng màu {random.choice(colors)}. "
         f"Đây quả thật là một khung cảnh {random.choice(status)}. \n\n"
         f"Có một {random.choice(indoorLocations)}, trông có vẻ {random.choice(indoorStatus)}. Và nó được xây dựng bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. "

@@ -11,16 +11,17 @@ def generateLovelyPrompt():
         f"Hai người này là cặp đôi yêu nhau rất sâu đậm. Chàng trai rất đẹp trai và có đôi mắt 2 mí rất đẹp, áo của chàng trai đóng thùng gọn gàng. Còn cô gái thì có nhan sắc xinh đẹp tuyệt trần. \n"
         f"Tóc của chàng trai để kiểu {random.choice(fashionHairMale)}, cô gái thì có kiểu tóc {random.choice(fashionHairFemale)}. \n"
         f"Chàng trai đang {random.choice(BoyActions)}. Còn cô gái thì đang {random.choice(GirlActions)}. \n"
-        f"Bọn họ đang {random.choice(LoveActions)} và trông họ có vẻ {random.choice(liveNPCEmotions)}. \n"
+        f"Bọn họ đang {random.choice(LoveActions)} và trông họ có vẻ {random.choice(liveNPCEmotions)}. \n\n"
+        f"Và khung cảnh cặp đôi này đang hẹn hò là: \n"
     )
     
     endingStatus = ( f"Đây thật là khung cảnh {random.choice(status)}! \n"
-                     f"Cảm xúc chung có thể nói là : {''.join(random.choices(loveIcons, k=4))}" ) 
+                     f"Cảm xúc chung của cặp đôi có thể nói là : {''.join(random.choices(loveIcons, k=4))}" ) 
     
     if typeLocation == 1:
         output = (
-            f"{commonSence}\n"
-            f"Và khung cảnh bọn họ đang hẹn hò là: Ở bên trong {random.choice(indoorLocations).strip()} {random.choice(indoorStatus)} lâu năm. \n"
+            f"{commonSence}"
+            f"Ở bên trong {random.choice(indoorLocations).strip()} {random.choice(indoorStatus)} lâu năm. \n"
             f"Nó được xây bằng {random.choice(indoorMaterials)} và sơn màu {random.choice(colors)}. \n"
             f"Tại đó, {generateIndoorItems().strip()}. \n"
             f"Và cũng đang có {generateIndoorObject().strip()} ở đây. \n"
@@ -29,8 +30,8 @@ def generateLovelyPrompt():
         )
     else:
         output = (
-            f"{commonSence}\n"
-            f"Và bọn họ đang hẹn hò ở khung cảnh là : {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm \n"
+            f"{commonSence}"
+            f"{random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm \n"
             f"và đang có thời tiết {random.choice(weatherConditions).strip()}. \n"
             f"{returnOutdoorSkyStrongObject().strip()}. \n"
             f"Và cũng đang có {generateOutdoorSkyObject().strip()}. \n"
@@ -42,8 +43,10 @@ def generateLovelyPrompt():
 
 def generateModelingPrompt():
     gender = random.choice(["male", "female"])
-    selectedPose = random.choice(globals()[f"{gender}Poses"])
+    selectedPose, gazeFlag = random.choice(globals()[f"{gender}Poses"])
     selectedArmPose = random.choice(globals()[f"{gender}ArmPoses"])
+    selectedGaze = random.choice(modelGazes)[gazeFlag]
+    selectedExpression = random.choice(globals()[f"{gender}Expressions"])
     framingText, hasShoe = random.choice(modelFramings)
     
     if hasShoe:
@@ -51,17 +54,24 @@ def generateModelingPrompt():
         setupText = framingText.format(
             pose=selectedPose, 
             armPose=selectedArmPose, 
+            gaze=selectedGaze,
+            expression=selectedExpression,
             shoe=shoeChoice
         )
     else:
         setupText = framingText.format(
             pose=selectedPose, 
-            armPose=selectedArmPose
+            armPose=selectedArmPose,
+            gaze=selectedGaze,
+            expression=selectedExpression
         )
 
     return (
-        f"[Note: Strictly preserve 100% of the facial features, facial structure, identity, and original outfits from the source reference photo. " 
-        f"Do not alter the face or clothing, and do not add extra accessories. Output must be a realistic photograph]. \n\n"
+        f"[Note: Strictly maintain 100% accurate facial recognition, bone structure, and unique facial features of the subject from the source reference photo, "
+        f"ensuring it is unmistakably the exact same person, while naturally adapting the head angle, gaze direction, and facial expression as described in the prompt. "
+        f"Strictly preserve 100% of the original outfit and existing accessories without altering or redesigning them. "
+        f"However, if the prompt explicitly requests new items or accessories that conflict with or replace existing ones in the reference photo, prioritize and apply the prompt's instructions over the source photo. "
+        f"Output must be a realistic photograph]. \n\n"
         f"This is a {gender.upper()} MODEL: \n"
         f" - {setupText} \n"
         f" - The hairstyle is: {random.choice(globals()[f'{gender}Hair'])}. \n"
