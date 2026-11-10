@@ -7,7 +7,7 @@ def generateRandomIcons(quantity):
     return " ".join(random.choices(allIcons, k=quantity))
 
 def generateNPC():
-    return f"Xung quanh, {random.choice(quantities)} {random.choice(liveNPCs)} {random.choice(liveNPCApperances)}, nhìn họ trông có vẻ {random.choice(liveNPCEmotions)} và họ đang {random.choice(liveNPCActions)}"
+    return f"Xung quanh, {random.choice(quantities)} {random.choice(liveNPCs)} {random.choice(liveNPCApperances)}, nhìn họ trông có vẻ {random.choice(liveNPCEmotions)}, và đang {random.choice(liveNPCActions)}"
 
 def generateOpenScene():
     return f"{generateRandomIcons(4)} - Đây là một khung cảnh {random.choice(starting).strip()} - {generateRandomIcons(4)}:\n"

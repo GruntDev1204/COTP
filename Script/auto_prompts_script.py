@@ -55,7 +55,7 @@ def generateLovelyPrompt():
     )
     
     endingStatus = ( f"Đây thật là khung cảnh {random.choice(status)}! \n"
-                     f"Cảm xúc chung của cặp đôi có thể nói là : {''.join(random.choices(loveIcons, k=4))}" ) 
+                     f"Cảm xúc chung của cặp đôi có thể nói là: {''.join(random.choices(loveIcons, k=4))}" ) 
     
     if typeLocation == 1:
         output = (
@@ -70,8 +70,8 @@ def generateLovelyPrompt():
     else:
         output = (
             f"{commonSence}"
-            f"{random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm \n"
-            f"và đang có thời tiết {random.choice(weatherConditions).strip()}. \n"
+            f"{random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm. \n"
+            f"Và ở đây, đang có thời tiết {random.choice(weatherConditions).strip()}. \n"
             f"{returnOutdoorSkyStrongObject().strip()}. \n"
             f"Và cũng đang có {generateOutdoorSkyObject().strip()}. \n"
             f"{generateNPC().strip()}. \n\n"
