@@ -13,7 +13,7 @@ SCRIPT_DIR = PROJECT_DIR / "Script"
 MENU_GENERATORS = {
     "Indoor Scene Prompt": "generateIndoorOutput",
     "Outdoor Scene Prompt": "generateOutdoorOutput",
-    "Lovely Prompt": "generateLovelyPrompt",
+    "Couple Prompt": "generateCouplePrompt",
     "Modeling Prompt": "generateModelingPrompt",
     "Random Rule L4D2": "ruleL4D2",
     "App Date Options": "dateAppOptions",

@@ -134,7 +134,7 @@ def buildFullStats(timestamp=None):
         story4Total,
         l4d2Total,
         appDateTotal,
-        lovelyPromptTotal,
+        couplePromptTotal,
         modelingPromptTotal,
     ) = caculateQuantity()
     modelingMaleTotal, modelingFemaleTotal = caculateModelingPromptPool()
@@ -147,7 +147,7 @@ def buildFullStats(timestamp=None):
         + story4Total
         + l4d2Total
         + appDateTotal
-        + lovelyPromptTotal
+        + couplePromptTotal
         + modelingPromptTotal
     )
 
@@ -160,7 +160,7 @@ def buildFullStats(timestamp=None):
         "story4": story4Total,
         "l4d2": l4d2Total,
         "appDate": appDateTotal,
-        "lovelyPrompt": lovelyPromptTotal,
+        "couplePrompt": couplePromptTotal,
         "modelingMale": modelingMaleTotal,
         "modelingFemale": modelingFemaleTotal,
         "modelingPrompt": modelingPromptTotal,
@@ -172,7 +172,7 @@ Updated Timestamp (latest): {timestamp}
 🖼️🎨 PROMPTS FOR AI ART MENU:
     - Indoor Scene Prompt: {indoorTotal:,} [👉 {formatNumber(abs(indoorTotal), 2)}]
     - Outdoor Scene Prompt: {outdoorTotal:,} [👉 {formatNumber(abs(outdoorTotal), 2)}]
-    - Lovely Prompt: {lovelyPromptTotal:,} [👉 {formatNumber(abs(lovelyPromptTotal), 2)}]
+    - Couple Prompt: {couplePromptTotal:,} [👉 {formatNumber(abs(couplePromptTotal), 2)}]
     - Modeling Prompt: {modelingMaleTotal:,} (Male) + {modelingFemaleTotal:,} (Female)= {modelingPromptTotal:,} [👉 {formatNumber(abs(modelingPromptTotal), 2)}]
 🕹️🎮 ANY GAMES RULE CUSTOM:
     - L4D2 Case: {l4d2Total:,} [👉 {formatNumber(abs(l4d2Total), 2)}]
@@ -188,7 +188,7 @@ Updated Timestamp (latest): {timestamp}
 🖼️🎨 PROMPTS FOR AI ART MENU:
     - Indoor combinations (digits): {len(str(indoorTotal))}
     - Outdoor combinations (digits): {len(str(outdoorTotal))}
-    - Lovely Prompt combinations (digits): {len(str(lovelyPromptTotal))}
+    - Couple Prompt combinations (digits): {len(str(couplePromptTotal))}
     - Modeling Prompt combinations (digits): {len(str(modelingMaleTotal))} (Male) + {len(str(modelingFemaleTotal))} (Female)= {len(str(modelingPromptTotal))}
 🕹️🎮 ANY GAMES RULE CUSTOM:
     - L4D2 scenarios (digits): {len(str(l4d2Total))}

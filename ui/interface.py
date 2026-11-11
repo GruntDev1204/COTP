@@ -22,49 +22,26 @@ createClickCount = 0
 headerCanvas = None
 headerCountTextId = None
 
+outputGenerators = {
+    "Indoor Scene Prompt": generateIndoorOutput,
+    "Outdoor Scene Prompt": generateOutdoorOutput,
+    "Couple Prompt": generateCouplePrompt,
+    "Modeling Prompt": generateModelingPrompt,
+    "Random Rule L4D2": ruleL4D2,
+    "App Date Options": dateAppOptions,
+    "Short Story 1 - Curse Breaking Journey": generateShortStory1,
+    "Short Story 2 - Job Interview": generateShortStory2,
+    "Short Story 3 - Dating": generateShortStory3,
+    "Short Story 4 - Rebellious Past": generateShortStory4,
+}
+
 def generateOutput():
-    output = ""
     option = outputType.get()
 
-    if option == "RANDOM 🎲🎲🎲":
-        option = random.choice(
-            [
-                "Indoor Scene Prompt",
-                "Outdoor Scene Prompt",
-                "Lovely Prompt",
-                "Modeling Prompt",
-                "Random Rule L4D2",
-                "App Date Options",
-                "Short Story 1 - Curse Breaking Journey",
-                "Short Story 2 - Job Interview",
-                "Short Story 3 - Dating",
-                "Short Story 4 - Rebellious Past",
-            ]
-        )
+    if option == outputMenuOptions[0]:
+        option = random.choice(tuple(outputGenerators))
 
-    match option:
-        case  "Indoor Scene Prompt":
-            output = generateIndoorOutput()
-        case "Outdoor Scene Prompt":
-            output = generateOutdoorOutput()
-        case "Lovely Prompt":
-            output = generateLovelyPrompt()
-        case "Modeling Prompt":
-            output = generateModelingPrompt()
-        case "Random Rule L4D2":
-            output = ruleL4D2()
-        case "App Date Options":
-            output = dateAppOptions()
-        case "Short Story 1 - Curse Breaking Journey":
-            output = generateShortStory1()
-        case "Short Story 2 - Job Interview":
-            output = generateShortStory2()
-        case "Short Story 3 - Dating":
-            output = generateShortStory3()
-        case "Short Story 4 - Rebellious Past":
-            output = generateShortStory4()
-        case _:
-            output = generateIndoorOutput()
+    output = outputGenerators.get(option, generateIndoorOutput)()
 
     outputText.delete("1.0", tk.END)
     outputText.tag_configure(
@@ -259,12 +236,19 @@ def createInterface():
         "COTP Struct Details": buildCotpStructure,
     }
 
-
     def updateInfoDisplay(*_args):
         infoText = infoTextBuilders[infoMode.get()]()
         statsDetailTextbox.configure(state="normal")
         statsDetailTextbox.delete("1.0", tk.END)
         statsDetailTextbox.insert("1.0", infoText)
+        if infoMode.get() == "Stats":
+            for lineNumber, line in enumerate(infoText.splitlines(), start=1):
+                if "TOTAL :" in line or "TOTAL combinations (digits):" in line:
+                    statsDetailTextbox.tag_add(
+                        "statsTotal",
+                        f"{lineNumber}.0",
+                        f"{lineNumber}.end",
+                    )
         statsDetailTextbox.configure(state="disabled")
 
     mainFrame = tk.Frame(
@@ -340,7 +324,7 @@ def createInterface():
     # Textbox stats (chiếm hết chiều ngang của statsFrame)
     statsDetailTextbox = tk.Text(
         statsFrame,
-        font=("Consolas", 10),
+        font=("Consolas", 11),
         fg=dataPaneColors["statsFg"],
         bg=dataPaneColors["statsBg"],
         height=10,
@@ -348,6 +332,10 @@ def createInterface():
         state="normal",
         padx=10,
         pady=10,
+    )
+    statsDetailTextbox.tag_configure(
+        "statsTotal",
+        font=("Consolas", 12, "bold"),
     )
     xscroll.config(command=statsDetailTextbox.xview)
     statsDetailTextbox.insert("1.0", statsDetailText)

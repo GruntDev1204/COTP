@@ -65,7 +65,7 @@ outputMenuOptions = [
     "RANDOM 🎲🎲🎲",
     "Indoor Scene Prompt",
     "Outdoor Scene Prompt",
-    "Lovely Prompt",
+    "Couple Prompt",
     "Modeling Prompt",
     "Random Rule L4D2",
     "App Date Options",

@@ -7,38 +7,6 @@ from data.dataL4D2 import *
 from data.dataIcon import *
 from data.dataModelingPrompt import *
 
-ending = [
-    "Cảnh vật ở đây trông rất ấn tượng và quen thuộc.",
-    "Cảnh vật ở đây trông rất bình thường và thơ mộng.",
-    "Cảnh vật ở đây trông rất bình yên và dễ thương.",
-    "Cảnh vật ở đây trông rất bồi hồi và thường thấy.",
-    "Cảnh vật ở đây trông rất dễ nhớ và bình thường.",
-    "Cảnh vật ở đây trông rất dễ thương và bình dị.",
-    "Cảnh vật ở đây trông rất dễ thương và ngọt ngào.",
-    "Cảnh vật ở đây trông rất dễ thương và quen thuộc.",
-    "Cảnh vật ở đây trông rất dễ thương và quyết liệt.",
-    "Cảnh vật ở đây trông rất dễ thương và tạm ổn.",
-    "Cảnh vật ở đây trông rất hài hước và thường ngày.",
-    "Cảnh vật ở đây trông rất hạnh phúc và dễ thương.",
-    "Cảnh vật ở đây trông rất hồn nhiên và kì lạ.",
-    "Cảnh vật ở đây trông rất khó tả và khó quên.",
-    "Cảnh vật ở đây trông rất khó tả và kì lạ.",
-    "Cảnh vật ở đây trông rất khó tả và rất cuốn.",
-    "Cảnh vật ở đây trông rất khó tả và rõ ràng.",
-    "Cảnh vật ở đây trông rất mơ mộng và thường thấy.",
-    "Cảnh vật ở đây trông rất nhộn nhịp và quen thuộc.",
-    "Cảnh vật ở đây trông rất như đùa nhưng rất thật.",
-    "Cảnh vật ở đây trông rất như 1 giấc mơ nhưng rất cuốn.",
-    "Cảnh vật ở đây trông rất quen thuộc và khó quên.",
-    "Cảnh vật ở đây trông rất quyết liệt và bình thường.",
-    "Cảnh vật ở đây trông rất tạm ổn và dễ thương.",
-    "Cảnh vật ở đây trông rất thân quen nhưng lạ lẫm.",
-    "Cảnh vật ở đây trông rất thường thấy và bồi hồi.",
-    "Cảnh vật ở đây trông rất vui vẻ và thường ngày.",
-    "Cảnh vật ở đây trông rất xúc động và dễ mến.",
-    "Cảnh vật ở đây trông rất yên bình và dễ thương.",
-]
-
 comment = [
     "Tổng quan thì chả có gì đặc biệt, chỉ là có một chút cái ánh nhìn lạc vào cơn gió cũ",
     "Tổng quan thì chả có gì đặc biệt, chỉ là có một chút cái cảm giác như đã từng ở đây",
@@ -51,27 +19,6 @@ comment = [
     "Tổng quan thì chả có gì đặc biệt, chỉ là có một chút cái gì đó như giấc mơ",
     "Tổng quan thì chả có gì đặc biệt, chỉ là có một chút cái gì đó như lạ lùng",
     "Tổng quan thì chả có gì đặc biệt, chỉ là có một chút cái gì đó như mơ màng",
-]
-
-starting = [
-    "bình dị",
-    "bình yên",
-    "dễ thương",
-    "gần gũi",
-    "hồn nhiên",
-    "hơi kì cục",
-    "kì cục",
-    "kì lạ",
-    "kì quặc",
-    "lãng mạn",
-    "mộng mơ",
-    "mơ màng",
-    "nhộn nhịp",
-    "tạm ổn",
-    "thơ mộng",
-    "thường ngày",
-    "tuyệt vời",
-    "vui vẻ",
 ]
 
 colors = [
@@ -235,6 +182,7 @@ shapes = [
     "hình vuông",
     "hình vương miện",
     "hình xoắn ốc",
+    "hình lò xo",
 ]
 
 status = [
@@ -316,9 +264,30 @@ status = [
     "chớt quớt",
     "lag lag",
     "khùng điên",
-    "vô trụ",
+    "vô sở trụ",
+    "vô nghiệm",
+    "vô vị",
+    "vi diệu",
     "không xác định",
     "bí ẩn",
+    "bình dị",
+    "bình yên",
+    "gần gũi",
+    "hồn nhiên",
+    "hơi kì cục",
+    "kì cục",
+    "kì lạ",
+    "kì quặc",
+    "lãng mạn",
+    "mộng mơ",
+    "mơ màng",
+    "nhộn nhịp",
+    "ngây thơ",
+    "tạm ổn",
+    "thơ mộng",
+    "thường ngày",
+    "tuyệt vời",
+    "vui vẻ",
 ]
 
 
@@ -350,3 +319,6 @@ units = [
 "tấn",
 "yard",
 ]
+
+randomLargeNumberRange = (100_000_000_000, 1_000_000_000_000)
+clockPeriods = ["sáng", "trưa", "chiều", "tối", "đêm"]

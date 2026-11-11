@@ -1,4 +1,5 @@
 from data.data import *
+from Script.common_script import clockPeriods
 
 # tính toán
 def formatNumber(number, digits=2):
@@ -40,9 +41,12 @@ def caculateModelingPromptPool():
     return maleTotal, femaleTotal
 
 
+def caculateClockPool():
+    return 24 * 60 * 60 * len(clockPeriods)
+
+
 def caculateQuantity():
-    titleLen = len(starting)
-    endingLen = len(ending)
+    openSceneStatusLen = len(status)
     colorsLen = len(colors)
     quantityLen = len(quantities)
     shapesLen = len(shapes)
@@ -64,7 +68,7 @@ def caculateQuantity():
     indoorTotal = (
         (len(liveNPCEmotions))
         * returnIconRandom(8)
-        * titleLen
+        * openSceneStatusLen
         * indoorLocationLen
         * indoorStatusLen
         * indoorMaterialLen
@@ -79,8 +83,7 @@ def caculateQuantity():
         * NPCLen
         * NPCAdjLen
         * NPCActionLen
-        * endingLen
-        * statusLen
+        * (statusLen**3)
         * returnIconRandom(3)
         * (len(emotionPunctuations) ** 4)
         * commentLen
@@ -100,7 +103,7 @@ def caculateQuantity():
     outdoorTotal = (
         (len(liveNPCEmotions))
         * returnIconRandom(8)
-        * titleLen
+        * openSceneStatusLen
         * outdoorViewLen
         * outdoorStatusLen
         * weatherConditionsLen
@@ -115,8 +118,7 @@ def caculateQuantity():
         * NPCLen
         * NPCAdjLen
         * NPCActionLen
-        * endingLen
-        * statusLen
+        * (statusLen**3)
         * returnIconRandom(3)
         * (len(emotionPunctuations) ** 4)
         * commentLen
@@ -131,7 +133,7 @@ def caculateQuantity():
         * len(magicTypes)
         * len(UpperText)
         * (len(LowerText)**5)
-        * (outdoorViewLen**2)
+        * (outdoorViewLen**3)
         * outdoorStatusLen
         * outdoorObjectDensityLen
         * (outdoorObjectsLen**2)
@@ -142,22 +144,22 @@ def caculateQuantity():
         * indoorSourceLightLen
         * (NPCAdjLen**2)
         * (len(liveNPCEmotions) ** 5)
+        * (len(status) ** 2)
         * indoorLocationLen
         * indoorStatusLen
         * len(proverbs)
         * (len(NPCjobs) ** 4)
-        * (900001**1)  # repeat_times mới
-        * (90001**4)  # years_duration mới
-        * (900000000001**15)  # distance mới
-        * (indoorObjectLen**3)
+        * (900000000001**20)  # shared large-number range
+        * caculateClockPool()
+        * (indoorObjectLen**4)
         * (shapesLen**5)
         * (quantityLen**3)
         * (colorsLen**6)
-        * (NPCLen**4)
+        * (NPCLen**5)
         * (len(slogan))
         * (len(nameNPC) ** 4)
         * len(sourceInfo)
-        * len(gpsLocations)
+        * (len(gpsLocations) ** 2)
         * len(Vehicle)
         * (NPCActionLen**11)
     )
@@ -167,17 +169,16 @@ def caculateQuantity():
         * returnIconRandom(7)
         * returnIconRandom(6)
         * (len(colors) ** 4)
-        * (9000000001**2)
-        * 8  # số giờ có thể rảnh
         * 18  # số tuổi của ứng viên
-        * (900000000001**26)
+        * (900000000001**28)
+        * (caculateClockPool() ** 2)
         * len(Vehicle)
         * len(weatherConditions)
         * (len(companies) ** 3)
         * (len(liveNPCs) ** 3)
         * len(liveNPCApperances)
         * (len(liveNPCEmotions) ** 4)
-        * (len(liveNPCActions) ** 13)
+        * (len(liveNPCActions) ** 15)
         * (len(nameNPC) ** 3)
         * (len(indoorLocations) ** 2)
         * len(indoorStatus)
@@ -193,8 +194,8 @@ def caculateQuantity():
     )
 
     shortStory3Total = (
-        (900000000001**26)
-        * 9000000001
+        (900000000001**27)
+        * (caculateClockPool() ** 3)
         * 18
         * len(indoorLocations)
         * (len(indoorMaterials) ** 2)
@@ -212,7 +213,7 @@ def caculateQuantity():
         * len(outDoorSkyStrongObjects)
         * (len(shapes) ** 3)
         * len(outDoorSkyStrongObjectStatus)
-        * (len(status) ** 8)
+        * (len(status) ** 9)
         * len(outdoorObjectDensity)
         * (len(outdoorObjects)**2)
         * (len(colors) ** 9)
@@ -235,8 +236,8 @@ def caculateQuantity():
 
     shortStory4Total = (
         (1000000000000000 - 100000000000000 + 1)
-        * ((10000000000 -  1000000000 + 1) ** 3)
-        * (900000000001**57)
+        * (900000000001**61)
+        * (caculateClockPool() ** 4)
         * (18)
         * returnIconRandom(10)
         * returnIconRandom(7)
@@ -294,11 +295,14 @@ def caculateQuantity():
         * len(optionsDateApp)  # các tùy chọn quẹt
     )
 
-    lovelyPromptTotal = (
+    couplePromptTotal = (
         len(BoyActions)
         * len(GirlActions)
         * len(LoveActions)
-        * len(status)
+        *(len(coupleCall)**2)
+        * (len(status)**2)
+        * len(adjApperanceBoys)
+        * len(adjAppearanceGirls)
         * (len(loveIcons)**4)
         * len(liveNPCEmotions)
         *len(fashionHairMale)
@@ -354,6 +358,6 @@ def caculateQuantity():
         shortStory4Total,
         L4D2caseTotal,
         appDateTotal,
-        lovelyPromptTotal,
+        couplePromptTotal,
         modelingPromptTotal,
     )

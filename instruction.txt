@@ -11,8 +11,19 @@ Author: Grunt - Trung.
 
 Details about COTP :
     - COTP (Chaos-One-Time-Prompt) :
-    is a desktop app that creates a new text prompt when you click CREATE.
-    Choose a prompt type, or select RANDOM to first pick one of the available types: Indoor Scene, Outdoor Scene, Lovely Prompt, Modeling Prompt, L4D2 Rule, App Date Options,
+    * Origin & Philosophical Inspiration: Formulated by Ho Trung (Grunt), born December 4, 2001, a Da Nang native and Electronics & Telecommunications Engineer from DUT CLC (Da Nang University of Technology - High-Quality Program). The theorem is deeply inspired by the principle of "Non-Abiding Wisdom" (Vô Sở Trụ) of Shakyamuni Buddha (Ho Trung's supreme idol), manifested through the doctrine of "Skillful Expedient Means" (Phương Tiện Thiện Xảo)—utilizing pure, unattached randomness as an effortless vehicle to transcend rigid cognitive boundaries.
+    * Theorem Statement: Let S be an invariant syntactic structure with n independent variable slots {X_1, X_2, ..., X_n}, where each X_i corresponds to a discrete semantic pool D_i with cardinality |D_i| = k_i. Performing simultaneous, seedless random selection across all X_i induces a combinatorial explosion in the output sample space Ω, defined by the product:
+
+        |Ω| = ∏_{i=1}^{n} k_i
+    From a finite, simple structure, the system yields an astronomical set of unique variants without complex semantic inference algorithms.
+    * Corollaries (as execution count N → ∞):
+    1. Maximum Entropy & Indeterminacy: Maximizes output entropy H(Ω), nullifying determinism and predictability for both linear human cognition and statistical AI models.
+    2. Semantic Collision & Creative Mutation: Forcing unrelated entities to co-occur within S breaks associative inertia, inevitably generating surreal, novel combinations.
+    3. Static Filter Neutralization: Lexical fragmentation and one-time composition defeat static keyword-matching and rigid contextual filters.
+    4. Paradigm Shift in Creation: Shifts the subject's role from manual content generator to structural architect (S) and output curator within an infinite probability space.
+
+    App : is a desktop app that creates a new text prompt when you click CREATE.
+    Choose a prompt type, or select RANDOM to first pick one of the available types: Indoor Scene, Outdoor Scene, Couple Prompt, Modeling Prompt, L4D2 Rule, App Date Options,
     or one of four Short Stories. Each generator fills its template by randomly selecting values from the app's predefined data arrays and, where needed, generating random numbers.
     Indoor and Outdoor scenes combine locations with their corresponding setting details, objects, NPCs, actions, and other descriptive elements; the other generators build their
     own prompt formats. The generated text is shown in the app and can be copied. COTP only creates the text—it does not send it to or run it through an AI. It does not set a fixed
