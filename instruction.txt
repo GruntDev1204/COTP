@@ -3,41 +3,45 @@ Chaos-One-Time-Prompt: Only chaos, and get a prompt for your AI — then pray fo
 🎪👑🤡🎰🎭🤦‍♂️🤷‍♂️🤯🤕🤮🫠🥴😭😵‍💫😵😫🤪🤧🙂🙄💀🎲🎲🎲
 How do you build a shitty app executable to look cool and make your girlfriend want to get into bed with you?
     1/ From the project folder, run:
-       pyinstaller --onefile --windowed --name "COTP - CHAOS ONE TIME PROMPT" --add-data "data;data" --add-data "Script;Script" main.py
-       The --add-data options bundle the Python source files required by the Arrays COTP and COTP Struct Details views.
-       The shorter command without these options can build the app, but those two Info views will not have their source data.
+       pyinstaller --onefile --windowed --name "COTP - CHAOS ONE TIME PROMPT" --add-data "data;data" --add-data "Script;Script" --add-data "instruction.txt;." --add-data "log/cotp_components_data_pool.txt;log" main.py
+       The --add-data options bundle the Python source files, COTP introduction text, and component data pool text required by the Info views.
+       The shorter command without these options can build the app, but the Info views will not have their source data.
     2/ Be careful: no one wants a baby when you're very young and earning a salary with a "trial and pray" mindset as a developer.
 Author: Grunt - Trung.
 
 Details about COTP :
-    - COTP (Chaos-One-Time-Prompt) :
-    * Origin & Philosophical Inspiration: Formulated by Ho Trung (Grunt), born December 4, 2001, a Da Nang native and Electronics & Telecommunications Engineer from DUT CLC (Da Nang University of Technology - High-Quality Program). The theorem is deeply inspired by the principle of "Non-Abiding Wisdom" (Vô Sở Trụ) of Shakyamuni Buddha (Ho Trung's supreme idol), manifested through the doctrine of "Skillful Expedient Means" (Phương Tiện Thiện Xảo)—utilizing pure, unattached randomness as an effortless vehicle to transcend rigid cognitive boundaries.
-    * Theorem Statement: Let S be an invariant syntactic structure with n independent variable slots {X_1, X_2, ..., X_n}, where each X_i corresponds to a discrete semantic pool D_i with cardinality |D_i| = k_i. Performing simultaneous, seedless random selection across all X_i induces a combinatorial explosion in the output sample space Ω, defined by the product:
+- COTP (Chaos-One-Time-Prompt) :
+    * Origin & Philosophical Foundation: Formulated by Ho Trung (Grunt), born April 12, 2001, a Da Nang native and Electronics & Telecommunications Engineer from DUT CLC (Da Nang University of Technology - High-Quality Program). The theorem is fundamentally grounded in the Buddhist Principle of Dependent Origination (Pratītyasamutpāda / Duyên Khởi) expounded by Shakyamuni Buddha (Ho Trung's supreme idol)—wherein no phenomenon possesses an inherent, fixed essence, and every unique output arises purely as a transient, non-abiding convergence of independent stochastic conditions (duyên) within a single fleeting instant.
+    * Formal Theorem Statement: Let S denote an invariant syntactic structure comprising n independent variable slots {X_1, X_2, ..., X_n}, where each slot X_i draws from a discrete semantic pool D_i of cardinality |D_i| = k_i. Executing simultaneous, seedless stochastic selection across all X_i induces a combinatorial explosion within the output sample space Ω, defined by the Cartesian product cardinality:
 
         |Ω| = ∏_{i=1}^{n} k_i
-    From a finite, simple structure, the system yields an astronomical set of unique variants without complex semantic inference algorithms.
-    * Corollaries (as execution count N → ∞):
-    1. Maximum Entropy & Indeterminacy: Maximizes output entropy H(Ω), nullifying determinism and predictability for both linear human cognition and statistical AI models.
-    2. Semantic Collision & Creative Mutation: Forcing unrelated entities to co-occur within S breaks associative inertia, inevitably generating surreal, novel combinations.
-    3. Static Filter Neutralization: Lexical fragmentation and one-time composition defeat static keyword-matching and rigid contextual filters.
-    4. Paradigm Shift in Creation: Shifts the subject's role from manual content generator to structural architect (S) and output curator within an infinite probability space.
 
-    App : is a desktop app that creates a new text prompt when you click CREATE.
+    From a finite, lightweight syntactic blueprint, the paradigm yields an astronomical manifold of unique realizations without requiring complex semantic inference engines.
+    * Fundamental Properties & Corollaries:
+    1. Maximum Entropy & Absolute Indeterminacy: Maximizes output Shannon entropy H(Ω), rendering generated states strictly non-deterministic and unpredictable to both linear human cognition (including the system's architect) and statistical AI models.
+    2. Single-Output Isolation: Each execution strictly yields a single, isolated realization (N = 1 per run), guaranteeing zero intra-instance collision among elements drawn from the same semantic pool D_i.
+    3. Unbounded Pool Expansion & Non-1:1 String Rule: Operating on the principle of pure expansion, semantic overlap or conceptual duplication within any pool D_i is fully permitted, provided no two entries share an exact 1-to-1 character string match (s_a ≠ s_b). This eliminates deduplication overhead and allows exponential entropy scaling at near-zero cost.
+    4. Deconstruction of Conventional Constraints: COTP supersedes empirical, physical, and standard mathematical conventions—treating all symbols (including negative imaginary units such as -i applied to temporal, chronological, or monetary magnitudes) as pure, unconstrained combinatorial tokens.
+    5. Semantic Collision & Creative Mutation: Forcing orthogonal conceptual domains (e.g., anomalous lore, historical hierarchies, paleontology, complex numbers, and mundane objects) to co-occur within S disrupts associative inertia, compelling generative AI and human minds to synthesize unprecedented surrealist imagery.
+    6. Static Filter Neutralization: Lexical fragmentation and ephemeral, one-time composition inherently bypass static keyword-matching algorithms and rigid contextual guardrails.
+    7. Open Paradigm & Cryptographic Entropy Source: Functioning as an open mathematical principle, COTP enables community-driven aggregation across multiple syntactic structures (∑ |Ω_j|). Furthermore, at the generation layer, its plaintext outputs serve as an ultra-high-entropy source completely decoupled from downstream storage or one-way hashing mechanisms, offering immunity against brute-force reconstruction.
+
+    This COTP App: is a desktop app build base on the COTP Theorem Statement. It will create a new text prompt ONE TIME when you click CREATE.
     Choose a prompt type, or select RANDOM to first pick one of the available types: Indoor Scene, Outdoor Scene, Couple Prompt, Modeling Prompt, L4D2 Rule, App Date Options,
     or one of four Short Stories. Each generator fills its template by randomly selecting values from the app's predefined data arrays and, where needed, generating random numbers.
     Indoor and Outdoor scenes combine locations with their corresponding setting details, objects, NPCs, actions, and other descriptive elements; the other generators build their
     own prompt formats. The generated text is shown in the app and can be copied. COTP only creates the text—it does not send it to or run it through an AI. It does not set a fixed
     random seed or save generated prompts; each click generates a fresh result.
 
-How to use COTP :
+How to use COTP:
     1/ Start the app by running main.py, or open the executable if you have built one.
     2/ In the Prompt menu, choose the kind of prompt you want. Choose RANDOM (the default) to let COTP select a prompt type for you.
     3/ Click CREATE. The generated prompt will appear in the large text box. Click CREATE again whenever you want a different result.
     4/ Click Copy Output to copy the displayed prompt to your clipboard, then paste it wherever you want to use it.
     5/ The CREATE PRESSES counter shows how many times you have generated a prompt in the current app run. It is not saved and resets when you close and reopen COTP.
-    6/ Optional: use the theme switch to change the app's appearance, or choose Stats, Arrays COTP, or COTP Struct Details from the Info menu to view app information.
+    6/ Optional: use the theme switch to change the app's appearance, or choose COTP Introduction, COTP Components data pool, Stats, Arrays COTP, or COTP Struct Details from the Info menu to view app information.
 
-Project folder structure :
+Project folder structure:
     - data/ : prompt data pools, including Indoor and Outdoor locations, NPCs, actions, stories, icons, and other choices.
     - Script/ : functions that assemble prompt text from the data pools and generate randomized values.
     - ui/ : the Tkinter interface, menu options, theme colors, and other UI properties.

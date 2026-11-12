@@ -3,6 +3,28 @@ from data.data import *
 
 
 # common
+def generateANumber(
+    minValue,
+    maxValue,
+    decimalPlaces=0,
+    *,
+    includeType=True,
+    thousandsSeparator=True,
+    minimumWidth=0,
+):
+    scale = 10**decimalPlaces
+    scaledNumber = random.randint(minValue * scale, maxValue * scale)
+    wholeNumber, fractionalNumber = divmod(abs(scaledNumber), scale)
+    wholeText = f"{wholeNumber:,}" if thousandsSeparator else str(wholeNumber)
+    wholeText = wholeText.zfill(minimumWidth)
+    formattedNumber = wholeText
+    if decimalPlaces:
+        formattedNumber += f".{fractionalNumber:0{decimalPlaces}d}"
+
+    if includeType:
+        formattedNumber = f"{random.choice(typeValueNumber)}{formattedNumber}{random.choice(typeNumber)}"
+    return formattedNumber
+
 def generateRandomIcons(quantity):
     return " ".join(random.choices(allIcons, k=quantity))
 
@@ -13,11 +35,11 @@ def generateOpenScene():
     return f"{generateRandomIcons(4)} - Đây là một khung cảnh {random.choice(status).strip()} - {generateRandomIcons(4)}:\n"
 
 def generateRandomReciprocal():
-    denominator = random.randint(*randomLargeNumberRange)
+    denominator = generateANumber(*randomLargeNumberRange, thousandsSeparator=False)
     return f"(1/{denominator})"
 
 def generateRandomLargeNumber():
-    return f"{random.randint(*randomLargeNumberRange):,}"
+    return generateANumber(*randomLargeNumberRange)
 
 def generateRandomWord():
     return random.choice(UpperText) + "".join(random.choices(LowerText, k=5))
@@ -51,4 +73,15 @@ def generateOutdoorSkyObject():
 
 
 def generateClock():
-    return f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d} {random.choice(clockPeriods)}"
+    return (
+        f"{generateANumber(0, 23, thousandsSeparator=False, minimumWidth=2)}:"
+        f"{generateANumber(0, 59, thousandsSeparator=False, minimumWidth=2)}:"
+        f"{generateANumber(0, 59, thousandsSeparator=False, minimumWidth=2)} "
+        f"{random.choice(clockPeriods)}"
+    )
+
+def generateDate():
+    day = generateANumber(1, 31, thousandsSeparator=False, minimumWidth=2)
+    month = generateANumber(1, 12, thousandsSeparator=False, minimumWidth=2)
+    year = generateANumber(100000000000000, 1000000000000000)
+    return f"{day}/{month}/{year} {random.choice(dateEras)},"

@@ -1,4 +1,6 @@
 import tkinter as tk
+import sys
+from pathlib import Path
 from Script.script import *
 from log.log import (
     buildFullStats,
@@ -14,6 +16,10 @@ from ui.ui_properties import (
     outputMenuOptions,
     sharedUiColors,
     themePalettes,
+)
+
+PROJECT_DIR = Path(
+    getattr(sys, "_MEIPASS", Path(__file__).resolve().parent.parent)
 )
 
 currentTheme = themePalettes["Dark"]
@@ -180,7 +186,23 @@ def createInterface():
         statsDetailText,
         statsValues,
     ) = buildFullStats()
-    infoMode = tk.StringVar(value="Stats")
+    infoMode = tk.StringVar(value="COTP Introduction")
+
+    def buildCotpIntroduction():
+        instructionText = (PROJECT_DIR / "instruction.txt").read_text(encoding="utf-8")
+        lines = instructionText.splitlines()
+        start = next(
+            index for index, line in enumerate(lines)
+            if line.strip() == "Details about COTP :"
+        )
+        end = next(
+            index for index in range(start + 1, len(lines))
+            if lines[index].strip().startswith("This COTP App:")
+        )
+        return "\n".join(lines[start:end]).rstrip()
+
+    def buildCotpComponentsDataPool():
+        return (PROJECT_DIR / "log" / "cotp_components_data_pool.txt").read_text(encoding="utf-8")
 
 
     def buildArraySizesText():
@@ -231,17 +253,23 @@ def createInterface():
 
 
     infoTextBuilders = {
+        "COTP Introduction": buildCotpIntroduction,
+        "COTP Components data pool": buildCotpComponentsDataPool,
         "Stats": lambda: statsDetailText,
         "Arrays COTP": buildArraySizesText,
         "COTP Struct Details": buildCotpStructure,
     }
 
     def updateInfoDisplay(*_args):
-        infoText = infoTextBuilders[infoMode.get()]()
+        selectedInfo = infoMode.get()
+        infoText = infoTextBuilders[selectedInfo]()
         statsDetailTextbox.configure(state="normal")
         statsDetailTextbox.delete("1.0", tk.END)
         statsDetailTextbox.insert("1.0", infoText)
-        if infoMode.get() == "Stats":
+        statsDetailTextbox.configure(
+            font=("Consolas", 13 if selectedInfo == "COTP Introduction" else 11)
+        )
+        if selectedInfo == "Stats":
             for lineNumber, line in enumerate(infoText.splitlines(), start=1):
                 if "TOTAL :" in line or "TOTAL combinations (digits):" in line:
                     statsDetailTextbox.tag_add(
@@ -338,7 +366,6 @@ def createInterface():
         font=("Consolas", 12, "bold"),
     )
     xscroll.config(command=statsDetailTextbox.xview)
-    statsDetailTextbox.insert("1.0", statsDetailText)
     statsDetailTextbox.config(
         state="disabled",
         xscrollcommand=xscroll.set,
@@ -346,6 +373,7 @@ def createInterface():
     )
     statsDetailTextbox.grid(row=1, column=0, sticky="nsew")
     yscroll.config(command=statsDetailTextbox.yview)
+    updateInfoDisplay()
 
     controlsFrame = tk.Frame(mainFrame, bg=currentTheme["mainBg"])
     controlsFrame.grid(

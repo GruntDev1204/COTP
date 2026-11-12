@@ -189,8 +189,11 @@ status = [
     "đáng yêu",
     "dễ thương",
     "bối rối",
+    "bất đồng",
+    "bất đối xứng",
     "đanh thép",
     "hào hứng",
+    "hòa hợp",
     "hoang mang",
     "hấp tấp",
     "hơi ấm",
@@ -209,8 +212,11 @@ status = [
     "hơi trầm",
     "hơi vui",
     "hơi xa",
+    "hòa thuận",
     "khó nói",
     "không thể nói gì",
+    "không thể nói gì hơn",
+    "không nói nên lời",
     "hơi lag",
     "hơi chớt quớt",
     "hơi cool",
@@ -256,6 +262,7 @@ status = [
     "rắn rỏi",
     "sung túc",
     "sầu muộn",
+    "siêu thực",
     "trầm tư",
     "xa xăm",
     "kỳ quặc",
@@ -264,10 +271,7 @@ status = [
     "chớt quớt",
     "lag lag",
     "khùng điên",
-    "vô sở trụ",
-    "vô nghiệm",
-    "vô vị",
-    "vi diệu",
+    "cam chịu",
     "không xác định",
     "bí ẩn",
     "bình dị",
@@ -286,8 +290,15 @@ status = [
     "tạm ổn",
     "thơ mộng",
     "thường ngày",
+    "yêu thương",
     "tuyệt vời",
     "vui vẻ",
+    "vô định",
+    "vô sở trụ",
+    "vô nghiệm",
+    "vô vị",
+    "vi diệu",
+    "tuyệt vời ông mặt trời",
 ]
 
 
@@ -322,3 +333,16 @@ units = [
 
 randomLargeNumberRange = (100_000_000_000, 1_000_000_000_000)
 clockPeriods = ["sáng", "trưa", "chiều", "tối", "đêm"]
+dateEras = [
+    "TCN",
+    "SCN",
+    "AH",  # Anno Hegirae / Hijri era
+    "BE",  # Buddhist Era
+    "AM",  # Anno Mundi
+    "HE",  # Holocene Era
+]
+
+typeNumber = ["i", ""]
+typeValueNumber = ["-" , ""]
+
+

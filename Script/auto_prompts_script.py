@@ -23,9 +23,9 @@ def createNoteArt(mode=0):
 def generateIndoorOutput():
     output = (
         f"{generateOpenScene()}\n"
-        f"Bên trong {random.choice(indoorLocations).strip()}, trông rất {random.choice(indoorStatus)}, nó được xây bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. \n"
+        f"{random.choice(inDoorPreposition).upper()} là {random.choice(indoorLocations).strip()}, trông rất {random.choice(indoorStatus)}, nó được xây bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. \n"
         f"Có {generateIndoorItems().strip()}. \n"
-        f"Ở đây, đang có {generateIndoorObject().strip()}. \n"
+        f"{random.choice(inDoorPreposition).upper()}, đang có {generateIndoorObject().strip()}. \n"
         f"{generateNPC().strip()}. \n\n"
         f"{generateEnding()}"
     )
@@ -35,11 +35,11 @@ def generateIndoorOutput():
 def generateOutdoorOutput():
     output = (
         f"{generateOpenScene()}\n"
-        f"{random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm, "
+        f"{random.choice(outDoorPreposition).upper()} là {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm, "
         f"thời tiết thì đang {random.choice(weatherConditions).strip()}. \n"
         f"{returnOutdoorSkyStrongObject().strip()}. \n"
         f"Có {generateOutdoorSkyObject().strip()}. \n"
-        f"Tại {generateOutdoorObject().strip()}. \n"
+        f"{random.choice(outDoorPreposition).upper()}, đang có {generateOutdoorObject().strip()} {generateOutdoorObject().strip()}. \n"
         f"{generateNPC().strip()}. \n\n"
         f"{generateEnding()}"
     )
@@ -65,17 +65,17 @@ def generateCouplePrompt():
     return random.choice((
         lambda:(
             f"{commonSence}"
-            f"Ở bên trong {random.choice(indoorLocations).strip()} {random.choice(indoorStatus)} lâu năm. \n"
+            f"{random.choice(inDoorPreposition).upper()} {random.choice(indoorLocations).strip()} {random.choice(indoorStatus)} lâu năm. \n"
             f"Nó được xây bằng {random.choice(indoorMaterials)} và sơn màu {random.choice(colors)}. \n"
-            f"Tại đó, {generateIndoorItems().strip()}. \n"
-            f"Và cũng đang có {generateIndoorObject().strip()} ở đây. \n"
+            f"{random.choice(inDoorPreposition).upper()}, {generateIndoorItems().strip()}. \n"
+            f"Và cũng đang có {generateIndoorObject().strip()} {random.choice(inDoorPreposition)}. \n"
             f"{generateNPC().strip()}. \n\n"
             f"{endingStatus}"
         ),
         lambda:(
             f"{commonSence}"
-            f"{random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm. \n"
-            f"Và ở đây, đang có thời tiết {random.choice(weatherConditions).strip()}. \n"
+            f"{random.choice(outDoorPreposition).upper()} {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm. \n"
+            f"Và {random.choice(outDoorPreposition).upper()}, đang có thời tiết {random.choice(weatherConditions).strip()}. \n"
             f"{returnOutdoorSkyStrongObject().strip()}. \n"
             f"Và cũng đang có {generateOutdoorSkyObject().strip()}. \n"
             f"{generateNPC().strip()}. \n\n"

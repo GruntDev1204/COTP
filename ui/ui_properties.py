@@ -75,4 +75,10 @@ outputMenuOptions = [
     "Short Story 4 - Rebellious Past",
 ]
 
-infoMenuOptions = ["Stats", "Arrays COTP", "COTP Struct Details"]
+infoMenuOptions = [
+    "COTP Introduction",
+    "COTP Components data pool",
+    "Stats",
+    "Arrays COTP",
+    "COTP Struct Details",
+]

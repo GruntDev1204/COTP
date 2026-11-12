@@ -1,0 +1,190 @@
+================================================================================
+COTP (CHAOS-ONE-TIME-PROMPT) - DATA ARCHITECTURE & POOL SPECIFICATION
+================================================================================
+
+1. SYSTEM OVERVIEW & DATA FLOW ARCHITECTURE
+The COTP application operates on a seedless combinatorial generation paradigm. 
+Rather than relying on complex semantic inference models, the engine achieves 
+astronomical output diversity by performing simultaneous, independent stochastic 
+selections across discrete lexical and structural pools housed within the `data/` 
+directory. To maximize memory efficiency and minimize runtime overhead, thematic 
+sub-categories within large pools are organized via inline source comments rather 
+than redundant sub-array allocations.
+
+--------------------------------------------------------------------------------
+2. MODULE-BY-MODULE DATA POOL SPECIFICATIONS (COTP COMPONENTS DATA POOL)
+--------------------------------------------------------------------------------
+
+[Module: data.py] — Core Primitives, Numerical Modifiers & General Descriptors
+    * clockPeriods: Defines diurnal time-of-day indicators (e.g., morning, noon, 
+    night) appended to stochastically generated timestamps.
+    * colors: Contains chromatic descriptors applied to architectural surfaces, 
+    ambient lighting, and anomalous objects.
+    * comment: Stores meta-commentary and concluding remarks appended to the terminal 
+    segment of generated narratives.
+    * dateEras: Specifies chronological era designators (e.g., BC/AD, Buddhist Era, 
+    Holocene Era) utilized during historical date synthesis.
+    * quantities: Provides quantifiers and numerical determiners preceding noun 
+    phrases.
+    * shapes: Defines geometric and morphological descriptors assigned to physical 
+    and anomalous entities.
+    * status: Contains general state adjectives and atmospheric descriptors used to 
+    characterize scenes and conditions.
+    * typeNumber: Supplies numerical suffixes (such as the imaginary unit 'i' or 
+    empty strings) to deconstruct standard real-number constraints.
+    * typeValueNumber: Supplies numerical prefixes (such as negative signs '-' or 
+    empty strings) to enable negative and complex numerical generation.
+    * units: Stores standard, scientific, and surreal units of measurement integrated 
+    into quantitative statements.
+
+[Module: dataIcon.py] — Unicode Emoji & Expressive Punctuation Pools
+    * allIcons: The master aggregated pool of general-purpose emojis utilized for 
+    visual ornamentation across generated prompts.
+    * animalsNatureEmojis: A specialized subset containing zoological, botanical, 
+    and meteorological icons.
+    * emotionPunctuations: Expressive punctuation sequences appended to narrative 
+    conclusions to modulate tone.
+    * facePeopleEmojis: Anthropomorphic, facial expression, and character-based icons.
+    * foodDrinkEmojis: Culinary, beverage, and consumable item icons.
+    * objectsToolsEmojis: Artifact, instrument, and everyday utility icons.
+    * sportsEntertainmentEmojis: Recreational, athletic, and artistic performance icons.
+    * symbolsHeartsEmojis: Abstract symbols, geometric signs, and affective heart icons.
+    * vehiclesPlacesEmojis: Transportation, infrastructure, and geographical icons.
+
+[Module: dataIndoor.py] — Interior Spaces, Architectural Components & Lighting
+    * indoorItemLightningSource: Defines external illumination sources (e.g., celestial 
+    bodies, artificial beams) that project light from outside into an interior scene.
+    * indoorItems: Represents fixed architectural apertures and structural components 
+    (e.g., doors, windows, skylights, vents) through which external light enters 
+    the interior space.
+    * indoorItemStatus: Characterizes the physical condition of architectural 
+    apertures (e.g., wide open, ajar, cracked, shattered).
+    * indoorLightVerb: Specifies dynamic verbs describing how external illumination 
+    penetrates, diffuses, or refracts through an `indoorItem` into the room.
+    * indoorLocations: Defines enclosed architectural settings, rooms, and subterranean 
+    complexes.
+    * indoorMaterials: The master material pool used to describe interior structural 
+    surfaces and construction compositions.
+    * indoorMetalMaterials: A subset dedicated to metallic elements, alloys, and 
+    industrial metals.
+    * indoorNonMetalMaterials: A subset dedicated to organic, mineral, synthetic, and 
+    non-metallic substances.
+    * indoorObjectItems: Represents discrete, movable artifacts, machinery, and 
+    anomalous items placed inside an interior environment.
+    * inDoorPreposition: Spatial prepositions and locative phrases linking entities 
+    to enclosed interior settings.
+    * indoorStatus: Describes the ambient condition, atmosphere, or structural state 
+    of an interior environment.
+
+[Module: dataL4D2.py] — Tactical Simulation & Game Scenario Pools (Left 4 Dead 2)
+    * charactersL4D2: Playable survivor character archetypes within the simulation.
+    * grenadesL4D2: Tactical throwable ordnance and area-denial explosives.
+    * mapsL4D2: Campaign environments, chapters, and combat theaters.
+    * medicineL4D2: Medical supplies, restorative items, and temporary stimulants.
+    * meleeL4D2: Close-quarters combat instruments and bladed/blunt weaponry.
+    * pickupsL4D2: Deployable equipment, ammunition upgrades, and environmental pickups.
+    * playerRulesL4D2: Behavioral constraints, challenge modifiers, and operational 
+    rules governing player execution.
+    * weaponsL4D2: Primary and secondary ballistic firearms across various tiers.
+
+[Module: dataLove.py] — Interpersonal Dynamics & Romantic Prompt Synthesis
+    * adjAppearanceGirls: Aesthetic and physical descriptors tailored for female 
+    subjects.
+    * adjApperanceBoys: Aesthetic and physical descriptors tailored for male subjects.
+    * BoyActions: Behavioral actions and gestures performed by male subjects within 
+    Couple Prompts.
+    * coupleCall: Relational titles, terms of endearment, and pair designations.
+    * fashionHairFemale: Hairstyle definitions for female subjects.
+    * fashionHairMale: Hairstyle definitions for male subjects.
+    * GirlActions: Behavioral actions and gestures performed by female subjects within 
+    Couple Prompts.
+    * LoveActions: Interactive, affectionate, and shared activities executed by the 
+    couple.
+    * loveIcons: Curated romantic and affective emojis dedicated to relationship-themed 
+    outputs.
+    * optionsDateApp: Simulated user interface choices and swipe actions for dating 
+    application scenarios.
+
+[Module: dataModelingPrompt.py] — Character Pose, Framing & Visual Composition
+    * backgroundModeling: Scenic and environmental backdrop descriptions for character 
+    portraits.
+    * backgroundModelingColors: Solid-color studio backdrop specifications.
+    * backgrounds: The unified backdrop pool combining scenic environments and solid 
+    studio colors.
+    * femaleArmPoses: Upper-limb positioning and hand placement directives for female 
+    models.
+    * femaleExpressions: Facial affect and emotional expression descriptors for female 
+    models.
+    * femaleHair: Hair styling and length attributes for female modeling subjects.
+    * femalePoses: Full-body posture definitions for female models, paired with boolean 
+    flags governing gaze direction compatibility.
+    * femaleShoes: Footwear specifications for female models.
+    * maleArmPoses: Upper-limb positioning and hand placement directives for male 
+    models.
+    * maleExpressions: Facial affect and emotional expression descriptors for male 
+    models.
+    * maleHair: Hair styling and length attributes for male modeling subjects.
+    * malePoses: Full-body posture definitions for male models, paired with boolean 
+    flags governing gaze direction compatibility.
+    * maleShoes: Footwear specifications for male models.
+    * modelFramings: Camera shot scales and cropping boundaries (e.g., full-body, 
+    knee-up), coupled with metadata flags determining footwear visibility.
+    * modelGazes: Ocular direction and visual engagement directives relative to the 
+    camera lens.
+
+[Module: dataNPC.py] — Autonomous Entities, Archetypes & Attributes
+    * liveNPCActions: Dynamic verbs and activities executed by non-player entities.
+    * liveNPCApperances: Attire, physical traits, and visual styling descriptors for 
+    NPCs.
+    * liveNPCEmotions: Psychological states and emotional dispositions exhibited by 
+    NPCs.
+    * liveNPCs: The unified, high-cardinality pool of sentient beings, historical 
+    figures, mythological deities, cryptids, kaiju, and anomalous entities.
+    * nameNPC: Proper nouns and character identifiers assigned to generated entities.
+    * NPCJobs: Occupational roles, feudal titles, and professional designations across 
+    historical and modern eras.
+
+[Module: dataOutdoor.py] — Exterior Landscapes, Celestial Phenomena & Weather
+    * outdoorObjectDensity: Quantifiers and spatial distribution phrases describing 
+    the prevalence of exterior objects.
+    * outdoorObjects: Physical structures, landmarks, and anomalies situated within 
+    open-air environments.
+    * outDoorPreposition: Spatial prepositions linking subjects to exterior landscapes 
+    and geographical features.
+    * outDoorSkyObjects: Aerial entities, aircraft, and anomalies suspended in the sky.
+    * outDoorSkyStrongObjects: Prominent celestial bodies and colossal aerial phenomena.
+    * outDoorSkyStrongObjectStatus: Dynamic states and visual behaviors exhibited by 
+    prominent celestial objects.
+    * outDoorStatus: Environmental conditions and atmospheric descriptors for open-air 
+    settings.
+    * outdoorView: Macro-scale geographical landscapes, dimensional planes, and exterior 
+    locations.
+    * times: Temporal lighting phases across the diurnal cycle.
+    * weatherConditions: Meteorological phenomena and atmospheric weather states.
+
+[Module: dataStory.py] — Narrative World-Building, Lexicon & Transit
+    * buildings: Architectural identifiers and structural designations used in narrative 
+    generation.
+    * businesses: Commercial establishments, enterprises, and institutional venues.
+    * companies: Corporate entities and organizational names referenced in narratives 
+    and dating simulations.
+    • gpsLocations: Cardinal and relative directional vectors utilized in navigation
+    segments.
+    • LowerText: Lowercase alphabetic character pool for stochastic string assembly.
+    • magicTypes: Supernatural abilities, arcane arts, and anomalous powers.
+    • proverbs: Traditional adages and folk wisdom integrated into dialogue and lore.
+    • slogan: Catchphrases, mottos, and promotional taglines.
+    • sourceInfo: Information channels, media platforms, and epistemological sources
+    cited within narratives.
+    • UpperText: Uppercase alphabetic character pool used for initial capitalization
+    in stochastic word generation.
+    • Vehicle: Conveyances and transportation modes spanning non-motorized, terrestrial,
+    aerial, and anomalous craft.
+-------------------------------------------------------------------------------
+3. SYSTEM CONFIGURATION CONSTANTS
+-------------------------------------------------------------------------------
+• randomLargeNumberRange (Tuple): A boundary configuration tuple (min, max)
+defining the lower and upper limits for macro-scale numerical generation within
+generateANumber(). Unlike content arrays, this serves strictly as a parametric
+range constraint.
+================================================================================

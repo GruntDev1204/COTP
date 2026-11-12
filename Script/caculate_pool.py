@@ -1,6 +1,8 @@
 from data.data import *
 from Script.common_script import clockPeriods
 
+numberTypePool = len(typeValueNumber) * len(typeNumber)
+
 # tính toán
 def formatNumber(number, digits=2):
     if abs(number) < 1:
@@ -42,7 +44,17 @@ def caculateModelingPromptPool():
 
 
 def caculateClockPool():
-    return 24 * 60 * 60 * len(clockPeriods)
+    return 24 * 60 * 60 * len(clockPeriods) * (numberTypePool**3)
+
+
+def caculateDatePool():
+    return (
+        (31 - 1 + 1)  # day
+        * (12 - 1 + 1)  # month
+        * (1000000000000000 - 100000000000000 + 1)  # year
+        * len(dateEras)  # available date eras
+        * (numberTypePool**3)  # day, month, year
+    )
 
 
 def caculateQuantity():
@@ -64,12 +76,14 @@ def caculateQuantity():
     indoorLightVerbLen = len(indoorLightVerb)
     indoorSourceLightLen = len(indoorItemLightningSource)
     indoorObjectLen = len(indoorObjectItems)
+    inDoorPrepositionLen = len(inDoorPreposition)
 
     indoorTotal = (
         (len(liveNPCEmotions))
         * returnIconRandom(8)
         * openSceneStatusLen
         * indoorLocationLen
+        * (inDoorPrepositionLen**2)
         * indoorStatusLen
         * indoorMaterialLen
         * (colorsLen**3)
@@ -99,22 +113,24 @@ def caculateQuantity():
     outDoorSkyObjectsLen = len(outDoorSkyObjects)
     outdoorObjectDensityLen = len(outdoorObjectDensity)
     outdoorObjectsLen = len(outdoorObjects)
+    outDoorPrepositionLen = len(outDoorPreposition)
 
     outdoorTotal = (
         (len(liveNPCEmotions))
         * returnIconRandom(8)
         * openSceneStatusLen
         * outdoorViewLen
+        * (outDoorPrepositionLen**2)
         * outdoorStatusLen
         * weatherConditionsLen
         * (outDoorSkyStrongObjectsLen + 1)
-        * (shapesLen**3)
+        * (shapesLen**4)
         * outDoorSkyStrongObjectStatusLen
-        * (quantityLen**3)
+        * (quantityLen**4)
         * outDoorSkyObjectsLen
-        * (colorsLen**2)
-        * outdoorObjectDensityLen
-        * outdoorObjectsLen
+        * (colorsLen**3)
+        * (outdoorObjectDensityLen**2)
+        * (outdoorObjectsLen**2)
         * NPCLen
         * NPCAdjLen
         * NPCActionLen
@@ -134,6 +150,7 @@ def caculateQuantity():
         * len(UpperText)
         * (len(LowerText)**5)
         * (outdoorViewLen**3)
+        * (outDoorPrepositionLen**3)
         * outdoorStatusLen
         * outdoorObjectDensityLen
         * (outdoorObjectsLen**2)
@@ -146,11 +163,14 @@ def caculateQuantity():
         * (len(liveNPCEmotions) ** 5)
         * (len(status) ** 2)
         * indoorLocationLen
+        * (inDoorPrepositionLen**2)
         * indoorStatusLen
         * len(proverbs)
         * (len(NPCjobs) ** 4)
-        * (900000000001**20)  # shared large-number range
+        * (900000000001**20)  # 19 large numbers + 1 reciprocal denominator
+        * (numberTypePool**20)
         * caculateClockPool()
+        * caculateDatePool()
         * (indoorObjectLen**4)
         * (shapesLen**5)
         * (quantityLen**3)
@@ -167,14 +187,19 @@ def caculateQuantity():
     story2Total = (
         returnIconRandom(10)
         * returnIconRandom(7)
-        * returnIconRandom(6)
+        * (returnIconRandom(3) ** 2)
         * (len(colors) ** 4)
-        * 18  # số tuổi của ứng viên
-        * (900000000001**28)
+        * (18 * numberTypePool)  # số tuổi của ứng viên
+        * (900000000001**29)  # 24 large numbers + 5 reciprocal denominators
+        * (numberTypePool**29)
         * (caculateClockPool() ** 2)
+        * caculateDatePool()
         * len(Vehicle)
         * len(weatherConditions)
         * (len(companies) ** 3)
+        * len(sourceInfo)
+        * (inDoorPrepositionLen**4)
+        * outDoorPrepositionLen
         * (len(liveNPCs) ** 3)
         * len(liveNPCApperances)
         * (len(liveNPCEmotions) ** 4)
@@ -194,10 +219,14 @@ def caculateQuantity():
     )
 
     shortStory3Total = (
-        (900000000001**27)
+        (900000000001**27)  # 22 large numbers + 5 reciprocal denominators
+        * (numberTypePool**27)
         * (caculateClockPool() ** 3)
-        * 18
+        * caculateDatePool()
+        * (18 * numberTypePool)
         * len(indoorLocations)
+        * (inDoorPrepositionLen**2)
+        * outDoorPrepositionLen
         * (len(indoorMaterials) ** 2)
         * returnIconRandom(10)
         * returnIconRandom(7)
@@ -235,14 +264,17 @@ def caculateQuantity():
     )
 
     shortStory4Total = (
-        (1000000000000000 - 100000000000000 + 1)
-        * (900000000001**61)
+        (900000000001**61)  # 54 large numbers + 7 reciprocal denominators
+        * (numberTypePool**61)
         * (caculateClockPool() ** 4)
-        * (18)
+        * caculateDatePool()
+        * (18 * numberTypePool)
         * returnIconRandom(10)
         * returnIconRandom(7)
         * (len(Vehicle)**2)
         * (len(indoorLocations) ** 3)
+        * (inDoorPrepositionLen**3)
+        * (outDoorPrepositionLen**2)
         * len(indoorStatus)
         * len(indoorMaterials)
         * (len(colors) ** 4)
@@ -309,6 +341,7 @@ def caculateQuantity():
         * len(fashionHairFemale)
         * (
             len(indoorLocations)
+            * (inDoorPrepositionLen**3)
             * len(indoorStatus)
             * len(indoorMaterials)
             * len(colors)
@@ -329,6 +362,7 @@ def caculateQuantity():
             * len(liveNPCEmotions)
             * len(liveNPCActions)
             + len(outdoorView)
+            * (outDoorPrepositionLen**2)
             * len(outDoorStatus)
             * len(weatherConditions)
             * (len(outDoorSkyStrongObjects) + 1)

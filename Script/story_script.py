@@ -9,17 +9,17 @@ def generateShortStory1():
     return (
         f"SHORT STORY 1 : Curse Breaking Journey {generateRandomIcons(10)}\n\n"
         f"Dựa trên câu chuyện được lấy từ {random.choice(sourceInfo)}.\n"
-        f"Có một {random.choice(businesses)} bán {random.choice(indoorObjectItems)}. Nó tọa lạc ngay địa điểm là {random.choice(outdoorView).upper()} trông có vẻ đã {random.choice(outDoorStatus)} lâu năm.\n"
+        f"Có một {random.choice(businesses)} bán {random.choice(indoorObjectItems)}. Nó tọa lạc {random.choice(outDoorPreposition)} địa điểm là {random.choice(outdoorView).upper()} trông có vẻ đã {random.choice(outDoorStatus)} lâu năm.\n"
         f"Ở {random.choice(outdoorObjectDensity)} nhìn từ phía tiệm, {random.choice(quantities)} {random.choice(outdoorObjects)} có hình dạng là {random.choice(shapes)} và nó luôn phát ra ánh sáng màu {random.choice(colors)}.\n"
         f"Bên trong tiệm, nó được xây bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)} lấp lánh. "
-        f"Ở đây, {random.choice(quantities)} {random.choice(indoorItems)} {random.choice(indoorItemStatus)}, nó có hình dạng là {random.choice(shapes)}, và đang {random.choice(indoorLightVerb)} là {random.choice(indoorItemLightningSource)} màu {random.choice(colors)} từ bên ngoài. "
-        f"Xung quanh tiệm, có {random.choice(quantities)} {random.choice(indoorObjectItems)} có hình dạng là {random.choice(shapes)} và đang phát quang màu {random.choice(colors)}. "
+        f"{random.choice(inDoorPreposition).upper()}, {random.choice(quantities)} {random.choice(indoorItems)} {random.choice(indoorItemStatus)}, nó có hình dạng là {random.choice(shapes)}, và đang {random.choice(indoorLightVerb)} là {random.choice(indoorItemLightningSource)} màu {random.choice(colors)} từ bên ngoài. "
+        f"{random.choice(inDoorPreposition).upper()} tiệm, có {random.choice(quantities)} {random.choice(indoorObjectItems)} có hình dạng là {random.choice(shapes)} và đang phát quang màu {random.choice(colors)}. "
         f"Khách hàng của tiệm này thường là {random.choice(liveNPCs)}, họ hay đến đây để đặt hàng {random.choice(indoorObjectItems)} thông qua chủ tiệm làm trung gian. Tiệm trông lúc nào cũng làm ăn một cách {random.choice(status)}!\n"
         f"Chủ tiệm, nhìn trông giống một {random.choice(liveNPCs)}, tên thật là {random.choice(nameNPC)} và năm nay đã {generateRandomLargeNumber()} tuổi.\n"
         f"Chủ tiệm cũng từng là {random.choice(NPCjobs).upper()} đã về hưu. Chủ tiệm thì đang {random.choice(liveNPCApperances)}, vừa nhìn thì trông có vẻ {random.choice(liveNPCEmotions)}, và đang {random.choice(liveNPCActions)}.\n"
         f"Chủ tiệm dù nhìn bên ngoài là một chủ tiệm bình thường, nhưng có một năng lực đặc biệt là {random.choice(magicTypes)}.\n"
-        f"Rồi ngày nọ lúc {generateClock()}, có một vị khách lạ ghé vào tiệm, tên là {random.choice(nameNPC)}, nghề nghiệp là {random.choice(NPCjobs).upper()} và đã có {generateRandomLargeNumber()} năm kinh nghiệm. Nhìn vị khách thì đang trông có vẻ {random.choice(liveNPCEmotions)}.\n"
-        f'Vị khách đó ban đầu ngập ngừng, rồi sau đó mở lời hỏi chủ tiệm: "Thú thật với ngài! Tôi đang bị dính phải một lời nguyền vì đã lỡ đắc tội với {random.choice(liveNPCs)}. '
+        f"Rồi vào ngày {generateDate()} lúc {generateClock()}, có một vị khách lạ ghé vào tiệm, tên là {random.choice(nameNPC)}, nghề nghiệp là {random.choice(NPCjobs).upper()} và đã có {generateRandomLargeNumber()} năm kinh nghiệm. Nhìn vị khách thì đang trông có vẻ {random.choice(liveNPCEmotions)}.\n"
+        f'Vị khách đó ban đầu ngập ngừng, rồi sau đó mở lời hỏi chủ tiệm: "...Thú thật với ngài! Tôi đang bị dính phải một lời nguyền vì đã lỡ đắc tội với {random.choice(liveNPCs)}. '
         f'Lời nguyền đó khiến tôi bây giờ phải có ngoại hình là {random.choice(shapes)}, và khi trúng nguyền thì phải {random.choice(liveNPCActions)} mãi mãi. Tôi nghe danh ngài đã lâu, hôm nay đến đây xin được nhờ ngài giúp đỡ cho! "\n'
         f'Chủ tiệm hỏi: "Hmmm, tôi thấy có vẻ cậu đang gặp phải chuyện {random.choice(status)} đấy! Mà cậu đã làm gì để bị dính phải lời nguyền đó? Đừng có nói với ta là cái trò thách thức đó nhá?".\n'
         f'Vị khách đáp: "Ơ sao ngài... lại biết ạ? Tôi sống năm nay đã {generateRandomLargeNumber()} tuổi mà tôi chưa bao giờ gặp cái trường hợp nào mà... nó như này cả!!! "\n'
@@ -29,9 +29,9 @@ def generateShortStory1():
         f'Lại còn trợ ác hại thiện! Mà cậu đã thử tự giải lời nguyền à? Trông cậu tôi thấy có vẻ {random.choice(liveNPCEmotions)}?"\n'
         f'Vị khách hỏi: "Vậy ngài có cách nào giúp tôi phá giải lời nguyền này không? Tôi đúng là đã thử giải nguyền bằng cách {random.choice(liveNPCActions)} hơn {generateRandomLargeNumber()} lần nhưng đều thất bại! Xin hãy cứu giúp tôi với thưa ngài!!!"\n'
         f'Chủ tiệm đáp: "Cũng không có gì khó đâu! Cậu hãy đến một {random.choice(indoorLocations)}, nơi đó cách ở đây {generateRandomLargeNumber()}km về phía {random.choice(gpsLocations)}. '
-        f'Để nhận biết đã đến đúng nơi cần đến hay chưa, thì cậu phải để ý là địa điểm đó tọa lạc tại {random.choice(outdoorView).upper()}, nơi mà ở đó có {generateRandomLargeNumber()} {random.choice(outdoorObjects)} có hình dạng là {random.choice(shapes)} và chúng hay phát ra ánh sáng màu {random.choice(colors)}."\n'
+        f'Để nhận biết đã đến đúng nơi cần đến hay chưa, thì cậu phải để ý là địa điểm đó tọa lạc {random.choice(outDoorPreposition)} {random.choice(outdoorView).upper()}, nơi mà ở đó có {generateRandomLargeNumber()} {random.choice(outdoorObjects)} có hình dạng là {random.choice(shapes)} và chúng hay phát ra ánh sáng màu {random.choice(colors)}."\n'
         f"Chủ tiệm, rút ra một điếu thuốc dài {generateRandomLargeNumber()}m ra, rít 1 hơi dài , rồi ông ta {random.choice(liveNPCActions)} một lúc.\n"
-        f"Ông ta tiếp tục nhìn vào vị khách bằng ánh mắt {random.choice(liveNPCEmotions)} và nói: còn nữa , ở đó có {generateRandomLargeNumber()} {random.choice(liveNPCs)} đang sinh sống. Hãy gặp 1 kẻ nào đó trong số họ, và dùng tên giả của tôi và cứ nói với họ rằng ông chủ tiệm {random.choice(nameNPC)} đã bảo đến đó để phá giải lời nguyền.\n"
+        f"Ông ta tiếp tục nhìn vào vị khách bằng ánh mắt {random.choice(liveNPCEmotions)} và nói: Còn nữa, {random.choice(outDoorPreposition)} đó có {generateRandomLargeNumber()} {random.choice(liveNPCs)} đang sinh sống. Hãy gặp 1 kẻ nào đó trong số họ, và dùng tên giả của tôi và cứ nói với họ rằng ông chủ tiệm {random.choice(nameNPC)} đã bảo đến đó để phá giải lời nguyền.\n"
         f"Rồi sau đó, họ sẽ dẫn cậu đến một nơi khác gần đó, nơi mà có một người bạn của tôi đang sống. Anh ta trông giống 1 {random.choice(liveNPCs)}, và danh tính thật là {random.choice(nameNPC)}, là {random.choice(NPCjobs).upper()} có {generateRandomLargeNumber()} năm kinh nghiệm. Cậu sẽ dễ nhận ra vì anh ta có ngoại hình là {random.choice(liveNPCApperances)} và thường {random.choice(liveNPCActions)}.\n"
         f"Anh ta tuy câm điếc bẩm sinh nhưng anh ta có thể {random.choice(liveNPCActions)} và nói rõ ràng chi tiết với cậu cách để giải lời nguyền của cậu. Nhưng với điều kiện là cậu phải đưa cho anh ta {generateRandomLargeNumber()}$ hoặc {generateRandomLargeNumber()} {random.choice(indoorObjectItems)} để làm phí giao dịch .\n"
         f"Anh ta ngoài ra còn bị cụt tứ chi, nên anh ta cũng có thể {random.choice(liveNPCActions)} để đi bộ cùng cậu để dẫn cậu đến {random.choice(outdoorView)}. Sau đó, cậu sẽ từ đó đi thẳng một đoạn {generateRandomLargeNumber()}km về {random.choice(gpsLocations)} nữa là sẽ đến đích. "
@@ -52,15 +52,15 @@ def generateShortStory1():
 def generateShortStory2():
     return (
         f"SHORT STORY 2: Job Interview {generateRandomIcons(10)}\n\n"
-        f"Một ngày {random.choice(weatherConditions)} tại {random.choice(companies).upper()} COMPANY!!!\n"
-        f"Công ty này vốn là công ty con của công ty con của công ty con của công ty con của {random.choice(companies)} Company, đây là một công ty chuyên về {random.choice(liveNPCActions)} và chuyên cung cấp {random.choice(indoorObjectItems)} có uy tín trong địa phương.\n"
-        f"Hôm nay, tại công ty này sẽ diễn ra một buổi phỏng vấn ứng viên đặc biệt - Cuộc phỏng vấn không giới hạn với triết lý '{random.choice(slogan)}'.\n"
-        f"Đang có tổng cộng {generateRandomLargeNumber()} ứng viên đang ở tại sảnh chờ {generateRandomLargeNumber()}km2 của công ty này.\n"
+        f"Một ngày {random.choice(weatherConditions)} {random.choice(inDoorPreposition)} {random.choice(companies).upper()} COMPANY!!!\n"
+        f"Công ty này vốn là công ty con của công ty con của công ty con của công ty con của {random.choice(companies)} Company, đây là một công ty chuyên về {random.choice(liveNPCActions)} và chuyên cung cấp {random.choice(indoorObjectItems)} có uy tín {random.choice(outDoorPreposition)} địa phương.\n"
+        f"Hôm nay, là ngày {generateDate()} {random.choice(inDoorPreposition)} công ty này sẽ diễn ra một buổi phỏng vấn ứng viên đặc biệt - Cuộc phỏng vấn không giới hạn với triết lý '{random.choice(slogan)}'.\n"
+        f"Đang có tổng cộng {generateRandomLargeNumber()} ứng viên đang ở {random.choice(inDoorPreposition)} sảnh chờ {generateRandomLargeNumber()}km2 của công ty này.\n"
         f"Tất cả ứng viên đều là {random.choice(liveNPCs)}. Ai cũng {random.choice(liveNPCApperances)}, nhìn bọn họ trông có vẻ {random.choice(liveNPCEmotions)}, và đang {random.choice(liveNPCActions)} trong lúc chờ đến lượt phỏng vấn của mình.\n"
         f"Một lúc sau, {generateRandomLargeNumber()} {random.choice(liveNPCs)} đều có mặt, họ là đại diện phòng nhân sự của công ty. Đang chuẩn bị tiến hành buổi phỏng vấn đặc biệt này.\n"
         f"CEO của công ty là {random.choice(liveNPCs)}, tên thật là {random.choice(nameNPC)}, là người sáng lập công ty. Ông ta đang {random.choice(liveNPCActions)}. Sau đó, ông ta lại chuyển qua {random.choice(liveNPCActions)}.\n"
         f"Cuối cùng, lễ khai mạc buổi phỏng vấn bắt đầu. Vị CEO tiếp tục {random.choice(liveNPCActions)} rồi sau đó phát biểu với giọng nói {random.choice(liveNPCEmotions)}:\n"
-        f" - Chào mừng mọi người đến với buổi phỏng vấn đặc biệt tại đây! Tôi là CEO - Xin đại diện công ty này để nói {generateRandomLargeNumber()} lời khai mạc.\n"
+        f" - Chào mừng mọi người đến với buổi phỏng vấn đặc biệt {random.choice(inDoorPreposition)} đây! Tôi là CEO - Xin đại diện công ty này để nói {generateRandomLargeNumber()} lời khai mạc.\n"
         f" Tôi có thể đoán được rằng, các bạn ở đây có thể đã từng đi phỏng vấn xin việc. Có thất bại, có thành công, có thương lượng thất bại, có thương lượng thành công.... "
         f"Nhưng mà, tôi có thể khẳng định. Buổi phỏng vấn này có điều đặc biệt ở chỗ 'Đây là buổi phỏng vấn nhân sự đầu tiên. Cái mà bạn có thể nhận mọi công việc bạn muốn làm nhất, deal mọi mức lương mà bạn muốn nhất!!! Trên tinh thần dân chủ, thực hiện chủ trương 7 dám. Các bạn hãy mạnh dạn lên! {random.choice(proverbs)}!'\n"
         f"Sau đó, CEO lấy ly rượu {generateRandomLargeNumber()} lít ra và uống hết sạch trong {generateRandomReciprocal()} nano giây, rồi ông ta đã ợ {generateRandomLargeNumber()} hơi liên tục, rồi tiếp tục nói:\n"
@@ -79,10 +79,10 @@ def generateShortStory2():
         f"Cô HR xăm soi CV của ứng viên một lúc, trông cô có vẻ {random.choice(liveNPCEmotions)} và {random.choice(status)}. Bỗng cô dừng lại:\n"
         f" - Chà, anh cũng thật thú vị đó chứ. Anh từng là {random.choice(NPCjobs).upper()}, làm cho {random.choice(companies)} và đã có {generateRandomLargeNumber()} năm kinh nghiệm trong việc {random.choice(liveNPCActions)} sao? Tại sao anh nghỉ việc vậy?\n"
         f"Ứng viên ngập ngừng đáp: Vâng, đúng là tôi đã từng làm việc bên đó. Và để trả lời cho câu hỏi của cô thì lí do tôi nghĩ là vì... bên này có cô HR xinh đẹp này làm tôi {random.choice(status)} từ lâu 🤡! "
-        f"Tôi đùa đấy... thật ra thì tôi không còn hứng thú với công việc bên đó nữa nên tôi quyết định nghỉ việc và tạm thư giãn ở nhà {generateRandomLargeNumber()} năm. "
-        f"Sau đó, tôi đã nộp {generateRandomLargeNumber()} cái CV để có thể có được cơ hội vào vòng phỏng vấn ở công ty này!\n"
+        f"Tôi đùa đấy... thật ra thì tôi không còn hứng thú với công việc bên đó nữa nên tôi quyết định nghỉ việc và tạm thư giãn ở nhà {generateRandomLargeNumber()} năm. Rồi vào cách đây {generateRandomLargeNumber()} ngày, tôi thấy công ty này đăng tuyển dụng trên {random.choice(sourceInfo)}. "
+        f"Sau đó, tôi đã nộp {generateRandomLargeNumber()} cái CV vào đây, để có thể có được cơ hội vào vòng phỏng vấn ở công ty này và có mặt ở đây!\n"
         f"Cô HR 2 má tự dưng dần chuyển sang {random.choice(colors)} vì ngượng ngùng. Nhưng cô vẫn giữ được sự nghiêm túc và lại tiếp tục:\n"
-        f" - Mồm miệng anh cũng ghê thật đó... Không biết hôm nay ai đó có chịu đúng hẹn không mà bày đặt... À mà, trong CV của anh mục Kinh nghiệm có ghi rằng là lúc {random.randint(1, 18)} tuổi, anh đã từng hack thành công vào Ngân Hàng SIDA Liên Bang Quốc Tế để trộm đi {generateRandomReciprocal()}$ và {generateRandomReciprocal()} thỏi vàng sao?\n"
+        f" - Mồm miệng anh cũng ghê thật đó... Không biết hôm nay ai đó có chịu đúng hẹn không mà bày đặt... À mà, trong CV của anh mục Kinh nghiệm có ghi rằng là lúc {generateANumber(1, 18, thousandsSeparator=False)} tuổi, anh đã từng hack thành công vào Ngân Hàng SIDA Liên Bang Quốc Tế để trộm đi {generateRandomReciprocal()}$ và {generateRandomReciprocal()} thỏi vàng sao?\n"
         f"Anh ứng viên thật thà đáp: - Dạ, báo cáo đồng chí HR, tôi không giấu gì cô. Tôi cũng đã bị phán {generateRandomLargeNumber()} năm tù ở 1 phiên tòa được diễn ra tại {random.choice(outdoorView)} và phải khổ sai bằng việc {random.choice(liveNPCActions)} liên tục trong {generateRandomLargeNumber()} năm. Và do tôi thực hiện cải tạo tốt nên được mãn hạn sớm.\n"
         f"Cô HR bắt đầu nghiêm túc: - Đánh giá sơ bộ tôi đưa ra nhận định thế này, anh cũng thật thà phết nhỉ? Tôi thích anh rồi đó! ...Bây giờ, vào việc quan trọng chính nhé. Về việc thực hiện chủ trương của CEO trong buổi phỏng vấn này, anh hãy nói vị trí mà anh đang muốn vào nhất, công việc anh muốn làm nhất và mức lương anh muốn nhất? Hãy thành thật nha!\n"
         f"Anh ứng viên dõng dạc: - Được rồi, tôi xin thành thật và không giấu diếm gì cả! Yêu cầu của tôi khá là khắt khe nha. Tôi muốn vào vị trí {random.choice(NPCjobs).upper()}, công việc tôi muốn làm là {random.choice(liveNPCActions)}. Mức lương tôi muốn nhất là {generateRandomReciprocal()}$ , cô thấy sao? Yêu cầu này có quá cao không?\n"
@@ -104,13 +104,13 @@ def generateShortStory2():
 def generateShortStory3():
     return (
         f"SHORT STORY 3: Dating {generateRandomIcons(10)}\n\n"
-        f"Lúc này, là sau giờ làm việc một cách {random.choice(status)}. vào lúc {generateClock()}, thời tiết thì {random.choice(weatherConditions)}.\n"
+        f"Hôm nay, là {generateDate()} hiện tại đang là khoảng thời gian sau ngày làm việc một cách {random.choice(status)}. Vào lúc {generateClock()}, thời tiết thì {random.choice(weatherConditions)}.\n"
         f"Bầu trời đang {random.choice(status)}, có {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} và bị {random.choice(outDoorSkyStrongObjectStatus)} đang phát ra ánh sáng màu {random.choice(colors)}.\n"
         f"Ở ngay {random.choice(gpsLocations)} của công ty {random.choice(companies)}, có {generateRandomLargeNumber()} cặp đôi đang thực hiện kế hoạch cho lời hẹn ước từ lúc {generateClock()}, cái lúc mà họ hẹn trước khi ở sảnh công ty với tư cách là HR và ứng viên xin việc.\n" 
         f"Đây là công ty con của công ty con của công ty con của công ty con của {random.choice(companies)}. Nó chuyên về {random.choice(liveNPCActions)} và cung cấp các {random.choice(indoorObjectItems)}. Nó đã có hơn {generateRandomLargeNumber()} khách hàng thân thiết.\n"
-        f"Công ty này đang đặt trụ sở chính tại {random.choice(outdoorView).upper()} đã {random.choice(outDoorStatus)} lâu năm.\n"
-        f"Ngay tại {random.choice(outdoorObjectDensity)} của công ty, có {generateRandomLargeNumber()} {random.choice(outdoorObjects)} đều có hình dạng là {random.choice(shapes)} đang phát ra ánh sáng màu {random.choice(colors)} khiến cho nơi này lung linh hơn bao giờ hết.\n"
-        f"Đâu đó tại tòa nhà {random.choice(buildings)} của công ty, có anh chàng {random.choice(liveNPCs)}, tên thật của anh là {random.choice(nameNPC)}. Đang có vẻ {random.choice(liveNPCEmotions)} và đợi cô gái {random.choice(liveNPCs)} của mình tan ca khi cô đang làm việc ở phòng HR tại tầng  {generateRandomLargeNumber()}, và tên thật của cô là {random.choice(nameNPC)}. "
+        f"Công ty này đang đặt trụ sở chính {random.choice(outDoorPreposition)} {random.choice(outdoorView).upper()} đã {random.choice(outDoorStatus)} lâu năm.\n"
+        f"Ngay {random.choice(inDoorPreposition)} {random.choice(outdoorObjectDensity)} của công ty, có {generateRandomLargeNumber()} {random.choice(outdoorObjects)} đều có hình dạng là {random.choice(shapes)} đang phát ra ánh sáng màu {random.choice(colors)} khiến cho nơi này lung linh hơn bao giờ hết.\n"
+        f"Đâu đó {random.choice(inDoorPreposition)} tòa nhà {random.choice(buildings)} của công ty, có anh chàng {random.choice(liveNPCs)}, tên thật của anh là {random.choice(nameNPC)}. Đang có vẻ {random.choice(liveNPCEmotions)} và đợi cô gái {random.choice(liveNPCs)} của mình tan ca khi cô đang làm việc ở phòng HR tại tầng  {generateRandomLargeNumber()}, và tên thật của cô là {random.choice(nameNPC)}. "
         f"Hôm nay anh có lẽ hơi {random.choice(liveNPCEmotions)} hơn so với mọi ngày, nên anh đã đến sớm hơn {generateRandomLargeNumber()} phút so với lịch đã hẹn trước với cô gái. "
         f"Vì anh đến hơi sớm, và cô gái kia thì vẫn đang còn trong ca cho đến {generateClock()} nên anh hơi đói bụng. Anh đang thầm nghĩ, nên mua {generateRandomLargeNumber()} cái bánh mì để ăn nhẹ trước.\n"
         f"Có một quán quen của anh cách đó {generateRandomLargeNumber()}km. Nghĩ cũng gần đây thôi, chưa kể vẫn còn cách thời gian đã hẹn là {generateRandomReciprocal()}ns nữa. Nên anh thầm nghĩ mặt thời gian trông vẫn khá {random.choice(liveNPCEmotions)}. "
@@ -140,7 +140,7 @@ def generateShortStory3():
         f"- Mối lương duyên giữa 2 người không hề tầm thường đâu! 2 người đã có tiền duyên với nhau cũng {generateRandomLargeNumber()} kiếp rồi đó. "
         f"Kiếp trước, vì 2 người hiểu lầm nhau, nguyên nhân là chàng trai đã {random.choice(liveNPCActions)} {generateRandomLargeNumber()} lần trước mặt cô gái khiến cô trầm cảm mà tự vẫn. Chàng trai vì nhớ thương người mình yêu nên đã đi theo cô sau đó không lâu! "
         f"Kiếp này, vì 2 người vẫn còn mối nợ kiếp trước chưa trả hết. Nên kiếp này sẽ tiếp tục bên nhau để cùng nhau {random.choice(liveNPCActions)}! Cơ mà, ta muốn nói trước 2 người biết, sẽ có họa kiếp đó. Này cậu trai trẻ? Cậu từng phạm phải tội gì phải không?\n"
-        f"- Ơ sao ông lại,.... ??? Phải, tôi từng hack thành công vào Ngân Hàng SIDA Liên Bang Quốc Tế để trộm đi {generateRandomReciprocal()}$ và {generateRandomReciprocal()} thỏi vàng lúc tôi chỉ mới {random.randint(1, 18)} tuổi! "
+        f"- Ơ sao ông lại,.... ??? Phải, tôi từng hack thành công vào Ngân Hàng SIDA Liên Bang Quốc Tế để trộm đi {generateRandomReciprocal()}$ và {generateRandomReciprocal()} thỏi vàng lúc tôi chỉ mới {generateANumber(1, 18, thousandsSeparator=False)} tuổi! "
         f"Và tôi cũng đã bị phán {generateRandomLargeNumber()} năm tù ở phiên tòa được diễn ra tại {random.choice(outdoorView).upper()} và phải khổ sai bằng việc {random.choice(liveNPCActions)} liên tục {generateRandomLargeNumber()} năm.\n"
         f"- Vì ta biết đó do nghiệp báo kiếp trước. Cơ mà quan trọng là chính cô gái trong tương lai cũng sẽ gặp tai họa tương tự, 2 người bây giờ chỉ cần làm theo tờ giấy {random.choice(colors)} này ghi. Hãy {random.choice(liveNPCActions)} trước khi làm theo lời tờ giấy này dặn dò. Thì lập tức họa kiếp tiêu trừ. Vạn sự bình an! Nhưng mà nhớ, không được để ai khác ngoài 2 người nhìn thấy tờ giấy này nhé!\n"
         f"Cặp đôi ra về và với tâm trạng hơi {random.choice(liveNPCEmotions)}. Một lúc sau, họ đi {random.choice(liveNPCActions)} ở gần đó. Và đợi lúc không có ai xung quanh, họ lấy tờ giấy ông chủ đó đưa cho họ ra xem. Họ như hiểu ra điều gì đó và họ nhìn nhau như ngầm hiểu - 'Ohhh, thì ra là thế!'\n"
@@ -157,12 +157,12 @@ def generateShortStory4():
     mainDuration = generateRandomLargeNumber()
     return (
         f"SHORT STORY 4 : Rebellious Past {generateRandomIcons(10)}\n\n"
-        f"Tọa lạc tại {random.choice(outdoorView).upper()} trông {random.choice(outDoorStatus)} lâu năm. Ở đây, tình hình thời tiết phức tạp, thời tiết luôn {random.choice(weatherConditions)} vài năm gần đây. Bầu trời đang trông có vẻ {random.choice(status)}, "
+        f"Tọa lạc {random.choice(outDoorPreposition)} {random.choice(outdoorView).upper()} trông {random.choice(outDoorStatus)} lâu năm. {random.choice(outDoorPreposition).upper()}, tình hình thời tiết phức tạp, thời tiết luôn {random.choice(weatherConditions)} vài năm gần đây. Bầu trời đang trông có vẻ {random.choice(status)}, "
         f"có {random.choice(quantities)} {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} và bị {random.choice(outDoorSkyStrongObjectStatus)} đang phát ra ánh sáng màu {random.choice(colors)}. "
         f"Đây quả thật là một khung cảnh {random.choice(status)}.\n"
         f"Có một {random.choice(indoorLocations)}, trông có vẻ {random.choice(indoorStatus)}. Và nó được xây dựng bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. "
-        f"Ở đây, đang có {generateRandomLargeNumber()} cặp đôi {random.choice(liveNPCs)}-{random.choice(liveNPCs)} đang hẹn hò. Họ đang {random.choice(liveNPCActions)} và trông rất {random.choice(liveNPCEmotions)}.\n"
-        f"Và ngay tại đó cũng có một cặp đôi đặc biệt {random.choice(liveNPCs)}-{random.choice(liveNPCs)} đang hẹn hò. Chàng trai tên thật là {mainName}, {generateRandomLargeNumber()} tuổi. "
+        f"{random.choice(inDoorPreposition).upper()}, đang có {generateRandomLargeNumber()} cặp đôi {random.choice(liveNPCs)}-{random.choice(liveNPCs)} đang hẹn hò. Họ đang {random.choice(liveNPCActions)} và trông rất {random.choice(liveNPCEmotions)}.\n"
+        f"Và {random.choice(inDoorPreposition)} đó cũng có một cặp đôi đặc biệt {random.choice(liveNPCs)}-{random.choice(liveNPCs)} đang hẹn hò. Chàng trai tên thật là {mainName}, {generateRandomLargeNumber()} tuổi. "
         f"Còn bạn nữ thì tên là {random.choice(nameNPC).upper()}, {generateRandomLargeNumber()} tuổi.\n"
         f"Cặp đôi đặc biệt này đang vừa {random.choice(liveNPCActions)} và trò chuyện với nhau trông rất {random.choice(liveNPCEmotions)}.\n"
         f"- Anh không thể ngờ là chúng ta có {generateRandomLargeNumber()} tiền kiếp ở bên nhau đó. Ông thầy bói đó quả nhiên là cao thủ {random.choice(magicTypes)}. {generateRandomIcons(3)}\n"
@@ -174,7 +174,7 @@ def generateShortStory4():
         f"- Cơ mà, em đang thấy anh rất tốt ở hiện tại, dù anh đã có hẹn hò {generateRandomLargeNumber()} hay {generateRandomLargeNumber()} cô gái khác đi nữa."
         f" Em vẫn tin là anh rất chung tình. Chỉ là họ vì e ngại quá khứ của anh, họ đã không hiểu anh, họ không chịu {random.choice(liveNPCActions)} cho anh! Cơ mà em thì khác, em không quan tâm gì cả, chỉ cần anh là phiên bản tốt nhất của chính mình là đủ rồi!"
         f" Cơ mà anh phải kể cho em nghe cái chuyện sai lầm anh từng phạm phải đó! Em khá tò mò lắm nha... haha.\n"
-        f"- Được rồi được rồi, anh sẽ kể chi tiết ngay đây, không giấu diếm. Lúc đó, anh chỉ mới {random.randint(1, 18)} tuổi thôi. Bắt đầu nhá!\n"
+        f"- Được rồi được rồi, anh sẽ kể chi tiết ngay đây, không giấu diếm. Lúc đó, anh chỉ mới {generateANumber(1, 18, thousandsSeparator=False)} tuổi thôi. Bắt đầu nhá!\n"
         f"Chàng trai đang bắt đầu hồi tưởng...\n"
         f"Cách thời điểm hiện tại {generateRandomLargeNumber()} năm. Chàng trai ban đầu vì tuổi trẻ, mà anh ta đã nảy ra ý tưởng một cách {random.choice(liveNPCEmotions)}:\n"
         f"Anh ta sẽ hack và trộm đi một số tiền để test bảo mật Ngân Hàng SIDA Liên Bang Quốc Tế thuộc tập đoàn {random.choice(companies)} sau đó giúp họ cải tiến hệ thống và vá lỗ hổng bảo mật. "
@@ -221,7 +221,7 @@ def generateShortStory4():
         f"Quay trở lại hiện tại, cô gái đang mỉm cười và vỗ vào vai anh ta an ủi và bảo:\n"
         f"- Tính ra anh đâu có động cơ gì xấu xa đâu, động cơ gây án ban đầu của anh là ý tốt. Cơ mà tại sao anh bị phán án nặng quá vậy? Còn tên cảnh sát trưởng? Hắn ta đúng là kẻ tham lam!! Còn anh điều tra viên đặc biệt đó? Anh ta có giúp anh không?\n"
         f"- Tên cảnh sát trưởng đó, anh biết. Hắn ta là kẻ biến chất và tham tiền, không biết bao nhiêu nạn nhân đã bị hắn hại? Còn anh điều tra viên đó, là người anh thấy duy nhất là người tốt, anh ta thì đã giúp anh nhiều lắm đó. Anh rất biết ơn anh ta...\n"
-        f"...Vào năm {random.randint(100000000000000, 1000000000000000):,}TCN lúc {generateClock()}, tọa lạc tại {random.choice(outdoorView).upper()}. Tòa án liên bang `SIDA VKL QUỐC TẾ` đang xét xử 1 vụ án cướp ngân hàng. "
+        f"...Vào {generateDate()} lúc {generateClock()}, tọa lạc tại {random.choice(outdoorView).upper()}. Tòa án liên bang `SIDA VKL QUỐC TẾ` đang xét xử 1 vụ án cướp ngân hàng. "
         f"Tòa án có sự tham gia của {generateRandomLargeNumber()} luật sư bào chữa cho phía thẩm phán, {generateRandomLargeNumber()} luật sư bào chữa cho phía cơ quan công tố và điều tra, {generateRandomLargeNumber()} luật sư bào chữa cho phía bị hại, {generateRandomLargeNumber()} thẩm phán, {generateRandomLargeNumber()} đại diện bên cơ quan công tố và điều tra. "
         f"Và cũng góp mặt tham dự tại đây {generateRandomLargeNumber()} đại diện của bên bị hại và {generateRandomLargeNumber()} nhân chứng khác.\n"
         f"Sau {generateRandomLargeNumber()} phút xét xử, chủ tọa tòa án {random.choice(nameNPC).upper()}, vừa {random.choice(liveNPCActions)}. Trong khi đó, các thẩm phán khác đang {random.choice(liveNPCActions)} để hỗ trợ thẩm phán chính. Sau {generateRandomLargeNumber()} giây bàn luận trao đổi gay gắt giữa các bên lên quan. Phán quyết đã được đưa ra:\n"
@@ -262,7 +262,7 @@ def generateShortStory4():
         f" - Không sao cả, em tin anh mà, anh là người tốt.\n"
         f"Thời gian nhanh chóng trôi qua, cặp đôi đặc biệt đó nhanh chóng băng qua {generateRandomLargeNumber()}km con phố để về nhà. Lúc chàng trai đưa cô gái về đến trước cổng nhà, cô gái nói:\n"
         f" - Bye anh yêu nha!!! Cơ mà anh nhớ mai chúng ta sẽ hẹn hò ở đâu không đó??? ~.~\n"
-        f" - Anh nhớ chứ, lúc {generateClock()} ngày mai chúng ta sẽ đi {random.choice(liveNPCActions)} ở một {random.choice(indoorLocations)} gần đây? Anh nhớ đúng phải hong ta??\n"
+        f" - Anh nhớ chứ, lúc {generateClock()} ngày mai chúng ta sẽ đi {random.choice(liveNPCActions)} {random.choice(inDoorPreposition)} một {random.choice(indoorLocations)} gần đây? Anh nhớ đúng phải hong ta??\n"
         f" - Đúng rùi đó anh yêu, nhưng mà em hơi bận tí, nên mai anh hãy đến đón em lúc {generateClock()} nha!! Em cũng muốn ở bên anh cựu `tội phạm hoàn lương` lâu hơn nè!!~~\n"
         f"Cặp đôi nhanh chóng tạm biệt nhau, tình cảm họ lúc này đã trở nên càng lúc {random.choice(status)} hơn rất nhiều. Vậy còn bạn? Bạn cảm thấy quá khứ của chàng trai thế nào? Bạn sẽ làm gì khi bị phán quyết khổ sai bằng cách `Lặp lại việc {mainAction} trong {mainDuration} năm`? {generateRandomIcons(7)}"
     )
