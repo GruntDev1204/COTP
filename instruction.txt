@@ -3,9 +3,9 @@ Chaos-One-Time-Prompt: Only chaos, and get a prompt for your AI — then pray fo
 🎪👑🤡🎰🎭🤦‍♂️🤷‍♂️🤯🤕🤮🫠🥴😭😵‍💫😵😫🤪🤧🙂🙄💀🎲🎲🎲
 How do you build a shitty app executable to look cool and make your girlfriend want to get into bed with you?
     1/ From the project folder, run:
-       pyinstaller --onefile --windowed --name "COTP - CHAOS ONE TIME PROMPT" --add-data "data;data" --add-data "Script;Script" --add-data "instruction.txt;." --add-data "log/cotp_components_data_pool.txt;log" main.py
-       The --add-data options bundle the Python source files, COTP introduction text, and component data pool text required by the Info views.
-       The shorter command without these options can build the app, but the Info views will not have their source data.
+       "pyinstaller --noconfirm "COTP - CHAOS ONE TIME PROMPT.spec"
+       The spec bundles the data and Script folders, instruction.txt, and log/cotp_components_data_pool.txt required by the app and its Info views.
+       The one-file executable is written to dist/COTP - CHAOS ONE TIME PROMPT.exe.
     2/ Be careful: no one wants a baby when you're very young and earning a salary with a "trial and pray" mindset as a developer.
 Author: Grunt - Trung.
 
