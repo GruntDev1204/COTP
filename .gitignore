@@ -1,0 +1,7 @@
+# PyInstaller build outputs
+/build/
+/dist/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
