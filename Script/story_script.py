@@ -24,7 +24,7 @@ def generateShortStory1():
         f'Chủ tiệm hỏi: "Hmmm, tôi thấy có vẻ cậu đang gặp phải chuyện {random.choice(status)} đấy! Mà cậu đã làm gì để bị dính phải lời nguyền đó? Đừng có nói với ta là cái trò thách thức đó nhá?".\n'
         f'Vị khách đáp: "Ơ sao ngài... lại biết ạ? Tôi sống năm nay đã {generateRandomLargeNumber()} tuổi mà tôi chưa bao giờ gặp cái trường hợp nào mà... nó như này cả!!! "\n'
         f'Chủ tiệm đáp: "Đó là vì ta đã từng gặp đâu đó khoảng {generateRandomLargeNumber()} người bị dính lời nguyền như cậu, và ta đã giúp {generateRandomLargeNumber()} người khác phá giải lời nguyền đó. Nhưng tôi chưa thấy ai nghiêm trọng như cậu cả."\n'
-        f'Vị khách đáp: "Tôi đúng là đã thách thức họ trong cuộc thi {random.choice(liveNPCActions)} xem ai làm tốt hơn và đã thua cuộc, và tôi đã phải dính lời nguyền này! Bây giờ, tôi cần phải làm gì?\n'
+        f'Vị khách đáp: "Tôi đúng là đã thách thức họ trong cuộc thi {random.choice(liveNPCActions)} xem ai làm tốt hơn và đã thua cuộc, và tôi đã phải dính lời nguyền này! Bây giờ, tôi cần phải làm gì?" \n'
         f'Chủ tiệm đáp: "Tôi biết tên đó, hắn ta cũng đã từng nguyền tôi mà thất bại, vì lúc đó tôi đã {random.choice(liveNPCActions)} để vô hiệu hóa lời nguyền đó. Tên này có {generateRandomLargeNumber()} kẻ khác là đàn em dưới trướng , tên đó có chút quyền năng cái là tâm tà bất chính. '
         f'Lại còn trợ ác hại thiện! Mà cậu đã thử tự giải lời nguyền à? Trông cậu tôi thấy có vẻ {random.choice(liveNPCEmotions)}?"\n'
         f'Vị khách hỏi: "Vậy ngài có cách nào giúp tôi phá giải lời nguyền này không? Tôi đúng là đã thử giải nguyền bằng cách {random.choice(liveNPCActions)} hơn {generateRandomLargeNumber()} lần nhưng đều thất bại! Xin hãy cứu giúp tôi với thưa ngài!!!"\n'

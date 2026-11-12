@@ -18,9 +18,13 @@ from ui.ui_properties import (
     themePalettes,
 )
 
-PROJECT_DIR = Path(
+projectDir = Path(
     getattr(sys, "_MEIPASS", Path(__file__).resolve().parent.parent)
 )
+if not (projectDir / "instruction.txt").is_file():
+    internalDir = projectDir / "_internal"
+    if (internalDir / "instruction.txt").is_file():
+        projectDir = internalDir
 
 currentTheme = themePalettes["Dark"]
 outerTheme = currentTheme
@@ -189,7 +193,7 @@ def createInterface():
     infoMode = tk.StringVar(value="COTP Introduction")
 
     def buildCotpIntroduction():
-        instructionText = (PROJECT_DIR / "instruction.txt").read_text(encoding="utf-8")
+        instructionText = (projectDir / "instruction.txt").read_text(encoding="utf-8")
         lines = instructionText.splitlines()
         start = next(
             index for index, line in enumerate(lines)
@@ -202,7 +206,7 @@ def createInterface():
         return "\n".join(lines[start:end]).rstrip()
 
     def buildCotpComponentsDataPool():
-        return (PROJECT_DIR / "log" / "cotp_components_data_pool.txt").read_text(encoding="utf-8")
+        return (projectDir / "log" / "cotp_components_data_pool.txt").read_text(encoding="utf-8")
 
 
     def buildArraySizesText():

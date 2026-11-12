@@ -5,7 +5,12 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('data', 'data'), ('Script', 'Script')],
+    datas=[
+        ('data', 'data'),
+        ('Script', 'Script'),
+        ('instruction.txt', '.'),
+        ('log/cotp_components_data_pool.txt', 'log'),
+    ],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
