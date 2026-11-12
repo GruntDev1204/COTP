@@ -282,6 +282,9 @@ coupleCall = [
     "cặp thần tiên quyến lữ",
     "cặp tình nhân",
     "cặp uyên ương hồ điệp",
+    "cặp vợ chồng",
+    "cặp vợ chồng mới cưới",
+    "cặp vợ chồng son",
     "đôi bạn đồng hành",
     "đôi bạn tâm giao",
     "đôi bạn trẻ",
@@ -299,6 +302,9 @@ coupleCall = [
     "đôi trai tài gái sắc",
     "đôi tri kỷ",
     "đôi uyên ương",
+    "đôi vợ chồng",
+    "đôi vợ chồng mới cưới",
+    "đôi vợ chồng son",
 ]
 
 adjApperanceBoys = [
