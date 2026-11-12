@@ -103,6 +103,7 @@ BoyActions = [
     "lấy hai ngón tay trỏ khẽ kéo nhẹ hai khóe môi mình để làm mặt hề với cô gái",
     "quay lưng lại với cô gái và khoanh tay lạnh lùng",
     "quay lưng lại về phía khung hình và che chở cô gái",
+    "quay lưng lại về phía khung hình và ôm chặt cô gái",
 ]
 
 GirlActions = [
@@ -177,6 +178,8 @@ GirlActions = [
     "bất ngờ dùng một tay bịt miệng của lại chàng trai một cách tinh nghịch",
     "lấy hai ngón tay kẹp nhẹ và kéo mũi của lại chàng trai đầy trêu chọc",
     "quay lưng lại về phía khung hình và ngã vào người chàng trai",
+    "quay lưng lại về phía khung hình và ông chặt chàng trai",
+    "quay lưng lại về phía khung hình và làm biểu cảm giận dỗi",
     "quay lưng lại với chàng trai và làm biểu cảm giận dỗi",
 ]
 
