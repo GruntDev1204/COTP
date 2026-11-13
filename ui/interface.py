@@ -201,7 +201,7 @@ def createInterface():
         )
         end = next(
             index for index in range(start + 1, len(lines))
-            if lines[index].strip().startswith("This COTP App:")
+            if lines[index].strip() == "How to use COTP:"
         )
         return "\n".join(lines[start:end]).rstrip()
 

@@ -133,7 +133,11 @@ than redundant sub-array allocations.
     camera lens.
 
 [Module: dataNPC.py] — Autonomous Entities, Archetypes & Attributes
-    * liveNPCActions: Dynamic verbs and activities executed by non-player entities.
+    * anyActions: Reusable action templates crossed with the shared anyObjects pool.
+    * anyObjects: Shared nouns reused across absurd, conversational, and ceremonial
+    action templates to avoid repeating the same object list in source code.
+    * liveNPCActions: The full NPC action pool, including all anyActions × anyObjects
+    combinations and the standalone feudal-ritual actions.
     * liveNPCApperances: Attire, physical traits, and visual styling descriptors for 
     NPCs.
     * liveNPCEmotions: Psychological states and emotional dispositions exhibited by 

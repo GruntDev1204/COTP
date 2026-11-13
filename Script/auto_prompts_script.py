@@ -54,7 +54,7 @@ def generateCouplePrompt():
         f"Chàng trai rất {random.choice(adjApperanceBoys)} và có đôi mắt 2 mí, áo của chàng trai đóng thùng gọn gàng. "
         f"Còn cô gái thì có đôi mắt long lanh quyến rũ và nhan sắc {random.choice(adjAppearanceGirls)}. \n"
         f"Tóc của chàng trai để kiểu {random.choice(fashionHairMale)}, cô gái thì có kiểu tóc {random.choice(fashionHairFemale)}. \n"
-        f"Chàng trai đang {random.choice(BoyActions)}. Còn cô gái thì đang {random.choice(GirlActions)}. \n"
+        f"Chàng trai đang {random.choice(BoyActions)}. Đáp lại chàng trai, cô gái thì đang {random.choice(GirlActions)}. \n"
         f"Bọn họ đang {random.choice(LoveActions)} và trông họ có vẻ {random.choice(liveNPCEmotions)}. \n\n"
         f"Và khung cảnh {random.choice(coupleCall)} này đang hẹn hò là: \n"
     )
