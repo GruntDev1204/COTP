@@ -335,7 +335,7 @@ def caculateQuantity():
         * (len(status)**2)
         * len(adjApperanceBoys)
         * len(adjAppearanceGirls)
-        * (len(loveIcons)**4)
+        * ((len(loveIcons)**4)**2)
         * len(liveNPCEmotions)
         *len(fashionHairMale)
         * len(fashionHairFemale)

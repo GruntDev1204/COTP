@@ -220,7 +220,8 @@ shapes = [
     "hình phích cắm điện(🔌)",
     "hình sợi dây xích(⛓️)",
     "hình cái xẻng(⛏️)",
-
+    "hình biểu tượng like (👍)",
+    "hình mặt hề (🤡)",
 
     # Biểu tượng toán học
     "hình biểu tượng vô cực(∞)",

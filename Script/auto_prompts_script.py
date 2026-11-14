@@ -23,7 +23,8 @@ def createNoteArt(mode=0):
 def generateIndoorOutput():
     output = (
         f"{generateOpenScene()}\n"
-        f"{random.choice(inDoorPreposition).upper()} là {random.choice(indoorLocations).strip()}, trông rất {random.choice(indoorStatus)}, nó được xây bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. \n"
+        f"This is a Indoor Scene: \n"
+        f"Ngay {random.choice(inDoorPreposition).upper()} thuộc bên trong {random.choice(indoorLocations).strip()}, trông rất {random.choice(indoorStatus)}, nó được xây bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. \n"
         f"Có {generateIndoorItems().strip()}. \n"
         f"{random.choice(inDoorPreposition).upper()}, đang có {generateIndoorObject().strip()}. \n"
         f"{generateNPC().strip()}. \n\n"
@@ -35,7 +36,8 @@ def generateIndoorOutput():
 def generateOutdoorOutput():
     output = (
         f"{generateOpenScene()}\n"
-        f"{random.choice(outDoorPreposition).upper()} là {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm, "
+        f"This is a Outdoor Scene: \n"
+        f"Ngay {random.choice(outDoorPreposition).upper()} tại {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm, "
         f"thời tiết thì đang {random.choice(weatherConditions).strip()}. \n"
         f"{returnOutdoorSkyStrongObject().strip()}. \n"
         f"Có {generateOutdoorSkyObject().strip()}. \n"
@@ -50,6 +52,7 @@ def generateCouplePrompt():
     
     commonSence = (
         f"{createNoteArt(0)}"
+        f" - {''.join(random.choices(loveIcons, k=4))} This is a Romantic Scene: \n"
         f"Hai người này, vốn là {random.choice(coupleCall)} đang yêu nhau rất {random.choice(status)}. "
         f"Chàng trai rất {random.choice(adjApperanceBoys)} và có đôi mắt 2 mí, áo của chàng trai đóng thùng gọn gàng. "
         f"Còn cô gái thì có đôi mắt long lanh quyến rũ và nhan sắc {random.choice(adjAppearanceGirls)}. \n"

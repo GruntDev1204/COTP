@@ -32,7 +32,7 @@ def generateNPC():
     return f"Xung quanh, {random.choice(quantities)} {random.choice(liveNPCs)} {random.choice(liveNPCApperances)}, nhìn họ trông có vẻ {random.choice(liveNPCEmotions)}, và đang {random.choice(liveNPCActions)}"
 
 def generateOpenScene():
-    return f"{generateRandomIcons(4)} - Đây là một khung cảnh {random.choice(status).strip()} - {generateRandomIcons(4)}:\n"
+    return f"{generateRandomIcons(4)} - Đây là một khung cảnh {random.choice(status).strip()} - {generateRandomIcons(4)}\n"
 
 def generateRandomReciprocal():
     denominator = generateANumber(*randomLargeNumberRange, thousandsSeparator=False)
