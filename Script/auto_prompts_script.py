@@ -52,7 +52,7 @@ def generateCouplePrompt():
     
     commonSence = (
         f"{createNoteArt(0)}"
-        f" - {''.join(random.choices(loveIcons, k=4))} This is a Romantic Scene: \n"
+        f"{''.join(random.choices(loveIcons, k=4))} This is a Romantic Scene {''.join(random.choices(loveIcons, k=4))}: \n"
         f"Hai người này, vốn là {random.choice(coupleCall)} đang yêu nhau rất {random.choice(status)}. "
         f"Chàng trai rất {random.choice(adjApperanceBoys)} và có đôi mắt 2 mí, áo của chàng trai đóng thùng gọn gàng. "
         f"Còn cô gái thì có đôi mắt long lanh quyến rũ và nhan sắc {random.choice(adjAppearanceGirls)}. \n"
