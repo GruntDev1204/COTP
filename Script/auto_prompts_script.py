@@ -68,7 +68,7 @@ def generateCouplePrompt():
     return random.choice((
         lambda:(
             f"{commonSence}"
-            f"{random.choice(inDoorPreposition).upper()} {random.choice(indoorLocations).strip()} {random.choice(indoorStatus)} lâu năm. \n"
+            f"{random.choice(inDoorPreposition).upper()} thuộc khu vực bên trong {random.choice(indoorLocations).strip()} {random.choice(indoorStatus)} lâu năm. \n"
             f"Nó được xây bằng {random.choice(indoorMaterials)} và sơn màu {random.choice(colors)}. \n"
             f"{random.choice(inDoorPreposition).upper()}, {generateIndoorItems().strip()}. \n"
             f"Và cũng đang có {generateIndoorObject().strip()} {random.choice(inDoorPreposition)}. \n"
@@ -77,7 +77,7 @@ def generateCouplePrompt():
         ),
         lambda:(
             f"{commonSence}"
-            f"{random.choice(outDoorPreposition).upper()} {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm. \n"
+            f"{random.choice(outDoorPreposition).upper()} tại {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm. \n"
             f"Và {random.choice(outDoorPreposition).upper()}, đang có thời tiết {random.choice(weatherConditions).strip()}. \n"
             f"{returnOutdoorSkyStrongObject().strip()}. \n"
             f"Và cũng đang có {generateOutdoorSkyObject().strip()}. \n"
