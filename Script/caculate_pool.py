@@ -327,9 +327,15 @@ def caculateQuantity():
         * len(optionsDateApp)  # các tùy chọn quẹt
     )
 
+    boyFlaggedActionLen = sum(action[1] != 0 for action in BoyActions)
+    girlFlaggedActionLen = sum(action[1] != 0 for action in GirlActions)
+    coupleActionPairPool = (
+        len(BoyActions) * len(GirlActions)
+        + (2 * boyFlaggedActionLen * girlFlaggedActionLen)
+    )
+
     couplePromptTotal = (
-        len(BoyActions)
-        * len(GirlActions)
+        coupleActionPairPool
         * len(LoveActions)
         *(len(coupleCall)**2)
         * (len(status)**2)

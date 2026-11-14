@@ -68,12 +68,31 @@ def getArraySourcePaths():
 
 def getArrayDuplicates():
     duplicateArrays = {}
+
+    def iterComparableItems(item):
+        if isinstance(item, str):
+            yield item
+        elif isinstance(item, (tuple, list)):
+            for nestedItem in item:
+                if isinstance(nestedItem, (str, tuple, list)):
+                    yield from iterComparableItems(nestedItem)
+        else:
+            try:
+                hash(item)
+            except TypeError:
+                return
+            yield item
+
     for varName, value in globals().items():
         if not isinstance(value, list):
             continue
         duplicates = [
             (item, count)
-            for item, count in Counter(value).items()
+            for item, count in Counter(
+                comparableItem
+                for arrayItem in value
+                for comparableItem in iterComparableItems(arrayItem)
+            ).items()
             if count > 1
         ]
         if duplicates:

@@ -49,6 +49,19 @@ def generateOutdoorOutput():
 
 # Romantic prompt
 def generateCouplePrompt():
+    boyActionSelected = random.choice(BoyActions)
+    girlActionSelected = random.choice(GirlActions)
+
+    if boyActionSelected[1] * girlActionSelected[1]!=0:
+        boyActing, girlActing = random.choice((
+            (boyActionSelected[2], girlActionSelected[0]),
+            (boyActionSelected[0], girlActionSelected[2]),
+            (boyActionSelected[2], girlActionSelected[2]),
+        ))
+        romanticAction = f"Chàng trai đang {boyActing}. Đáp lại chàng trai, cô gái thì đang {girlActing}. \n"
+    else:
+        romanticAction = f"Chàng trai đang {boyActionSelected[0]}. Đáp lại chàng trai, cô gái thì đang {girlActionSelected[0]}. \n"
+
     
     commonSence = (
         f"{createNoteArt(0)}"
@@ -57,7 +70,7 @@ def generateCouplePrompt():
         f"Chàng trai rất {random.choice(adjApperanceBoys)} và có đôi mắt 2 mí, áo của chàng trai đóng thùng gọn gàng. "
         f"Còn cô gái thì có đôi mắt long lanh quyến rũ và nhan sắc {random.choice(adjAppearanceGirls)}. \n"
         f"Tóc của chàng trai để kiểu {random.choice(fashionHairMale)}, cô gái thì có kiểu tóc {random.choice(fashionHairFemale)}. \n"
-        f"Chàng trai đang {random.choice(BoyActions)}. Đáp lại chàng trai, cô gái thì đang {random.choice(GirlActions)}. \n"
+        f"{romanticAction}"
         f"Bọn họ đang {random.choice(LoveActions)} và trông họ có vẻ {random.choice(liveNPCEmotions)}. \n\n"
         f"Và khung cảnh {random.choice(coupleCall)} này đang hẹn hò là: \n"
     )

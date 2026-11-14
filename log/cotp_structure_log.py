@@ -64,7 +64,10 @@ def _arrayName(node, values):
                 if suffix in ("Shoes", "Hair"):
                     return f"male{suffix}/female{suffix} (gender-dependent)"
     if isinstance(node, (ast.List, ast.Tuple)):
-        valuesText = ", ".join(repr(ast.literal_eval(item)) for item in node.elts)
+        try:
+            valuesText = ", ".join(repr(ast.literal_eval(item)) for item in node.elts)
+        except (ValueError, TypeError):
+            valuesText = ", ".join(ast.unparse(item) for item in node.elts)
         return f"inline choices ({valuesText})"
     return ast.unparse(node)
 
