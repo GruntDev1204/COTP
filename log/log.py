@@ -18,13 +18,21 @@ PROJECT_DIR = Path(
 )
 LOG_DIR = PROJECT_DIR / "log"
 DATA_DIR = PROJECT_DIR / "data"
+NON_POOL_SEQUENCE_NAMES = {"randomLargeNumberRange"}
+
+
+def _isPoolSequence(varName, value):
+    return (
+        varName not in NON_POOL_SEQUENCE_NAMES
+        and isinstance(value, (list, tuple))
+    )
 
 
 def getArraySizes():
     return {
         varName: len(value)
         for varName, value in globals().items()
-        if isinstance(value, list)
+        if _isPoolSequence(varName, value)
     }
 
 
@@ -32,7 +40,7 @@ def getArraySourcePaths():
     arrayValues = {
         varName: value
         for varName, value in globals().items()
-        if isinstance(value, list)
+        if _isPoolSequence(varName, value)
     }
     sourcePaths = {}
 
@@ -84,7 +92,7 @@ def getArrayDuplicates():
             yield item
 
     for varName, value in globals().items():
-        if not isinstance(value, list):
+        if not _isPoolSequence(varName, value):
             continue
         duplicates = [
             (item, count)
@@ -126,7 +134,9 @@ def getArrayCommaIssues():
         sourceText = sourcePath.read_text(encoding="utf-8")
         sourceTree = ast.parse(sourceText)
         for node in sourceTree.body:
-            if not isinstance(node, ast.Assign) or not isinstance(node.value, ast.List):
+            if not isinstance(node, ast.Assign) or not isinstance(
+                node.value, (ast.List, ast.Tuple)
+            ):
                 continue
             if not any(
                 isinstance(target, ast.Name) and target.id == arrayName

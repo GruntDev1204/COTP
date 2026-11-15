@@ -1,6 +1,6 @@
 # Emojis
 # Mặt cười & Con người
-facePeopleEmojis = [
+facePeopleEmojis = (
     "😀",
     "😃",
     "😄",
@@ -80,6 +80,7 @@ facePeopleEmojis = [
     "😧",
     "😮",
     "😲",
+    "🫪",
     "🥱",
     "😴",
     "🤤",
@@ -172,10 +173,10 @@ facePeopleEmojis = [
     "👄",
     "💋",
     "🩸",
-]
+)
 
 # Động vật & Tự nhiên
-animalsNatureEmojis = [
+animalsNatureEmojis = (
     "🙈",
     "🙉",
     "🙊",
@@ -333,10 +334,10 @@ animalsNatureEmojis = [
     "🍃",
     "🍄",
     "🌰",
-]
+)
 
 # Đồ ăn & Thức uống
-foodDrinkEmojis = [
+foodDrinkEmojis = (
     "🍇",
     "🍈",
     "🍉",
@@ -462,10 +463,10 @@ foodDrinkEmojis = [
     "🍴",
     "🥄",
     "🫙",
-]
+)
 
 # Thể thao & Giải trí
-sportsEntertainmentEmojis = [
+sportsEntertainmentEmojis = (
     "⚽",
     "🏀",
     "🏈",
@@ -548,10 +549,10 @@ sportsEntertainmentEmojis = [
     "🎮",
     "🎰",
     "🧩",
-]
+)
 
 # Xe cộ & Địa điểm
-vehiclesPlacesEmojis = [
+vehiclesPlacesEmojis = (
     "🚗",
     "🚕",
     "🚙",
@@ -661,10 +662,10 @@ vehiclesPlacesEmojis = [
     "🎠",
     "🎡",
     "🎢",
-]
+)
 
 # Vật dụng & Công cụ
-objectsToolsEmojis = [
+objectsToolsEmojis = (
     "⌚",
     "📱",
     "📲",
@@ -848,10 +849,11 @@ objectsToolsEmojis = [
     "💼",
     "🏹",
     "📡",
-]
+)
 
 # Biểu tượng & Trái tim
-symbolsHeartsEmojis = [ "❤️",
+symbolsHeartsEmojis = ( 
+    "❤️",
     "🩷",
     "🧡",
     "💛",
@@ -948,9 +950,9 @@ symbolsHeartsEmojis = [ "❤️",
     "↪️",
     "⤴️",
     "⤵️",
-]
+)
 
-emotionPunctuations = [
+emotionPunctuations = (
     "!",   # Cảm xúc mạnh, ngạc nhiên, vui vẻ
     "#",   # Meme, tag, hoặc cảm xúc mạng
     "$",   # Gợi giá trị, hoặc meme kiểu "giấc mơ đắt giá"
@@ -961,7 +963,7 @@ emotionPunctuations = [
     "@",   # Gợi liên kết, gọi tên, hoặc meme hóa
     "^",   # Mơ màng, lơ lửng, chill
     "~",   # Mơ màng, lơ lửng, chill
-]
+)
 
 
 allIcons = list(

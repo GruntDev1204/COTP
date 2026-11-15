@@ -4,13 +4,6 @@ from Script.common_script import *
 
 #prompt for AI Art
 def createNoteArt(mode=0):
-    identityRules = [
-        #couple
-        "Keep the natural facial identity and recognizable features of both individuals from the reference photos without artificially remixing, blending, or over-stylizing their faces, allowing flexible head angles, natural eye contact, and organic expressions that fit their interaction. ",
-        #single
-        "Strictly maintain 100% accurate facial recognition, bone structure, and unique facial features of the subject from the source reference photos, ensuring it is unmistakably the exact same person, while naturally adapting the head angle, gaze direction, and facial expression as described in the prompt. ",
-    ]
-    
     return (
         f"[Note: {identityRules[mode]}"
         f"Strictly preserve 100% of the original outfits and existing accessories without altering or redesigning them, "
@@ -81,17 +74,17 @@ def generateCouplePrompt():
     return random.choice((
         lambda:(
             f"{commonSence}"
-            f"{random.choice(inDoorPreposition).upper()} thuộc khu vực bên trong {random.choice(indoorLocations).strip()} {random.choice(indoorStatus)} lâu năm. \n"
+            f"Ở {random.choice(inDoorPreposition).upper()} thuộc khu vực bên trong {random.choice(indoorLocations).strip()} {random.choice(indoorStatus)} lâu năm. \n"
             f"Nó được xây bằng {random.choice(indoorMaterials)} và sơn màu {random.choice(colors)}. \n"
-            f"{random.choice(inDoorPreposition).upper()}, {generateIndoorItems().strip()}. \n"
+            f"Và {random.choice(inDoorPreposition).upper()} nơi này, {generateIndoorItems().strip()}. \n"
             f"Và cũng đang có {generateIndoorObject().strip()} {random.choice(inDoorPreposition)}. \n"
             f"{generateNPC().strip()}. \n\n"
             f"{endingStatus}"
         ),
         lambda:(
             f"{commonSence}"
-            f"{random.choice(outDoorPreposition).upper()} tại {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm. \n"
-            f"Và {random.choice(outDoorPreposition).upper()}, đang có thời tiết {random.choice(weatherConditions).strip()}. \n"
+            f"Ngay {random.choice(outDoorPreposition).upper()} tọa lạc tại {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm. \n"
+            f"Và {random.choice(outDoorPreposition).upper()} nơi này, đang có thời tiết {random.choice(weatherConditions).strip()}. \n"
             f"{returnOutdoorSkyStrongObject().strip()}. \n"
             f"Và cũng đang có {generateOutdoorSkyObject().strip()}. \n"
             f"{generateNPC().strip()}. \n\n"

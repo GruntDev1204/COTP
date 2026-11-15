@@ -1,4 +1,4 @@
-mapsL4D2 = [
+mapsL4D2 = (
 'Blood Harvest',
 'Cold Stream',
 'Crash Course',
@@ -12,9 +12,9 @@ mapsL4D2 = [
 'The Last Stand',
 'The Parish',
 'The Sacrifice',
-]
+)
 
-charactersL4D2 = [
+charactersL4D2 = (
 'Bill',
 'Coach',
 'Ellis',
@@ -23,29 +23,29 @@ charactersL4D2 = [
 'Nick',
 'Rochelle',
 'Zoey',
-]
+)
 
-grenadesL4D2 = [
+grenadesL4D2 = (
 'Bile Bomb',
 'Molotov Cocktail',
 'Pipe Bomb',
-]
+)
 
-pickupsL4D2 = [
+pickupsL4D2 = (
 "Cola Bottle",
 "Defibrillator",
 "Fireworks Crates",
 "Gas Can",
 "Oxygen Tank",
 "Propane Tank",
-]
+)
 
-medicineL4D2 = [
+medicineL4D2 = (
 "Adrenaline Shot",
 "Pain Pills",
-]
+)
 
-weaponsL4D2 = [
+weaponsL4D2 = (
   "AK-47",
   "Assault Rifle (M16)",
   "Autoshotgun",
@@ -59,9 +59,9 @@ weaponsL4D2 = [
   "Silenced SMG",
   "SMG (Uzi)",
   "SPAS-12 (Combat Shotgun)",
-]
+)
 
-meleeL4D2 = [
+meleeL4D2 = (
   "Baseball Bat",
   "Chainsaw",
   "Cricket Bat (Paddle Bat)",
@@ -76,9 +76,9 @@ meleeL4D2 = [
   "Pitchfork",
   "Shovel",
   "Tonfa (Nightstick)",
-]
+)
 
-playerRulesL4D2 = [
+playerRulesL4D2 = (
   "Cannot heal (no pills, no adrenaline, no first aid)",
   "Cannot jump",
   "Cannot use any fire-based item (Molotov, Gas Can, Fireworks)",
@@ -94,5 +94,5 @@ playerRulesL4D2 = [
   "Must drop grenade immediately after picking it up",
   "Must kill 10 commons before touching Tank",
   "Must shout 'WAAAGH!' IRL before throwing a grenade",
-]
+)
 

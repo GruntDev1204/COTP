@@ -1,6 +1,6 @@
 # outdoor
 
-outdoorView = [
+outdoorView = (
     # Hoạt hình
     "Konoha (Naruto)",
     "the Valley of the End (Naruto)",
@@ -1004,9 +1004,9 @@ outdoorView = [
     "sân quần vợt đất nện",
     "sân pickleball ngoài trời",
     "sân cỏ",
-]
+)
 
-outDoorStatus = [
+outDoorStatus = (
     "ảo diệu",
     "ảo lạ",
     "ảo ma",
@@ -1145,10 +1145,10 @@ outDoorStatus = [
     "xa hoa",
     "xám xịt",
     "xập xệ",
-]
+)
 
 
-outDoorSkyStrongObjects = [
+outDoorSkyStrongObjects = (
     # Sao và tàn dư sao
     "Sao dãy chính",
     "Sao lùn đỏ",
@@ -1211,9 +1211,9 @@ outDoorSkyStrongObjects = [
     # Cấu trúc quy mô lớn của vũ trụ
     "Sợi vũ trụ",
     "Khoảng rỗng vũ trụ",
-]
+)
 
-outDoorSkyStrongObjectStatus = [
+outDoorSkyStrongObjectStatus = (
     "bị che khuất gần hết",
     "bị che khuất hoàn toàn",
     "bị che khuất một nửa",
@@ -1233,9 +1233,9 @@ outDoorSkyStrongObjectStatus = [
     "vỡ làm nhiều mảnh",
     "vỡ làm 4 mảnh",
     "vỡ làm 5 mảnh",
-]
+)
 
-outDoorSkyObjects = [
+outDoorSkyObjects = (
     "ATULA",
     "BẦY ĐOM ĐÓM",
     "BONG BÓNG BAY LỚN",
@@ -1295,9 +1295,9 @@ outDoorSkyObjects = [
     "VỆ TINH",
     "XE KÉO TUẦN LỘC",
     "XE Ô TÔ CÓ CÁNH",
-]
+)
 
-outdoorObjects = [
+outdoorObjects = (
     # Nhà cửa và kiến trúc
     "am nhỏ",
     "biệt thự",
@@ -1585,6 +1585,7 @@ outdoorObjects = [
     "bảng thông báo",
     "barie",
     "biển báo",
+    "biển báo sàn trơn trượt",
     "biển quảng cáo",
     "biển tên đường",
     "cái biển hiệu",
@@ -1689,9 +1690,9 @@ outdoorObjects = [
     "trụ chống trời",
     "UFO",
     "vòng tròn đá",
-]
+)
 
-outdoorObjectDensity = [
+outdoorObjectDensity = (
     "bên đường",
     "bên ven đường",
     "dọc đường",
@@ -1702,7 +1703,7 @@ outdoorObjectDensity = [
     "phía ngang",
     "mặt đất",
     "xung quanh",
-]
+)
 
 weatherConditions = [
     "bão bụi hydrocarbon",
@@ -1789,12 +1790,12 @@ weatherConditions = [
     "tuyết thạch anh lấp lánh",
 ]
 
-times = [
+times = (
     "ban đêm",
     "ban ngày",
-]
+)
 
-outDoorPreposition = [
+outDoorPreposition = (
     "trên",
     "tại trong",
     "giữa nơi",
@@ -1844,4 +1845,4 @@ outDoorPreposition = [
     "về nơi",
     "hướng về",
     "về phía",
-]
+)

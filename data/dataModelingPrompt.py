@@ -1,4 +1,4 @@
-backgroundModeling = [
+backgroundModeling = (
     # --- DANH MỤC: CÁNH ĐỒNG (FIELD & MEADOW) ---
     "softly blurred golden wheat field at sunset, warm cinematic lighting, minimal details",
     "out of focus green meadow under an overcast sky, soft natural daylight, minimalist backdrop",
@@ -40,9 +40,9 @@ backgroundModeling = [
     "out of focus tranquil lakeside surrounded by pine trees, soft diffused daylight, clean composition",
     "blurred vast desert sand dunes under a soft pastel sunset sky, smooth warm textures, minimal details",
     "softly blurred bamboo forest path with gentle dappled sunlight, calm green tones, clean background",
-]
+)
 
-backgroundModelingColors = [
+backgroundModelingColors = (
     "solid deep navy blue",        # Xanh dương đậm (Màu kinh điển của ảnh thẻ cao cấp và suit doanh nhân)
     "solid luxury charcoal gray",  # Xám than đá (Màu quyền lực nhất trong chụp lookbook thời trang nam/nữ)
     "solid elegant olive green",   # Xanh rêu/ô-liu trầm (Cực tôn da và làm nổi bật đồ màu trắng/kem)
@@ -61,10 +61,10 @@ backgroundModelingColors = [
     "solid cool ice blue",         # Xanh băng giá nhạt (Tươi mát, thanh thoát, làm nổi bật tóc và trang phục tối màu)
     "solid rich burnt orange",     # Cam cháy trầm (Tạo hiệu ứng thị giác mạnh mẽ chuẩn bìa tạp chí)
     "solid deep royal purple",     # Tím hoàng gia trầm (Huyền bí, quyền lực và cực kỳ tôn ánh sáng da)
-]
+)
 
 #female 
-femaleShoes = [
+femaleShoes = (
     # --- DANH MỤC: GIÀY CAO GÓT (HIGH HEELS) ---
     "wearing elegant high-heeled stiletto pumps",
     "wearing sexy strappy high-heeled sandals",
@@ -99,9 +99,9 @@ femaleShoes = [
     "wearing stylish canvas low-top skate shoes",
     "wearing sporty retro-style running sneakers",
     "wearing high-top streetwear sneakers"
-]
+)
 
-femaleHair = [
+femaleHair = (
     "high-quality elegant Hime cut hair with long side-locks and subtle blonde highlights",
     "long layered haircut delicately curved inwards in a soft C-shape at the hair ends",
     "romantic long layered hair with effortless loose waves in a sweet ulzzang style",
@@ -120,10 +120,10 @@ femaleHair = [
     "effortless half-up claw clip hairstyle with a sparkling diamond-encrusted clip",
     "trendy medium-length shoulder Lob with a deep side part and soft inward curves dyed in warm chestnut brown",
     "classic short bob cut just touching the nape, voluminous curved inward, hugging the jawline in pure natural jet-black"
-]
+)
 
 #male
-maleShoes = [
+maleShoes = (
     "wearing highly polished black leather Oxford dress shoes",
     "wearing premium dark brown leather Derby dress shoes with precise stitching",
     "wearing sophisticated black leather Double Monk Strap shoes with silver buckles",
@@ -135,9 +135,9 @@ maleShoes = [
     "wearing clean minimalist low-top white leather sneakers with crisp details",
     "wearing sophisticated all-black minimalist premium leather sneakers",
     "wearing dapper full-brogue dress shoes with intricate perforated patterns",
-]
+)
 
-maleHair = [
+maleHair = (
     "a classic Pompadour with clean tapered sides and high-volume slicked-back styling",
     "a masculine French Crop with crisp skin fade and textured short crop on top",
     "a sharp Ivy League haircut with short sides and subtle side-swept front styling",
@@ -158,11 +158,11 @@ maleHair = [
     "a formal military-style Crew Cut with a high skin fade and sharp blocky top",
     "a bold platinum-blonde dyed Buzz Cut featuring a short clean-shaven crisp silhouette",
     "a sharp Spiky haircut with short sides and texturized spiky top styled with matte wax"
-]
+)
 
 backgrounds = backgroundModeling + backgroundModelingColors
 
-maleArmPoses = [
+maleArmPoses = (
     # Hai tay buông thõng thẳng tự nhiên dọc hai bên thân, hai bàn tay hiển thị rõ ràng
     "both arms relaxed straight down at the sides with both hands clearly visible",
     # Khoanh tay tự nhiên trước ngực với bờ vai thả lỏng
@@ -180,9 +180,9 @@ maleArmPoses = [
     "left hand raised vertically with straight fingers held together pointing upward and the back of the hand facing outward, resting naturally against the left cheek to cover the left eye and vertical left half of the face in natural alignment with the head's angle, while the right arm hangs relaxed at the side",
     # Giơ tay phải áp sát dọc theo nửa mặt phải (tự thích nghi theo góc xoay của đầu, kể cả khi ngoái đầu hay nghiêng mặt), tay trái buông tự nhiên
     "right hand raised vertically with straight fingers held together pointing upward and the back of the hand facing outward, resting naturally against the right cheek to cover the right eye and vertical right half of the face in natural alignment with the head's angle, while the left arm hangs relaxed at the side",
-]
+)
 
-femaleArmPoses = [
+femaleArmPoses = (
     # Hai tay buông thõng thẳng tự nhiên dọc hai bên thân, hai bàn tay hiển thị rõ ràng
     "both arms relaxed straight down at the sides with both hands clearly visible",
     # Khoanh tay duyên dáng trước ngực với bờ vai thanh thoát
@@ -206,9 +206,9 @@ femaleArmPoses = [
     "left hand raised gracefully in a vertical position with straight fingers held neatly together pointing upward and the back of the hand facing outward, resting lightly against the left cheek to cover the left eye and vertical left half of the face in natural alignment with the head's angle, while the right arm hangs relaxed at the side",
     # Giơ tay phải thanh thoát áp sát dọc theo nửa mặt phải (tự thích nghi theo góc xoay của đầu), tay trái buông tự nhiên
     "right hand raised gracefully in a vertical position with straight fingers held neatly together pointing upward and the back of the hand facing outward, resting lightly against the right cheek to cover the right eye and vertical right half of the face in natural alignment with the head's angle, while the left arm hangs relaxed at the side",
-]
+)
 
-malePoses = [
+malePoses = (
     # (chuỗi_mô_tả, flag_góc_nhìn: 0 = dáng thường, 1 = dáng quay lưng)
     # Đứng thẳng nghiêm túc, hai chân mở rộng bằng vai
     ("standing straight in a formal posture with feet shoulder-width apart", 0),
@@ -250,9 +250,9 @@ malePoses = [
     # Ngồi quay lưng góc nghiêng 3/4 trên ghế đẩu, lưng giữ thẳng và bờ vai vuông vức (flag = 1)
     ("sitting in a three-quarter rear-angled posture on a minimalist studio stool with back turned partially away, upright spine and squared shoulders", 1),
 
-]
+)
 
-femalePoses = [
+femalePoses = (
     # (chuỗi_mô_tả, flag_góc_nhìn: 0 = dáng thường, 1 = dáng quay lưng)
     # Đứng thẳng chuẩn mực, hai gót chân chạm nhau và mũi chân hơi hướng nhẹ ra ngoài
     ("standing straight in a formal posture with heels together and toes slightly turned out", 0),
@@ -293,9 +293,9 @@ femalePoses = [
     ("sitting turned in a graceful three-quarter side profile on a minimalist studio stool with knees softly together and legs angled diagonally, upright posture", 0),
     # Ngồi quay lưng góc nghiêng 3/4 trên ghế đẩu, hai chân khép gọn gàng, giữ dáng lưng thẳng thanh thoát (flag = 1)
     ("sitting in a three-quarter rear-angled posture on a minimalist studio stool with back turned partially away, legs neatly together and poised upright posture", 1),
-]
+)
 
-maleExpressions = [
+maleExpressions = (
     # Biểu cảm lạnh lùng, điềm tĩnh, cơ mặt thả lỏng hoàn toàn
     "with a cool, composed, and neutral facial expression",
     # Cười nửa miệng tự tin, phong trần với ánh mắt sắc bén
@@ -331,9 +331,9 @@ maleExpressions = [
     
     # Giật mình hoảng hốt bất ngờ như vừa bị ai đó hù, mắt mở to, chân mày giật bắn lên và miệng há hốc rõ nét
     "with a sudden startled expression as if caught off guard, wide-eyed, eyebrows jolted upward, and mouth open in a surprised gasp",
-]
+)
 
-femaleExpressions = [
+femaleExpressions = (
     # Biểu cảm kiêu kỳ, lạnh lùng chuẩn phong cách thời trang cao cấp (High-fashion)
     "with a poised, cool, and neutral high-fashion editorial expression",
     # Cười mỉm dịu dàng, ngọt ngào với khóe môi hơi nhếch lên tự nhiên (không lộ răng)
@@ -371,9 +371,9 @@ femaleExpressions = [
 
     #Giật mình hoảng hốt bất ngờ như vừa bị hù, đôi mắt mở tròn xoe, chân mày nhướng cao và miệng há hốc kinh ngạc
     "with a sudden startled, flustered expression as if startled by a sudden noise, eyes wide open, raised eyebrows, and mouth open in a surprised gasp",
-]
+)
  
-modelGazes = [
+modelGazes = (
     # (index 0: dùng cho dáng thường, index 1: dùng cho dáng quay lưng)
     # Index 0: đầu và mắt xoay nhìn thẳng vào ống kính | Index 1: ngoái hẳn đầu qua vai nhìn thẳng vào ống kính
     ("head and eyes turned directly toward the camera lens", "head turned sharply back over the shoulder with eyes looking directly into the lens"),
@@ -385,9 +385,9 @@ modelGazes = [
     ("head angled slightly away while eyes glance sideways toward the camera", "head turned back over the shoulder with eyes glancing toward the camera"),
     # Cằm hơi cúi nhẹ, mắt nhìn chếch xuống dưới một cách thư giãn (dùng chung cho cả 0 và 1)
     ("chin slightly lowered with eyes gazing subtly downward in a relaxed candid expression", "chin slightly lowered with eyes gazing subtly downward in a relaxed candid expression"),
-]
+)
 
-modelFramings = [
+modelFramings = (
     # Khung hình từ ngang đùi trở lên, ống kính 35mm, ánh sáng studio mềm, giữ chi tiết tự nhiên (không lấy giày)
     ("Three-quarter thigh-up photorealistic studio lookbook shot of a professional model, {pose}, {armPose}, {gaze}, crisp real-world details, soft studio lighting, shot on 35mm lens, natural skin texture.", False),
     # Khung hình từ đầu gối trở lên, ảnh gốc chân thực chi tiết cao, ánh sáng studio mềm (không lấy giày)
@@ -396,4 +396,11 @@ modelFramings = [
     ("Ankle-up fashion studio lookbook photorealistic portrait of a professional model, {pose}, {armPose}, {gaze}, soft floor shadow, professional studio lighting, realistic photography style. The model is wearing {shoe}.", True),
     # Khung hình toàn thân từ đầu đến chân, bối cảnh sạch sẽ, đổ bóng nhẹ trên sàn, chụp máy ảnh DSLR cao cấp (có kèm giày)
     ("Full-body studio lookbook photorealistic portrait of a professional model, {pose}, {armPose}, {gaze}, clean realistic environment, soft floor shadow, professional studio lighting, shot on high-end DSLR camera. The model is wearing {shoe}.", True),
-]
+)
+
+identityRules = (
+    #couple
+    "Keep the natural facial identity and recognizable features of both individuals from the reference photos without artificially remixing, blending, or over-stylizing their faces, allowing flexible head angles, natural eye contact, and organic expressions that fit their interaction. ",
+    #single
+    "Strictly maintain 100% accurate facial recognition, bone structure, and unique facial features of the subject from the source reference photos, ensuring it is unmistakably the exact same person, while naturally adapting the head angle, gaze direction, and facial expression as described in the prompt. ",
+)

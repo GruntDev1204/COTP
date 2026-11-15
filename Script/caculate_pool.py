@@ -166,7 +166,7 @@ def caculateQuantity():
         * (inDoorPrepositionLen**2)
         * indoorStatusLen
         * len(proverbs)
-        * (len(NPCjobs) ** 4)
+        * (len(NPCjobs) ** 5)
         * (900000000001**20)  # 19 large numbers + 1 reciprocal denominator
         * (numberTypePool**20)
         * caculateClockPool()

@@ -1,4 +1,4 @@
-LoveActions = [
+LoveActions = (
     "cùng ngắm cảnh",
     "cùng nhau đi dạo",
     "cùng tận hưởng buổi hẹn hò",
@@ -41,9 +41,9 @@ LoveActions = [
     "tận hưởng niềm vui trăng mật",
     "tận hưởng không khí trăng mật",
     "tận hưởng lễ cưới",
-]
+)
 
-BoyActions = [
+BoyActions = (
     # Independent or compatible actions (flag 0)
     ("ấn vào má cô gái", 0),
     ("ấn vào mũi cô gái", 0),
@@ -171,9 +171,9 @@ BoyActions = [
     ("quỳ gối dâng trà cho cô gái", 1, "đứng 1 chân tỏ tình cô gái"),
     ("quỳ gối tặng bó hoa cho cô gái", 1, "giơ 2 tay lên trời làm tư thế đầu hàng"),
     ("quỳ gối tặng giỏ hoa cho cô gái", 1, "đội giỏ hoa lên đầu và tấu hề chọc cười cô gái"),
-]
+)
 
-GirlActions = [
+GirlActions = (
     # Independent or compatible actions (flag 0)
     ("ấn vào mũi chàng trai", 0),
     ("ấn vào trán chàng trai", 0),
@@ -289,9 +289,9 @@ GirlActions = [
     ("quỳ gối tặng giỏ trứng phục sinh cho chàng trai", -1, "đưa cho chàng trai 1 giỏ trứng phục sinh"),
     ("quỳ gối tặng hòm vàng cho chàng trai", -1, "đưa cho chàng trai 1 hòm vàng"),
     ("tựa đầu vào vai chàng trai", -1, "khoác vai chàng trai đầy tình cảm"),
-]
+)
 
-fashionHairMale = [
+fashionHairMale = (
     "Classic Pompadour vuốt phồng lịch lãm",
     "French Crop tỉa mỏng nam tính",
     "Ivy League ngắn vuốt rủ kiểu học giả",
@@ -312,9 +312,9 @@ fashionHairMale = [
     "Crew Cut phối Fade sắc nét gọn gàng kiểu quân đội",
     "Buzz Cut ngắn nhuộm màu bạch kim thời thượng đầy phá cách",
     "Spiky ngắn cắt gọn vuốt sáp tạo lọn dựng đầy năng động",
-]
+)
 
-fashionHairFemale = [
+fashionHairFemale = (
     "Hime cut layer dài nhuộm highlight đầy khí chất",
     "Layer dài uốn cụp chữ C đuôi tóc nhẹ nhàng",
     "Layer dài uốn xoăn lơi lãng mạn chuẩn ulzzang",
@@ -333,9 +333,9 @@ fashionHairFemale = [
     "Tóc kẹp nửa đầu bằng kẹp càng cua đính đá lấp lánh",
     "Tóc Lob ngang vai rẽ ngôi lệch uốn cụp nhẹ",
     "Tóc Bob ngắn chạm gáy uốn cụp phồng ôm nhẹ gương mặt nhuộm màu đen tuyền tự nhiên",
-]
+)
 
-loveIcons = [
+loveIcons = (
     "❣️",
     "❤️",
     "❤️‍🔥",
@@ -364,17 +364,17 @@ loveIcons = [
     "🩵",
     "🩶",
     "🩷",
-]
+)
 
-optionsDateApp = [
+optionsDateApp = (
     "Chỉ Like (Không quẹt trái)",
     "Chỉ Reject (Không quẹt phải)",
     "Like trước, Reject sau (tức là quẹt toàn bộ bên phải trước rồi mới đến toàn bộ trái)",
     "Like xen kẽ Reject (tức là 1 Like 1 Reject luân phiên nhau)",
     "Reject trước, Like sau (tức là quẹt toàn bộ bên trái trước rồi mới đến toàn bộ bên phải)",
-]
+)
 
-coupleCall = [
+coupleCall = (
     "cặp bích nhân",
     "cặp đôi",
     "cặp đôi ăn ý",
@@ -415,9 +415,9 @@ coupleCall = [
     "đôi vợ chồng",
     "đôi vợ chồng mới cưới",
     "đôi vợ chồng son",
-]
+)
 
-adjApperanceBoys = [
+adjApperanceBoys = (
     "anh tuấn bất phàm",
     "ấm áp",
     "ấn tượng",
@@ -459,9 +459,9 @@ adjApperanceBoys = [
     "phát ra ánh sáng cầu vồng",
     "văn nhã thư sinh",
     "thần thái tưng tửng khùng khùng",
-]
+)
 
-adjAppearanceGirls = [
+adjAppearanceGirls = (
     "băng thanh ngọc khiết",
     "bế nguyệt tu hoa",
     "cuốn hút khó rời mắt",
@@ -500,4 +500,4 @@ adjAppearanceGirls = [
     "phát ra ánh sáng cầu vồng",
     "phong thái nho nhã",
     "thần thái tưng tửng khùng khùng",
-]
+)

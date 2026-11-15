@@ -132,12 +132,14 @@ than redundant sub-array allocations.
     * modelGazes: Ocular direction and visual engagement directives relative to the 
     camera lens.
 
-[Module: dataNPC.py] — Autonomous Entities, Archetypes & Attributes
+[Module: dataNPC.py] - Autonomous Entities, Archetypes & Attributes
     * anyActions: Reusable action templates crossed with the shared anyObjects pool.
-    * anyObjects: Shared nouns reused across absurd, conversational, and ceremonial
-    action templates to avoid repeating the same object list in source code.
-    * liveNPCActions: The full NPC action pool, including all anyActions × anyObjects
-    combinations and the standalone feudal-ritual actions.
+    * anyObjects: Shared nouns reused across action templates to avoid repeating the
+    same object list in source code.
+    * mainActions: Repeated primary actions extracted from combined NPC actions.
+    * subActions: Secondary actions crossed with every mainActions entry.
+    * liveNPCActions: Full NPC action pool, including anyActions x anyObjects and
+    mainActions x subActions combinations.
     * liveNPCApperances: Attire, physical traits, and visual styling descriptors for 
     NPCs.
     * liveNPCEmotions: Psychological states and emotional dispositions exhibited by 

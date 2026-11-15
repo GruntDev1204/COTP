@@ -1,5 +1,5 @@
 
-proverbs = [
+proverbs = (
     "Ăn cây táo rào cây cam, ăn cây sung rào cây táo",
     "Ăn quả nhớ kẻ hay ăn quả",
     "Bàn tay ta làm nên tất cả, có sức người cục cức cũng thành cơm",
@@ -33,9 +33,9 @@ proverbs = [
     "Vạn sự khởi đầu nan, gian nan bắt đầu nản",
     "Vì lợi ích mười năm trồng cây, vì lợi ích trăm năm trồng cây",
     "Thất bại là mẹ thành công, thành công là mẹ thất nghiệp",
-]
+)
 
-slogan = [
+slogan = (
     "Anh hùng nan quá trọ phí quan, vô tinh hoàn chưởng mỹ nhân quan",
     "Ân oán triền miên, từ bi hóa học",
     "Công chính vô tư, lệ tư bất phục",
@@ -83,9 +83,9 @@ slogan = [
     "Vô minh khuất nhãn, diệt vô bất trì",
     "Vô sở trụ tâm, nhai sinh em bé",
     "Vô vi nhi vô vi vi vô vi vi vô",
-]
+)
 
-sourceInfo = [
+sourceInfo = (
     "Badoo",
     "Creepy Copy-Paste",
     "Discord",
@@ -296,9 +296,9 @@ sourceInfo = [
     "NHK",
     "KBS",
     "SOI SÁNG",
-]
+)
 
-gpsLocations = [
+gpsLocations = (
     "Bắc",
     "Chính Đông",
     "Chính Tây",
@@ -309,9 +309,9 @@ gpsLocations = [
     "Tây",
     "Tây Bắc",
     "Tây Nam",
-]
+)
 
-businesses = [
+businesses = (
     "cửa hàng",
     "cửa hàng bách hóa",
     "cửa hàng bách hóa tổng hợp",
@@ -329,9 +329,9 @@ businesses = [
     "siêu thị",
     "siêu thị mini",
     "tiệm",
-]
+)
 
-magicTypes = [
+magicTypes = (
     "biết cân đẩu vân.",
     "bói bài Tarot bằng Uno",
     "đọc vị mọi ký ức",
@@ -389,9 +389,9 @@ magicTypes = [
     "tinh thông 720 phép biến đổi Boustrophedon",
     "tinh thông 720 phép biến đổi Chirp Z (CZT)",
     "tinh thông 720 phép biến đổi Möbius",
-]
+)
 
-companies = [
+companies = (
     # --- CÔNG TY CHẾ (PARODY & MEME) ---
     "AC Comic",
     "Aveporn",
@@ -659,24 +659,24 @@ companies = [
     "IMF",
     "Federal Reserve",
     "Pentagon",
-]
+)
 
-buildings = [
+buildings = (
     "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
     "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
-]
+)
 
-UpperText = [
+UpperText = (
   "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
   "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
-]
+)
 
-LowerText = [
+LowerText = (
   "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
   "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-]
+)
 
-Vehicle = [
+Vehicle = (
     # ==================== HÃNG TESLA (XE ĐIỆN MỸ) ====================
     "xe điện Tesla Model 3", "xe điện Tesla Model Y", "xe điện bán tải Tesla Cybertruck", 
     "xe điện hạng sang Tesla Model S Plaid", "xe điện SUV Tesla Model X", "xe điện thể thao Tesla Roadster",
@@ -820,4 +820,4 @@ Vehicle = [
     "phi thuyền không gian Millennium Falcon", "cỗ máy thời gian DeLorean DMC-12", 
     "xe mô tô bay hoverbike không trọng lực", "giày bay phản lực jetpack", 
     "kén ngủ dịch chuyển tức thời quantum pod", "bàn tọa bay phản lực",
-]
+)

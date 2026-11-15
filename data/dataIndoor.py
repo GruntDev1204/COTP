@@ -1,6 +1,6 @@
 # indoor
 
-indoorStatus = [
+indoorStatus = (
     # Single-word statuses
     "ảo ma Canada",
     "ảo ma",
@@ -34,7 +34,6 @@ indoorStatus = [
     "xuống cấp nặng",
     "xuống cấp nhẹ",
     "yên tĩnh",
-    
     "âm u",
     "ấm cúng",
     "ẩm ướt",
@@ -175,10 +174,10 @@ indoorStatus = [
     "xơ xác và tiêu điều",
     "ma ám và âm u",
     "bị ám và âm u",
-]
+)
 
 
-indoorLocations = [
+indoorLocations = (
     # Không gian kỳ ảo
     "căn phòng bí mật phía sau tường",
     "mê cung",
@@ -1052,9 +1051,9 @@ indoorLocations = [
     "trạm trung chuyển tàu ngầm ngầm dưới biển",
     "thủy cung",
     "long cung",
-]
+)
 
-indoorItems = [
+indoorItems = (
     "cánh cửa ra vào",
     "cửa cách âm",
     "cửa chống trộm",
@@ -1182,9 +1181,9 @@ indoorItems = [
     "cửa sổ hoa gió",
     "ô cửa quan sát",
     "khung cửa vòm",
-]
+)
 
-indoorItemStatus = [
+indoorItemStatus = (
     "bật mở",
     "khép hờ",
     "lỏng bản lề",
@@ -1193,9 +1192,9 @@ indoorItemStatus = [
     "mở hờ",
     "mở rộng",
     "nứt nhẹ",
-]
+)
 
-indoorLightVerb = [
+indoorLightVerb = (
     "chập chờn",
     "đổi màu liên tục",
     "hắt nhẹ",
@@ -1210,9 +1209,9 @@ indoorLightVerb = [
     "rọi vào",
     "rọi vào đan xen bụi",
     "tỏa đều",
-]
+)
 
-indoorItemLightningSource = [
+indoorItemLightningSource = (
     "ánh sáng đám cháy lớn",
     "ánh sáng đèn cao áp nhà xưởng",
     "ánh sáng đèn cứu hỏa lập lòe",
@@ -1231,9 +1230,9 @@ indoorItemLightningSource = [
     "ánh sáng tinh vân ngoài vũ trụ",
     "ánh sáng vòm cực quang",
     "ánh sáng vành đai hành tinh phát quang",
-]
+)
 
-indoorObjectItems = [
+indoorObjectItems = (
     # Đồ nội thất
     "bàn ăn",
     "bàn góc sofa",
@@ -1346,6 +1345,9 @@ indoorObjectItems = [
     "bảng ghi chú",
     "bàn phím cơ",
     "bàn phím",
+    "biển báo",
+    "biển báo sàn trơn trượt",
+    "biển quảng cáo",
     "cái camera",
     "cái quạt tản nhiệt",
     "cái CPU",
@@ -1845,38 +1847,66 @@ indoorObjectItems = [
     "Rory's Music Box (The Conjuring)",
     "Valak's Painted Portrait (The Conjuring)",
     "Warren Occult Museum Music Box (The Conjuring)",
-]
+)
 
-indoorMetalMaterials = [
-    "antimon",
+indoorMetalMaterials = (
     "actinium",
+    "Adamantium",
+    "Amazonium (DC Comics)",
     "amơrici",
+    "antimon",
+    "Auramite (Warhammer 40K)",
+    "Australium (Team Fortress 2)",
     "bạc",
+    "bạc đánh bóng gương",
+    "bạc Sterling",
     "bạch kim",
     "bari",
+    "Batmanium (DC Comics)",
+    "Bendezium (Ratchet & Clank)",
     "beri",
+    "Beskar (Star Wars)",
     "bitmut",
     "bohi",
     "cadimi",
     "californi",
     "canxi",
+    "Carbonadium (Marvel)",
+    "Ceramite (Warhammer 40K)",
     "ceri",
     "cesi",
     "chì",
+    "Chlorophyte kim loại (Terraria)",
     "coban",
     "copernici",
+    "Cortosis (Star Wars)",
     "crôm",
     "curi",
+    "Dalekanium (Doctor Who)",
+    "Dargonite (DC Comics)",
+    "Darksteel (Magic: The Gathering)",
     "darmstadti",
-    "dysprosi",
-    "dubni",
+    "Dilithium kim loại (Star Trek)",
     "đồng",
+    "đồng Beryli",
     "đồng đỏ",
+    "đồng oxy hóa xanh",
     "đồng thanh",
     "đồng thau",
     "đồng thiếc",
+    "dubni",
+    "Duralumin",
+    "Duranium (Star Trek)",
+    "Durasteel (Star Wars)",
+    "Dwemer Metal (The Elder Scrolls)",
+    "dysprosi",
+    "Ebony Metal (The Elder Scrolls)",
+    "Eighth Metal (DC Comics)",
     "einsteini",
+    "Electrum (DC Comics)",
+    "Element Zero (Mass Effect)",
     "erbi",
+    "Etherium (Magic: The Gathering)",
     "europi",
     "fermi",
     "flerovi",
@@ -1884,89 +1914,155 @@ indoorMetalMaterials = [
     "gadolini",
     "gali",
     "gang",
+    "gang cầu",
+    "gang trắng",
+    "gang xám",
+    "Gundanium Alloy (Mobile Suit Gundam)",
     "hafni",
     "hassi",
+    "Hellstone (Terraria)",
+    "Hextech Metal (League of Legends)",
+    "Hihiirokane (Thần thoại Nhật Bản)",
+    "holmi",
+    "hợp kim chì-thiếc",
     "hợp kim đồng",
     "hợp kim kẽm",
     "hợp kim magie",
+    "hợp kim nhớ hình Nitinol",
     "hợp kim nhôm",
     "hợp kim niken",
     "hợp kim thép",
     "hợp kim titan",
-    "holmi",
+    "hợp kim từ tính Permalloy",
     "indium",
+    "Inertron (DC Comics)",
     "inox",
     "iridi",
+    "Kairoseki / Đá biển kim loại (One Piece)",
     "kali",
     "kẽm",
     "kim loại",
+    "kim loại lỏng",
+    "kim loại mạ crôm",
+    "kim loại mạ vàng",
+    "kim loại nóng chảy",
+    "kim loại rỉ sét",
+    "Kryptonite kim loại",
     "lanthan",
+    "Latinium (Star Trek)",
     "lawrenci",
     "lithium",
     "livermori",
+    "Living Metal / Necrodermis (Warhammer 40K)",
+    "Luna Titanium (Mobile Suit Gundam)",
+    "Lunarite / Luminite (Terraria)",
     "lutetium",
     "magie",
     "mangan",
     "meitneri",
     "mendelevi",
+    "Mithril (The Lord of the Rings)",
     "molypden",
     "moscovi",
+    "Mysterium (Marvel)",
+    "Naquadah (Stargate)",
     "natri",
     "neodymium",
     "neptunium",
+    "Netherite (Minecraft)",
+    "Neutronium (Sci-Fi)",
     "ngọc bích kim loại",
     "nhôm",
+    "nhôm anod hóa",
     "niken",
     "niobi",
     "nobeli",
+    "Nth Metal (DC Comics)",
+    "Orichalcum (Atlantis)",
+    "Orichalcum cổ đại (Thần thoại Hy Lạp)",
     "osmi",
     "palladi",
     "phốt pho đồng",
+    "Phrik (Star Wars)",
+    "Plasteel (Dune / Warhammer 40K)",
     "plutonium",
     "polonium",
     "praseodymium",
+    "Promethium (DC Comics)",
     "promethium",
     "protactinium",
+    "Proto-Adamantium (Marvel)",
+    "Prysmium (League of Legends)",
+    "Quantum-crystalline Armor (Star Wars)",
     "radium",
+    "Raritanium (Ratchet & Clank)",
     "rhenium",
     "rhodi",
     "roentgeni",
     "rubidium",
+    "Runite (RuneScape)",
     "rutheni",
     "rutherfordi",
     "samarium",
     "sắt",
+    "sắt mạ kẽm",
+    "sắt non",
     "sắt rèn",
+    "sắt tây",
+    "Scarlet Crimson Iron Sand (Demon Slayer)",
     "scandium",
     "seaborgi",
+    "Secondary Adamantium (Marvel)",
+    "Songsteel (Star Wars)",
+    "Stalhrim kim loại băng (The Elder Scrolls)",
+    "Tamahagane rèn quỷ (Demon Slayer)",
+    "Telekill Alloy Metal (SCP-148)",
+    "Tenth Metal / Element X (DC Comics)",
     "thali",
     "thallium",
     "thép",
     "thép carbon",
     "thép corten",
+    "thép Damascus",
+    "thép gió",
     "thép hợp kim",
     "thép không gỉ",
+    "thép không gỉ đánh xước",
+    "thép lò xo",
     "thép mạ kẽm",
+    "thép non",
     "thép tấm",
+    "thép trắng",
     "thép xây dựng",
     "thiếc",
+    "thiếc hàn",
     "thori",
     "thulium",
     "thủy ngân",
     "titan",
+    "titan khò nhiệt",
+    "Tritanium (Star Trek)",
     "tritium kim loại",
+    "Unobtainium (Avatar)",
     "uranium",
+    "Uru (Marvel)",
+    "Validium (Doctor Who)",
     "vanadium",
     "vàng",
+    "vàng hồng",
+    "vàng lá",
     "vàng ròng",
+    "vàng tây",
+    "vàng trắng",
+    "Vibranium (Marvel)",
     "vonfram",
+    "Wapometal (One Piece)",
     "ytterbium",
     "yttri",
     "zirconi",
-    "Telekill Alloy Metal (SCP-148)",
-]
+)
 
-indoorNonMetalMaterials = [
+indoorNonMetalMaterials = (
     "acrylic",
     "amiăng",
     "bê tông",
@@ -2177,11 +2273,12 @@ indoorNonMetalMaterials = [
     "vật liệu xốp polystyrene",
     "vật liệu xốp polyurethane",
     "vật liệu zeolite",
-]
+    "vật chất tối",
+)
 
 indoorMaterials = indoorMetalMaterials + indoorNonMetalMaterials
 
-inDoorPreposition = [
+inDoorPreposition = (
     "trên",
     "trong này",
     "giữa nơi này",
@@ -2224,4 +2321,4 @@ inDoorPreposition = [
     "nơi này",
     "ở nơi này",
     "ở đây",
-]
+)
