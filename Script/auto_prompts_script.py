@@ -121,7 +121,27 @@ def generateModelingPrompt():
     return (
         f"{createNoteArt(1)}"
         f"This is a {gender.upper()} MODEL: \n"
-        f" - {setupText} \n"
-        f" - The hairstyle is: {random.choice(globals()[f'{gender}Hair'])}. \n"
-        f" - The background is: {random.choice(backgrounds)}."
+        f"- {setupText} \n"
+        f"- The hairstyle is: {random.choice(globals()[f'{gender}Hair'])}. \n"
+        f"{(
+            random.choice((
+                lambda: f"- The background is described by the following text: {random.choice(backgrounds)}.",
+                lambda: (
+                    f"- The background is described by the following Vietnamese language text: \n"
+                    f"Ở {random.choice(inDoorPreposition).upper()} thuộc khu vực bên trong {random.choice(indoorLocations).strip()} {random.choice(indoorStatus)} lâu năm. "
+                    f"Nó được xây bằng {random.choice(indoorMaterials)} và sơn màu {random.choice(colors)}. "
+                    f"Và {random.choice(inDoorPreposition).upper()} nơi này, {generateIndoorItems().strip()}. "
+                    f"Và cũng đang có {generateIndoorObject().strip()} {random.choice(inDoorPreposition)}. "
+                    f"{generateNPC().strip()}."
+                ),
+                lambda: (
+                    f"- The background is described by the following Vietnamese language text: \n"
+                    f"Ngay {random.choice(outDoorPreposition).upper()} tọa lạc tại {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm. "
+                    f"Và {random.choice(outDoorPreposition).upper()} nơi này, đang có thời tiết {random.choice(weatherConditions).strip()}. "
+                    f"{returnOutdoorSkyStrongObject().strip()}. "
+                    f"Và cũng đang có {generateOutdoorSkyObject().strip()}. "
+                    f"{generateNPC().strip()}."
+                ),
+            ))()
+        )}"
     )

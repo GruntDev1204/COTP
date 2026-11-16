@@ -21,6 +21,49 @@ def returnIconRandom(number):
 def caculateModelingPromptPool():
     noShoeCount = sum(1 for _, hasShoe in modelFramings if not hasShoe)
     hasShoeCount = sum(1 for _, hasShoe in modelFramings if hasShoe)
+    dayCount = sum(1 for time in times if time.strip() == "ban ngày")
+    nightCount = sum(1 for time in times if time.strip() != "ban ngày")
+
+    indoorBackgroundPool = (
+        len(inDoorPreposition) ** 3
+        * len(indoorLocations)
+        * len(indoorStatus)
+        * len(indoorMaterials)
+        * len(colors) ** 3
+        * len(quantities) ** 3
+        * len(indoorItems)
+        * len(indoorItemStatus)
+        * len(shapes) ** 2
+        * len(indoorLightVerb)
+        * len(indoorItemLightningSource)
+        * len(indoorObjectItems)
+        * len(liveNPCs)
+        * len(liveNPCApperances)
+        * len(liveNPCEmotions)
+        * len(liveNPCActions)
+    )
+    outdoorSkyStrongObjectPool = (
+        len(shapes)
+        * len(outDoorSkyStrongObjectStatus)
+        * (dayCount + nightCount * len(outDoorSkyStrongObjects))
+    )
+    outdoorBackgroundPool = (
+        len(outDoorPreposition) ** 2
+        * len(outdoorView)
+        * len(outDoorStatus)
+        * len(weatherConditions)
+        * outdoorSkyStrongObjectPool
+        * len(quantities)
+        * len(outDoorSkyObjects)
+        * len(shapes)
+        * len(colors)
+        * len(quantities)
+        * len(liveNPCs)
+        * len(liveNPCApperances)
+        * len(liveNPCEmotions)
+        * len(liveNPCActions)
+    )
+    backgroundPool = len(backgrounds) + indoorBackgroundPool + outdoorBackgroundPool
 
     maleSetupPool = (
         len(malePoses)
@@ -37,8 +80,8 @@ def caculateModelingPromptPool():
         * (noShoeCount + hasShoeCount * len(femaleShoes))
     )
 
-    maleTotal = len(backgrounds) * len(maleHair) * maleSetupPool
-    femaleTotal = len(backgrounds) * len(femaleHair) * femaleSetupPool
+    maleTotal = backgroundPool * len(maleHair) * maleSetupPool
+    femaleTotal = backgroundPool * len(femaleHair) * femaleSetupPool
 
     return maleTotal, femaleTotal
 

@@ -259,7 +259,7 @@ def createInterface():
     infoTextBuilders = {
         "COTP Introduction": buildCotpIntroduction,
         "COTP Components data pool": buildCotpComponentsDataPool,
-        "Stats": lambda: statsDetailText,
+        "COTP Stats": lambda: statsDetailText,
         "Arrays COTP": buildArraySizesText,
         "COTP Struct Details": buildCotpStructure,
     }
@@ -273,7 +273,7 @@ def createInterface():
         statsDetailTextbox.configure(
             font=("Consolas", 13 if selectedInfo == "COTP Introduction" else 11)
         )
-        if selectedInfo == "Stats":
+        if selectedInfo == "COTP Stats":
             for lineNumber, line in enumerate(infoText.splitlines(), start=1):
                 if "TOTAL :" in line or "TOTAL combinations (digits):" in line:
                     statsDetailTextbox.tag_add(

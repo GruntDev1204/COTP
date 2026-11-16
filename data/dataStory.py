@@ -86,6 +86,7 @@ slogan = (
 )
 
 sourceInfo = (
+    "4Chan",
     "Badoo",
     "Creepy Copy-Paste",
     "Discord",
@@ -604,6 +605,8 @@ companies = (
     "Siemens",
     "Snapchat",
     "Sony",
+    "Senko",
+    "Suzuki",
     "SpaceX",
     "Spotify",
     "Steam",
@@ -626,6 +629,9 @@ companies = (
     "Xiaomi",
     "Yahoo",
     "Zoom",
+    "Yamaha",
+    "Honda",
+  
     
     #cơ quan chính phủ
     "CIA",

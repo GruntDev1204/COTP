@@ -78,7 +78,7 @@ outputMenuOptions = [
 infoMenuOptions = [
     "COTP Introduction",
     "COTP Components data pool",
-    "Stats",
+    "COTP Stats",
     "Arrays COTP",
     "COTP Struct Details",
 ]
