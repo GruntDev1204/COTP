@@ -9,6 +9,10 @@ proverbs = (
     "Chớ thấy sóng cả mà ngã xe đạp",
     "Có chí thì nên, vì chí mà gội đầu",
     "Có công mài sắt có ngày mài đá",
+    "Đi một ngày đàng, gặp một tràng hóa đơn",
+    "Đi một ngày đàng, tốn mấy chục ngàn tiền cơm",
+    "Đùm bọc riêng lẻ lẫn nhau, cùng nhau đùm bọc chung tiền",
+    "Đường dài mới biết đường bay, đường ngắn mới biết đường hay",
     "Giàu vì nghèo, sang vì nợ",
     "Gừng càng già càng trẻ",
     "Không có việc gì khó, chỉ sợ lòng mề gan phèo phổi",
@@ -25,23 +29,21 @@ proverbs = (
     "Thất bại là mẹ thành công, thành công là mẹ thất nghiệp",
     "Thương người tựa thể thương người, thương người như thể thương người",
     "Trên con đường thành công, không có dấu chân của kẻ thành công",
-    "Uống nước nhớ kẻ hay ăn quả",
     "Uống nước nhớ đóng nắp chai",
+    "Uống nước nhớ kẻ hay ăn quả",
     "Vạn sự khởi đầu nan, gian nan bắt đầu nản",
     "Vì lợi ích mười năm trồng cây, vì lợi ích trăm năm trồng cây",
-    "Đi một ngày đàng, gặp một tràng hóa đơn",
-    "Đi một ngày đàng, tốn mấy chục ngàn tiền cơm",
-    "Đùm bọc riêng lẻ lẫn nhau, cùng nhau đùm bọc chung tiền",
-    "Đường dài mới biết đường bay, đường ngắn mới biết đường hay",
 )
 
 slogan = (
-    "Ân oán triền miên, từ bi hóa học",
     "Anh hùng nan quá trọ phí quan, vô tinh hoàn chưởng mỹ nhân quan",
+    "Ân oán triền miên, từ bi hóa học",
     "Công chính vô tư, lệ tư bất phục",
     "Dĩ bất biến, diệt vạn biến; dĩ khả biến, ứng tẩu vi",
     "Diệu pháp khai tuệ, vạn vật khai đao",
     "Dược nhĩ sắc kiến ngã, dĩ âm thanh cầu ngã, thị nhân như cái lồn",
+    "Đại tư vô tư, tư bất đại tự",
+    "Đạo khả dụ, phi đạo dụ; danh khả danh, khinh thường danh",
     "Hắc diện chánh nghĩa, bạch diện chánh nghĩa",
     "Hữu duyên thiên lý năng tương ngộ, vô duyên đối diện năng tương ngộ",
     "Hữu hình hữu tướng, bất hình bất tướng",
@@ -65,12 +67,10 @@ slogan = (
     "Tri túc thường lạc lộ, năng nhẫn lạc loài",
     "Tứ diệu đế, bất tứ diệu đế giày",
     "Ưng vô sở trụ, nhai sinh con cặc",
-    "Vận chuyến thủ chi, luyến thủ nhãn trí",
     "Vạn diện chi hình, vô định bất truy",
     "Vạn hình chi trung, vô diện bất định",
     "Vạn pháp giai không, nhân quả không dai",
     "Vạn sắc mê trận, kim cang tâm đồ",
-    "Vân tư vô tư, tư bất vân tự",
     "Vạn vật chi ngoại, vô vật bất ngoại",
     "Vạn vật chi trung, vô vật bất trung",
     "Vạn vật duyên khởi, vi vật thiết tâm",
@@ -78,16 +78,15 @@ slogan = (
     "Vạn vật vô minh, vô thường vĩnh trì",
     "Vạn vật vô sắc, hữu truy vô diện",
     "Vạn vật vô thường, vô thường bất biến",
+    "Vận chuyến thủ chi, luyến thủ nhãn trí",
+    "Vân tư vô tư, tư bất vân tự",
     "Vô minh khuất nhãn, diệt vô bất trì",
     "Vô sở trụ tâm, nhai sinh em bé",
     "Vô vi nhi vô vi vi vô vi vi vô",
-    "Đại tư vô tư, tư bất đại tự",
-    "Đạo khả dụ, phi đạo dụ; danh khả danh, khinh thường danh",
 )
 
 sourceInfo = (
     "2channel",
-    "4Chan",
     "4chan",
     "8chan",
     "9GAG",
@@ -301,15 +300,15 @@ sourceInfo = (
 
 gpsLocations = (
     "Bắc",
-    "Chính Tây",
     "Chính Đông",
+    "Chính Tây",
+    "Đông",
+    "Đông Bắc",
+    "Đông Nam",
     "Nam",
     "Tây",
     "Tây Bắc",
     "Tây Nam",
-    "Đông",
-    "Đông Bắc",
-    "Đông Nam",
 )
 
 businesses = (
@@ -317,9 +316,9 @@ businesses = (
     "cửa hàng bách hóa",
     "cửa hàng bách hóa tổng hợp",
     "cửa hàng chuyên bán đồ thất lạc trước khi bị thất lạc",
+    "cửa hàng đồ cũ",
     "cửa hàng tạp hóa",
     "cửa hàng tiện lợi",
-    "cửa hàng đồ cũ",
     "cửa hiệu",
     "cửa tiệm",
     "hiệu thuốc",
@@ -336,6 +335,8 @@ magicTypes = (
     "biết cân đẩu vân.",
     "bói bài Tarot bằng Uno",
     "tinh thông 720 phép biến đổi Chirp Z (CZT)",
+    "đọc vị mọi ký ức",
+    "đọc vị tâm trí người khác",
     "giúp người khác bế tắc mọi vấn đề",
     "giúp người khác giải quyết mọi vấn đề",
     "hóa giải mọi lời nguyền",
@@ -388,12 +389,9 @@ magicTypes = (
     "tinh thông 720 phép biến đổi Z",
     "tinh thông tam thiên nhãn thuật",
     "tinh thông tuyệt phong kĩ",
-    "đọc vị mọi ký ức",
-    "đọc vị tâm trí người khác",
 )
 
 companies = (
-
     # --- CÔNG TY CHẾ (PARODY & MEME) ---
     "AC Comic",
     "Adididias",
@@ -441,6 +439,7 @@ companies = (
     "Valve Active Cheat",
     "Vansida",
     "Vim Group",
+
     # --- CÔNG TY GIẢI TRÍ & TRUYỀN THÔNG (ENTERTAINMENT) ---
     "A24",
     "ADOR",
@@ -484,6 +483,7 @@ companies = (
     "Woollim Entertainment",
     "YG Entertainment",
     "Yuehua Entertainment",
+
     # --- HÃNG PHÁT TRIỂN & PHÁT HÀNH GAME ---
     "2K Games",
     "Activision",
@@ -537,6 +537,7 @@ companies = (
     "Ubisoft",
     "Valve",
     "VNG Corporation",
+
     # --- TẬP ĐOÀN CÔNG NGHỆ & PHẦN CỨNG ---
     "Acer",
     "Adobe",
@@ -629,6 +630,7 @@ companies = (
     "Yahoo",
     "Yamaha",
     "Zoom",
+
     #cơ quan chính phủ
     "Area 51",
     "ATF",
@@ -751,7 +753,6 @@ LowerText = (
 )
 
 Vehicle = (
-
     # ==================== HÃNG TESLA (XE ĐIỆN MỸ) ====================
     "xe điện bán tải Tesla Cybertruck",
     "xe điện hạng sang Tesla Model S Plaid",
@@ -759,6 +760,7 @@ Vehicle = (
     "xe điện Tesla Model 3",
     "xe điện Tesla Model Y",
     "xe điện thể thao Tesla Roadster",
+
     # ==================== HÃNG MERCEDES-BENZ (XE SANG ĐỨC) ====================
     "xe sang Mercedes-Benz C200",
     "xe sang Mercedes-Benz C300 AMG",
@@ -769,13 +771,15 @@ Vehicle = (
     "xe siêu sang Mercedes-Maybach S450",
     "xe siêu sang Mercedes-Maybach S650",
     "xe siêu sang Mercedes-Maybach S680",
+    "xe SUV địa hình Mercedes-AMG G63",
     "xe SUV Mercedes-Benz GLC 200",
     "xe SUV Mercedes-Benz GLC 300 4MATIC",
     "xe SUV Mercedes-Benz GLE 450",
     "xe SUV Mercedes-Benz GLS 450",
-    "xe SUV địa hình Mercedes-AMG G63",
     "xe thể thao Mercedes-AMG GT Coupe",
+
     # ==================== HÃNG BMW (XE SANG ĐỨC) ====================
+    "xe điện hạng sang BMW i7",
     "xe sang BMW 320i Sport Line",
     "xe sang BMW 330i M Sport",
     "xe sang BMW 520i Luxury Line",
@@ -790,8 +794,9 @@ Vehicle = (
     "xe SUV BMW X6",
     "xe SUV hạng sang BMW X7",
     "xe thể thao BMW Z4 M40i",
-    "xe điện hạng sang BMW i7",
+
     # ==================== HÃNG AUDI (XE SANG ĐỨC) ====================
+    "xe điện hạng sang Audi e-tron GT",
     "xe hơi Audi A4",
     "xe hơi Audi A6",
     "xe sang Audi A7 Sportback",
@@ -801,7 +806,7 @@ Vehicle = (
     "xe SUV Audi Q7",
     "xe SUV Audi Q8",
     "xe thể thao Audi R8 Spyder",
-    "xe điện hạng sang Audi e-tron GT",
+
     # ==================== HÃNG PORSCHE (XE THỂ THAO ĐỨC) ====================
     "xe huyền thoại Porsche 911 Carrera",
     "xe sang Porsche Panamera 4S",
@@ -811,20 +816,23 @@ Vehicle = (
     "xe thể thao Porsche 718 Boxster",
     "xe thể thao Porsche 718 Cayman",
     "xe thể thao Porsche 911 Turbo S",
+
     # ==================== HÃNG ROLLS-ROYCE (SIÊU SANG ANH QUỐC) ====================
+    "xe điện siêu sang Rolls-Royce Spectre",
     "xe siêu sang mui trần Rolls-Royce Dawn",
     "xe siêu sang Rolls-Royce Ghost",
     "xe siêu sang Rolls-Royce Phantom VII",
     "xe siêu sang Rolls-Royce Phantom VIII",
     "xe siêu sang Rolls-Royce Wraith",
     "xe SUV siêu sang Rolls-Royce Cullinan",
-    "xe điện siêu sang Rolls-Royce Spectre",
+
     # ==================== HÃNG BENTLEY (SIÊU SANG ANH QUỐC) ====================
     "xe siêu sang Bentley Continental GT",
     "xe siêu sang Bentley Flying Spur V8",
     "xe siêu sang Bentley Flying Spur W12",
     "xe siêu sang Bentley Mulsanne",
     "xe SUV siêu sang Bentley Bentayga",
+
     # ==================== HÃNG LAND ROVER (SUV SANG ANH QUỐC) ====================
     "xe SUV hạng sang Range Rover Autobiography",
     "xe SUV hạng sang Range Rover Vogue",
@@ -833,6 +841,7 @@ Vehicle = (
     "xe SUV Land Rover Discovery",
     "xe SUV Range Rover Sport",
     "xe SUV Range Rover Velar",
+
     # ==================== HÃNG LEXUS (XE SANG NHẬT BẢN) ====================
     "xe coupe thể thao Lexus LC 500",
     "xe sang Lexus ES 250",
@@ -843,6 +852,7 @@ Vehicle = (
     "xe SUV Lexus NX 350h",
     "xe SUV Lexus RX 350 Premium",
     "xe SUV Lexus RX 500h F Sport",
+
     # ==================== HÃNG LAMBORGHINI (SIÊU XE Ý) ====================
     "siêu xe Lamborghini Aventador LP700-4",
     "siêu xe Lamborghini Aventador SVJ",
@@ -852,6 +862,7 @@ Vehicle = (
     "siêu xe Lamborghini Murciélago LP640",
     "siêu xe Lamborghini Revuelto",
     "xe SUV siêu xe Lamborghini Urus Performante",
+
     # ==================== HÃNG FERRARI (SIÊU XE Ý) ====================
     "siêu xe Ferrari 458 Italia",
     "siêu xe Ferrari 488 GTB",
@@ -861,6 +872,7 @@ Vehicle = (
     "siêu xe Ferrari Roma",
     "siêu xe Ferrari SF90 Stradale",
     "xe SUV siêu xe Ferrari Purosangue",
+
     # ==================== HÃNG MCLAREN & ASTON MARTIN (SIÊU XE ANH) ====================
     "siêu xe McLaren 570S",
     "siêu xe McLaren 650S Spider",
@@ -869,8 +881,12 @@ Vehicle = (
     "xe sang Aston Martin DB11",
     "xe SUV siêu xe Aston Martin DBX 707",
     "xe thể thao Aston Martin Vantage",
+
     # ==================== HÃNG TOYOTA (Ô TÔ NHẬT) ====================
     "xe bán tải Toyota Hilux",
+    "xe đa dụng Toyota Avanza Premio",
+    "xe đa dụng Toyota Innova Cross",
+    "xe đa dụng Toyota Veloz Cross",
     "xe hơi Toyota Camry đại gia",
     "xe hơi Toyota Corolla Altis",
     "xe hơi Toyota Vios taxi",
@@ -883,9 +899,7 @@ Vehicle = (
     "xe SUV Toyota Land Cruiser Prado",
     "xe SUV Toyota Raize",
     "xe SUV Toyota Yaris Cross",
-    "xe đa dụng Toyota Avanza Premio",
-    "xe đa dụng Toyota Innova Cross",
-    "xe đa dụng Toyota Veloz Cross",
+
     # ==================== HÃNG HONDA (XE MÁY & Ô TÔ NHẬT) ====================
     "xe hơi Honda Brio",
     "xe hơi Honda City",
@@ -905,6 +919,7 @@ Vehicle = (
     "xe tay ga Honda SH 150i",
     "xe tay ga Honda SH 350i",
     "xe tay ga Honda Vision",
+
     # ==================== HÃNG YAMAHA & SUZUKI (XE MÁY NHẬT) ====================
     "xe côn tay Suzuki Raider R150",
     "xe côn tay Suzuki Satria F150",
@@ -919,6 +934,7 @@ Vehicle = (
     "xe phân khối lớn Yamaha YZF-R1",
     "xe tay ga Yamaha Grande",
     "xe tay ga Yamaha NVX 155",
+
     # ==================== HÃNG HYUNDAI & KIA (Ô TÔ HÀN QUỐC) ====================
     "xe hơi Hyundai Accent",
     "xe hơi Hyundai Elantra",
@@ -939,6 +955,7 @@ Vehicle = (
     "xe SUV Kia Sorento",
     "xe SUV Kia Sportage",
     "xe tải nhẹ Hyundai Porter H150",
+
     # ==================== HÃNG MAZDA & FORD (Ô TÔ PHỔ THÔNG) ====================
     "xe bán tải Ford Ranger XLS",
     "xe bán tải hạng nặng Ford F-150",
@@ -957,11 +974,11 @@ Vehicle = (
     "xe SUV Mazda CX-3",
     "xe SUV Mazda CX-5",
     "xe SUV Mazda CX-8",
+
     # ==================== HÃNG VINFAST (Ô TÔ ĐIỆN VIỆT NAM) ====================
     "xe buýt điện VinFast VinBus",
     "xe hơi VinFast Fadil",
     "xe hơi VinFast Lux A2.0",
-    "xe SUV VinFast Lux SA2.0",
     "xe SUV điện VinFast VF e34",
     "xe SUV điện VinFast VF3",
     "xe SUV điện VinFast VF5 Plus",
@@ -969,8 +986,12 @@ Vehicle = (
     "xe SUV điện VinFast VF7",
     "xe SUV điện VinFast VF8",
     "xe SUV điện VinFast VF9 đại gia",
+    "xe SUV VinFast Lux SA2.0",
+
     # ==================== HÃNG THACO, HINO & ISUZU (XE TẢI & XE KHÁCH) ====================
     "xe bán tải Isuzu D-Max",
+    "xe bọc thép chở quân chống mìn Ural-VV",
+    "xe đầu kéo Isuzu Giga",
     "xe khách giường nằm Thaco Mobihome",
     "xe khách Thaco Meadow",
     "xe SUV Isuzu Mu-X",
@@ -983,9 +1004,8 @@ Vehicle = (
     "xe tải nhẹ Thaco Towner",
     "xe tải trung Isuzu Forward",
     "xe tải trung Thaco Ollin",
-    "xe đầu kéo Isuzu Giga",
+
     # ==================== XE QUÂN SỰ NGA (KAMAZ, URAL, GAZ, ZIL) ====================
-    "xe bọc thép chở quân chống mìn Ural-VV",
     "xe bọc thép chống mìn GAZ-Tigr",
     "xe bọc thép chống mìn KamAZ-6560 Typhoon",
     "xe bọc thép trinh sát BRDM-2",
@@ -1003,10 +1023,20 @@ Vehicle = (
     "xe thiết giáp bánh lốp BTR-80",
     "xe vận tải chiến thuật ZIL-131",
     "xe vận tải hạng nặng KamAZ-5350",
+
     # ==================== XE PHI NHIÊN LIỆU (CHẠY BẰNG SỨC NGƯỜI & SÚC VẬT) ====================
     "xe ba gác đạp chở hàng",
     "xe bò kéo bánh gỗ",
     "xe cút kít xi măng",
+    "xe đạp cuộc Martin 107",
+    "xe đạp địa hình Asama",
+    "xe đạp điện HKbike hết pin",
+    "xe đạp gấp Brompton đại gia",
+    "xe đạp mini Thống Nhất",
+    "xe đạp Phượng Hoàng cổ cọc chèo",
+    "xe đạp thể thao Giant",
+    "xe đạp thồ hàng Điện Biên Phủ",
+    "xe đẩy hàng bốn bánh",
     "xe kéo tay phu xe cổ đại",
     "xe lôi đạp miền Tây",
     "xe lừa thồ hàng",
@@ -1015,33 +1045,26 @@ Vehicle = (
     "xe trâu kéo bánh lốp",
     "xe trượt scooter trẻ em",
     "xe xích lô đạp Chợ Lớn",
-    "xe đạp cuộc Martin 107",
-    "xe đạp gấp Brompton đại gia",
-    "xe đạp mini Thống Nhất",
-    "xe đạp Phượng Hoàng cổ cọc chèo",
-    "xe đạp thể thao Giant",
-    "xe đạp thồ hàng Điện Biên Phủ",
-    "xe đạp địa hình Asama",
-    "xe đạp điện HKbike hết pin",
-    "xe đẩy hàng bốn bánh",
+
     # ==================== XE THỜI CỔ ĐẠI & PHONG KIẾN (ANCIENT & FEUDAL ERA) ====================
     "bệ rước long đình",
     "kiệu bát cống bốn người khiêng",
     "kiệu hoa đại hồng gấm",
     "kiệu võng tre đường trường",
     "thuyền rồng ngự chế",
+    "xe đẩy bằng tay bằng gỗ thời Tống",
     "xe song mã hoàng gia",
     "xe thiết xa La Mã",
     "xe tứ mã chiến trận cổ đại",
-    "xe đẩy bằng tay bằng gỗ thời Tống",
+
     # ==================== PHƯƠNG TIỆN VIỄN TƯỞNG & HOẠT HÌNH (FUTURE & FICTIONAL) ====================
     "bàn tọa bay phản lực",
     "chong chóng tre Doraemon",
     "cỗ máy thời gian DeLorean DMC-12",
+    "đĩa bay UFO phản vật chất",
     "giày bay phản lực jetpack",
     "kén ngủ dịch chuyển tức thời quantum pod",
     "phi thuyền không gian Millennium Falcon",
     "thảm thần Aladdin",
     "xe mô tô bay hoverbike không trọng lực",
-    "đĩa bay UFO phản vật chất",
 )

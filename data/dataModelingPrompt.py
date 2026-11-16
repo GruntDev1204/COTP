@@ -1,5 +1,4 @@
 backgroundModeling = (
-
     # --- DANH MỤC: CÁNH ĐỒNG (FIELD & MEADOW) ---
     "blurred rustic countryside hay bale field, muted colors, soft focus background",
     "blurred wildflower field with pastel colors, soft morning sun rays, clean composition",
@@ -7,6 +6,7 @@ backgroundModeling = (
     "out of focus lavender field with gentle purple hues, dreamy minimalist bokeh background",
     "softly blurred golden wheat field at sunset, warm cinematic lighting, minimal details",
     "softly blurred pampas grass field, earthy tones, minimalist and clean outdoor setup",
+
     # --- DANH MỤC: TRONG NHÀ / STUDIO HẠU CẢNH (INDOOR & ARCHITECTURE) ---
     "blurred high-end studio interior with professional lighting setup, clean solid textures",
     "blurred upscale apartment interior, floor-to-ceiling window, soft morning light, clean backdrop",
@@ -14,6 +14,7 @@ backgroundModeling = (
     "out of focus minimalist museum interior, clean white marble textures, soft diffuse lighting",
     "softly blurred luxury hotel lobby with warm ambient light, minimalist structural lines",
     "softly blurred scandinavian style living room, muted tones, minimalist furniture layout",
+
     # --- DANH MỤC: PHỐ THỊ & CÀ PHÊ (URBAN & CAFE) ---
     "blurred contemporary fashion boutique backdrop with warm glowing lights",
     "blurred minimalist cafe interior with soft bokeh lighting",
@@ -21,16 +22,19 @@ backgroundModeling = (
     "out of focus modern urban street at daytime, minimal crowd",
     "softly blurred industrial loft wall, minimalist interior",
     "softly blurred serene outdoor garden, natural daylight, clean composition",
+
     # --- DANH MỤC: BÃI BIỂN & BỜ BIỂN (BEACH & COASTLINE) ---
     "blurred tropical white sand beach with distant turquoise water, bright airy daylight, clean composition",
     "out of focus rocky coastline under a clear blue sky, calm sea water, soft natural lighting, minimal details",
     "softly blurred moody overcast shoreline, muted gray ocean and wet sand, calm minimalist atmosphere",
     "softly blurred sandy beach with gentle ocean waves at golden hour, warm sunlight, minimalist clean horizon",
+
     # --- DANH MỤC: SÂN KHẤU & ÁNH ĐÈN NGHỆ THUẬT (STAGE & SPOTLIGHT) ---
     "blurred minimalist fashion runway stage with sleek dark flooring and soft overhead lighting, minimal details",
     "out of focus dark concert stage with subtle warm spotlight beams and soft haze, minimalist bokeh background",
     "out of focus modern studio stage with subtle neon rim lighting and smooth dark gradient backdrop",
     "softly blurred theater stage backdrop with deep velvet curtains and dim ambient stage lights, clean composition",
+
     # --- DANH MỤC: ĐỒI NÚI & THIÊN NHIÊN RỘNG LỚN (MOUNTAINS & NATURE) ---
     "blurred vast desert sand dunes under a soft pastel sunset sky, smooth warm textures, minimal details",
     "out of focus tranquil lakeside surrounded by pine trees, soft diffused daylight, clean composition",
@@ -39,29 +43,50 @@ backgroundModeling = (
 )
 
 backgroundModelingColors = (
-    "solid chocolate brown", # Nâu đen/nâu chocolate (Tông màu cổ điển cho đồ thu đông, da thuộc)
-    "solid cool ice blue", # Xanh băng giá nhạt (Tươi mát, thanh thoát, làm nổi bật tóc và trang phục tối màu)
-    "solid crisp alabaster white", # Trắng thạch cao mịn (Chuẩn phông nền studio tối giản, sạch bong từng chi tiết)
-    "solid dark forest green", # Xanh lá cây sẫm/rừng sâu (Tạo chiều sâu tuyệt đối cho khung hình)
-    "solid deep burgundy wine", # Đỏ rượu vang chát (Sang trọng, huyền bí, hợp với đồ dạ hội/vest)
-    "solid deep navy blue", # Xanh dương đậm (Màu kinh điển của ảnh thẻ cao cấp và suit doanh nhân)
-    "solid deep royal purple", # Tím hoàng gia trầm (Huyền bí, quyền lực và cực kỳ tôn ánh sáng da)
-    "solid elegant olive green", # Xanh rêu/ô-liu trầm (Cực tôn da và làm nổi bật đồ màu trắng/kem)
-    "solid luxury charcoal gray", # Xám than đá (Màu quyền lực nhất trong chụp lookbook thời trang nam/nữ)
-    "solid midnight black", # Đen tuyền (Ép AI đánh khối ánh sáng studio viền gáy - Rim light rất nghệ)
-    "solid muted mustard yellow", # Vàng mù tạt trầm (Tạo điểm nhấn cá tính, nghệ thuật nhưng vẫn giữ độ sâu)
-    "solid muted terracotta", # Đất nung trầm (Tạo cảm giác nghệ thuật, ấm áp, trendy)
-    "solid pastel sage green", # Xanh bơ/xanh xô thơm pastel (Nhẹ nhàng, hiện đại, chuẩn gu chụp lookbook Hàn Quốc)
-    "solid rich burnt orange", # Cam cháy trầm (Tạo hiệu ứng thị giác mạnh mẽ chuẩn bìa tạp chí)
-    "solid slate gray", # Xám đá phiến (Màu trung tính lạnh, tạo cảm giác hiện đại, sạch sẽ)
-    "solid soft dusty rose", # Hồng phấn trầm/hồng đất nhẹ (Cực kỳ nịnh da và hợp concept trẻ trung)
-    "solid soft lavender mist", # Tím oải hương nhạt (Mộng mơ, lạ mắt mà không hề sến)
-    "solid warm ivory cream", # Trắng kem ngà ấm (Sáng sủa, tự nhiên, không bị chói gắt như trắng tinh)
+    "solid chocolate brown",
+    # Nâu đen/nâu chocolate (Tông màu cổ điển cho đồ thu đông, da thuộc)
+    "solid cool ice blue",
+    # Xanh băng giá nhạt (Tươi mát, thanh thoát, làm nổi bật tóc và trang phục tối màu)
+    "solid crisp alabaster white",
+    # Trắng thạch cao mịn (Chuẩn phông nền studio tối giản, sạch bong từng chi tiết)
+    "solid dark forest green",
+    # Xanh lá cây sẫm/rừng sâu (Tạo chiều sâu tuyệt đối cho khung hình)
+    "solid deep burgundy wine",
+
+    # Đỏ rượu vang chát (Sang trọng, huyền bí, hợp với đồ dạ hội/vest)
+    "solid deep navy blue",
+    # Xanh dương đậm (Màu kinh điển của ảnh thẻ cao cấp và suit doanh nhân)
+    "solid deep royal purple",
+    # Tím hoàng gia trầm (Huyền bí, quyền lực và cực kỳ tôn ánh sáng da)
+    "solid elegant olive green",
+
+    # Xanh rêu/ô-liu trầm (Cực tôn da và làm nổi bật đồ màu trắng/kem)
+    "solid luxury charcoal gray",
+    # Xám than đá (Màu quyền lực nhất trong chụp lookbook thời trang nam/nữ)
+    "solid midnight black",
+    # Đen tuyền (Ép AI đánh khối ánh sáng studio viền gáy - Rim light rất nghệ)
+    "solid muted mustard yellow",
+    # Vàng mù tạt trầm (Tạo điểm nhấn cá tính, nghệ thuật nhưng vẫn giữ độ sâu)
+    "solid muted terracotta",
+
+    # Đất nung trầm (Tạo cảm giác nghệ thuật, ấm áp, trendy)
+    "solid pastel sage green",
+    # Xanh bơ/xanh xô thơm pastel (Nhẹ nhàng, hiện đại, chuẩn gu chụp lookbook Hàn Quốc)
+    "solid rich burnt orange",
+
+    # Cam cháy trầm (Tạo hiệu ứng thị giác mạnh mẽ chuẩn bìa tạp chí)
+    "solid slate gray",
+    # Xám đá phiến (Màu trung tính lạnh, tạo cảm giác hiện đại, sạch sẽ)
+    "solid soft dusty rose",
+    # Hồng phấn trầm/hồng đất nhẹ (Cực kỳ nịnh da và hợp concept trẻ trung)
+    "solid soft lavender mist",
+
+    # Tím oải hương nhạt (Mộng mơ, lạ mắt mà không hề sến)
+    "solid warm ivory cream",
 )
 
 #female 
 femaleShoes = (
-
     # --- DANH MỤC: GIÀY CAO GÓT (HIGH HEELS) ---
     "wearing chunky platform high heels",
     "wearing classic pointed-toe kitten heels",
@@ -71,6 +96,7 @@ femaleShoes = (
     "wearing sexy strappy high-heeled sandals",
     "wearing sophisticated slingback heels with pointed toes",
     "wearing stylish wedge heel sandals",
+
     # --- DANH MỤC: BỐT NỮ (BOOTS) ---
     "wearing chunky combat platform boots",
     "wearing elegant leather chelsea ankle boots",
@@ -79,6 +105,7 @@ femaleShoes = (
     "wearing sleek black leather knee-high boots",
     "wearing stylish pointed-toe stiletto ankle booties",
     "wearing western-style cowboy leather boots",
+
     # --- DANH MỤC: GIÀY BỆT & BÚP BÊ (FLATS & BALLERINAS) ---
     "wearing casual espadrille flat shoes",
     "wearing classic leather oxfords",
@@ -87,6 +114,7 @@ femaleShoes = (
     "wearing elegant mary jane shoes with instep straps",
     "wearing stylish pointed-toe flat shoes",
     "wearing trendy leather loafers with metal hardware",
+
     # --- DANH MỤC: GIÀY THỂ THAO & STREETWEAR (SNEAKERS) ---
     "wearing clean white minimalist fashion sneakers",
     "wearing high-top streetwear sneakers",
@@ -201,12 +229,12 @@ femaleArmPoses = (
 )
 
 malePoses = (
-
     # (chuỗi_mô_tả, flag_góc_nhìn: 0 = dáng thường, 1 = dáng quay lưng)
     # Bắt khoảnh khắc đang sải bước đi chậm rãi, dứt khoát, thân trên thẳng và điềm tĩnh
     ('captured mid-stride in a slow, deliberate walking motion, legs in a natural walking step, upper torso straight and composed', 0),
     # Góc máy chụp hất từ dưới lên tạo cảm giác uy quyền, đứng thẳng với một chân bước tới trước
     ('shot from a dramatic low-angle camera perspective, standing tall with one foot planted forward in a commanding posture', 0),
+
     # Góc máy chụp từ trên cao xuống, hai chân đứng trụ vững chắc
     ('shot from an elevated high-angle camera perspective, feet planted firmly apart in a grounded stance', 0),
     # Ngồi bắt chéo một chân theo kiểu chữ ngũ (cổ chân gác lên đầu gối chân kia), thân trên thẳng và mở
@@ -217,6 +245,7 @@ malePoses = (
     ('sitting turned in a three-quarter side profile on a minimalist studio stool with feet planted firmly on the floor, upright torso and squared shoulders', 0),
     # Ngồi thẳng lưng trên ghế đẩu, hai chân mở rộng bằng vai và đặt phẳng trên sàn, vai vuông vức
     ('sitting upright on a minimalist studio stool with legs set shoulder-width apart and feet planted flat on the floor, straight back and squared shoulders', 0),
+
     # Đứng dang rộng hai chân tự tin, thân trên giữ thẳng
     ('standing in a confident wide-leg stance with an upright torso', 0),
     # Đứng quay lưng hoàn toàn 180 độ ra sau, hai chân rộng bằng vai và bờ vai vuông vức (flag = 1)
@@ -229,12 +258,14 @@ malePoses = (
     ('standing in a sharp side-profile posture with legs in a slight walking stance, torso upright', 0),
     # Đứng quay lưng góc nghiêng 3/4, hai chân đứng so le, thân trên thẳng và vai vuông vức (flag = 1)
     ('standing in a three-quarter rear-angled posture with feet staggered, upright torso and squared shoulders', 1),
+
     # Đứng thẳng nghiêm túc, hai chân mở rộng bằng vai
     ('standing straight in a formal posture with feet shoulder-width apart', 0),
     # Xoay ngang sang trái góc nghiêng 3/4, hai chân đứng thẳng vững chãi, ngực mở và vai vuông vức
     ('standing turned sideways to the left in a sharp three-quarter side profile with legs straight in a grounded, wide-set stance, chest open and shoulders squared', 0),
     # Xoay ngang sang phải góc nghiêng 3/4, hai chân đứng thẳng vững chãi, ngực mở và vai vuông vức
     ('standing turned sideways to the right in a sharp three-quarter side profile with legs straight in a grounded, wide-set stance, chest open and shoulders squared', 0),
+
     # Hai chân đứng thẳng hơi mở nhẹ, thân trên xoay nghiêng 45 độ
     ('standing with legs straight and slightly apart, torso angled at 45 degrees', 0),
     # Đứng thả lỏng một chân bắt chéo nhẹ qua chân kia ở mắt cá chân, thân trên giữ thẳng
@@ -244,7 +275,6 @@ malePoses = (
 )
 
 femalePoses = (
-
     # (chuỗi_mô_tả, flag_góc_nhìn: 0 = dáng thường, 1 = dáng quay lưng)
     # Bắt khoảnh khắc sải bước catwalk thanh lịch, một chân đặt thẳng phía trước chân kia, thân trên giữ thẳng
     ('captured mid-stride in an elegant runway step, one foot placed directly in front of the other, upper torso poised and straight', 0),
@@ -293,6 +323,7 @@ maleExpressions = (
     "with a bright, hearty open-mouthed smile showing teeth and softly crinkled eyes",
     # Cười mỉm nhẹ nhàng, chân thành với khóe môi hơi nhếch lên tự nhiên (không lộ răng)
     "with a calm, genuine closed-mouth smile and relaxed jawline",
+
     # Biểu cảm lạnh lùng, điềm tĩnh, cơ mặt thả lỏng hoàn toàn
     "with a cool, composed, and neutral facial expression",
     # Nụ cười nhếch mép đầy ngạo mạn với một bên khóe môi nhếch cao và ánh mắt sắc bén
@@ -305,10 +336,12 @@ maleExpressions = (
     "with a quiet, melancholic expression, heavy eyelids, and slightly downturned lips",
     # Vẻ mặt ngạc nhiên chừng mực, chân mày hơi nhướng lên và ánh mắt mở to tự nhiên
     "with a restrained surprised expression, subtly raised eyebrows, and widened eyes",
+
     # Nụ cười nửa miệng sắc sảo với đôi mắt hơi nheo lại đầy tự tin
     "with a sharp, calculating half-smile and subtly narrowed, confident eyes",
     # Biểu cảm nghiêm nghị, sắc lạnh với chân mày hơi nhíu lại và xương hàm góc cạnh
     "with a stern, intense expression, slightly furrowed brows, and a defined jaw",
+
     # Cười nửa miệng tự tin, phong trần với ánh mắt sắc bén
     "with a subtle, confident smirk and sharp, focused eyes",
     # Giật mình hoảng hốt bất ngờ như vừa bị ai đó hù, mắt mở to, chân mày giật bắn lên và miệng há hốc rõ nét
@@ -324,26 +357,33 @@ maleExpressions = (
 femaleExpressions = (
     # Đang khóc xúc động, đôi mắt ngấn lệ long lanh với những giọt nước mắt lăn nhẹ trên má
     "crying emotionally with teary, glistening eyes and subtle tear tracks on the cheeks",
+
     # Cười phá lên sảng khoái, mắt nheo lại tự nhiên đầy sức sống
     "laughing brightly with an open mouth, crinkled eyes, and raised cheeks",
+
     # Chun mũi tinh nghịch, đáng yêu kèm nụ cười mỉm nhẹ nhàng
     "playfully scrunching her nose with a cute, lighthearted closed-mouth smile",
     # Cười tít mắt rạng rỡ với đôi mắt cong hình trăng khuyết đầy sức sống
     "with a bright, genuine eye-smile, eyes curving happily into crescents and a radiant smile",
     # Vẻ mặt buồn bã, mong manh với đôi mắt rũ nhẹ và khóe miệng hơi trễ xuống
     "with a delicate, melancholic expression, softly drooping eyelids, and slightly downturned lips",
+
     # Vẻ mặt mơ màng, dịu dàng và trầm tư với đôi môi hơi hé nhẹ
     "with a dreamy, serene, and pensive expression and softly parted lips",
+
     # Nụ cười mím môi dịu dàng, e thẹn với sắc mặt tươi tắn tự nhiên
     "with a gentle, understated closed-lip smile and a soft, natural complexion",
+
     # Nháy một bên mắt tinh nghịch kèm nụ cười nửa miệng duyên dáng
     "with a playful wink of one eye and a charming, subtle half-smile",
+
     # Ánh mắt lém lỉnh, tinh nghịch kèm nụ cười mỉm lém lỉnh tự nhiên
     "with a playful, spirited expression, sparkling eyes, and a lighthearted closed-mouth smile",
     # Nháy một bên mắt kiêu kỳ, quyến rũ kèm nụ cười mỉm tự tin đầy cuốn hút
     "with a poised, alluring wink of one eye and a confident, subtle closed-mouth smile",
     # Biểu cảm kiêu kỳ, lạnh lùng chuẩn phong cách thời trang cao cấp (High-fashion)
     "with a poised, cool, and neutral high-fashion editorial expression",
+
     # Cười tươi tắn, rạng rỡ lộ răng tự nhiên với đôi mắt cong vui vẻ
     "with a radiant, joyful open-mouthed smile showing teeth and softly crinkled eyes",
     # Vẻ mặt trầm tư nhẹ nhàng với đôi môi khép hờ tự nhiên và ánh mắt to tròn
@@ -354,12 +394,12 @@ femaleExpressions = (
     "with a sudden startled, flustered expression as if startled by a sudden noise, eyes wide open, raised eyebrows, and mouth open in a surprised gasp",
     # Vẻ mặt ngạc nhiên dễ thương, đôi mắt mở to tròn và chân mày hơi nhướng lên
     "with a surprised expression, wide open eyes, raised eyebrows, and softly parted lips",
+
     # Hơi phồng nhẹ hai má và chu môi hờ hững đầy đáng yêu
     "with softly puffed cheeks and a subtle, cute pout",
 )
  
 modelGazes = (
-
     # (index 0: dùng cho dáng thường, index 1: dùng cho dáng quay lưng)
     # Cằm hơi cúi nhẹ, mắt nhìn chếch xuống dưới một cách thư giãn (dùng chung cho cả 0 và 1)
     ('chin slightly lowered with eyes gazing subtly downward in a relaxed candid expression', 'chin slightly lowered with eyes gazing subtly downward in a relaxed candid expression'),

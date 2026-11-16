@@ -171,14 +171,13 @@ facePeopleEmojis = (
     "🫠",
     "🫣",
     "🫨",
-    "🫪",
     "🫰",
+    "🫪",
 )
 
 # Động vật & Tự nhiên
 animalsNatureEmojis = (
     "☘️",
-    "牛",
     "🌰",
     "🌱",
     "🌲",
@@ -334,12 +333,12 @@ animalsNatureEmojis = (
     "🪽",
     "🪿",
     "🫏",
+    "牛",
 )
 
 # Đồ ăn & Thức uống
 foodDrinkEmojis = (
     "☕",
-    "栗",
     "🌭",
     "🌮",
     "🌯",
@@ -463,6 +462,7 @@ foodDrinkEmojis = (
     "🫗",
     "🫘",
     "🫙",
+    "栗",
 )
 
 # Thể thao & Giải trí
@@ -569,7 +569,6 @@ vehiclesPlacesEmojis = (
     "⛵",
     "⛺",
     "✈️",
-    "城堡",
     "🌁",
     "🌃",
     "🌄",
@@ -662,12 +661,12 @@ vehiclesPlacesEmojis = (
     "🪂",
     "🪨",
     "🪵",
+    "城堡",
 )
 
 # Vật dụng & Công cụ
 objectsToolsEmojis = (
     " coffin",
-    "Telephone",
     "⌚",
     "⌛",
     "⌨️",
@@ -849,6 +848,7 @@ objectsToolsEmojis = (
     "🪦",
     "🪧",
     "🪮",
+    "Telephone",
 )
 
 # Biểu tượng & Trái tim
@@ -953,16 +953,32 @@ symbolsHeartsEmojis = (
 )
 
 emotionPunctuations = (
-    "!", # Cảm xúc mạnh, ngạc nhiên, vui vẻ
-    "#", # Meme, tag, hoặc cảm xúc mạng
-    "$", # Gợi giá trị, hoặc meme kiểu "giấc mơ đắt giá"
-    "%", # Rối loạn, hỗn hợp, chaos
-    "*", # Nhấn nhá, lấp lánh, đặc biệt
+    "!",
+
+    # Cảm xúc mạnh, ngạc nhiên, vui vẻ
+    "#",
+
+    # Meme, tag, hoặc cảm xúc mạng
+    "$",
+
+    # Gợi giá trị, hoặc meme kiểu "giấc mơ đắt giá"
+    "%",
+
+    # Rối loạn, hỗn hợp, chaos
+    "*",
+
+    # Nhấn nhá, lấp lánh, đặc biệt
     "-.-!",
-    "?", # Bối rối, tò mò, hoang mang
-    "@", # Gợi liên kết, gọi tên, hoặc meme hóa
-    "^", # Mơ màng, lơ lửng, chill
-    "~", # Mơ màng, lơ lửng, chill
+    "?",
+
+    # Bối rối, tò mò, hoang mang
+    "@",
+
+    # Gợi liên kết, gọi tên, hoặc meme hóa
+    "^",
+
+    # Mơ màng, lơ lửng, chill
+    "~",
 )
 
 
