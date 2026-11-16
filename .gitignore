@@ -5,3 +5,6 @@
 # Python-generated files
 __pycache__/
 *.py[cod]
+
+# Local maintenance helpers
+/helper/
