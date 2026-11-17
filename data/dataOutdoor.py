@@ -1312,6 +1312,8 @@ outDoorSkyObjects = (
 outdoorObjects = (
     # Nhà cửa và kiến trúc
     "am nhỏ",
+    "am thờ",
+    "bàn thờ",
     "biệt thự",
     "bốt bảo vệ",
     "bốt kiểm soát",
