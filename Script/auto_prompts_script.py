@@ -16,7 +16,7 @@ def createNoteArt(mode=0):
 def generateIndoorOutput():
     output = (
         f"{generateOpenScene()}\n"
-        f"This is a Indoor Scene: \n"
+        f"This is a Surreal Indoor Scene: \n"
         f"Ngay {random.choice(inDoorPreposition).upper()} thuộc bên trong {random.choice(indoorLocations).strip()}, trông rất {random.choice(indoorStatus)}, nó được xây bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. \n"
         f"Có {generateIndoorItems().strip()}. \n"
         f"{random.choice(inDoorPreposition).upper()}, đang có {generateIndoorObject().strip()}. \n"
@@ -29,7 +29,7 @@ def generateIndoorOutput():
 def generateOutdoorOutput():
     output = (
         f"{generateOpenScene()}\n"
-        f"This is a Outdoor Scene: \n"
+        f"This is a Surreal Outdoor Scene: \n"
         f"Ngay {random.choice(outDoorPreposition).upper()} tại {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm, "
         f"thời tiết thì đang {random.choice(weatherConditions).strip()}. \n"
         f"{returnOutdoorSkyStrongObject().strip()}. \n"
