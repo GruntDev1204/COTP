@@ -3047,11 +3047,13 @@ anyActions = [
     "hành lễ bái tạ trước {object}",
     "hành lễ cáo lui trước {object}",
     "hành lễ trước {object}",
+    "hát bài tình ca về {object}",
     "học bài cùng {object}",
     "hỏi thăm sức khỏe của {object}",
     "huấn luyện mô hình AI nhận diện {object}",
     "huấn luyện múa cho {object}",
     "huấn luyện xiếc cho {object}",
+    "làm thơ ca ngợi vẻ đẹp của {object}",
     "lạy tạ trước {object}",
     "lắng nghe lời thì thầm của {object}",
     "lấy sổ ra ghi chép gì đó về {object}",
@@ -3102,8 +3104,6 @@ anyActions = [
     "vẽ tranh về {object}",
     "xăm soi {object}",
     "xây dựng tập dữ liệu để huấn luyện AI về {object}",
-    "hát bài tình ca về {object}",
-    "làm thơ ca ngợi vẻ đẹp của {object}",
 ]
 
 # Shared object nouns; action templates above are combined with every item here.
