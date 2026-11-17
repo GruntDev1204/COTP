@@ -3102,6 +3102,8 @@ anyActions = [
     "vẽ tranh về {object}",
     "xăm soi {object}",
     "xây dựng tập dữ liệu để huấn luyện AI về {object}",
+    "hát bài tình ca về {object}",
+    "làm thơ ca ngợi vẻ đẹp của {object}",
 ]
 
 # Shared object nouns; action templates above are combined with every item here.
