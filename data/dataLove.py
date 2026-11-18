@@ -16,10 +16,15 @@ LoveActions = (
     "gần gũi với nhau",
     "gần gũi với nhau rất hạnh phúc",
     "gần gũi với nhau rất vui vẻ",
+    "ở cạnh nhau giữa không trung",
     "ở cạnh nhau ở gần khung hình",
     "ở cạnh nhau ở giữa khung hình",
     "ở cạnh nhau ở góc khung hình",
     "ở cạnh nhau ở xa khung hình",
+    "ở cạnh nhau trên bề mặt mảnh vỡ máy bay",
+    "ở cạnh nhau trên chiếc xe mui trần",
+    "ở cạnh nhau trên một thùng gỗ",
+    "ở cạnh nhau trên nóc chiếc xe bán tải",
     "ở cạnh nhau và gần gũi",
     "ở vui vẻ bên nhau",
     "tận hưởng không khí mới cưới",
@@ -45,13 +50,16 @@ LoveActions = (
 
 BoyActions = (
     # Independent or compatible actions (flag 0)
+    ('an ủi cô gái', 0),
     ('ấn vào má cô gái', 0),
     ('ấn vào mũi cô gái', 0),
     ('ấn vào trán cô gái', 0),
     ('biểu diễn tung hứng bó hoa trước cô gái', 0),
+    ('bôi phấn trang điểm lên mặt cô gái', 0),
     ('búng trán cô gái', 0),
     ('cài 1 cành hoa lên tóc cô gái', 0),
     ('che chắn cho cô gái bằng tư thế lá chắn', 0),
+    ('cho cô gái xem nhật ký của mình', 0),
     ('choàng eo cô gái thật chặt', 0),
     ('chu mỏ làm mặt xấu trêu chọc cô gái', 0),
     ('cười lớn và hút thuốc', 0),
@@ -179,6 +187,7 @@ BoyActions = (
 
 GirlActions = (
     # Independent or compatible actions (flag 0)
+    ('an ủi chàng trai', 0),
     ('áp hai bàn tay vào má chàng trai', 0),
     ('ấn vào mũi chàng trai', 0),
     ('ấn vào trán chàng trai', 0),
@@ -188,6 +197,8 @@ GirlActions = (
     ('cài 1 bông hoa lên tai của chàng trai', 0),
     ('chìa 1 cây kẹo mút cho chàng trai', 0),
     ('chìa 1 gói thuốc lá cho chàng trai', 0),
+    ('chìa 1 hộp sữa cho chàng trai', 0),
+    ('cho chàng trai xem nhật ký của mình', 0),
     ('chống cằm và nhìn chàng trai đắm đuối', 0),
     ('chống nạnh và làm biểu cảm dễ thương với chàng trai', 0),
     ('chống nạnh và làm biểu cảm giận dỗi với chàng trai', 0),
