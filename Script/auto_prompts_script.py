@@ -65,15 +65,21 @@ def generateCouplePrompt():
         f"Tóc của chàng trai để kiểu {random.choice(fashionHairMale)}, cô gái thì có kiểu tóc {random.choice(fashionHairFemale)}. \n"
         f"{romanticAction}"
         f"Bọn họ đang {random.choice(LoveActions)} và trông họ có vẻ {random.choice(liveNPCEmotions)}. \n\n"
-        f"Và khung cảnh {random.choice(coupleCall)} này đang hẹn hò là: \n"
     )
     
     endingStatus = ( f"Đây quả thật là khung cảnh {random.choice(status)}! \n"
                      f"Cảm xúc chung có thể nói là: {''.join(random.choices(loveIcons, k=4))}" ) 
   
     return random.choice((
+        lambda: (
+            f"{commonSence}"
+            f"Và khung cảnh {random.choice(coupleCall)} này đang hẹn hò là một khung cảnh được mô tả bằng đoạn văn Tiếng Anh như sau: \n"
+            f"{random.choice(backgrounds)}. \n\n"
+            f"{endingStatus}"
+        ),
         lambda:(
             f"{commonSence}"
+            f"Và khung cảnh {random.choice(coupleCall)} này đang hẹn hò là một khung cảnh Indoor: \n"
             f"Ở {random.choice(inDoorPreposition).upper()} thuộc khu vực bên trong {random.choice(indoorLocations).strip()} {random.choice(indoorStatus)} lâu năm. \n"
             f"Nó được xây bằng {random.choice(indoorMaterials)} và sơn màu {random.choice(colors)}. \n"
             f"Và {random.choice(inDoorPreposition).upper()} nơi này, {generateIndoorItems().strip()}. \n"
@@ -83,6 +89,7 @@ def generateCouplePrompt():
         ),
         lambda:(
             f"{commonSence}"
+            f"Và khung cảnh {random.choice(coupleCall)} này đang hẹn hò là một khung cảnh Outdoor: \n"
             f"Ngay {random.choice(outDoorPreposition).upper()} tọa lạc tại {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm. \n"
             f"Và {random.choice(outDoorPreposition).upper()} nơi này, đang có thời tiết {random.choice(weatherConditions).strip()}. \n"
             f"{returnOutdoorSkyStrongObject().strip()}. \n"

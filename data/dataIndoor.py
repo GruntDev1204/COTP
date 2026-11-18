@@ -1698,6 +1698,7 @@ indoorObjectItems = (
     "máy chụp X-quang",
     "máy điện tim",
     "máy đo đường huyết",
+    "máy đo huyết áp cơ",
     "máy đo mắt",
     "máy đo nồng độ oxy máu",
     "máy gây mê hồi sức",
@@ -1714,6 +1715,7 @@ indoorObjectItems = (
     "nhiệt kế y tế",
     "ống nghe",
     "ống tiêm",
+    "thước dây cơ khí",
     "tủ thuốc",
     "xe lăn",
 

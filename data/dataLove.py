@@ -1,4 +1,7 @@
 LoveActions = (
+    "cùng ăn mừng kỉ niệm yêu nhau",
+    "cùng ăn mừng kỉ niệm ngày cưới",
+    "cùng ăn mừng kỉ niệm gặp nhau",
     "cùng ngắm cảnh",
     "cùng nhau đi dạo",
     "cùng ở cạnh nhau một cách gần gũi",
