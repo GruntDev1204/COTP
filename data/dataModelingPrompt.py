@@ -40,6 +40,42 @@ backgroundModeling = (
     "out of focus tranquil lakeside surrounded by pine trees, soft diffused daylight, clean composition",
     "softly blurred bamboo forest path with gentle dappled sunlight, calm green tones, clean background",
     "softly blurred misty mountain peaks at dawn, cool morning tones, serene minimalist backdrop",
+
+    # --- DANH MỤC: PHỐ LÃNG MẠN & CON ĐƯỜNG MÙA THU (ROMANTIC STREETS & ALLEYS) ---
+    "blurred European cobblestone alley with warm vintage street lamps at dusk, soft bokeh, minimalist backdrop",
+    "blurred Parisian street corner with classic cafe awnings and soft morning sunlight, clean composition",
+    "out of focus quiet cherry blossom street with falling pink petals, soft pastel daylight, minimalist setup",
+    "out of focus rain-slicked city street at twilight reflecting warm neon and amber lights, soft cinematic bokeh",
+    "out of focus tree-lined avenue covered in golden autumn leaves, warm afternoon glow, dreamy bokeh background",
+    "softly blurred charming old town pedestrian street at sunset, warm golden hues, minimal details",
+    "softly blurred ivy-covered brick wall along a quiet romantic lane, gentle diffused light, clean background",
+    "softly blurred lantern-lit alleyway in the evening, soft warm ambient glow, dreamy out of focus backdrop",
+
+    # --- DANH MỤC: CẦU, BẾN NƯỚC & VEN SÔNG LÃNG MẠN (BRIDGES, RIVERSIDE & HARBOR) ---
+    "blurred stone arch bridge over a calm river at sunset, warm golden reflections on water, clean composition",
+    "blurred wooden pier stretching into a serene lake under a pastel twilight sky, minimalist horizon",
+    "out of focus quiet marina with distant sailboat silhouettes at dawn, cool pastel tones, minimal details",
+    "out of focus riverside promenade with weeping willows and soft evening lights, dreamy bokeh background",
+    "softly blurred canal side walkway with historic buildings and warm window lights, calm romantic atmosphere",
+    "softly blurred lakeside gazebo surrounded by blooming roses, soft diffused daylight, clean backdrop",
+
+    # --- DANH MỤC: VƯỜN HOA, BAN CÔNG & KHÔNG GIAN HẸN HÒ (GARDENS, BALCONIES & TERRACES) ---
+    "blurred rooftop terrace overlooking city lights at blue hour, soft warm string lights, dreamy bokeh",
+    "blurred sunlit conservatory greenhouse filled with lush ferns and white blossoms, airy natural light",
+    "out of focus botanical garden pathway under a canopy of wisteria flowers, soft purple bokeh, minimal details",
+    "out of focus cozy balcony with sheer curtains blowing gently in morning breeze, warm sunlight, clean setup",
+    "out of focus rose garden archway in full bloom, soft pastel tones, romantic minimalist background",
+    "out of focus vineyard hills at golden hour, warm sunbeams and muted earthy greens, serene backdrop",
+    "softly blurred candlelit outdoor patio at night, warm golden bokeh orbs, intimate minimalist atmosphere",
+    "softly blurred lakeside picnic meadow under a soft pink sunset sky, gentle warm lighting, clean composition",
+
+    # --- DANH MỤC: GA TÀU, THƯ VIỆN & GÓC HOÀI NIỆM (NOSTALGIC & CINEMATIC SPOTS) ---
+    "blurred quiet classic library aisle with warm desk lamp glow, muted wooden tones, minimalist backdrop",
+    "blurred vintage train station platform bathed in warm late afternoon sunbeams, soft nostalgic haze",
+    "out of focus Ferris wheel lights glowing softly against a pastel dusk sky, dreamy romantic bokeh",
+    "out of focus sunlit bookstore corner with soft golden light filtering through windows, calm atmosphere",
+    "softly blurred hilltop viewpoint overlooking a misty valley at sunrise, cool and warm pastel tones",
+    "softly blurred snow-dusted quiet street with warm glowing cafe windows, serene winter twilight",
 )
 
 backgroundModelingColors = (
@@ -82,7 +118,35 @@ backgroundModelingColors = (
     "solid soft lavender mist",
 
     # Tím oải hương nhạt (Mộng mơ, lạ mắt mà không hề sến)
+    "aged Venetian plaster wall",
+    "architectural ribbed concrete wall",
+    "brushed anodized aluminum wall panel",
+    "brushed matte brass wall texture",
+    "charred Shou Sugi Ban wood wall",
+    "clean whitewashed brick wall",
+    "dark smoked oak wood paneling",
+    "exposed red clay brick wall",
+    "fluted vertical wood slat wall",
+    "honed travertine stone wall",
+    "matte black slate tile wall",
+    "minimalist geometric relief plaster wall",
+    "muted sage limewash wall",
+    "natural beige sandstone wall",
+    "pale gray terrazzo stone wall",
+    "polished Carrara white marble wall",
+    "polished Nero Marquina black marble wall",
+    "raw board-formed concrete wall",
+    "rough textured limestone wall",
+    "sand-blasted beige stucco wall",
+    "smooth microcement architectural wall",
+    "soft warm beige limewash wall",
     "solid warm ivory cream",
+    "subtle herring-bone stone tile wall",
+    "textured charcoal gray stucco wall",
+    "textured terracotta plaster wall",
+    "warm walnut wood acoustic slat wall",
+    "weathered industrial concrete wall",
+    "white plaster wall with subtle molding",
 )
 
 #female 
