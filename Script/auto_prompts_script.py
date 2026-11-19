@@ -60,7 +60,7 @@ def generateCouplePrompt():
         f"{createNoteArt(0)}"
         f"{''.join(random.choices(loveIcons, k=4))} This is a Romantic Scene {''.join(random.choices(loveIcons, k=4))}: \n"
         f"Hai người này, vốn là {random.choice(coupleCall)} đang yêu nhau rất {random.choice(status)}. "
-        f"Chàng trai rất {random.choice(adjApperanceBoys)} và có đôi mắt 2 mí, áo của chàng trai đóng thùng gọn gàng. "
+        f"Chàng trai rất {random.choice(adjApperanceBoys)}, kèm đôi mắt 2 mí và lông mi cong vút tự nhiên bẩm sinh. "
         f"Còn cô gái thì có đôi mắt long lanh quyến rũ và nhan sắc {random.choice(adjAppearanceGirls)}. \n"
         f"Tóc của chàng trai để kiểu {random.choice(fashionHairMale)}, cô gái thì có kiểu tóc {random.choice(fashionHairFemale)}. \n"
         f"{romanticAction}"

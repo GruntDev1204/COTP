@@ -539,6 +539,10 @@ adjApperanceBoys = (
     "tự do tự tại",
     "tự tin",
     "văn nhã thư sinh",
+    "đẹp trai badboy",
+    "trắng trẻo",
+    "badboy",
+    "lăng nhăng đa tình",
 )
 
 adjAppearanceGirls = (
@@ -580,4 +584,10 @@ adjAppearanceGirls = (
     "tươi trẻ rạng ngời",
     "xinh đẹp tuyệt trần",
     "yêu kiều thướt tha",
+    "quyến rũ thanh lịch",
+    "tuyệt mỹ nhân gian",
+    "mỹ nhân thiên hạ",
+    "badgirl",
+    "xinh đẹp dịu dàng",
+    "lăng nhăng đa tình",
 )
