@@ -76,6 +76,38 @@ backgroundModeling = (
     "out of focus sunlit bookstore corner with soft golden light filtering through windows, calm atmosphere",
     "softly blurred hilltop viewpoint overlooking a misty valley at sunrise, cool and warm pastel tones",
     "softly blurred snow-dusted quiet street with warm glowing cafe windows, serene winter twilight",
+
+    # --- DANH MỤC: ĐƯỜNG PHỐ LỄ HỘI & QUỐC KHÁNH (FESTIVAL & NATIONAL DAY STREETS) ---
+    "blurred festive city boulevard lined with fluttering national flags at daytime, bright celebratory atmosphere, clean composition",
+    "blurred vibrant parade street with colorful confetti and festive banners, soft daylight bokeh, minimalist backdrop",
+    "out of focus historic town square decorated with national holiday bunting and warm string lights at dusk, dreamy bokeh",
+    "out of focus lively night market street glowing with rows of red and gold festival lanterns, warm bokeh lights",
+    "softly blurred carnival street at twilight with glowing warm lights and festive flags, soft cinematic haze",
+    "softly blurred traditional festival street filled with glowing paper lanterns and warm golden reflections, clean composition",
+
+    # --- DANH MỤC: PHÁO HOA & BẦU TRỜI ĐÊM LỄ HỘI (FIREWORKS & HEART-SHAPED PYROTECHNICS) ---
+    "blurred dark twilight sky with a glowing heart-shaped pink and red firework burst, romantic soft bokeh background",
+    "blurred night sky over a city skyline illuminated by bursting golden and red fireworks, dreamy colorful bokeh",
+    "out of focus midnight sky filled with sparkling silver willow fireworks trails, dramatic dark minimalist backdrop",
+    "out of focus riverfront at night reflecting dazzling multi-colored fireworks on calm water, soft luminous bokeh",
+    "softly blurred city rooftop view at night with glowing heart-shaped golden fireworks in the background, warm cinematic light",
+    "softly blurred coastal horizon at night with distant vibrant fireworks lighting up low clouds, atmospheric bokeh",
+
+    # --- DANH MỤC: THIÊN TAI MÀU HỒNG - SÉT, LỐC XOÁY & MƯA HỒNG (PINK LIGHTNING, TORNADO & PINK RAIN) ---
+    "blurred dark stormy sky with jagged glowing pink lightning bolts illuminating heavy clouds, dramatic neon pink lighting",
+    "blurred rain-lashed city street at night with falling pink rain and glowing pink reflections on wet asphalt, atmospheric bokeh",
+    "out of focus massive swirling pink tornado funnel descending from dark storm clouds over an open plain, dramatic surreal lighting",
+    "out of focus torrential pink rain pouring down over a misty landscape, surreal pastel pink and gray tones, minimalist backdrop",
+    "softly blurred glass window covered in streaming pink raindrops with dim twilight outside, dreamy pink bokeh",
+    "softly blurred tempest sky filled with branching pink lightning strikes and swirling pink storm clouds, dramatic atmospheric haze",
+
+    # --- DANH MỤC: BẦU TRỜI ĐẦY SAO, HÀNH TINH & VỆ TINH (STARRY SKY, PLANETS & SATELLITES) ---
+    "blurred deep midnight sky filled with thousands of twinkling stars and a faint glowing Milky Way band, serene cosmic bokeh",
+    "blurred night horizon with a giant ringed planet looming softly in the starry sky, surreal atmospheric lighting, clean composition",
+    "out of focus starry night sky crossed by glowing artificial satellites and faint orbital light trails, minimalist dark backdrop",
+    "out of focus twilight sky with a luminous crescent moon and large colorful planets visible above a quiet horizon, dreamy bokeh",
+    "softly blurred cosmic night sky with a massive gas giant planet and its glowing moons rising over a misty silhouette, ethereal light",
+    "softly blurred deep space horizon filled with dense star clusters, distant glowing planets, and orbiting satellites, clean cinematic bokeh",
 )
 
 backgroundModelingColors = (

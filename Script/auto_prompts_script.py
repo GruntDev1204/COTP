@@ -73,8 +73,8 @@ def generateCouplePrompt():
     return random.choice((
         lambda: (
             f"{commonSence}"
-            f"Và khung cảnh {random.choice(coupleCall)} này đang hẹn hò là một khung cảnh được mô tả bằng đoạn văn Tiếng Anh như sau: \n"
-            f"{random.choice(backgrounds)}. \n\n"
+            f"Và khung cảnh {random.choice(coupleCall)} này đang hẹn hò là một khung cảnh được mô tả bằng TIẾNG ANH như sau: \n"
+            f"{random.choice(backgrounds).upper()}. \n\n"
             f"{endingStatus}"
         ),
         lambda:(
@@ -132,7 +132,10 @@ def generateModelingPrompt():
         f"- The hairstyle is: {random.choice(globals()[f'{gender}Hair'])}. \n"
         f"{(
             random.choice((
-                lambda: f"- The background is described by the following text: {random.choice(backgrounds)}.",
+                lambda: (
+                    f"- The background is described by the following text: \n"
+                    f"{random.choice(backgrounds).upper()}."
+                ),   
                 lambda: (
                     f"- The background is described by the following Vietnamese language text: \n"
                     f"Ở {random.choice(inDoorPreposition).upper()} thuộc khu vực bên trong {random.choice(indoorLocations).strip()} {random.choice(indoorStatus)} lâu năm. "
