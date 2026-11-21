@@ -61,9 +61,9 @@ def generateIndoorObject():
 def returnOutdoorSkyStrongObject():
     outDoorTime = random.choice(times).strip()
     if outDoorTime == "ban ngày":
-        return f"Bầu trời đang ban ngày, có Mặt trời có hình {random.choice(shapes)} và nó đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)}"
+        return f"Bầu trời đang ban ngày, có Mặt trời có hình {random.choice(shapes)}. Nó đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)} và đang phát ra ánh sáng màu {random.choice(colors)}"
     else:
-        return f"Bầu trời đang ban đêm, có {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} và nó đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)}"
+        return f"Bầu trời đang ban đêm, có {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)}. Nó đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)} và đang phát ra ánh sáng màu {random.choice(colors)}"
 
 def generateOutdoorObject():
     return f"{random.choice(outdoorObjectDensity)}, {random.choice(quantities)} {random.choice(outdoorObjects)} đang có hình dạng là {random.choice(shapes)} đang phát ra ánh sáng màu {random.choice(colors)}"

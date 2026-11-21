@@ -34,7 +34,7 @@ def generateOutdoorOutput():
         f"thời tiết thì đang {random.choice(weatherConditions).strip()}. \n"
         f"{returnOutdoorSkyStrongObject().strip()}. \n"
         f"Có {generateOutdoorSkyObject().strip()}. \n"
-        f"{random.choice(outDoorPreposition).upper()}, đang có {generateOutdoorObject().strip()} {generateOutdoorObject().strip()}. \n"
+        f"{random.choice(outDoorPreposition).upper()}, đang có {generateOutdoorObject().strip()}. \n"
         f"{generateNPC().strip()}. \n\n"
         f"{generateEnding()}"
     )
@@ -94,6 +94,7 @@ def generateCouplePrompt():
             f"Và {random.choice(outDoorPreposition).upper()} nơi này, đang có thời tiết {random.choice(weatherConditions).strip()}. \n"
             f"{returnOutdoorSkyStrongObject().strip()}. \n"
             f"Và cũng đang có {generateOutdoorSkyObject().strip()}. \n"
+            f"Ngoài ra, {random.choice(outDoorPreposition).upper()} cũng đang có {generateOutdoorObject().strip()}. \n"
             f"{generateNPC().strip()}. \n\n"
             f"{endingStatus}"
         ),
@@ -149,7 +150,8 @@ def generateModelingPrompt():
                     f"Ngay {random.choice(outDoorPreposition).upper()} tọa lạc tại {random.choice(outdoorView).strip()} đã {random.choice(outDoorStatus).strip()} lâu năm. "
                     f"Và {random.choice(outDoorPreposition).upper()} nơi này, đang có thời tiết {random.choice(weatherConditions).strip()}. "
                     f"{returnOutdoorSkyStrongObject().strip()}. "
-                    f"Và cũng đang có {generateOutdoorSkyObject().strip()}. "
+                    f"Và cũng đang có {generateOutdoorSkyObject().strip()}. \n"
+                    f"Ngoài ra, {random.choice(outDoorPreposition).upper()} cũng đang có {generateOutdoorObject().strip()}. \n"
                     f"{generateNPC().strip()}."
                 ),
             ))()

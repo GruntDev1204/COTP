@@ -1,5 +1,6 @@
 import tkinter as tk
 import sys
+from time import perf_counter
 from pathlib import Path
 from Script.script import *
 from log.log import (
@@ -31,6 +32,8 @@ outerTheme = currentTheme
 createClickCount = 0
 headerCanvas = None
 headerCountTextId = None
+createTimeLabel = None
+outputCapacityLabel = None
 
 outputGenerators = {
     "Indoor Scene Prompt": generateIndoorOutput,
@@ -81,6 +84,7 @@ def generateOutput():
 
     if isinstance(output, tuple):
         output = "\n".join(output)
+    outputCapacityBytes = len(output.encode("utf-8"))
 
     lines = output.split("\n")
     for i, line in enumerate(lines):
@@ -121,17 +125,44 @@ def generateOutput():
         bg=sharedUiColors["buttonBg"],
         fg=sharedUiColors["buttonFg"],
     )
+    return outputCapacityBytes
+
+
+def formatOutputCapacity(byteCount):
+    if byteCount < 1024:
+        return f"{byteCount} B"
+    if byteCount < 1024**2:
+        return f"{byteCount / 1024:.2f} KB"
+    if byteCount < 1024**3:
+        return f"{byteCount / (1024**2):.2f} MB"
+    return f"{byteCount / (1024**3):.2f} GB"
 
 
 def handleCreateClick():
     global createClickCount
-    createClickCount += 1
-    if headerCanvas is not None and headerCountTextId is not None:
-        headerCanvas.itemconfigure(
-            headerCountTextId,
-            text=f"CREATE PRESSES  •  {createClickCount:02d}",
-        )
-    generateOutput()
+    startedAt = perf_counter()
+    try:
+        createClickCount += 1
+        if headerCanvas is not None and headerCountTextId is not None:
+            headerCanvas.itemconfigure(
+                headerCountTextId,
+                text=f"CREATE PRESSES  •  {createClickCount:02d}",
+            )
+        outputCapacityBytes = generateOutput()
+        if outputCapacityLabel is not None:
+            outputCapacityLabel.config(
+                text=f"SIZE: {formatOutputCapacity(outputCapacityBytes)}"
+            )
+    finally:
+        if createTimeLabel is not None:
+            elapsedMilliseconds = (perf_counter() - startedAt) * 1000
+            if elapsedMilliseconds >= 1000:
+                elapsedText = f"TIME: {elapsedMilliseconds / 1000:.3f} s"
+            else:
+                elapsedText = f"TIME: {elapsedMilliseconds:.3f} ms"
+            createTimeLabel.config(
+                text=elapsedText
+            )
 
 
 def copyOutputToClipboard():
@@ -174,6 +205,7 @@ def copyStatsToClipboard():
 def createInterface():
     global root, outputType, themeMode, statsDetailText, statsValues, infoMode
     global statsDetailTextbox, outputText, copyButton, copyStatsButton
+    global createTimeLabel, outputCapacityLabel
     global createClickCount, headerCanvas, headerCountTextId
     createClickCount = 0
     headerCountTextId = None
@@ -518,13 +550,29 @@ def createInterface():
     )
     copyStatsButton.pack()
 
+    createActionFrame = tk.Frame(mainFrame, bg=currentTheme["mainBg"], height=82)
+    createActionFrame.grid(
+        row=3,
+        column=0,
+        columnspan=3,
+        sticky="ew",
+        pady=15,
+    )
+    createActionFrame.grid_propagate(False)
+
+    createActionGroup = tk.Frame(
+        createActionFrame,
+        bg=currentTheme["mainBg"],
+    )
+    createActionGroup.place(relx=0.5, rely=0.5, anchor="center")
+
     createButtonBorder = tk.Frame(
-        mainFrame,
+        createActionGroup,
         bg=currentTheme["menuBorder"],
         padx=1,
         pady=1,
     )
-    createButtonBorder.grid(row=3, columnspan=3, pady=15)
+    createButtonBorder.pack(side="left")
 
     createButton = tk.Button(
         createButtonBorder,
@@ -543,6 +591,40 @@ def createInterface():
         highlightcolor=currentTheme["menuBorder"],
     )
     createButton.pack()
+
+    createMetricsFrame = tk.Frame(
+        createActionGroup,
+        bg=currentTheme["mainBg"],
+    )
+    createMetricsFrame.pack(side="left", padx=(20, 0))
+
+    createTimeLabel = tk.Label(
+        createMetricsFrame,
+        text="TIME: —",
+        bg=dataPaneColors["statsBg"],
+        fg=dataPaneColors["statsFg"],
+        font=("Consolas", 10, "bold"),
+        padx=8,
+        pady=5,
+        highlightthickness=1,
+        highlightbackground=currentTheme["menuBorder"],
+        highlightcolor=currentTheme["menuBorder"],
+    )
+    createTimeLabel.pack(fill="x")
+
+    outputCapacityLabel = tk.Label(
+        createMetricsFrame,
+        text="SIZE: —",
+        bg=dataPaneColors["statsBg"],
+        fg=dataPaneColors["statsFg"],
+        font=("Consolas", 10, "bold"),
+        padx=8,
+        pady=5,
+        highlightthickness=1,
+        highlightbackground=currentTheme["menuBorder"],
+        highlightcolor=currentTheme["menuBorder"],
+    )
+    outputCapacityLabel.pack(fill="x", pady=(5, 0))
 
     outputText = tk.Text(
         mainFrame,
@@ -668,11 +750,19 @@ def createInterface():
         statsFrame.configure(highlightbackground=outerTheme["border"])
         outputText.configure(highlightbackground=outerTheme["border"])
         controlsFrame.configure(bg=outerTheme["mainBg"])
+        createActionFrame.configure(bg=outerTheme["mainBg"])
+        createActionGroup.configure(bg=outerTheme["mainBg"])
+        createMetricsFrame.configure(bg=outerTheme["mainBg"])
         themeSwitch.configure(bg=outerTheme["mainBg"])
         themeSwitchBorder.configure(bg=outerTheme["menuBorder"])
         copyStatsBorder.configure(bg=outerTheme["menuBorder"])
         createButtonBorder.configure(bg=outerTheme["menuBorder"])
         copyButtonBorder.configure(bg=outerTheme["menuBorder"])
+        for metricLabel in (createTimeLabel, outputCapacityLabel):
+            metricLabel.configure(
+                highlightbackground=outerTheme["menuBorder"],
+                highlightcolor=outerTheme["menuBorder"],
+            )
         themeLabel.configure(bg=outerTheme["mainBg"], fg=outerTheme["controlFg"])
         outputLabel.configure(bg=outerTheme["mainBg"], fg=outerTheme["controlFg"])
         infoLabel.configure(bg=outerTheme["mainBg"], fg=outerTheme["controlFg"])

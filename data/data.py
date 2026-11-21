@@ -1063,6 +1063,8 @@ status = (
     "vui vẻ",
     "xa xăm",
     "yêu thương",
+    "chung thủy",
+    "nặng nề",
 )
 
 

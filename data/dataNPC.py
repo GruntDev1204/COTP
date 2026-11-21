@@ -116,6 +116,18 @@ liveNPCs = [
     "Arthas (Warcraft)",
     "Illidan (Warcraft)",
     "Thrall (Warcraft)",
+    "Greg (Hay Day)",
+    "Tom (Hay Day)",
+    "Alfred (Hay Day)",
+    "Rose (Hay Day)",
+    "Ernest (Hay Day)",
+    "Maggie (Hay Day)",
+    "Angus (Hay Day)",
+    "Mike (Hay Day)",
+    "Joan (Hay Day)",
+    "Mary (Hay Day)",
+    "Tilly (Hay Day)",
+    "Greg's Scarecrow (Hay Day)",
 
     # Điện ảnh và vũ trụ comic
     "ALIEN (Alien)",
@@ -414,6 +426,14 @@ liveNPCs = [
     "YAMCHA (Dragon Ball)",
     "ZAMASU (Dragon Ball)",
     "ZENO-SAMA (Dragon Ball)",
+    "Người Tuffle (Dragon Ball)",
+    "GOLDEN COOLER (Dragon Ball)",
+    "VADOS (Dragon Ball)",
+    "VEGITO (Dragon Ball)",
+    "GOGETA SSJ4 (Dragon Ball)",
+    "ZARBON (Dragon Ball)",
+    "VEGITO SSJ4 (Dragon Ball)",
+    "SUPER CELL (Dragon Ball)",
     "NGƯỜI TUYẾT OLAF (Frozen)",
     "MÈO GARFIELD (Garfield)",
     "MÈO HELLO KITTY (Hello Kitty)",
@@ -493,13 +513,7 @@ liveNPCs = [
     "THẦN SẤM OSIRIS (Yu-Gi-Oh!)",
     "VUA TRÒ CHƠI YUGI (Yu-Gi-Oh!)",
 
-    # TURLES (Dragon Ball)
-    "ULTRA EGO VEGETA (Dragon Ball)",
-    "ULTRA INSTINCT GOKU (Dragon Ball)",
-    "VADOS (Dragon Ball)",
-    "VEGITO (Dragon Ball)",
-    "ZARBON (Dragon Ball)",
-
+   
     # --- Chiến binh Saiyan, Hợp thể & Các trạng thái biến hình ---
     # Hư cấu Internet
     "Wendigo (Algonquian Legend)",
@@ -1108,6 +1122,9 @@ liveNPCs = [
     "YAMABUSHI",
     "Yogi",
     "ZEUS",
+    "Dancer Tiktok",
+    "Dancer Nữ",
+    "Dancer Nam",
 ]
 
 liveNPCApperances = [
@@ -2157,6 +2174,7 @@ liveNPCActions = [
     "chỉ tay vào không khí",
     "chích điện",
     "chiên cá",
+    "chống đẩy",
     "chiên thịt",
     "chiếu đèn laser lên trời",
     "chiếu đèn laser lên tường",
@@ -3762,6 +3780,10 @@ anyActions = [
     "viết đơn phàn nàn về {object}",
     "xăm soi {object}",
     "xây dựng tập dữ liệu để huấn luyện AI về {object}",
+    "huấn luyện workout cho {object}",
+    "tư vấn nghề nghiệp cho {object}",
+    "đào tạo kỹ năng mềm cho {object}",
+    "trao huy chương hạng nhất cho {object}",
 ]
 
 # Shared object nouns; action templates above are combined with every item here.
@@ -3804,6 +3826,7 @@ anyObjects = [
     "bút chì",
     "bức tượng thần tài",
     "cà chua",
+    "cái thang xếp",
     "cái áo mưa",
     "cái ấm siêu tốc",
     "cái ấm trà",
@@ -4467,6 +4490,7 @@ subActions = [
     "phun sương",
     "thổi phù phù",
     "tưởng tượng",
+    "chống đẩy",
 ]
 
 
@@ -4650,6 +4674,8 @@ liveNPCEmotions = [
     "vui nhộn",
     "vui vẻ",
     "yêu đời",
+    "nặng nề",
+    "chung thủy",
 ]
 
 

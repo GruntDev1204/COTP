@@ -2422,3 +2422,1220 @@ Short Story 4 - Rebellious Past:
     - random.randint(minValue * scale, maxValue * scale) *77 calls
 =======================================================================================
 
+📊📊📊 Tổng không gian trạng thái của COTP (COTP - Total Combinations and Possibilities):
+Updated Timestamp (latest): 2026-11-21 12:15:14
+=================================================================================================
+🖼️🎨 PROMPTS FOR AI ART MENU:
+    - Indoor Scene Prompt: 36,353,531,696,384,475,553,349,403,950,263,580,374,761,633,240,619,281,425,354,085,758,017,063,122,178,973,571,898,657,049,892,101,793,261,220,446,713,060,352,000,000 [👉 3.6×10^124]
+    - Outdoor Scene Prompt: 41,452,836,289,162,183,723,985,371,699,527,406,090,267,019,501,133,305,793,998,443,118,262,014,132,049,941,610,877,500,288,254,265,620,023,455,260,851,587,276,304,646,400,000,000 [👉 4.1×10^133]
+    - Couple Prompt: 475,513,640,429,290,067,011,088,665,658,174,426,351,419,917,973,027,428,581,354,964,930,384,422,608,683,663,360,000,000 [👉 4.7×10^89]
+    - Modeling Prompt: 1,629,021,136,911,673,504,571,573,301,711,492,216,809,759,799,224,750,899,200 (Male) + 4,997,785,941,134,485,822,228,569,027,985,179,637,040,567,759,027,809,985,280 (Female)= 6,626,807,078,046,159,326,800,142,329,696,671,853,850,327,558,252,560,884,480 [👉 6.6×10^57]
+🕹️🎮 ANY GAMES RULE CUSTOM:
+    - L4D2 Case: 1,072,951,355,314,582,609,277,815,603,200,000 [👉 1.0×10^33]
+    - appDateTotal: 524,000 [👉 5.2×10^5]
+🎲📖 SHORT STORIES MENU:
+    - Short Story 1 - Curse Breaking Journey: 1,234,067,667,905,398,421,542,236,571,699,152,040,896,000,922,259,072,664,469,889,610,813,229,708,260,235,067,233,983,552,720,091,412,760,774,705,223,646,704,094,460,663,154,778,582,581,009,141,449,070,263,839,187,458,793,458,214,795,857,310,178,195,898,765,923,821,508,079,760,547,726,660,143,929,435,780,849,124,298,302,867,179,982,688,084,561,939,721,807,286,834,257,321,356,602,297,637,152,274,146,337,914,343,913,971,254,299,748,475,181,505,346,366,419,355,813,137,338,396,711,354,973,701,763,231,408,747,112,286,395,102,439,284,360,304,247,804,122,801,154,310,454,165,630,349,148,788,601,910,061,950,808,448,536,457,428,780,856,052,589,107,016,957,243,492,139,287,292,744,634,659,092,955,611,147,614,866,636,800,000,000,000,000,000 [👉 1.2×10^552]
+    - Short Story 2 - Job Interview: 2,778,976,109,145,464,384,912,482,932,961,144,946,152,359,811,534,277,696,253,609,575,039,261,901,535,491,891,995,990,724,658,204,207,784,822,014,932,734,423,129,025,143,952,123,413,485,967,879,034,685,777,448,309,640,255,998,909,653,876,118,173,663,978,195,636,053,865,523,474,041,174,636,590,306,105,043,293,252,713,823,452,948,087,700,660,000,250,905,032,111,739,072,905,500,649,661,936,029,364,484,813,945,875,764,280,794,577,514,115,295,099,576,533,290,560,968,548,479,632,832,195,725,977,609,047,737,000,437,651,366,271,953,712,418,025,504,575,970,774,651,788,811,771,431,039,320,439,559,172,287,773,595,578,154,871,042,230,944,830,674,391,040,831,475,149,308,359,101,736,629,214,181,401,549,917,030,087,035,208,590,372,938,459,437,772,233,318,001,434,166,300,311,659,990,180,083,602,781,950,315,966,592,574,218,762,109,535,271,387,932,917,760,000,000,000,000 [👉 2.7×10^648]
+    - Short Story 3 - Dating: 45,652,369,310,259,744,258,229,094,991,210,622,937,454,553,729,316,052,732,449,340,599,464,223,677,854,472,180,617,075,059,342,458,101,154,009,830,621,919,480,921,502,357,198,623,072,860,957,260,474,074,476,163,670,724,540,021,764,827,975,191,318,541,168,124,023,346,214,900,337,930,352,512,700,658,715,480,312,780,449,530,293,611,499,617,336,438,815,078,717,564,731,638,476,877,305,999,816,283,219,431,820,880,259,833,586,132,426,320,009,654,323,923,131,168,412,982,107,893,275,418,382,189,639,709,680,260,095,089,030,383,947,368,183,731,913,547,743,231,533,714,554,661,947,765,825,159,149,811,777,491,581,480,675,947,707,058,114,157,917,065,553,086,290,049,821,241,626,897,140,084,055,494,174,397,805,688,463,376,989,356,434,395,006,200,131,146,660,705,971,351,108,391,906,006,998,611,978,262,541,336,510,709,808,486,430,823,433,582,659,000,109,862,941,667,380,234,526,355,670,385,611,345,108,727,234,560,000,000,000,000,000,000,000,000 [👉 4.5×10^703]
+    - Short Story 4 - Rebellious Past: 2,994,244,224,733,380,632,769,535,908,951,438,409,128,873,906,449,423,913,804,807,175,980,190,950,186,306,306,387,056,680,521,295,634,876,176,413,658,238,419,268,092,590,420,628,398,104,262,336,312,959,903,893,280,201,759,369,099,961,582,308,345,852,391,092,732,030,305,942,241,275,871,325,103,989,964,351,603,138,938,152,440,100,956,167,182,821,488,366,924,632,988,397,813,249,360,739,404,575,308,267,733,212,141,879,509,656,326,665,281,552,337,810,100,652,547,493,254,726,533,839,587,858,290,948,210,043,996,965,610,873,131,406,352,408,686,837,543,672,154,029,178,221,045,988,115,753,498,897,281,283,345,712,992,328,957,384,688,278,021,603,808,041,129,691,467,102,948,748,403,690,326,917,233,837,419,527,583,337,015,382,910,414,180,600,036,143,640,199,249,730,772,046,041,606,372,203,838,088,088,959,508,342,595,292,751,846,432,573,215,726,487,565,644,479,022,672,934,631,605,506,817,438,333,862,798,419,946,350,053,929,904,911,684,631,907,280,493,718,700,075,246,029,295,700,135,871,922,675,446,925,724,343,857,550,798,677,485,209,264,732,617,595,432,724,078,956,469,419,705,080,972,670,647,286,712,882,302,060,756,963,042,877,486,606,792,962,473,754,837,276,463,124,676,237,091,516,107,067,575,389,665,065,630,050,529,862,112,855,527,185,749,228,581,518,719,186,810,641,192,608,363,048,294,327,415,111,876,607,130,232,666,944,213,210,629,785,577,391,350,999,133,412,894,768,270,039,625,949,502,266,288,404,279,546,870,501,745,889,697,432,439,411,011,493,418,861,218,046,030,329,668,077,157,562,984,693,760,000,000,000,000,000,000,000,000 [👉 2.9×10^1155]
+📜TOTAL : 2,994,244,224,733,380,632,769,535,908,951,438,409,128,873,906,449,423,913,804,807,175,980,190,950,186,306,306,387,056,680,521,295,634,876,176,413,658,238,419,268,092,590,420,628,398,104,262,336,312,959,903,893,280,201,759,369,099,961,582,308,345,852,391,092,732,030,305,942,241,275,871,325,103,989,964,351,603,138,938,152,440,100,956,167,182,821,488,366,924,632,988,397,813,249,360,739,404,575,308,267,733,212,141,879,509,656,326,665,281,552,337,810,100,652,547,493,254,726,533,839,587,858,290,948,210,043,996,965,610,873,131,406,352,408,686,837,543,672,154,029,178,221,045,988,115,753,498,897,281,283,391,365,361,639,217,128,946,507,116,595,018,664,067,146,020,832,264,801,138,918,643,625,843,525,482,294,538,450,593,602,915,908,998,512,724,431,167,074,778,786,732,810,300,340,487,168,695,036,074,091,788,260,611,453,396,717,610,303,409,298,521,988,349,956,633,586,418,953,856,092,085,711,300,049,164,305,315,606,186,536,651,903,583,180,339,257,161,231,466,671,541,811,903,436,835,053,756,214,695,047,174,516,277,658,091,307,980,882,492,338,655,003,052,403,675,229,302,400,162,930,884,655,261,351,146,575,857,120,265,391,306,225,325,334,181,509,063,070,622,813,190,491,204,553,950,944,001,505,905,713,256,697,443,095,896,116,396,044,085,366,808,058,445,214,508,803,424,577,715,918,754,036,917,074,618,379,918,648,293,899,459,312,522,650,498,580,073,592,808,985,861,686,127,082,453,189,842,294,804,343,502,135,276,106,727,059,408,117,766,352,131,842,586,337,961,584,431,701,549,149,273,428,965,784,105,781,217,920,232,986,297,438,276,608,480 [👉 2.9×10^1155]
+=====================================================================================================
+📊📢📢📢 Phân tích chi tiết (Details):
+🖼️🎨 PROMPTS FOR AI ART MENU:
+    - Indoor combinations (digits): 125
+    - Outdoor combinations (digits): 134
+    - Couple Prompt combinations (digits): 90
+    - Modeling Prompt combinations (digits): 58 (Male) + 58 (Female)= 58
+🕹️🎮 ANY GAMES RULE CUSTOM:
+    - L4D2 scenarios (digits): 34
+    - appDate combinations (digits): 6
+🎲📖 SHORT STORIES MENU:
+    - Story 1 - Curse Breaking Journey combinations (digits): 553
+    - Story 2 - Job Interview combinations (digits): 649
+    - Story 3 - Dating combinations (digits): 704
+    - Story 4 - Rebellious Past combinations (digits): 1156
+📜TOTAL combinations (digits): 1156
+
+=== ARRAY SIZES (95 arrays, alphabetical ascending) ===
+Array size - adjAppearanceGirls (./data/dataLove.py): 44
+Array size - adjApperanceBoys (./data/dataLove.py): 45
+Array size - allIcons (./data/dataIcon.py): 911
+Array size - animalsNatureEmojis (./data/dataIcon.py): 157
+Array size - anyActions (./data/dataNPC.py): 171
+Array size - anyObjects (./data/dataNPC.py): 437
+Array size - backgroundModeling (./data/dataModelingPrompt.py): 98
+Array size - backgroundModelingColors (./data/dataModelingPrompt.py): 46
+Array size - backgrounds (./data/dataModelingPrompt.py): 144
+Array size - BoyActions (./data/dataLove.py): 135
+Array size - buildings (./data/dataStory.py): 26
+Array size - businesses (./data/dataStory.py): 17
+Array size - charactersL4D2 (./data/dataL4D2.py): 8
+Array size - clockPeriods (./data/data.py): 5
+Array size - colors (./data/data.py): 181
+Array size - comment (./data/data.py): 11
+Array size - companies (./data/dataStory.py): 262
+Array size - coupleCall (./data/dataLove.py): 40
+Array size - dateEras (./data/data.py): 6
+Array size - emotionPunctuations (./data/dataIcon.py): 10
+Array size - facePeopleEmojis (./data/dataIcon.py): 172
+Array size - fashionHairFemale (./data/dataLove.py): 18
+Array size - fashionHairMale (./data/dataLove.py): 20
+Array size - femaleArmPoses (./data/dataModelingPrompt.py): 11
+Array size - femaleExpressions (./data/dataModelingPrompt.py): 17
+Array size - femaleHair (./data/dataModelingPrompt.py): 18
+Array size - femalePoses (./data/dataModelingPrompt.py): 19
+Array size - femaleShoes (./data/dataModelingPrompt.py): 27
+Array size - foodDrinkEmojis (./data/dataIcon.py): 125
+Array size - GirlActions (./data/dataLove.py): 166
+Array size - gpsLocations (./data/dataStory.py): 10
+Array size - grenadesL4D2 (./data/dataL4D2.py): 3
+Array size - identityRules (./data/dataModelingPrompt.py): 2
+Array size - indoorItemLightningSource (./data/dataIndoor.py): 18
+Array size - indoorItems (./data/dataIndoor.py): 127
+Array size - indoorItemStatus (./data/dataIndoor.py): 8
+Array size - indoorLightVerb (./data/dataIndoor.py): 14
+Array size - indoorLocations (./data/dataIndoor.py): 1057
+Array size - indoorMaterials (./data/dataIndoor.py): 484
+Array size - indoorMetalMaterials (./data/dataIndoor.py): 240
+Array size - indoorNonMetalMaterials (./data/dataIndoor.py): 244
+Array size - indoorObjectItems (./data/dataIndoor.py): 903
+Array size - inDoorPreposition (./data/dataIndoor.py): 62
+Array size - indoorStatus (./data/dataIndoor.py): 169
+Array size - liveNPCActions (./data/dataNPC.py): 83099
+Array size - liveNPCApperances (./data/dataNPC.py): 714
+Array size - liveNPCEmotions (./data/dataNPC.py): 169
+Array size - liveNPCs (./data/dataNPC.py): 1100
+Array size - LoveActions (./data/dataLove.py): 70
+Array size - loveIcons (./data/dataLove.py): 28
+Array size - LowerText (./data/dataStory.py): 26
+Array size - magicTypes (./data/dataStory.py): 57
+Array size - mainActions (./data/dataNPC.py): 228
+Array size - maleArmPoses (./data/dataModelingPrompt.py): 8
+Array size - maleExpressions (./data/dataModelingPrompt.py): 16
+Array size - maleHair (./data/dataModelingPrompt.py): 20
+Array size - malePoses (./data/dataModelingPrompt.py): 19
+Array size - maleShoes (./data/dataModelingPrompt.py): 11
+Array size - mapsL4D2 (./data/dataL4D2.py): 13
+Array size - medicineL4D2 (./data/dataL4D2.py): 2
+Array size - meleeL4D2 (./data/dataL4D2.py): 14
+Array size - modelFramings (./data/dataModelingPrompt.py): 4
+Array size - modelGazes (./data/dataModelingPrompt.py): 5
+Array size - nameNPC (./data/dataNPC.py): 1073
+Array size - NPCjobs (./data/dataNPC.py): 939
+Array size - objectsToolsEmojis (./data/dataIcon.py): 183
+Array size - optionsDateApp (./data/dataLove.py): 5
+Array size - outdoorObjectDensity (./data/dataOutdoor.py): 10
+Array size - outdoorObjects (./data/dataOutdoor.py): 383
+Array size - outDoorPreposition (./data/dataOutdoor.py): 62
+Array size - outDoorSkyObjects (./data/dataOutdoor.py): 59
+Array size - outDoorSkyStrongObjects (./data/dataOutdoor.py): 56
+Array size - outDoorSkyStrongObjectStatus (./data/dataOutdoor.py): 19
+Array size - outDoorStatus (./data/dataOutdoor.py): 138
+Array size - outdoorView (./data/dataOutdoor.py): 1058
+Array size - pickupsL4D2 (./data/dataL4D2.py): 6
+Array size - playerRulesL4D2 (./data/dataL4D2.py): 15
+Array size - proverbs (./data/dataStory.py): 33
+Array size - quantities (./data/data.py): 21
+Array size - shapes (./data/data.py): 311
+Array size - slogan (./data/dataStory.py): 47
+Array size - sourceInfo (./data/dataStory.py): 210
+Array size - sportsEntertainmentEmojis (./data/dataIcon.py): 82
+Array size - status (./data/data.py): 151
+Array size - subActions (./data/dataNPC.py): 29
+Array size - symbolsHeartsEmojis (./data/dataIcon.py): 97
+Array size - times (./data/dataOutdoor.py): 2
+Array size - typeNumber (./data/data.py): 2
+Array size - typeValueNumber (./data/data.py): 2
+Array size - units (./data/data.py): 26
+Array size - UpperText (./data/dataStory.py): 26
+Array size - Vehicle (./data/dataStory.py): 269
+Array size - vehiclesPlacesEmojis (./data/dataIcon.py): 109
+Array size - weaponsL4D2 (./data/dataL4D2.py): 13
+Array size - weatherConditions (./data/dataOutdoor.py): 82
+=== DUPLICATE ITEMS (6 duplicated values) ===
+Duplicate item - liveNPCs (./data/dataNPC.py): 'BABY VEGETA (Dragon Ball)' (2 occurrences)
+Duplicate item - liveNPCs (./data/dataNPC.py): 'COOLER (Dragon Ball)' (2 occurrences)
+Duplicate item - liveNPCs (./data/dataNPC.py): 'GOGETA (Dragon Ball)' (2 occurrences)
+Duplicate item - liveNPCs (./data/dataNPC.py): 'SUPER 17 (Dragon Ball)' (2 occurrences)
+Duplicate item - modelGazes (./data/dataModelingPrompt.py): 'chin slightly lowered with eyes gazing subtly downward in a relaxed candid expression' (2 occurrences)
+Duplicate item - modelGazes (./data/dataModelingPrompt.py): 'head and eye gaze aligned naturally straight ahead in the exact direction the torso is facing' (2 occurrences)
+=== POSSIBLE MISSING COMMAS (0 issues) ===
+No possible missing commas found.
+=======================================================================================
+COTP Struct Details (mỗi lần tạo output sẽ gọi một generator; mỗi lời gọi random là một lượt rút riêng từ PRNG của Python; các nhánh điều kiện được ghi rõ):
+*n là số lần gọi; random.choices ghi thêm số phần tử được rút.
+RANDOM 🎲🎲🎲:
+  - random.choice(10 lựa chọn) *1, sau đó chạy generator tương ứng bên dưới.
+Indoor Scene Prompt:
+  Arrays:
+    - allIcons *5 calls (21 picks)
+    - status *4 calls
+    - inDoorPreposition *2 calls
+    - indoorLocations *1 calls
+    - indoorStatus *1 calls
+    - indoorMaterials *1 calls
+    - colors *3 calls
+    - quantities *3 calls
+    - indoorItems *1 calls
+    - indoorItemStatus *1 calls
+    - shapes *2 calls
+    - indoorLightVerb *1 calls
+    - indoorItemLightningSource *1 calls
+    - indoorObjectItems *1 calls
+    - liveNPCs *1 calls
+    - liveNPCApperances *1 calls
+    - liveNPCEmotions *1 calls
+    - liveNPCActions *1 calls
+    - emotionPunctuations *1 calls (4 picks)
+    - comment *1 calls
+  Random numbers:
+    - none
+Outdoor Scene Prompt:
+  Arrays:
+    - allIcons *5 calls (21 picks)
+    - status *4 calls
+    - outDoorPreposition *2 calls
+    - outdoorView *1 calls
+    - outDoorStatus *1 calls
+    - weatherConditions *1 calls
+    - times *1 calls
+    - shapes *1 calls [if outDoorTime == 'ban ngày']
+    - outDoorSkyStrongObjectStatus *1 calls [if outDoorTime == 'ban ngày']
+    - outDoorSkyStrongObjects *1 calls [else outDoorTime == 'ban ngày']
+    - shapes *1 calls [else outDoorTime == 'ban ngày']
+    - outDoorSkyStrongObjectStatus *1 calls [else outDoorTime == 'ban ngày']
+    - quantities *4 calls
+    - outDoorSkyObjects *1 calls
+    - shapes *3 calls
+    - colors *3 calls
+    - outdoorObjectDensity *2 calls
+    - outdoorObjects *2 calls
+    - liveNPCs *1 calls
+    - liveNPCApperances *1 calls
+    - liveNPCEmotions *1 calls
+    - liveNPCActions *1 calls
+    - emotionPunctuations *1 calls (4 picks)
+    - comment *1 calls
+  Random numbers:
+    - none
+Couple Prompt:
+  Arrays:
+    - BoyActions *1 calls
+    - GirlActions *1 calls
+    - inline choices ((boyActionSelected[2], girlActionSelected[0]), (boyActionSelected[0], girlActionSelected[2]), (boyActionSelected[2], girlActionSelected[2])) *1 calls [if boyActionSelected[1] * girlActionSelected[1] != 0]
+    - loveIcons *3 calls (12 picks)
+    - coupleCall *1 calls
+    - status *2 calls
+    - adjApperanceBoys *1 calls
+    - adjAppearanceGirls *1 calls
+    - fashionHairMale *1 calls
+    - fashionHairFemale *1 calls
+    - LoveActions *1 calls
+    - liveNPCEmotions *1 calls
+  Random numbers:
+    - none
+Modeling Prompt:
+  Arrays:
+    - inline choices ('male', 'female') *1 calls
+    - globals()[f'{gender}Poses'] *1 calls
+    - globals()[f'{gender}ArmPoses'] *1 calls
+    - modelGazes *1 calls
+    - globals()[f'{gender}Expressions'] *1 calls
+    - modelFramings *1 calls
+    - maleShoes/femaleShoes (gender-dependent) *1 calls [if hasShoe]
+    - maleHair/femaleHair (gender-dependent) *1 calls
+  Random numbers:
+    - none
+Random Rule L4D2:
+  Arrays:
+    - mapsL4D2 *1 calls
+    - charactersL4D2 *1 calls
+    - typeValueNumber *10 calls [if includeType]
+    - typeNumber *10 calls [if includeType]
+    - inline choices (True, False) *1 calls
+    - weaponsL4D2 *1 calls [if random.choice((True, False))]
+    - typeValueNumber *1 calls [if random.choice((True, False)) and if includeType]
+    - typeNumber *1 calls [if random.choice((True, False)) and if includeType]
+    - meleeL4D2 *1 calls
+    - grenadesL4D2 *1 calls
+    - pickupsL4D2 *1 calls
+    - medicineL4D2 *1 calls
+    - playerRulesL4D2 *1 calls
+    - inline choices ('escape', 'kill the tank', 'survive') *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *10 calls
+    - random.randint(minValue * scale, maxValue * scale) *1 calls [if random.choice((True, False))]
+App Date Options:
+  Arrays:
+    - companies *1 calls
+    - typeValueNumber *2 calls [if includeType]
+    - typeNumber *2 calls [if includeType]
+    - optionsDateApp *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *2 calls
+Short Story 1 - Curse Breaking Journey:
+  Arrays:
+    - allIcons *2 calls (17 picks)
+    - sourceInfo *1 calls
+    - businesses *1 calls
+    - indoorObjectItems *4 calls
+    - outDoorPreposition *3 calls
+    - outdoorView *3 calls
+    - outDoorStatus *1 calls
+    - outdoorObjectDensity *1 calls
+    - quantities *3 calls
+    - outdoorObjects *2 calls
+    - shapes *5 calls
+    - colors *6 calls
+    - indoorMaterials *2 calls
+    - inDoorPreposition *2 calls
+    - indoorItems *1 calls
+    - indoorItemStatus *1 calls
+    - indoorLightVerb *1 calls
+    - indoorItemLightningSource *1 calls
+    - liveNPCs *5 calls
+    - status *2 calls
+    - nameNPC *4 calls
+    - typeValueNumber *26 calls [if includeType]
+    - typeNumber *26 calls [if includeType]
+    - NPCjobs *5 calls
+    - liveNPCApperances *2 calls
+    - liveNPCEmotions *5 calls
+    - liveNPCActions *11 calls
+    - magicTypes *1 calls
+    - dateEras *1 calls
+    - clockPeriods *1 calls
+    - companies *1 calls
+    - indoorLocations *1 calls
+    - gpsLocations *2 calls
+    - Vehicle *1 calls
+    - indoorStatus *1 calls
+    - slogan *1 calls
+    - proverbs *1 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *26 calls
+Short Story 2 - Job Interview:
+  Arrays:
+    - allIcons *4 calls (23 picks)
+    - weatherConditions *1 calls
+    - inDoorPreposition *4 calls
+    - companies *3 calls
+    - liveNPCActions *15 calls
+    - indoorObjectItems *1 calls
+    - outDoorPreposition *1 calls
+    - typeValueNumber *39 calls [if includeType]
+    - typeNumber *39 calls [if includeType]
+    - dateEras *1 calls
+    - slogan *1 calls
+    - liveNPCs *3 calls
+    - liveNPCApperances *1 calls
+    - liveNPCEmotions *4 calls
+    - nameNPC *3 calls
+    - proverbs *1 calls
+    - indoorLocations *2 calls
+    - indoorStatus *1 calls
+    - colors *4 calls
+    - status *2 calls
+    - NPCjobs *2 calls
+    - sourceInfo *1 calls
+    - outdoorView *3 calls
+    - clockPeriods *2 calls
+    - buildings *1 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+    - Vehicle *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *39 calls
+Short Story 3 - Dating:
+  Arrays:
+    - allIcons *4 calls (23 picks)
+    - typeValueNumber *40 calls [if includeType]
+    - typeNumber *40 calls [if includeType]
+    - dateEras *1 calls
+    - status *9 calls
+    - clockPeriods *3 calls
+    - weatherConditions *1 calls
+    - outDoorSkyStrongObjects *1 calls
+    - shapes *3 calls
+    - outDoorSkyStrongObjectStatus *1 calls
+    - colors *9 calls
+    - gpsLocations *2 calls
+    - companies *2 calls
+    - liveNPCActions *15 calls
+    - indoorObjectItems *3 calls
+    - outDoorPreposition *1 calls
+    - outdoorView *2 calls
+    - outDoorStatus *1 calls
+    - inDoorPreposition *2 calls
+    - outdoorObjectDensity *1 calls
+    - outdoorObjects *2 calls
+    - buildings *1 calls
+    - liveNPCs *4 calls
+    - nameNPC *3 calls
+    - liveNPCEmotions *7 calls
+    - Vehicle *1 calls
+    - BoyActions *2 calls
+    - GirlActions *2 calls
+    - LoveActions *1 calls
+    - slogan *2 calls
+    - sourceInfo *2 calls
+    - liveNPCApperances *3 calls
+    - indoorLocations *1 calls
+    - businesses *1 calls
+    - magicTypes *1 calls
+    - indoorMaterials *2 calls
+    - proverbs *2 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *40 calls
+Short Story 4 - Rebellious Past:
+  Arrays:
+    - nameNPC *6 calls
+    - liveNPCActions *23 calls
+    - typeValueNumber *77 calls [if includeType]
+    - typeNumber *77 calls [if includeType]
+    - allIcons *4 calls (23 picks)
+    - outDoorPreposition *2 calls
+    - outdoorView *3 calls
+    - outDoorStatus *1 calls
+    - weatherConditions *1 calls
+    - status *7 calls
+    - quantities *1 calls
+    - outDoorSkyStrongObjects *1 calls
+    - shapes *2 calls
+    - outDoorSkyStrongObjectStatus *1 calls
+    - colors *4 calls
+    - indoorLocations *3 calls
+    - indoorStatus *1 calls
+    - indoorMaterials *1 calls
+    - inDoorPreposition *3 calls
+    - liveNPCs *5 calls
+    - liveNPCEmotions *7 calls
+    - magicTypes *1 calls
+    - companies *2 calls
+    - gpsLocations *2 calls
+    - Vehicle *2 calls
+    - liveNPCApperances *2 calls
+    - indoorObjectItems *2 calls
+    - dateEras *1 calls
+    - clockPeriods *4 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+    - GirlActions *1 calls
+    - BoyActions *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *77 calls
+=======================================================================================
+
+📊📊📊 Tổng không gian trạng thái của COTP (COTP - Total Combinations and Possibilities):
+Updated Timestamp (latest): 2026-11-21 12:24:45
+=================================================================================================
+🖼️🎨 PROMPTS FOR AI ART MENU:
+    - Indoor Scene Prompt: 36,750,115,678,526,851,650,295,033,811,539,183,069,759,032,875,971,491,768,176,130,329,922,703,810,784,562,374,501,187,854,072,742,903,733,161,033,404,475,555,840,000 [👉 3.6×10^124]
+    - Outdoor Scene Prompt: 41,905,049,048,680,316,637,337,939,390,794,977,793,069,932,441,145,669,129,932,971,588,643,054,286,217,759,155,723,436,655,035,221,244,969,165,681,879,059,137,500,697,088,000,000 [👉 4.1×10^133]
+    - Couple Prompt: 480,701,061,961,245,958,651,209,632,919,899,965,547,980,862,532,730,505,879,265,223,598,126,823,622,060,277,760,000,000 [👉 4.8×10^89]
+    - Modeling Prompt: 1,646,792,276,587,073,579,166,899,555,911,981,222,811,320,815,216,284,467,200 (Male) + 5,052,307,242,310,498,394,834,698,871,926,836,142,171,919,407,308,085,236,480 (Female)= 6,699,099,518,897,571,974,001,598,427,838,817,364,983,240,222,524,369,703,680 [👉 6.6×10^57]
+🕹️🎮 ANY GAMES RULE CUSTOM:
+    - L4D2 Case: 1,072,951,355,314,582,609,277,815,603,200,000 [👉 1.0×10^33]
+    - appDateTotal: 524,000 [👉 5.2×10^5]
+🎲📖 SHORT STORIES MENU:
+    - Short Story 1 - Curse Breaking Journey: 1,302,865,201,440,683,174,930,353,161,210,853,213,776,852,984,820,521,733,462,610,653,657,052,176,212,804,079,961,363,949,908,165,076,450,847,531,491,832,292,242,124,405,694,918,024,144,659,484,920,558,757,183,938,540,613,635,946,676,876,994,867,044,813,446,339,891,910,160,791,079,923,396,111,936,812,272,137,520,368,724,732,615,698,448,463,318,053,220,769,330,496,956,304,532,551,958,587,833,915,208,137,682,737,599,841,579,747,968,965,943,322,028,162,643,157,999,002,022,767,143,707,057,738,848,935,495,081,939,891,015,165,487,123,489,229,947,082,916,992,132,834,921,505,515,287,055,609,106,384,364,908,505,490,740,337,454,790,125,865,518,476,294,494,006,906,072,253,074,504,945,424,267,447,092,463,797,674,678,075,271,413,760,000,000 [👉 1.3×10^552]
+    - Short Story 2 - Job Interview: 2,870,920,189,410,046,621,309,894,876,777,853,260,796,443,467,470,136,867,134,094,980,445,809,289,612,923,556,828,756,479,602,187,050,239,756,084,477,744,002,869,411,631,536,202,522,581,982,752,437,663,363,537,051,364,786,171,205,335,698,993,858,812,837,777,901,113,834,178,754,964,285,888,661,646,056,542,731,225,555,780,213,280,308,831,998,580,253,556,487,283,746,842,633,769,832,917,470,140,007,407,205,763,176,986,616,315,481,039,870,001,511,296,146,083,202,618,775,060,896,619,196,356,531,165,546,044,545,780,407,806,321,254,729,738,149,693,191,429,599,244,910,561,564,957,756,927,892,125,510,095,268,923,233,133,326,661,266,263,445,911,340,965,481,317,922,624,573,571,730,108,264,269,758,393,638,130,507,708,839,855,706,698,477,534,460,510,041,535,641,724,736,154,523,212,229,701,220,099,523,077,622,338,695,628,383,659,698,105,993,170,229,531,770,880,000,000 [👉 2.8×10^648]
+    - Short Story 3 - Dating: 47,677,308,477,125,028,236,537,041,546,746,191,834,540,561,722,506,313,655,917,095,622,858,012,843,354,200,577,027,830,343,381,847,190,469,250,393,283,753,101,339,210,995,116,805,226,283,420,351,718,258,805,257,974,835,272,078,999,730,321,406,017,563,922,130,846,872,821,073,759,446,234,644,004,744,317,332,182,615,313,577,064,746,390,163,743,299,826,698,537,985,634,666,653,237,477,290,412,216,320,181,090,600,482,396,015,754,546,435,172,932,896,143,027,975,705,668,300,585,797,274,272,917,682,245,069,338,879,975,504,095,972,621,011,597,951,654,967,886,808,314,792,510,370,221,071,893,673,509,135,625,893,753,497,701,869,028,917,784,716,381,825,655,431,477,490,445,832,800,583,722,805,713,600,223,666,923,018,806,715,919,010,310,270,927,350,484,961,968,111,494,820,784,763,895,220,317,684,118,427,641,495,468,292,757,764,488,820,538,070,862,460,126,202,591,509,992,231,429,598,578,759,441,643,904,351,021,406,617,600,000,000,000,000,000 [👉 4.7×10^703]
+    - Short Story 4 - Rebellious Past: 3,161,169,121,010,396,465,240,423,691,174,482,246,563,021,240,162,915,740,201,726,457,257,385,284,534,861,088,857,125,575,980,432,271,154,952,558,338,352,041,596,779,574,298,835,096,640,274,666,265,799,305,755,748,110,069,860,379,655,795,475,359,261,830,718,291,407,827,712,322,210,955,565,618,935,694,006,927,170,433,926,879,051,543,938,492,512,140,074,359,763,447,802,000,889,456,160,510,121,569,547,486,277,160,435,843,041,224,216,872,411,207,899,294,455,106,454,013,905,066,812,530,175,974,440,533,304,996,609,083,071,091,394,166,658,695,292,760,339,403,728,260,307,828,613,426,982,328,434,067,156,867,355,545,946,703,797,589,415,745,316,245,938,484,826,361,152,049,356,829,258,285,808,344,661,622,495,116,048,108,576,690,480,407,782,354,793,536,365,024,889,975,187,817,534,611,868,852,769,426,415,037,500,133,831,116,493,848,682,182,834,653,419,562,021,618,706,937,720,632,314,213,411,479,218,595,757,633,168,557,337,098,519,072,899,167,869,105,631,298,673,902,189,954,162,046,606,373,347,725,356,265,060,398,593,201,753,687,490,935,537,194,348,646,793,451,315,507,600,195,807,137,852,394,687,677,631,307,303,735,291,502,739,508,607,997,069,021,757,784,663,879,801,021,626,274,086,492,663,487,737,115,469,164,044,970,803,926,585,337,139,518,328,773,335,916,232,259,512,214,799,045,109,798,052,091,234,658,923,820,149,179,416,749,965,017,448,329,969,397,005,833,692,269,209,791,953,651,304,216,390,108,881,366,986,149,225,274,757,221,790,874,997,582,177,479,992,672,290,679,214,227,956,171,201,553,945,947,099,103,232,000,000,000,000,000 [👉 3.1×10^1155]
+📜TOTAL : 3,161,169,121,010,396,465,240,423,691,174,482,246,563,021,240,162,915,740,201,726,457,257,385,284,534,861,088,857,125,575,980,432,271,154,952,558,338,352,041,596,779,574,298,835,096,640,274,666,265,799,305,755,748,110,069,860,379,655,795,475,359,261,830,718,291,407,827,712,322,210,955,565,618,935,694,006,927,170,433,926,879,051,543,938,492,512,140,074,359,763,447,802,000,889,456,160,510,121,569,547,486,277,160,435,843,041,224,216,872,411,207,899,294,455,106,454,013,905,066,812,530,175,974,440,533,304,996,609,083,071,091,394,166,658,695,292,760,339,403,728,260,307,828,613,426,982,328,434,067,156,915,032,854,423,828,825,825,952,786,862,992,130,319,366,922,874,555,670,488,046,301,620,612,721,087,159,211,501,914,260,294,658,698,440,294,180,796,782,872,971,760,208,102,264,340,651,964,946,257,735,484,658,496,763,476,926,846,615,135,728,901,826,542,243,184,521,383,501,102,899,807,351,145,061,687,493,105,130,127,873,438,329,762,266,896,294,115,704,793,790,018,610,672,566,744,839,033,975,206,810,285,217,015,012,718,636,634,471,331,333,964,745,604,467,790,831,207,818,349,601,255,225,695,098,174,993,958,191,232,675,619,590,828,520,662,259,055,675,511,437,881,621,653,847,072,256,125,332,637,109,204,230,338,429,965,705,964,850,335,732,405,041,414,686,964,772,829,857,133,418,834,855,702,717,825,103,340,470,478,097,079,073,865,282,058,602,333,744,390,373,773,011,418,202,763,401,049,302,087,949,903,774,479,839,273,360,359,773,577,613,832,465,243,921,315,675,963,912,268,699,225,076,425,254,018,381,228,592,178,779,268,975,017,267,680 [👉 3.1×10^1155]
+=====================================================================================================
+📊📢📢📢 Phân tích chi tiết (Details):
+🖼️🎨 PROMPTS FOR AI ART MENU:
+    - Indoor combinations (digits): 125
+    - Outdoor combinations (digits): 134
+    - Couple Prompt combinations (digits): 90
+    - Modeling Prompt combinations (digits): 58 (Male) + 58 (Female)= 58
+🕹️🎮 ANY GAMES RULE CUSTOM:
+    - L4D2 scenarios (digits): 34
+    - appDate combinations (digits): 6
+🎲📖 SHORT STORIES MENU:
+    - Story 1 - Curse Breaking Journey combinations (digits): 553
+    - Story 2 - Job Interview combinations (digits): 649
+    - Story 3 - Dating combinations (digits): 704
+    - Story 4 - Rebellious Past combinations (digits): 1156
+📜TOTAL combinations (digits): 1156
+
+=== ARRAY SIZES (95 arrays, alphabetical ascending) ===
+Array size - adjAppearanceGirls (./data/dataLove.py): 44
+Array size - adjApperanceBoys (./data/dataLove.py): 45
+Array size - allIcons (./data/dataIcon.py): 911
+Array size - animalsNatureEmojis (./data/dataIcon.py): 157
+Array size - anyActions (./data/dataNPC.py): 171
+Array size - anyObjects (./data/dataNPC.py): 437
+Array size - backgroundModeling (./data/dataModelingPrompt.py): 98
+Array size - backgroundModelingColors (./data/dataModelingPrompt.py): 46
+Array size - backgrounds (./data/dataModelingPrompt.py): 144
+Array size - BoyActions (./data/dataLove.py): 135
+Array size - buildings (./data/dataStory.py): 26
+Array size - businesses (./data/dataStory.py): 17
+Array size - charactersL4D2 (./data/dataL4D2.py): 8
+Array size - clockPeriods (./data/data.py): 5
+Array size - colors (./data/data.py): 181
+Array size - comment (./data/data.py): 11
+Array size - companies (./data/dataStory.py): 262
+Array size - coupleCall (./data/dataLove.py): 40
+Array size - dateEras (./data/data.py): 6
+Array size - emotionPunctuations (./data/dataIcon.py): 10
+Array size - facePeopleEmojis (./data/dataIcon.py): 172
+Array size - fashionHairFemale (./data/dataLove.py): 18
+Array size - fashionHairMale (./data/dataLove.py): 20
+Array size - femaleArmPoses (./data/dataModelingPrompt.py): 11
+Array size - femaleExpressions (./data/dataModelingPrompt.py): 17
+Array size - femaleHair (./data/dataModelingPrompt.py): 18
+Array size - femalePoses (./data/dataModelingPrompt.py): 19
+Array size - femaleShoes (./data/dataModelingPrompt.py): 27
+Array size - foodDrinkEmojis (./data/dataIcon.py): 125
+Array size - GirlActions (./data/dataLove.py): 166
+Array size - gpsLocations (./data/dataStory.py): 10
+Array size - grenadesL4D2 (./data/dataL4D2.py): 3
+Array size - identityRules (./data/dataModelingPrompt.py): 2
+Array size - indoorItemLightningSource (./data/dataIndoor.py): 18
+Array size - indoorItems (./data/dataIndoor.py): 127
+Array size - indoorItemStatus (./data/dataIndoor.py): 8
+Array size - indoorLightVerb (./data/dataIndoor.py): 14
+Array size - indoorLocations (./data/dataIndoor.py): 1057
+Array size - indoorMaterials (./data/dataIndoor.py): 484
+Array size - indoorMetalMaterials (./data/dataIndoor.py): 240
+Array size - indoorNonMetalMaterials (./data/dataIndoor.py): 244
+Array size - indoorObjectItems (./data/dataIndoor.py): 903
+Array size - inDoorPreposition (./data/dataIndoor.py): 62
+Array size - indoorStatus (./data/dataIndoor.py): 169
+Array size - liveNPCActions (./data/dataNPC.py): 83099
+Array size - liveNPCApperances (./data/dataNPC.py): 714
+Array size - liveNPCEmotions (./data/dataNPC.py): 169
+Array size - liveNPCs (./data/dataNPC.py): 1112
+Array size - LoveActions (./data/dataLove.py): 70
+Array size - loveIcons (./data/dataLove.py): 28
+Array size - LowerText (./data/dataStory.py): 26
+Array size - magicTypes (./data/dataStory.py): 57
+Array size - mainActions (./data/dataNPC.py): 228
+Array size - maleArmPoses (./data/dataModelingPrompt.py): 8
+Array size - maleExpressions (./data/dataModelingPrompt.py): 16
+Array size - maleHair (./data/dataModelingPrompt.py): 20
+Array size - malePoses (./data/dataModelingPrompt.py): 19
+Array size - maleShoes (./data/dataModelingPrompt.py): 11
+Array size - mapsL4D2 (./data/dataL4D2.py): 13
+Array size - medicineL4D2 (./data/dataL4D2.py): 2
+Array size - meleeL4D2 (./data/dataL4D2.py): 14
+Array size - modelFramings (./data/dataModelingPrompt.py): 4
+Array size - modelGazes (./data/dataModelingPrompt.py): 5
+Array size - nameNPC (./data/dataNPC.py): 1073
+Array size - NPCjobs (./data/dataNPC.py): 939
+Array size - objectsToolsEmojis (./data/dataIcon.py): 183
+Array size - optionsDateApp (./data/dataLove.py): 5
+Array size - outdoorObjectDensity (./data/dataOutdoor.py): 10
+Array size - outdoorObjects (./data/dataOutdoor.py): 383
+Array size - outDoorPreposition (./data/dataOutdoor.py): 62
+Array size - outDoorSkyObjects (./data/dataOutdoor.py): 59
+Array size - outDoorSkyStrongObjects (./data/dataOutdoor.py): 56
+Array size - outDoorSkyStrongObjectStatus (./data/dataOutdoor.py): 19
+Array size - outDoorStatus (./data/dataOutdoor.py): 138
+Array size - outdoorView (./data/dataOutdoor.py): 1058
+Array size - pickupsL4D2 (./data/dataL4D2.py): 6
+Array size - playerRulesL4D2 (./data/dataL4D2.py): 15
+Array size - proverbs (./data/dataStory.py): 33
+Array size - quantities (./data/data.py): 21
+Array size - shapes (./data/data.py): 311
+Array size - slogan (./data/dataStory.py): 47
+Array size - sourceInfo (./data/dataStory.py): 210
+Array size - sportsEntertainmentEmojis (./data/dataIcon.py): 82
+Array size - status (./data/data.py): 151
+Array size - subActions (./data/dataNPC.py): 29
+Array size - symbolsHeartsEmojis (./data/dataIcon.py): 97
+Array size - times (./data/dataOutdoor.py): 2
+Array size - typeNumber (./data/data.py): 2
+Array size - typeValueNumber (./data/data.py): 2
+Array size - units (./data/data.py): 26
+Array size - UpperText (./data/dataStory.py): 26
+Array size - Vehicle (./data/dataStory.py): 269
+Array size - vehiclesPlacesEmojis (./data/dataIcon.py): 109
+Array size - weaponsL4D2 (./data/dataL4D2.py): 13
+Array size - weatherConditions (./data/dataOutdoor.py): 82
+=== DUPLICATE ITEMS (3 duplicated values) ===
+Duplicate item - liveNPCs (./data/dataNPC.py): 'BABY VEGETA (Dragon Ball)' (2 occurrences)
+Duplicate item - modelGazes (./data/dataModelingPrompt.py): 'chin slightly lowered with eyes gazing subtly downward in a relaxed candid expression' (2 occurrences)
+Duplicate item - modelGazes (./data/dataModelingPrompt.py): 'head and eye gaze aligned naturally straight ahead in the exact direction the torso is facing' (2 occurrences)
+=== POSSIBLE MISSING COMMAS (0 issues) ===
+No possible missing commas found.
+=======================================================================================
+COTP Struct Details (mỗi lần tạo output sẽ gọi một generator; mỗi lời gọi random là một lượt rút riêng từ PRNG của Python; các nhánh điều kiện được ghi rõ):
+*n là số lần gọi; random.choices ghi thêm số phần tử được rút.
+RANDOM 🎲🎲🎲:
+  - random.choice(10 lựa chọn) *1, sau đó chạy generator tương ứng bên dưới.
+Indoor Scene Prompt:
+  Arrays:
+    - allIcons *5 calls (21 picks)
+    - status *4 calls
+    - inDoorPreposition *2 calls
+    - indoorLocations *1 calls
+    - indoorStatus *1 calls
+    - indoorMaterials *1 calls
+    - colors *3 calls
+    - quantities *3 calls
+    - indoorItems *1 calls
+    - indoorItemStatus *1 calls
+    - shapes *2 calls
+    - indoorLightVerb *1 calls
+    - indoorItemLightningSource *1 calls
+    - indoorObjectItems *1 calls
+    - liveNPCs *1 calls
+    - liveNPCApperances *1 calls
+    - liveNPCEmotions *1 calls
+    - liveNPCActions *1 calls
+    - emotionPunctuations *1 calls (4 picks)
+    - comment *1 calls
+  Random numbers:
+    - none
+Outdoor Scene Prompt:
+  Arrays:
+    - allIcons *5 calls (21 picks)
+    - status *4 calls
+    - outDoorPreposition *2 calls
+    - outdoorView *1 calls
+    - outDoorStatus *1 calls
+    - weatherConditions *1 calls
+    - times *1 calls
+    - shapes *1 calls [if outDoorTime == 'ban ngày']
+    - outDoorSkyStrongObjectStatus *1 calls [if outDoorTime == 'ban ngày']
+    - outDoorSkyStrongObjects *1 calls [else outDoorTime == 'ban ngày']
+    - shapes *1 calls [else outDoorTime == 'ban ngày']
+    - outDoorSkyStrongObjectStatus *1 calls [else outDoorTime == 'ban ngày']
+    - quantities *4 calls
+    - outDoorSkyObjects *1 calls
+    - shapes *3 calls
+    - colors *3 calls
+    - outdoorObjectDensity *2 calls
+    - outdoorObjects *2 calls
+    - liveNPCs *1 calls
+    - liveNPCApperances *1 calls
+    - liveNPCEmotions *1 calls
+    - liveNPCActions *1 calls
+    - emotionPunctuations *1 calls (4 picks)
+    - comment *1 calls
+  Random numbers:
+    - none
+Couple Prompt:
+  Arrays:
+    - BoyActions *1 calls
+    - GirlActions *1 calls
+    - inline choices ((boyActionSelected[2], girlActionSelected[0]), (boyActionSelected[0], girlActionSelected[2]), (boyActionSelected[2], girlActionSelected[2])) *1 calls [if boyActionSelected[1] * girlActionSelected[1] != 0]
+    - loveIcons *3 calls (12 picks)
+    - coupleCall *1 calls
+    - status *2 calls
+    - adjApperanceBoys *1 calls
+    - adjAppearanceGirls *1 calls
+    - fashionHairMale *1 calls
+    - fashionHairFemale *1 calls
+    - LoveActions *1 calls
+    - liveNPCEmotions *1 calls
+  Random numbers:
+    - none
+Modeling Prompt:
+  Arrays:
+    - inline choices ('male', 'female') *1 calls
+    - globals()[f'{gender}Poses'] *1 calls
+    - globals()[f'{gender}ArmPoses'] *1 calls
+    - modelGazes *1 calls
+    - globals()[f'{gender}Expressions'] *1 calls
+    - modelFramings *1 calls
+    - maleShoes/femaleShoes (gender-dependent) *1 calls [if hasShoe]
+    - maleHair/femaleHair (gender-dependent) *1 calls
+  Random numbers:
+    - none
+Random Rule L4D2:
+  Arrays:
+    - mapsL4D2 *1 calls
+    - charactersL4D2 *1 calls
+    - typeValueNumber *10 calls [if includeType]
+    - typeNumber *10 calls [if includeType]
+    - inline choices (True, False) *1 calls
+    - weaponsL4D2 *1 calls [if random.choice((True, False))]
+    - typeValueNumber *1 calls [if random.choice((True, False)) and if includeType]
+    - typeNumber *1 calls [if random.choice((True, False)) and if includeType]
+    - meleeL4D2 *1 calls
+    - grenadesL4D2 *1 calls
+    - pickupsL4D2 *1 calls
+    - medicineL4D2 *1 calls
+    - playerRulesL4D2 *1 calls
+    - inline choices ('escape', 'kill the tank', 'survive') *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *10 calls
+    - random.randint(minValue * scale, maxValue * scale) *1 calls [if random.choice((True, False))]
+App Date Options:
+  Arrays:
+    - companies *1 calls
+    - typeValueNumber *2 calls [if includeType]
+    - typeNumber *2 calls [if includeType]
+    - optionsDateApp *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *2 calls
+Short Story 1 - Curse Breaking Journey:
+  Arrays:
+    - allIcons *2 calls (17 picks)
+    - sourceInfo *1 calls
+    - businesses *1 calls
+    - indoorObjectItems *4 calls
+    - outDoorPreposition *3 calls
+    - outdoorView *3 calls
+    - outDoorStatus *1 calls
+    - outdoorObjectDensity *1 calls
+    - quantities *3 calls
+    - outdoorObjects *2 calls
+    - shapes *5 calls
+    - colors *6 calls
+    - indoorMaterials *2 calls
+    - inDoorPreposition *2 calls
+    - indoorItems *1 calls
+    - indoorItemStatus *1 calls
+    - indoorLightVerb *1 calls
+    - indoorItemLightningSource *1 calls
+    - liveNPCs *5 calls
+    - status *2 calls
+    - nameNPC *4 calls
+    - typeValueNumber *26 calls [if includeType]
+    - typeNumber *26 calls [if includeType]
+    - NPCjobs *5 calls
+    - liveNPCApperances *2 calls
+    - liveNPCEmotions *5 calls
+    - liveNPCActions *11 calls
+    - magicTypes *1 calls
+    - dateEras *1 calls
+    - clockPeriods *1 calls
+    - companies *1 calls
+    - indoorLocations *1 calls
+    - gpsLocations *2 calls
+    - Vehicle *1 calls
+    - indoorStatus *1 calls
+    - slogan *1 calls
+    - proverbs *1 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *26 calls
+Short Story 2 - Job Interview:
+  Arrays:
+    - allIcons *4 calls (23 picks)
+    - weatherConditions *1 calls
+    - inDoorPreposition *4 calls
+    - companies *3 calls
+    - liveNPCActions *15 calls
+    - indoorObjectItems *1 calls
+    - outDoorPreposition *1 calls
+    - typeValueNumber *39 calls [if includeType]
+    - typeNumber *39 calls [if includeType]
+    - dateEras *1 calls
+    - slogan *1 calls
+    - liveNPCs *3 calls
+    - liveNPCApperances *1 calls
+    - liveNPCEmotions *4 calls
+    - nameNPC *3 calls
+    - proverbs *1 calls
+    - indoorLocations *2 calls
+    - indoorStatus *1 calls
+    - colors *4 calls
+    - status *2 calls
+    - NPCjobs *2 calls
+    - sourceInfo *1 calls
+    - outdoorView *3 calls
+    - clockPeriods *2 calls
+    - buildings *1 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+    - Vehicle *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *39 calls
+Short Story 3 - Dating:
+  Arrays:
+    - allIcons *4 calls (23 picks)
+    - typeValueNumber *40 calls [if includeType]
+    - typeNumber *40 calls [if includeType]
+    - dateEras *1 calls
+    - status *9 calls
+    - clockPeriods *3 calls
+    - weatherConditions *1 calls
+    - outDoorSkyStrongObjects *1 calls
+    - shapes *3 calls
+    - outDoorSkyStrongObjectStatus *1 calls
+    - colors *9 calls
+    - gpsLocations *2 calls
+    - companies *2 calls
+    - liveNPCActions *15 calls
+    - indoorObjectItems *3 calls
+    - outDoorPreposition *1 calls
+    - outdoorView *2 calls
+    - outDoorStatus *1 calls
+    - inDoorPreposition *2 calls
+    - outdoorObjectDensity *1 calls
+    - outdoorObjects *2 calls
+    - buildings *1 calls
+    - liveNPCs *4 calls
+    - nameNPC *3 calls
+    - liveNPCEmotions *7 calls
+    - Vehicle *1 calls
+    - BoyActions *2 calls
+    - GirlActions *2 calls
+    - LoveActions *1 calls
+    - slogan *2 calls
+    - sourceInfo *2 calls
+    - liveNPCApperances *3 calls
+    - indoorLocations *1 calls
+    - businesses *1 calls
+    - magicTypes *1 calls
+    - indoorMaterials *2 calls
+    - proverbs *2 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *40 calls
+Short Story 4 - Rebellious Past:
+  Arrays:
+    - nameNPC *6 calls
+    - liveNPCActions *23 calls
+    - typeValueNumber *77 calls [if includeType]
+    - typeNumber *77 calls [if includeType]
+    - allIcons *4 calls (23 picks)
+    - outDoorPreposition *2 calls
+    - outdoorView *3 calls
+    - outDoorStatus *1 calls
+    - weatherConditions *1 calls
+    - status *7 calls
+    - quantities *1 calls
+    - outDoorSkyStrongObjects *1 calls
+    - shapes *2 calls
+    - outDoorSkyStrongObjectStatus *1 calls
+    - colors *4 calls
+    - indoorLocations *3 calls
+    - indoorStatus *1 calls
+    - indoorMaterials *1 calls
+    - inDoorPreposition *3 calls
+    - liveNPCs *5 calls
+    - liveNPCEmotions *7 calls
+    - magicTypes *1 calls
+    - companies *2 calls
+    - gpsLocations *2 calls
+    - Vehicle *2 calls
+    - liveNPCApperances *2 calls
+    - indoorObjectItems *2 calls
+    - dateEras *1 calls
+    - clockPeriods *4 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+    - GirlActions *1 calls
+    - BoyActions *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *77 calls
+=======================================================================================
+
+📊📊📊 Tổng không gian trạng thái của COTP (COTP - Total Combinations and Possibilities):
+Updated Timestamp (latest): 2026-11-21 12:28:24
+=================================================================================================
+🖼️🎨 PROMPTS FOR AI ART MENU:
+    - Indoor Scene Prompt: 36,750,115,678,526,851,650,295,033,811,539,183,069,759,032,875,971,491,768,176,130,329,922,703,810,784,562,374,501,187,854,072,742,903,733,161,033,404,475,555,840,000 [👉 3.6×10^124]
+    - Outdoor Scene Prompt: 41,905,049,048,680,316,637,337,939,390,794,977,793,069,932,441,145,669,129,932,971,588,643,054,286,217,759,155,723,436,655,035,221,244,969,165,681,879,059,137,500,697,088,000,000 [👉 4.1×10^133]
+    - Couple Prompt: 480,701,061,961,245,958,651,209,632,919,899,965,547,980,862,532,730,505,879,265,223,598,126,823,622,060,277,760,000,000 [👉 4.8×10^89]
+    - Modeling Prompt: 1,646,792,276,587,073,579,166,899,555,911,981,222,811,320,815,216,284,467,200 (Male) + 5,052,307,242,310,498,394,834,698,871,926,836,142,171,919,407,308,085,236,480 (Female)= 6,699,099,518,897,571,974,001,598,427,838,817,364,983,240,222,524,369,703,680 [👉 6.6×10^57]
+🕹️🎮 ANY GAMES RULE CUSTOM:
+    - L4D2 Case: 1,072,951,355,314,582,609,277,815,603,200,000 [👉 1.0×10^33]
+    - appDateTotal: 524,000 [👉 5.2×10^5]
+🎲📖 SHORT STORIES MENU:
+    - Short Story 1 - Curse Breaking Journey: 1,302,865,201,440,683,174,930,353,161,210,853,213,776,852,984,820,521,733,462,610,653,657,052,176,212,804,079,961,363,949,908,165,076,450,847,531,491,832,292,242,124,405,694,918,024,144,659,484,920,558,757,183,938,540,613,635,946,676,876,994,867,044,813,446,339,891,910,160,791,079,923,396,111,936,812,272,137,520,368,724,732,615,698,448,463,318,053,220,769,330,496,956,304,532,551,958,587,833,915,208,137,682,737,599,841,579,747,968,965,943,322,028,162,643,157,999,002,022,767,143,707,057,738,848,935,495,081,939,891,015,165,487,123,489,229,947,082,916,992,132,834,921,505,515,287,055,609,106,384,364,908,505,490,740,337,454,790,125,865,518,476,294,494,006,906,072,253,074,504,945,424,267,447,092,463,797,674,678,075,271,413,760,000,000 [👉 1.3×10^552]
+    - Short Story 2 - Job Interview: 2,870,920,189,410,046,621,309,894,876,777,853,260,796,443,467,470,136,867,134,094,980,445,809,289,612,923,556,828,756,479,602,187,050,239,756,084,477,744,002,869,411,631,536,202,522,581,982,752,437,663,363,537,051,364,786,171,205,335,698,993,858,812,837,777,901,113,834,178,754,964,285,888,661,646,056,542,731,225,555,780,213,280,308,831,998,580,253,556,487,283,746,842,633,769,832,917,470,140,007,407,205,763,176,986,616,315,481,039,870,001,511,296,146,083,202,618,775,060,896,619,196,356,531,165,546,044,545,780,407,806,321,254,729,738,149,693,191,429,599,244,910,561,564,957,756,927,892,125,510,095,268,923,233,133,326,661,266,263,445,911,340,965,481,317,922,624,573,571,730,108,264,269,758,393,638,130,507,708,839,855,706,698,477,534,460,510,041,535,641,724,736,154,523,212,229,701,220,099,523,077,622,338,695,628,383,659,698,105,993,170,229,531,770,880,000,000 [👉 2.8×10^648]
+    - Short Story 3 - Dating: 47,677,308,477,125,028,236,537,041,546,746,191,834,540,561,722,506,313,655,917,095,622,858,012,843,354,200,577,027,830,343,381,847,190,469,250,393,283,753,101,339,210,995,116,805,226,283,420,351,718,258,805,257,974,835,272,078,999,730,321,406,017,563,922,130,846,872,821,073,759,446,234,644,004,744,317,332,182,615,313,577,064,746,390,163,743,299,826,698,537,985,634,666,653,237,477,290,412,216,320,181,090,600,482,396,015,754,546,435,172,932,896,143,027,975,705,668,300,585,797,274,272,917,682,245,069,338,879,975,504,095,972,621,011,597,951,654,967,886,808,314,792,510,370,221,071,893,673,509,135,625,893,753,497,701,869,028,917,784,716,381,825,655,431,477,490,445,832,800,583,722,805,713,600,223,666,923,018,806,715,919,010,310,270,927,350,484,961,968,111,494,820,784,763,895,220,317,684,118,427,641,495,468,292,757,764,488,820,538,070,862,460,126,202,591,509,992,231,429,598,578,759,441,643,904,351,021,406,617,600,000,000,000,000,000 [👉 4.7×10^703]
+    - Short Story 4 - Rebellious Past: 3,161,169,121,010,396,465,240,423,691,174,482,246,563,021,240,162,915,740,201,726,457,257,385,284,534,861,088,857,125,575,980,432,271,154,952,558,338,352,041,596,779,574,298,835,096,640,274,666,265,799,305,755,748,110,069,860,379,655,795,475,359,261,830,718,291,407,827,712,322,210,955,565,618,935,694,006,927,170,433,926,879,051,543,938,492,512,140,074,359,763,447,802,000,889,456,160,510,121,569,547,486,277,160,435,843,041,224,216,872,411,207,899,294,455,106,454,013,905,066,812,530,175,974,440,533,304,996,609,083,071,091,394,166,658,695,292,760,339,403,728,260,307,828,613,426,982,328,434,067,156,867,355,545,946,703,797,589,415,745,316,245,938,484,826,361,152,049,356,829,258,285,808,344,661,622,495,116,048,108,576,690,480,407,782,354,793,536,365,024,889,975,187,817,534,611,868,852,769,426,415,037,500,133,831,116,493,848,682,182,834,653,419,562,021,618,706,937,720,632,314,213,411,479,218,595,757,633,168,557,337,098,519,072,899,167,869,105,631,298,673,902,189,954,162,046,606,373,347,725,356,265,060,398,593,201,753,687,490,935,537,194,348,646,793,451,315,507,600,195,807,137,852,394,687,677,631,307,303,735,291,502,739,508,607,997,069,021,757,784,663,879,801,021,626,274,086,492,663,487,737,115,469,164,044,970,803,926,585,337,139,518,328,773,335,916,232,259,512,214,799,045,109,798,052,091,234,658,923,820,149,179,416,749,965,017,448,329,969,397,005,833,692,269,209,791,953,651,304,216,390,108,881,366,986,149,225,274,757,221,790,874,997,582,177,479,992,672,290,679,214,227,956,171,201,553,945,947,099,103,232,000,000,000,000,000 [👉 3.1×10^1155]
+📜TOTAL : 3,161,169,121,010,396,465,240,423,691,174,482,246,563,021,240,162,915,740,201,726,457,257,385,284,534,861,088,857,125,575,980,432,271,154,952,558,338,352,041,596,779,574,298,835,096,640,274,666,265,799,305,755,748,110,069,860,379,655,795,475,359,261,830,718,291,407,827,712,322,210,955,565,618,935,694,006,927,170,433,926,879,051,543,938,492,512,140,074,359,763,447,802,000,889,456,160,510,121,569,547,486,277,160,435,843,041,224,216,872,411,207,899,294,455,106,454,013,905,066,812,530,175,974,440,533,304,996,609,083,071,091,394,166,658,695,292,760,339,403,728,260,307,828,613,426,982,328,434,067,156,915,032,854,423,828,825,825,952,786,862,992,130,319,366,922,874,555,670,488,046,301,620,612,721,087,159,211,501,914,260,294,658,698,440,294,180,796,782,872,971,760,208,102,264,340,651,964,946,257,735,484,658,496,763,476,926,846,615,135,728,901,826,542,243,184,521,383,501,102,899,807,351,145,061,687,493,105,130,127,873,438,329,762,266,896,294,115,704,793,790,018,610,672,566,744,839,033,975,206,810,285,217,015,012,718,636,634,471,331,333,964,745,604,467,790,831,207,818,349,601,255,225,695,098,174,993,958,191,232,675,619,590,828,520,662,259,055,675,511,437,881,621,653,847,072,256,125,332,637,109,204,230,338,429,965,705,964,850,335,732,405,041,414,686,964,772,829,857,133,418,834,855,702,717,825,103,340,470,478,097,079,073,865,282,058,602,333,744,390,373,773,011,418,202,763,401,049,302,087,949,903,774,479,839,273,360,359,773,577,613,832,465,243,921,315,675,963,912,268,699,225,076,425,254,018,381,228,592,178,779,268,975,017,267,680 [👉 3.1×10^1155]
+=====================================================================================================
+📊📢📢📢 Phân tích chi tiết (Details):
+🖼️🎨 PROMPTS FOR AI ART MENU:
+    - Indoor combinations (digits): 125
+    - Outdoor combinations (digits): 134
+    - Couple Prompt combinations (digits): 90
+    - Modeling Prompt combinations (digits): 58 (Male) + 58 (Female)= 58
+🕹️🎮 ANY GAMES RULE CUSTOM:
+    - L4D2 scenarios (digits): 34
+    - appDate combinations (digits): 6
+🎲📖 SHORT STORIES MENU:
+    - Story 1 - Curse Breaking Journey combinations (digits): 553
+    - Story 2 - Job Interview combinations (digits): 649
+    - Story 3 - Dating combinations (digits): 704
+    - Story 4 - Rebellious Past combinations (digits): 1156
+📜TOTAL combinations (digits): 1156
+
+=== ARRAY SIZES (95 arrays, alphabetical ascending) ===
+Array size - adjAppearanceGirls (./data/dataLove.py): 44
+Array size - adjApperanceBoys (./data/dataLove.py): 45
+Array size - allIcons (./data/dataIcon.py): 911
+Array size - animalsNatureEmojis (./data/dataIcon.py): 157
+Array size - anyActions (./data/dataNPC.py): 171
+Array size - anyObjects (./data/dataNPC.py): 437
+Array size - backgroundModeling (./data/dataModelingPrompt.py): 98
+Array size - backgroundModelingColors (./data/dataModelingPrompt.py): 46
+Array size - backgrounds (./data/dataModelingPrompt.py): 144
+Array size - BoyActions (./data/dataLove.py): 135
+Array size - buildings (./data/dataStory.py): 26
+Array size - businesses (./data/dataStory.py): 17
+Array size - charactersL4D2 (./data/dataL4D2.py): 8
+Array size - clockPeriods (./data/data.py): 5
+Array size - colors (./data/data.py): 181
+Array size - comment (./data/data.py): 11
+Array size - companies (./data/dataStory.py): 262
+Array size - coupleCall (./data/dataLove.py): 40
+Array size - dateEras (./data/data.py): 6
+Array size - emotionPunctuations (./data/dataIcon.py): 10
+Array size - facePeopleEmojis (./data/dataIcon.py): 172
+Array size - fashionHairFemale (./data/dataLove.py): 18
+Array size - fashionHairMale (./data/dataLove.py): 20
+Array size - femaleArmPoses (./data/dataModelingPrompt.py): 11
+Array size - femaleExpressions (./data/dataModelingPrompt.py): 17
+Array size - femaleHair (./data/dataModelingPrompt.py): 18
+Array size - femalePoses (./data/dataModelingPrompt.py): 19
+Array size - femaleShoes (./data/dataModelingPrompt.py): 27
+Array size - foodDrinkEmojis (./data/dataIcon.py): 125
+Array size - GirlActions (./data/dataLove.py): 166
+Array size - gpsLocations (./data/dataStory.py): 10
+Array size - grenadesL4D2 (./data/dataL4D2.py): 3
+Array size - identityRules (./data/dataModelingPrompt.py): 2
+Array size - indoorItemLightningSource (./data/dataIndoor.py): 18
+Array size - indoorItems (./data/dataIndoor.py): 127
+Array size - indoorItemStatus (./data/dataIndoor.py): 8
+Array size - indoorLightVerb (./data/dataIndoor.py): 14
+Array size - indoorLocations (./data/dataIndoor.py): 1057
+Array size - indoorMaterials (./data/dataIndoor.py): 484
+Array size - indoorMetalMaterials (./data/dataIndoor.py): 240
+Array size - indoorNonMetalMaterials (./data/dataIndoor.py): 244
+Array size - indoorObjectItems (./data/dataIndoor.py): 903
+Array size - inDoorPreposition (./data/dataIndoor.py): 62
+Array size - indoorStatus (./data/dataIndoor.py): 169
+Array size - liveNPCActions (./data/dataNPC.py): 83099
+Array size - liveNPCApperances (./data/dataNPC.py): 714
+Array size - liveNPCEmotions (./data/dataNPC.py): 169
+Array size - liveNPCs (./data/dataNPC.py): 1112
+Array size - LoveActions (./data/dataLove.py): 70
+Array size - loveIcons (./data/dataLove.py): 28
+Array size - LowerText (./data/dataStory.py): 26
+Array size - magicTypes (./data/dataStory.py): 57
+Array size - mainActions (./data/dataNPC.py): 228
+Array size - maleArmPoses (./data/dataModelingPrompt.py): 8
+Array size - maleExpressions (./data/dataModelingPrompt.py): 16
+Array size - maleHair (./data/dataModelingPrompt.py): 20
+Array size - malePoses (./data/dataModelingPrompt.py): 19
+Array size - maleShoes (./data/dataModelingPrompt.py): 11
+Array size - mapsL4D2 (./data/dataL4D2.py): 13
+Array size - medicineL4D2 (./data/dataL4D2.py): 2
+Array size - meleeL4D2 (./data/dataL4D2.py): 14
+Array size - modelFramings (./data/dataModelingPrompt.py): 4
+Array size - modelGazes (./data/dataModelingPrompt.py): 5
+Array size - nameNPC (./data/dataNPC.py): 1073
+Array size - NPCjobs (./data/dataNPC.py): 939
+Array size - objectsToolsEmojis (./data/dataIcon.py): 183
+Array size - optionsDateApp (./data/dataLove.py): 5
+Array size - outdoorObjectDensity (./data/dataOutdoor.py): 10
+Array size - outdoorObjects (./data/dataOutdoor.py): 383
+Array size - outDoorPreposition (./data/dataOutdoor.py): 62
+Array size - outDoorSkyObjects (./data/dataOutdoor.py): 59
+Array size - outDoorSkyStrongObjects (./data/dataOutdoor.py): 56
+Array size - outDoorSkyStrongObjectStatus (./data/dataOutdoor.py): 19
+Array size - outDoorStatus (./data/dataOutdoor.py): 138
+Array size - outdoorView (./data/dataOutdoor.py): 1058
+Array size - pickupsL4D2 (./data/dataL4D2.py): 6
+Array size - playerRulesL4D2 (./data/dataL4D2.py): 15
+Array size - proverbs (./data/dataStory.py): 33
+Array size - quantities (./data/data.py): 21
+Array size - shapes (./data/data.py): 311
+Array size - slogan (./data/dataStory.py): 47
+Array size - sourceInfo (./data/dataStory.py): 210
+Array size - sportsEntertainmentEmojis (./data/dataIcon.py): 82
+Array size - status (./data/data.py): 151
+Array size - subActions (./data/dataNPC.py): 29
+Array size - symbolsHeartsEmojis (./data/dataIcon.py): 97
+Array size - times (./data/dataOutdoor.py): 2
+Array size - typeNumber (./data/data.py): 2
+Array size - typeValueNumber (./data/data.py): 2
+Array size - units (./data/data.py): 26
+Array size - UpperText (./data/dataStory.py): 26
+Array size - Vehicle (./data/dataStory.py): 269
+Array size - vehiclesPlacesEmojis (./data/dataIcon.py): 109
+Array size - weaponsL4D2 (./data/dataL4D2.py): 13
+Array size - weatherConditions (./data/dataOutdoor.py): 82
+=== DUPLICATE ITEMS (2 duplicated values) ===
+Duplicate item - modelGazes (./data/dataModelingPrompt.py): 'chin slightly lowered with eyes gazing subtly downward in a relaxed candid expression' (2 occurrences)
+Duplicate item - modelGazes (./data/dataModelingPrompt.py): 'head and eye gaze aligned naturally straight ahead in the exact direction the torso is facing' (2 occurrences)
+=== POSSIBLE MISSING COMMAS (0 issues) ===
+No possible missing commas found.
+=======================================================================================
+COTP Struct Details (mỗi lần tạo output sẽ gọi một generator; mỗi lời gọi random là một lượt rút riêng từ PRNG của Python; các nhánh điều kiện được ghi rõ):
+*n là số lần gọi; random.choices ghi thêm số phần tử được rút.
+RANDOM 🎲🎲🎲:
+  - random.choice(10 lựa chọn) *1, sau đó chạy generator tương ứng bên dưới.
+Indoor Scene Prompt:
+  Arrays:
+    - allIcons *5 calls (21 picks)
+    - status *4 calls
+    - inDoorPreposition *2 calls
+    - indoorLocations *1 calls
+    - indoorStatus *1 calls
+    - indoorMaterials *1 calls
+    - colors *3 calls
+    - quantities *3 calls
+    - indoorItems *1 calls
+    - indoorItemStatus *1 calls
+    - shapes *2 calls
+    - indoorLightVerb *1 calls
+    - indoorItemLightningSource *1 calls
+    - indoorObjectItems *1 calls
+    - liveNPCs *1 calls
+    - liveNPCApperances *1 calls
+    - liveNPCEmotions *1 calls
+    - liveNPCActions *1 calls
+    - emotionPunctuations *1 calls (4 picks)
+    - comment *1 calls
+  Random numbers:
+    - none
+Outdoor Scene Prompt:
+  Arrays:
+    - allIcons *5 calls (21 picks)
+    - status *4 calls
+    - outDoorPreposition *2 calls
+    - outdoorView *1 calls
+    - outDoorStatus *1 calls
+    - weatherConditions *1 calls
+    - times *1 calls
+    - shapes *1 calls [if outDoorTime == 'ban ngày']
+    - outDoorSkyStrongObjectStatus *1 calls [if outDoorTime == 'ban ngày']
+    - outDoorSkyStrongObjects *1 calls [else outDoorTime == 'ban ngày']
+    - shapes *1 calls [else outDoorTime == 'ban ngày']
+    - outDoorSkyStrongObjectStatus *1 calls [else outDoorTime == 'ban ngày']
+    - quantities *4 calls
+    - outDoorSkyObjects *1 calls
+    - shapes *3 calls
+    - colors *3 calls
+    - outdoorObjectDensity *2 calls
+    - outdoorObjects *2 calls
+    - liveNPCs *1 calls
+    - liveNPCApperances *1 calls
+    - liveNPCEmotions *1 calls
+    - liveNPCActions *1 calls
+    - emotionPunctuations *1 calls (4 picks)
+    - comment *1 calls
+  Random numbers:
+    - none
+Couple Prompt:
+  Arrays:
+    - BoyActions *1 calls
+    - GirlActions *1 calls
+    - inline choices ((boyActionSelected[2], girlActionSelected[0]), (boyActionSelected[0], girlActionSelected[2]), (boyActionSelected[2], girlActionSelected[2])) *1 calls [if boyActionSelected[1] * girlActionSelected[1] != 0]
+    - loveIcons *3 calls (12 picks)
+    - coupleCall *1 calls
+    - status *2 calls
+    - adjApperanceBoys *1 calls
+    - adjAppearanceGirls *1 calls
+    - fashionHairMale *1 calls
+    - fashionHairFemale *1 calls
+    - LoveActions *1 calls
+    - liveNPCEmotions *1 calls
+  Random numbers:
+    - none
+Modeling Prompt:
+  Arrays:
+    - inline choices ('male', 'female') *1 calls
+    - globals()[f'{gender}Poses'] *1 calls
+    - globals()[f'{gender}ArmPoses'] *1 calls
+    - modelGazes *1 calls
+    - globals()[f'{gender}Expressions'] *1 calls
+    - modelFramings *1 calls
+    - maleShoes/femaleShoes (gender-dependent) *1 calls [if hasShoe]
+    - maleHair/femaleHair (gender-dependent) *1 calls
+  Random numbers:
+    - none
+Random Rule L4D2:
+  Arrays:
+    - mapsL4D2 *1 calls
+    - charactersL4D2 *1 calls
+    - typeValueNumber *10 calls [if includeType]
+    - typeNumber *10 calls [if includeType]
+    - inline choices (True, False) *1 calls
+    - weaponsL4D2 *1 calls [if random.choice((True, False))]
+    - typeValueNumber *1 calls [if random.choice((True, False)) and if includeType]
+    - typeNumber *1 calls [if random.choice((True, False)) and if includeType]
+    - meleeL4D2 *1 calls
+    - grenadesL4D2 *1 calls
+    - pickupsL4D2 *1 calls
+    - medicineL4D2 *1 calls
+    - playerRulesL4D2 *1 calls
+    - inline choices ('escape', 'kill the tank', 'survive') *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *10 calls
+    - random.randint(minValue * scale, maxValue * scale) *1 calls [if random.choice((True, False))]
+App Date Options:
+  Arrays:
+    - companies *1 calls
+    - typeValueNumber *2 calls [if includeType]
+    - typeNumber *2 calls [if includeType]
+    - optionsDateApp *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *2 calls
+Short Story 1 - Curse Breaking Journey:
+  Arrays:
+    - allIcons *2 calls (17 picks)
+    - sourceInfo *1 calls
+    - businesses *1 calls
+    - indoorObjectItems *4 calls
+    - outDoorPreposition *3 calls
+    - outdoorView *3 calls
+    - outDoorStatus *1 calls
+    - outdoorObjectDensity *1 calls
+    - quantities *3 calls
+    - outdoorObjects *2 calls
+    - shapes *5 calls
+    - colors *6 calls
+    - indoorMaterials *2 calls
+    - inDoorPreposition *2 calls
+    - indoorItems *1 calls
+    - indoorItemStatus *1 calls
+    - indoorLightVerb *1 calls
+    - indoorItemLightningSource *1 calls
+    - liveNPCs *5 calls
+    - status *2 calls
+    - nameNPC *4 calls
+    - typeValueNumber *26 calls [if includeType]
+    - typeNumber *26 calls [if includeType]
+    - NPCjobs *5 calls
+    - liveNPCApperances *2 calls
+    - liveNPCEmotions *5 calls
+    - liveNPCActions *11 calls
+    - magicTypes *1 calls
+    - dateEras *1 calls
+    - clockPeriods *1 calls
+    - companies *1 calls
+    - indoorLocations *1 calls
+    - gpsLocations *2 calls
+    - Vehicle *1 calls
+    - indoorStatus *1 calls
+    - slogan *1 calls
+    - proverbs *1 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *26 calls
+Short Story 2 - Job Interview:
+  Arrays:
+    - allIcons *4 calls (23 picks)
+    - weatherConditions *1 calls
+    - inDoorPreposition *4 calls
+    - companies *3 calls
+    - liveNPCActions *15 calls
+    - indoorObjectItems *1 calls
+    - outDoorPreposition *1 calls
+    - typeValueNumber *39 calls [if includeType]
+    - typeNumber *39 calls [if includeType]
+    - dateEras *1 calls
+    - slogan *1 calls
+    - liveNPCs *3 calls
+    - liveNPCApperances *1 calls
+    - liveNPCEmotions *4 calls
+    - nameNPC *3 calls
+    - proverbs *1 calls
+    - indoorLocations *2 calls
+    - indoorStatus *1 calls
+    - colors *4 calls
+    - status *2 calls
+    - NPCjobs *2 calls
+    - sourceInfo *1 calls
+    - outdoorView *3 calls
+    - clockPeriods *2 calls
+    - buildings *1 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+    - Vehicle *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *39 calls
+Short Story 3 - Dating:
+  Arrays:
+    - allIcons *4 calls (23 picks)
+    - typeValueNumber *40 calls [if includeType]
+    - typeNumber *40 calls [if includeType]
+    - dateEras *1 calls
+    - status *9 calls
+    - clockPeriods *3 calls
+    - weatherConditions *1 calls
+    - outDoorSkyStrongObjects *1 calls
+    - shapes *3 calls
+    - outDoorSkyStrongObjectStatus *1 calls
+    - colors *9 calls
+    - gpsLocations *2 calls
+    - companies *2 calls
+    - liveNPCActions *15 calls
+    - indoorObjectItems *3 calls
+    - outDoorPreposition *1 calls
+    - outdoorView *2 calls
+    - outDoorStatus *1 calls
+    - inDoorPreposition *2 calls
+    - outdoorObjectDensity *1 calls
+    - outdoorObjects *2 calls
+    - buildings *1 calls
+    - liveNPCs *4 calls
+    - nameNPC *3 calls
+    - liveNPCEmotions *7 calls
+    - Vehicle *1 calls
+    - BoyActions *2 calls
+    - GirlActions *2 calls
+    - LoveActions *1 calls
+    - slogan *2 calls
+    - sourceInfo *2 calls
+    - liveNPCApperances *3 calls
+    - indoorLocations *1 calls
+    - businesses *1 calls
+    - magicTypes *1 calls
+    - indoorMaterials *2 calls
+    - proverbs *2 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *40 calls
+Short Story 4 - Rebellious Past:
+  Arrays:
+    - nameNPC *6 calls
+    - liveNPCActions *23 calls
+    - typeValueNumber *77 calls [if includeType]
+    - typeNumber *77 calls [if includeType]
+    - allIcons *4 calls (23 picks)
+    - outDoorPreposition *2 calls
+    - outdoorView *3 calls
+    - outDoorStatus *1 calls
+    - weatherConditions *1 calls
+    - status *7 calls
+    - quantities *1 calls
+    - outDoorSkyStrongObjects *1 calls
+    - shapes *2 calls
+    - outDoorSkyStrongObjectStatus *1 calls
+    - colors *4 calls
+    - indoorLocations *3 calls
+    - indoorStatus *1 calls
+    - indoorMaterials *1 calls
+    - inDoorPreposition *3 calls
+    - liveNPCs *5 calls
+    - liveNPCEmotions *7 calls
+    - magicTypes *1 calls
+    - companies *2 calls
+    - gpsLocations *2 calls
+    - Vehicle *2 calls
+    - liveNPCApperances *2 calls
+    - indoorObjectItems *2 calls
+    - dateEras *1 calls
+    - clockPeriods *4 calls
+    - UpperText *1 calls
+    - LowerText *1 calls (5 picks)
+    - GirlActions *1 calls
+    - BoyActions *1 calls
+  Random numbers:
+    - random.randint(minValue * scale, maxValue * scale) *77 calls
+=======================================================================================
+

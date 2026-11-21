@@ -6,11 +6,18 @@ from Script.common_script import *
 
 # short story 1
 def generateShortStory1():
+    outDoorTime = random.choice(times).strip()
+    if outDoorTime == "ban ngày":
+        outDoorSpace = f"ở đây, bầu trời luôn là ban ngày, có Mặt trời có hình {random.choice(shapes)} và nó đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)}"
+    else:
+        outDoorSpace = f"ở đây, bầu trời luôn là ban đêm, có {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} và nó đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)}"
+    
     return (
         f"SHORT STORY 1 : Curse Breaking Journey {generateRandomIcons(10)}\n\n"
         f"Dựa trên câu chuyện được lấy từ {random.choice(sourceInfo)}.\n"
         f"Có một {random.choice(businesses)} bán {random.choice(indoorObjectItems)}. Nó tọa lạc {random.choice(outDoorPreposition)} địa điểm là {random.choice(outdoorView).upper()} trông có vẻ đã {random.choice(outDoorStatus)} lâu năm.\n"
-        f"Ở {random.choice(outdoorObjectDensity)} nhìn từ phía tiệm, {random.choice(quantities)} {random.choice(outdoorObjects)} có hình dạng là {random.choice(shapes)} và nó luôn phát ra ánh sáng màu {random.choice(colors)}.\n"
+        f"Đây là nơi mà {outDoorSpace}. Và thời tiết ở đây thì luôn {random.choice(weatherConditions)}. \n"
+        f"Ở {random.choice(outdoorObjectDensity)} nhìn từ phía tiệm, có {random.choice(quantities)} {random.choice(outdoorObjects)} có hình dạng là {random.choice(shapes)} và nó luôn phát ra ánh sáng màu {random.choice(colors)}.\n"
         f"Bên trong tiệm, nó được xây bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)} lấp lánh. "
         f"{random.choice(inDoorPreposition).upper()}, {random.choice(quantities)} {random.choice(indoorItems)} {random.choice(indoorItemStatus)}, nó có hình dạng là {random.choice(shapes)}, và đang {random.choice(indoorLightVerb)} là {random.choice(indoorItemLightningSource)} màu {random.choice(colors)} từ bên ngoài. "
         f"{random.choice(inDoorPreposition).upper()} tiệm, có {random.choice(quantities)} {random.choice(indoorObjectItems)} có hình dạng là {random.choice(shapes)} và đang phát quang màu {random.choice(colors)}. "
@@ -32,7 +39,8 @@ def generateShortStory1():
         f'Để nhận biết đã đến đúng nơi cần đến hay chưa, thì cậu phải để ý là địa điểm đó tọa lạc {random.choice(outDoorPreposition)} {random.choice(outdoorView).upper()}, nơi mà ở đó có {generateRandomLargeNumber()} {random.choice(outdoorObjects)} có hình dạng là {random.choice(shapes)} và chúng hay phát ra ánh sáng màu {random.choice(colors)}."\n'
         f"Chủ tiệm, rút ra một điếu thuốc dài {generateRandomLargeNumber()}m ra, rít 1 hơi dài, rồi ông ta {random.choice(liveNPCActions)} một lúc.\n"
         f"Ông ta tiếp tục nhìn vào vị khách bằng ánh mắt {random.choice(liveNPCEmotions)} và nói: Còn nữa, {random.choice(outDoorPreposition)} đó có {generateRandomLargeNumber()} {random.choice(liveNPCs)} đang sinh sống. Hãy gặp 1 kẻ nào đó trong số họ, và dùng tên giả của tôi và cứ nói với họ rằng ông chủ tiệm {random.choice(nameNPC)} đã bảo đến đó để phá giải lời nguyền.\n"
-        f"Rồi sau đó, họ sẽ dẫn cậu đến một nơi khác gần đó, nơi mà có một người bạn của tôi đang sống. Anh ta trông giống 1 {random.choice(liveNPCs)}, và danh tính thật là {random.choice(nameNPC)}, là {random.choice(NPCjobs).upper()} có {generateRandomLargeNumber()} năm kinh nghiệm. Cậu sẽ dễ nhận ra vì anh ta có ngoại hình là {random.choice(liveNPCApperances)} và thường {random.choice(liveNPCActions)}.\n"
+        f"Rồi sau đó, họ sẽ dẫn cậu đến một nơi khác gần đó. Nơi mà luôn lơ lửng giữa không trung có {random.choice(quantities)} {random.choice(outDoorSkyObjects)} đang có hình dạng là {random.choice(shapes)} và nó đang phát quang màu {random.choice(colors)}, " 
+        f"có một người bạn của tôi đang sống ở đó. Anh ta trông giống 1 {random.choice(liveNPCs)}, và danh tính thật là {random.choice(nameNPC)}, là {random.choice(NPCjobs).upper()} có {generateRandomLargeNumber()} năm kinh nghiệm. Cậu sẽ dễ nhận ra vì anh ta có ngoại hình là {random.choice(liveNPCApperances)} và thường {random.choice(liveNPCActions)}.\n"
         f"Anh ta tuy câm điếc bẩm sinh nhưng anh ta có thể {random.choice(liveNPCActions)} và nói rõ ràng chi tiết với cậu cách để giải lời nguyền của cậu. Nhưng với điều kiện là cậu phải đưa cho anh ta {generateRandomLargeNumber()}$ hoặc {generateRandomLargeNumber()} {random.choice(indoorObjectItems)} để làm phí giao dịch .\n"
         f"Anh ta ngoài ra còn bị cụt tứ chi, nên anh ta cũng có thể {random.choice(liveNPCActions)} để đi bộ cùng cậu để dẫn cậu đến {random.choice(outdoorView)}. Sau đó, cậu sẽ từ đó đi thẳng một đoạn {generateRandomLargeNumber()}km về {random.choice(gpsLocations)} nữa là sẽ đến đích. "
         f"Tôi nghĩ đây là một hành trình khá ngắn vì chỉ mất {generateRandomLargeNumber()} giờ nếu đi bằng {random.choice(Vehicle).upper()} từ đây đến nơi mà địa điểm đó tọa lạc. "
@@ -50,9 +58,16 @@ def generateShortStory1():
 
 # short story 2
 def generateShortStory2():
+    outDoorTime = random.choice(times).strip()
+    if outDoorTime == "ban ngày":
+        outDoorSpace = f"bầu trời luôn có Mặt trời có hình {random.choice(shapes)} và nó đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)}"
+    else:
+        outDoorSpace = f"bầu trời luôn có {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} và nó đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)}"
+            
     return (
         f"SHORT STORY 2: Job Interview {generateRandomIcons(10)}\n\n"
         f"Một ngày {random.choice(weatherConditions)} {random.choice(inDoorPreposition)} {random.choice(companies).upper()} COMPANY!!!\n"
+        f"Công ty có vị trí phong thủy khá là {random.choice(status)}. Vì tại vị trí công ty tọa lạc, {outDoorSpace}. Ngoài ra, luôn lơ lửng giữa không trung có {random.choice(quantities)} {random.choice(outDoorSkyObjects)} đang có hình dạng là {random.choice(shapes)} và nó đang phát quang màu {random.choice(colors)} 24/7. \n"
         f"Công ty này vốn là công ty con của công ty con của công ty con của công ty con của {random.choice(companies)} Company, đây là một công ty chuyên về {random.choice(liveNPCActions)} và chuyên cung cấp {random.choice(indoorObjectItems)} có uy tín {random.choice(outDoorPreposition)} địa phương.\n"
         f"Hôm nay, là ngày {generateDate()} {random.choice(inDoorPreposition)} công ty này sẽ diễn ra một buổi phỏng vấn ứng viên đặc biệt - Cuộc phỏng vấn không giới hạn với triết lý '{random.choice(slogan)}'.\n"
         f"Đang có tổng cộng {generateRandomLargeNumber()} ứng viên đang ở {random.choice(inDoorPreposition)} sảnh chờ {generateRandomLargeNumber()}km2 của công ty này.\n"
@@ -95,17 +110,23 @@ def generateShortStory2():
         f"Cô HR im lặng, rồi chỉ {random.choice(liveNPCActions)}. Và rồi cô vấp té cắm đầu vì không để ý và nhào lộn {generateRandomLargeNumber()} vòng rồi đứng dậy. Sau đó, vì ngại ngùng mà cô đã {random.choice(liveNPCActions)} để chữa quê, sau đó bỏ đi. Nhưng cô cố tình làm rơi mảnh giấy nhỏ gần chân anh ứng viên.\n"
         f"Anh ứng viên cũng không nói gì thêm nữa, nhưng tò mò mở mảnh giấy đó ra đọc. Bên trong ghi: `Hôm nay tôi tan làm lúc {generateClock()} và rảnh được đến {generateClock()}, anh hãy đến công ty đón tôi. Ngoài ra, tôi cũng muốn tăng 2 cho cuộc hẹn của chúng ta là {random.choice(liveNPCActions)} ở {random.choice(indoorLocations)}. Số điện thoại của tôi kèm ở dưới nha! Còn nữa, tôi làm ở văn phòng nhân sự tại tầng {generateRandomLargeNumber()} tòa nhà {random.choice(buildings)} của công ty. "
         f"Tạm thời thì thang máy ở đó đang bảo trì {generateRandomLargeNumber()} năm nên anh chịu khó đi thang bộ nhé 😉!! Vào buổi trưa, thì tôi hay ăn trưa tại quán quen tại {random.choice(outdoorView)} cách ở đây {generateRandomLargeNumber()}km 😉` và có 1 từ kì lạ phía cuối tờ giấy là `{generateRandomWord()}`\n"
-        f"Anh ứng viên hiểu ý và vui vẻ {random.choice(liveNPCActions)} rồi bỏ mảnh giấy vào túi áo. Sau đó, anh ta bước ra {random.choice(outdoorView)} gần đó để lấy chiếc {random.choice(Vehicle).upper()} của mình và ra về! Hôm đó, tâm trạng anh trông rất {random.choice(liveNPCEmotions)}.\n"
+        f"Anh ứng viên hiểu ý và vui vẻ {random.choice(liveNPCActions)} rồi bỏ mảnh giấy vào túi áo. Sau đó, anh ta bước ra {random.choice(outdoorView)} gần đó, nơi mà có {generateRandomLargeNumber()} {random.choice(outdoorObjects)} có hình dạng là {random.choice(shapes)} và chúng hay phát ra ánh sáng màu {random.choice(colors)} 24/7, để lấy chiếc {random.choice(Vehicle).upper()} của mình và ra về! Hôm đó, tâm trạng anh trông rất {random.choice(liveNPCEmotions)}.\n"
         f"Còn bạn? Khi tình cảm bọn họ tiến triển như thế này thì bạn sẽ đoán mối quan hệ giữa 2 nhân vật này sẽ tiến triển như thế nào? {generateRandomIcons(7)}"
     )
 
 
 # short story 3
 def generateShortStory3():
+    outDoorTime = random.choice(times).strip()
+    if outDoorTime == "ban ngày":
+        outDoorSpace = f"Bầu trời đang {random.choice(status)}, có Mặt trời có hình {random.choice(shapes)} đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)} và đang phát ra ánh sáng màu {random.choice(colors)}. "
+    else:
+        outDoorSpace = f"Bầu trời đang {random.choice(status)}, có {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)} và đang phát ra ánh sáng màu {random.choice(colors)}. "
     return (
         f"SHORT STORY 3: Dating {generateRandomIcons(10)}\n\n"
         f"Hôm nay, là {generateDate()} hiện tại đang là khoảng thời gian sau ngày làm việc một cách {random.choice(status)}. Vào lúc {generateClock()}, thời tiết thì {random.choice(weatherConditions)}.\n"
-        f"Bầu trời đang {random.choice(status)}, có {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} và bị {random.choice(outDoorSkyStrongObjectStatus)} đang phát ra ánh sáng màu {random.choice(colors)}.\n"
+        f"{outDoorSpace}\n"
+        f"Ngoài ra, lơ lửng giữa không trung tại vị trí của công ty này còn có {random.choice(quantities)} {random.choice(outDoorSkyObjects)} đang có hình dạng là {random.choice(shapes)} và nó đang phát quang màu {random.choice(colors)} 24/7 trông rất {random.choice(status)}. \n"
         f"Ở ngay {random.choice(gpsLocations)} của công ty {random.choice(companies)}, có {generateRandomLargeNumber()} cặp đôi đang thực hiện kế hoạch cho lời hẹn ước từ lúc {generateClock()}, cái lúc mà họ hẹn trước khi ở sảnh công ty với tư cách là HR và ứng viên xin việc.\n" 
         f"Đây là công ty con của công ty con của công ty con của công ty con của {random.choice(companies)}. Nó chuyên về {random.choice(liveNPCActions)} và cung cấp các {random.choice(indoorObjectItems)}. Nó đã có hơn {generateRandomLargeNumber()} khách hàng thân thiết.\n"
         f"Công ty này đang đặt trụ sở chính {random.choice(outDoorPreposition)} {random.choice(outdoorView).upper()} đã {random.choice(outDoorStatus)} lâu năm.\n"
@@ -116,7 +137,7 @@ def generateShortStory3():
         f"Có một quán quen của anh cách đó {generateRandomLargeNumber()}km. Nghĩ cũng gần đây thôi, chưa kể vẫn còn cách thời gian đã hẹn là {generateRandomReciprocal()}ns nữa. Nên anh thầm nghĩ mặt thời gian trông vẫn khá {random.choice(liveNPCEmotions)}. "
         f"Không nghĩ thêm được nữa vì bụng anh kêu ọc ọc rồi, anh lập tức phóng chiếc {random.choice(Vehicle).upper()} của mình với tốc độ {generateRandomReciprocal()}nm/h đi mua vội bánh mì trước khi anh mất hết {random.choice(liveNPCEmotions)} hẹn hò vì đói.\n"
         f"Dọc đường, anh phải băng qua {generateRandomLargeNumber()} ngã tư. Và khi qua đến mỗi ngã 4, anh phải dừng đèn đỏ là {generateRandomLargeNumber()}s. "
-        f"Lúc đợi đèn giao thông, anh ta thấy {random.choice(outdoorObjects)} có hình dạng {random.choice(shapes)} khắp nẻo đường trông {random.choice(status)}. Và cột đèn giao thông đang từ đỏ sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi mới đến xanh để anh được đi tiếp. Anh phải đợi đèn đỏ khá lâu, anh bèn nhìn ngắm cảnh vật xung quanh một chút, tâm trạng anh đang {random.choice(status)}.\n"
+        f"Lúc đợi đèn giao thông, anh ta thấy {generateRandomLargeNumber()} {random.choice(outdoorObjects)} có hình dạng {random.choice(shapes)} luôn phát ra ánh sáng {random.choice(colors)} ở khắp nẻo đường trông {random.choice(status)}. Và cột đèn giao thông đang từ đỏ sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi sang {random.choice(colors)} rồi mới đến xanh để anh được đi tiếp. Anh phải đợi đèn đỏ khá lâu, anh bèn nhìn ngắm cảnh vật xung quanh một chút, tâm trạng anh đang {random.choice(status)}.\n"
         f"Rồi bỗng anh thấy có {generateRandomLargeNumber()} cặp đôi {random.choice(liveNPCs)}-{random.choice(liveNPCs)} đang vừa {random.choice(liveNPCActions)} và vừa {random.choice(liveNPCActions)} bên đường. Sau đó, các chàng trai đang {random.choice(BoyActions)[0]}, còn các cô gái thì đang {random.choice(GirlActions)[0]}. Rồi họ lại cùng nhau {random.choice(LoveActions)}, rồi họ cùng nhau băng qua vạch kẻ đường trông rất {random.choice(status)}. "
         f"Anh dõi nhìn theo bọn họ, sau đó {random.choice(liveNPCActions)} một lúc rồi quay lại xe của mình và {random.choice(liveNPCEmotions)} trong lòng - 'Phải chi cuộc hẹn hôm nay của mình cũng được như thế! Có thể nói là `{random.choice(slogan)}`'\n"
         f"Một lúc sau, anh đã quay lại công ty nơi bạn gái anh vẫn còn đang làm việc và kèm túi bánh mì nhỏ và một túi quà bên trong là {random.choice(indoorObjectItems)} để làm quà tặng cho cô gái trong ngày hẹn hò đầu tiên. Anh mừng trong lòng là vẫn còn kịp. Chứ nếu không, anh sẽ bị block thẳng tay trên {random.choice(sourceInfo)} trước khi kịp giải thích là do anh mãi ngắm các cặp đôi hẹn hò ở ngã tư kia. "
@@ -155,10 +176,18 @@ def generateShortStory4():
     mainName = random.choice(nameNPC).upper()
     mainAction = random.choice(liveNPCActions)
     mainDuration = generateRandomLargeNumber()
+    
+    outDoorTime = random.choice(times).strip()
+    if outDoorTime == "ban ngày":
+        outDoorSpace = f"Bầu trời đang trông có vẻ {random.choice(status)}, có Mặt trời có hình {random.choice(shapes)} đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)} và đang phát ra ánh sáng màu {random.choice(colors)}. "
+    else:
+        outDoorSpace = f"Bầu trời đang trông có vẻ {random.choice(status)}, có {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} đang trong tình trạng {random.choice(outDoorSkyStrongObjectStatus)} và đang phát ra ánh sáng màu {random.choice(colors)}. "
+    
     return (
         f"SHORT STORY 4 : Rebellious Past {generateRandomIcons(10)}\n\n"
-        f"Tọa lạc {random.choice(outDoorPreposition)} {random.choice(outdoorView).upper()} trông {random.choice(outDoorStatus)} lâu năm. {random.choice(outDoorPreposition).upper()}, tình hình thời tiết phức tạp, thời tiết luôn {random.choice(weatherConditions)} vài năm gần đây. Bầu trời đang trông có vẻ {random.choice(status)}, "
-        f"có {random.choice(quantities)} {random.choice(outDoorSkyStrongObjects)} có hình dạng là {random.choice(shapes)} và bị {random.choice(outDoorSkyStrongObjectStatus)} đang phát ra ánh sáng màu {random.choice(colors)}. "
+        f"Tọa lạc {random.choice(outDoorPreposition)} {random.choice(outdoorView).upper()} trông {random.choice(outDoorStatus)} lâu năm. {random.choice(outDoorPreposition).upper()}, tình hình thời tiết phức tạp, thời tiết luôn {random.choice(weatherConditions)} vài năm gần đây. "
+        f"{outDoorSpace}\n"
+        f"Ngoài ra, đang lơ lửng giữa không trung còn có {random.choice(quantities)} {random.choice(outDoorSkyObjects)} đang có hình dạng là {random.choice(shapes)} và nó đang phát quang màu {random.choice(colors)} 24/7 trông rất {random.choice(status)}. \n"
         f"Đây quả thật là một khung cảnh {random.choice(status)}.\n"
         f"Có một {random.choice(indoorLocations)}, trông có vẻ {random.choice(indoorStatus)}. Và nó được xây dựng bằng {random.choice(indoorMaterials)} và được sơn màu {random.choice(colors)}. "
         f"{random.choice(inDoorPreposition).upper()}, đang có {generateRandomLargeNumber()} cặp đôi {random.choice(liveNPCs)}-{random.choice(liveNPCs)} đang hẹn hò. Họ đang {random.choice(liveNPCActions)} và trông rất {random.choice(liveNPCEmotions)}.\n"
@@ -252,7 +281,7 @@ def generateShortStory4():
         f"Lúc về lại phòng giam, anh ta mở ra đọc ngay. Nội dung ghi là: 'Anh thực sự không có phạm phải tội lớn gì! Anh đã thi hành án quá đủ rồi. Bây giờ nếu tôi không thể giúp anh giảm nhẹ hình phạt hay thay đổi gì được. Thì tôi lại không đành lòng nhìn anh chịu tội vì những cái anh không làm. "
         f"Nên là tôi sẽ giúp anh ...vượt ngục, hãy chạy trốn đi thật xa và đừng ngẩng đầu lại. Bên dưới là bản đồ dẫn đến lối đi bí mật của nhà tù này, anh chỉ cần canh lúc {generateClock()} ngày mai. "
         f"Lúc đó, các cai ngục sẽ giải lao và đi {random.choice(liveNPCActions)} theo thói quen sinh hoạt thường ngày. Đây là thời điểm tốt nhất, hãy theo bản đồ này và thoát ra ngoài. Mật khẩu cửa phòng giam của anh là :`{generateRandomWord()}`. "
-        f"Sau khi thoát được ra ngoài, anh hãy đi thêm {generateRandomLargeNumber()}km về hướng {random.choice(gpsLocations)}. "
+        f"Sau khi thoát được ra ngoài, anh hãy đi thêm {generateRandomLargeNumber()}km về hướng {random.choice(gpsLocations)}. Rồi anh sẽ thấy có nơi mà có {generateRandomLargeNumber()} {random.choice(outdoorObjects)} có hình dạng {random.choice(shapes)} luôn phát ra ánh sáng {random.choice(colors)} ở khắp nẻo đường thì đó là nơi mà anh đã đến đúng đích. "
         f"Một người bạn của tôi tên là {random.choice(nameNPC).upper()}. Anh ta sẽ đến đón anh tại đó bằng chiếc {random.choice(Vehicle).upper()} có sơn màu {random.choice(colors)}. Anh ta sẽ giúp anh đưa anh đi trốn ra nước ngoài. Xin anh hãy giữ bí mật chuyện này! Và hãy cẩn thận và bảo trọng nhé!!'\n"
         f"Vậy là mọi kế hoạch đều suôn sẻ, chàng trai đã được đưa đi trốn thành công sau {generateRandomLargeNumber()}h di chuyển....\n"
         f" - Vậy lí do anh bảo anh được ân xá chứ không phải là anh đã vượt ngục là muốn bảo vệ anh điều tra viên ân nhân đó sao? - Cô gái {random.choice(GirlActions)[0]}.\n"
