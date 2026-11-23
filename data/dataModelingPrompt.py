@@ -60,23 +60,22 @@ backgroundModeling = (
     "softly blurred lakeside gazebo surrounded by blooming roses, soft diffused daylight, clean backdrop",
 
     # --- DANH MỤC: VƯỜN HOA, BAN CÔNG & KHÔNG GIAN HẸN HÒ (GARDENS, BALCONIES & TERRACES) ---
+    "blurred bustling spring flower street festival lined with colorful chrysanthemum and marigold displays, bright festive daylight, clean composition",
+    "blurred coastal village street bursting with colorful potted geraniums along whitewashed walls, bright airy daylight, clean composition",
     "blurred rooftop terrace overlooking city lights at blue hour, soft warm string lights, dreamy bokeh",
     "blurred sunlit conservatory greenhouse filled with lush ferns and white blossoms, airy natural light",
+    "blurred vibrant Mediterranean alley draped in blooming pink and magenta bougainvillea flowers, warm sunlight, dreamy bokeh background",
     "out of focus botanical garden pathway under a canopy of wisteria flowers, soft purple bokeh, minimal details",
+    "out of focus charming European street lined with overflowing hanging flower baskets and pastel facades, soft morning glow, minimalist bokeh",
     "out of focus cozy balcony with sheer curtains blowing gently in morning breeze, warm sunlight, clean setup",
+    "out of focus lively outdoor flower market street filled with buckets of colorful fresh blooms, soft natural daylight, warm atmospheric backdrop",
+    "out of focus romantic flower-lined promenade at golden hour with glowing warm bokeh and pastel floral hues, serene artistic backdrop",
     "out of focus rose garden archway in full bloom, soft pastel tones, romantic minimalist background",
     "out of focus vineyard hills at golden hour, warm sunbeams and muted earthy greens, serene backdrop",
     "softly blurred candlelit outdoor patio at night, warm golden bokeh orbs, intimate minimalist atmosphere",
-    "softly blurred lakeside picnic meadow under a soft pink sunset sky, gentle warm lighting, clean composition",
-    "blurred vibrant Mediterranean alley draped in blooming pink and magenta bougainvillea flowers, warm sunlight, dreamy bokeh background",
-    "blurred bustling spring flower street festival lined with colorful chrysanthemum and marigold displays, bright festive daylight, clean composition",
-    "out of focus charming European street lined with overflowing hanging flower baskets and pastel facades, soft morning glow, minimalist bokeh",
-    "out of focus lively outdoor flower market street filled with buckets of colorful fresh blooms, soft natural daylight, warm atmospheric backdrop",
-    "softly blurred sunlit walkway under a vibrant canopy of blooming yellow trumpet trees, warm golden bokeh, clean minimalist setup",
     "softly blurred historic stone lane framed by cascading purple and white flowering vines, gentle diffused light, romantic soft focus background",
-    "blurred coastal village street bursting with colorful potted geraniums along whitewashed walls, bright airy daylight, clean composition",
-    "out of focus romantic flower-lined promenade at golden hour with glowing warm bokeh and pastel floral hues, serene artistic backdrop",
-
+    "softly blurred lakeside picnic meadow under a soft pink sunset sky, gentle warm lighting, clean composition",
+    "softly blurred sunlit walkway under a vibrant canopy of blooming yellow trumpet trees, warm golden bokeh, clean minimalist setup",
 
     # --- DANH MỤC: GA TÀU, THƯ VIỆN & GÓC HOÀI NIỆM (NOSTALGIC & CINEMATIC SPOTS) ---
     "blurred quiet classic library aisle with warm desk lamp glow, muted wooden tones, minimalist backdrop",
@@ -117,17 +116,16 @@ backgroundModeling = (
     "out of focus twilight sky with a luminous crescent moon and large colorful planets visible above a quiet horizon, dreamy bokeh",
     "softly blurred cosmic night sky with a massive gas giant planet and its glowing moons rising over a misty silhouette, ethereal light",
     "softly blurred deep space horizon filled with dense star clusters, distant glowing planets, and orbiting satellites, clean cinematic bokeh",
-    
+
     # --- DANH MỤC: PHỐ GRAFFITI & NGHỆ THUẬT ĐƯỜNG PHỐ (GRAFFITI STREETS & URBAN STREET ART) ---
-    "blurred vibrant graffiti-covered brick alleyway at daytime, colorful spray paint murals, soft natural daylight, clean composition",
+    "blurred abandoned factory courtyard with weathered colorful graffiti murals and overgrown ivy, soft diffused daylight, atmospheric backdrop",
     "blurred gritty urban street corner with bold pastel and neon graffiti walls, soft afternoon sunlight, minimalist bokeh backdrop",
-    "out of focus underground subway tunnel wall covered in layered street art and colorful tags, moody fluorescent lighting, soft bokeh",
+    "blurred vibrant graffiti-covered brick alleyway at daytime, colorful spray paint murals, soft natural daylight, clean composition",
     "out of focus concrete skatepark bowl painted with vibrant abstract graffiti murals under a clear sky, dynamic urban backdrop",
+    "out of focus underground subway tunnel wall covered in layered street art and colorful tags, moody fluorescent lighting, soft bokeh",
+    "out of focus vibrant street art district walkway with large-scale geometric wall murals, muted ambient tones, minimalist composition",
     "softly blurred industrial warehouse exterior covered in colorful pop-art graffiti, warm golden hour light, clean background",
     "softly blurred narrow urban street art lane at twilight with glowing neon signs reflecting off painted graffiti walls, dreamy bokeh",
-    "blurred abandoned factory courtyard with weathered colorful graffiti murals and overgrown ivy, soft diffused daylight, atmospheric backdrop",
-    "out of focus vibrant street art district walkway with large-scale geometric wall murals, muted ambient tones, minimalist composition",
-
 )
 
 backgroundModelingColors = (
